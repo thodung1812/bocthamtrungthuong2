@@ -868,43 +868,41 @@
         }
 
         // Employee data
-		
-		let csvData = null;
+		let employeesData = [];
+
+		// Load CSV function
 		async function loadCSV() {
-            try {
-                const response = await fetch('data.csv');
-                const csvText = await response.text();
-                
-                // Parse CSV với Papa Parse
-                Papa.parse(csvText, {
-                    header: true,          // Dòng đầu tiên là header
-                    dynamicTyping: true,   // Tự động chuyển đổi kiểu dữ liệu
-                    skipEmptyLines: true,  // Bỏ qua dòng trống
-                    complete: function(results) {
-                        csvData = results.data;
-                        console.log('Dữ liệu CSV:', csvData);
-                        
-                        // Hiển thị thông báo thành công
-                        document.getElementById('status').textContent = 
-                            `✓ Đã tải ${csvData.length} dòng dữ liệu`;
-                        
-                        // Hiển thị dữ liệu mẫu
-                        displayData();
-                    },
-                    error: function(error) {
-                        console.error('Lỗi parse CSV:', error);
-                        document.getElementById('status').textContent = 
-                            '✗ Lỗi khi đọc file CSV';
-                    }
-                });
-            } catch (error) {
-                console.error('Lỗi tải file:', error);
-                document.getElementById('status').textContent = 
-                    '✗ Không thể tải file data.csv';
-            }
-        }
+		    try {
+		        const response = await fetch('data.csv');
+		        if (!response.ok) {
+		            throw new Error(`HTTP error! status: ${response.status}`);
+		        }
+		        const csvText = await response.text();
+		        
+		        // Parse CSV with Papa Parse
+		        Papa.parse(csvText, {
+		            header: true,
+		            dynamicTyping: false,
+		            skipEmptyLines: true,
+		            complete: function(results) {
+		                employeesData = results.data;
+		                console.log('✓ Đã tải thành công:', employeesData.length, 'nhân viên');
+		                console.log('Dữ liệu mẫu:', employeesData[0]);
+		            },
+		            error: function(error) {
+		                console.error('✗ Lỗi parse CSV:', error);
+		                alert('Lỗi khi đọc file CSV. Vui lòng kiểm tra console.');
+		            }
+		        });
+		    } catch (error) {
+		        console.error('✗ Lỗi tải file:', error);
+		        alert('Không thể tải file data.csv. Đảm bảo file nằm cùng thư mục với index.html');
+		    }
+		}
 		
-        let employeesData = [];
+		// Load CSV on page load
+		loadCSV();
+
 
         // Award configurations
         const awardConfig = {
@@ -1143,6 +1141,7 @@
 </html>
 
                 
+
 
 
 
