@@ -1042,7 +1042,7 @@
                 }, 100);
             });
 
-            await new Promise(resolve => setTimeout(resolve, 500));
+            await new Promise(resolve => setTimeout(resolve, 100));
 
             // Step 2: Wipe transition (1.5s)
 				await new Promise(resolve => {
@@ -1055,7 +1055,7 @@
 				// Step 2.5: Victory banner (3s - khớp với animation)
 				await new Promise(resolve => {
 					victoryBanner.classList.add('show');
-					setTimeout(resolve, 3000); // Khớp với animation bannerReveal
+					setTimeout(resolve, 2000); // Khớp với animation bannerReveal
 				});
 
             // Step 3: Show award title (2s)
@@ -1123,6 +1123,7 @@
 </html>
 
                 
+
 
 
 
