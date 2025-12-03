@@ -1,2095 +1,2093 @@
-ID,Họ và Tên,Bộ Phận
-0002,Hoàng Thanh Hương,Production Engineering
+Mã nhân viên,Tên nhân viên,Group
+0002,Hoàng Thanh Hương,Document & IT
 0004,Văn Thị Dung,Accounting
 0016,Tạ Quang Cường,Improvement
 0019,Lê Đăng Khánh,T-Mate
-0023,Hoàng Thị Hiển,PTCA GW
-0025,Phạm Thị Hương Cúc,PTCA GW
-0038,Nguyễn Thị Bích Hằng,Catheter
-0041,Lê Thị Nhung,M-Pro
-0043,Đào Thị Thúy Chắt,Catheter
+0023,Hoàng Thị Hiển,PLGW
+0025,Phạm Thị Hương Cúc,Assy
+0038,Nguyễn Thị Bích Hằng,Balloon
+0041,Lê Thị Nhung,Core
+0043,Đào Thị Thúy Chắt,Guiding
 0044,Nguyễn Thị Tuyết,T-Mate
-0050,Phạm Nguyễn Thanh Dung,Quality Assurance
-0052,Lê Thị Hiệp,T-Mate
-0056,Nguyễn Duy An,Sterilization
-0079,Nguyễn Thị Lan Phương,Quality Assurance
-0085,Trần Thị Thu,PTCA GW
+0050,Phạm Nguyễn Thanh Dung,Inspection
+0052,Lê Thị Hiệp,Shaft
+0056,Nguyễn Duy An,Production Support
+0079,Nguyễn Thị Lan Phương,Quality Engineering
+0085,Trần Thị Thu,Assy
 0093,Nguyễn Hà Vân,HR
 0101,Lê Thanh Hà,ISO
-0102,Nguyễn Minh Phúc,Production Engineering
+0102,Nguyễn Minh Phúc,PTCA GW
 0103,Nguyễn Thị Hồng Minh,ISO
-0107,Ngô Thị Tuấn Anh,SPGW
-0108,Lê Thị Hạnh,Production Engineering
-0119,Nguyễn Thị Kim Dung,PTCA GW
+0107,Ngô Thị Tuấn Anh,Assy
+0108,Lê Thị Hạnh,T-Mate
+0119,Nguyễn Thị Kim Dung,Assy
 0128,Đỗ Hồng Huệ,Order Control
 0129,Đỗ Thị Thanh Tâm,T-Mate
-0135,Nguyễn Thị Thảo,Sterilization
-0140,Trần Thị Thảo,M-Pro
-0141,Vũ Thị Hoàn,Production Engineering
-0143,Đỗ Thanh Thuỷ,Production Engineering
+0135,Nguyễn Thị Thảo,Sterilization/Boxing
+0140,Trần Thị Thảo,Core
+0141,Vũ Thị Hoàn,Catheter
+0143,Đỗ Thanh Thuỷ,APS
 0153,Phạm Thị Thuỳ,Order Control
-0171,Ngô Thị Dung,PTCA GW
+0171,Ngô Thị Dung,PLGW
 0181,Nguyễn Thị Thương Thương,Order Control
 0186,Trần Thị Kim Dung,ISO
-0193,Bùi Thị Hà,M-Pro
-0194,Bùi Thị Loan,Production Engineering
-0211,Nguyễn Thị Lan Anh,PTCA GW
-0224,Trịnh Thị Nhượng,Catheter
-0237,Hoàng Thị Huyền,PTCA GW
-0243,Nguyễn Thị Dung,Purchase-Import-Receiving
-0245,Nguyễn Thị Hồng Hạnh,PTCA GW
-0250,Nguyễn Thị Thảo,Sterilization
+0193,Bùi Thị Hà,Core
+0194,Bùi Thị Loan,APS
+0211,Nguyễn Thị Lan Anh,Assy
+0224,Trịnh Thị Nhượng,Micro
+0237,Hoàng Thị Huyền,Assy
+0243,Nguyễn Thị Dung,Pur-Import
+0245,Nguyễn Thị Hồng Hạnh,Assy
+0250,Nguyễn Thị Thảo,Seal/Label
 0259,Phạm Thị Loan,ISO
-0261,Phan Thị Đát,Production Engineering
-0266,Trần Thị Lan Phương,M-Pro
-0282,Lê Thị Thu Hà,PTCA GW
-0283,Nguyễn Thị Hà,Sterilization
-0286,Phạm Thị Hoa,PTCA GW
-0326,Trần Thị Hạnh,PTCA GW
-0329,Vũ Thị Băng,Quality Assurance
+0261,Phan Thị Đát,APS
+0266,Trần Thị Lan Phương,Core
+0282,Lê Thị Thu Hà,Assy
+0283,Nguyễn Thị Hà,Seal/Label
+0286,Phạm Thị Hoa,Assy
+0326,Trần Thị Hạnh,Assy
+0329,Vũ Thị Băng,Calibration
 0338,Hoàng Thị Hảo,GA
-0364,Tô Thị Mơ,Production Engineering
-0368,Đỗ Thị Diễn,Catheter
-0371,Lê Thị Kiều Trang,T-Mate
-0380,Trần Thị Hà,PTCA GW
+0364,Tô Thị Mơ,Catheter
+0368,Đỗ Thị Diễn,Micro
+0371,Lê Thị Kiều Trang,Shaft
+0380,Trần Thị Hà,Assy
 0383,Nguyễn Thị Thu Hường,GA
-0390,Đỗ Thị Việt Thương,PTCA GW
+0390,Đỗ Thị Việt Thương,Assy
 0394,Nguyễn Đức Bình,Maintenance
-0396,Nguyễn Thị Hậu,PTCA GW
-0403,Phạm Thị Ngoan,Catheter
-0408,Đặng Thị Hằng,PTCA GW
-0416,Nguyễn Thị Nữ,Sterilization
-0419,Nguyễn Thị Thu Trang,PTCA GW
-0435,Nguyễn Hồng Nhung,Quality Assurance
-0436,Lương Thị Huyền,Shipping
-0445,Nguyễn Thị Phương Thảo,PTCA GW
-0467,Bùi Thị Bốn,M-Pro
-0475,Nguyễn Thị Lượt,Information & Production support
-0478,Nguyễn Thị Xuân,SPGW
-0483,Phùng Thị Hà,Production Engineering
-0484,Trần Thị Bến,Production Engineering
-0488,Vương Kim Huệ,Production Engineering
+0396,Nguyễn Thị Hậu,Assy
+0403,Phạm Thị Ngoan,Guiding
+0408,Đặng Thị Hằng,Assy
+0416,Nguyễn Thị Nữ,Sterilization/Boxing
+0419,Nguyễn Thị Thu Trang,Assy
+0435,Nguyễn Hồng Nhung,Inspection
+0436,Lương Thị Huyền,Export
+0445,Nguyễn Thị Phương Thảo,Assy
+0467,Bùi Thị Bốn,Core
+0475,Nguyễn Thị Lượt,Information
+0478,Nguyễn Thị Xuân,Assy
+0483,Phùng Thị Hà,T-Mate
+0484,Trần Thị Bến,Catheter
+0488,Vương Kim Huệ,Catheter
 0489,Phạm Thị Thuận,Order Control
-0491,Vũ Quang,Production Engineering
+0491,Vũ Quang,T-Mate
 0495,Nguyễn Đình Độ,Order Control
-0497,Đào Thị Thuý Hoà,Catheter
-0498,Hoàng Thị Nhàn,Production Engineering
-0519,Dương Thị Hạnh,PTCA GW
-0521,Lê Thị An,SPGW
+0497,Đào Thị Thuý Hoà,CAG
+0498,Hoàng Thị Nhàn,APS
+0519,Dương Thị Hạnh,Assy
+0521,Lê Thị An,Part
 0562,Trần Thị Lan,ISO
-0571,Nguyễn Thị Toàn,PTCA GW
-0578,Trịnh Thị Thảo,M-Pro
-0580,Lê Phương Hằng,PTCA GW
-0584,Nguyễn Thị Mai,PTCA GW
-0592,Lê Thị Thảo,Catheter
+0571,Nguyễn Thị Toàn,Assy
+0578,Trịnh Thị Thảo,Coil
+0580,Lê Phương Hằng,Assy
+0584,Nguyễn Thị Mai,PLGW
+0592,Lê Thị Thảo,Micro
 0600,Khuất Thị Phương,Order Control
-0615,Nguyễn Thị Kim Oanh,PTCA GW
-0619,Nguyễn Thị Lợi,M-Pro
-0624,Nguyễn Thị Thêm,PTCA GW
-0627,Nguyễn Thị Tuyết,Quality Assurance
-0635,Trần Thị Hương,PTCA GW
-0645,Vũ Thị Yến,Sterilization
-0651,Hạ Thị Minh Hà,PTCA GW
-0657,Nguyễn Thị Liên,PTCA GW
-0661,Nguyễn Thị Phương Hồng,PTCA GW
-0662,Nguyễn Thị Thu Hiền,PTCA GW
-0682,Lê Thị Cúc,Catheter
-0691,Nguyễn Thị Hòa,PTCA GW
-0702,Trần Thị Hiên,PTCA GW
+0615,Nguyễn Thị Kim Oanh,Assy
+0619,Nguyễn Thị Lợi,Core
+0624,Nguyễn Thị Thêm,Assy
+0627,Nguyễn Thị Tuyết,Inspection
+0635,Trần Thị Hương,Assy
+0645,Vũ Thị Yến,Production Support
+0651,Hạ Thị Minh Hà,Assy
+0657,Nguyễn Thị Liên,Assy
+0661,Nguyễn Thị Phương Hồng,Assy
+0662,Nguyễn Thị Thu Hiền,Assy
+0682,Lê Thị Cúc,Micro
+0691,Nguyễn Thị Hòa,Assy
+0702,Trần Thị Hiên,Assy
 0708,Vũ Văn Tâm,Improvement
-0712,Dương Thị Quỳnh,Sterilization
-0715,Hoàng Thị Đậm,Quality Assurance
-0720,Nguyễn Thị Dung,PTCA GW
-0722,Nguyễn Thị Kim Dung,PTCA GW
-0726,Nguyễn Thị Thắm,Production Engineering
-0731,Trần Thị Hằng,PTCA GW
-0763,Nguyễn Thị Bích Huệ,PTCA GW
-0767,Nguyễn Thị Tiếp,Shipping
-0768,Phạm Thị Minh,SPGW
-0769,Trần Thị Hậu,Sterilization
-0770,Trần Thị Thơm,Quality Assurance
-0773,Nguyễn Thị Chinh,PTCA GW
-0775,Nguyễn Văn Ngà,Catheter
-0776,Phạm Thị Bưởi,Sterilization
-0782,Cao Thị Tâm,SPGW
-0787,Đinh Thị Trang,PTCA GW
-0791,Hoàng Thị Bông,PTCA GW
-0805,Nguyễn Thị Hải,Sterilization
-0809,Nguyễn Thị Liên,Sterilization
-0810,Nguyễn Thị Loan,PTCA GW
-0812,Nguyễn Thị Ninh,Production Engineering
-0815,Nguyễn Thị Lan Anh,SPGW
-0820,Trần Thị Hương,T-Mate
-0821,Trần Thị Hương,Quality Assurance
-0826,Vũ Thị Huyền,SPGW
-0830,Bùi Thị Biên,PTCA GW
-0836,Đặng Thị Hồng Kiên,PTCA GW
-0837,Đặng Thị Yên,Quality Assurance
-0848,Nguyễn Thị Duyên,Sterilization
-0852,Nguyễn Thị Huyền,Package
-0855,Nguyễn Thị Mai Hương,Quality Assurance
-0859,Nguyễn Thị Thu,PTCA GW
+0712,Dương Thị Quỳnh,Sterilization/Boxing
+0715,Hoàng Thị Đậm,Inspection
+0720,Nguyễn Thị Dung,Assy
+0722,Nguyễn Thị Kim Dung,Assy
+0726,Nguyễn Thị Thắm,APS
+0731,Trần Thị Hằng,Assy
+0763,Nguyễn Thị Bích Huệ,Assy
+0767,Nguyễn Thị Tiếp,Export
+0768,Phạm Thị Minh,Assy
+0769,Trần Thị Hậu,Production Support
+0770,Trần Thị Thơm,Inspection
+0773,Nguyễn Thị Chinh,Assy
+0775,Nguyễn Văn Ngà,Guiding
+0776,Phạm Thị Bưởi,Seal/Label
+0782,Cao Thị Tâm,Assy
+0787,Đinh Thị Trang,Assy
+0791,Hoàng Thị Bông,Assy
+0805,Nguyễn Thị Hải,Seal/Label
+0809,Nguyễn Thị Liên,Sterilization/Boxing
+0810,Nguyễn Thị Loan,Assy
+0812,Nguyễn Thị Ninh,Filmecc
+0815,Nguyễn Thị Lan Anh,Assy
+0820,Trần Thị Hương,Shaft
+0821,Trần Thị Hương,Inspection
+0826,Vũ Thị Huyền,Assy
+0830,Bùi Thị Biên,Assy
+0836,Đặng Thị Hồng Kiên,Assy
+0837,Đặng Thị Yên,Quality Engineering
+0848,Nguyễn Thị Duyên,Sterilization/Boxing
+0852,Nguyễn Thị Huyền,Shipping-Package
+0855,Nguyễn Thị Mai Hương,Inspection
+0859,Nguyễn Thị Thu,Assy
 0869,Vũ Thị Hạt,Order Control
-0876,Khuất Thị Hoa,Sterilization
-0878,Ngô Thị Thanh Tâm,SPGW
+0876,Khuất Thị Hoa,Seal/Label
+0878,Ngô Thị Thanh Tâm,Assy
 0888,Chu Đình Hùng,Improvement
 0891,Đỗ Thị Huyên,GA
 0892,Lê Thị Diễm Lệ,GA
 0895,Lưu Thị Hảo,GA
 0897,Nguyễn Thị Bình,GA
 0902,Trần Thị Hiển,GA
-0909,Doãn Thị Hương,Sterilization
-0934,Trần Thị Châm,PTCA GW
-0937,Trương Thị Phương,Sterilization
-0948,Ngụy Thị Huyền,Quality Assurance
-0949,Nguyễn Thị Chang,Quality Assurance
-0960,Nguyễn Thị Thu Hằng,Catheter
-0962,Nguyễn Thu Hiền,PTCA GW
-0965,Phạm Thị Hiền,PTCA GW
-0969,Vũ Thị Phương,PTCA GW
+0909,Doãn Thị Hương,Sterilization/Boxing
+0934,Trần Thị Châm,Assy
+0937,Trương Thị Phương,Sterilization/Boxing
+0948,Ngụy Thị Huyền,Quality Engineering
+0949,Nguyễn Thị Chang,Inspection
+0960,Nguyễn Thị Thu Hằng,Guiding
+0962,Nguyễn Thu Hiền,Assy
+0965,Phạm Thị Hiền,Assy
+0969,Vũ Thị Phương,Assy
 0979,Lê Xuân Hà,T-Mate
 0981,Ngô Thị Nga,Order Control
-0988,Nguyễn Văn Biên,M-Pro
-0992,Vũ Thị Thanh,Quality Assurance
+0988,Nguyễn Văn Biên,Core
+0992,Vũ Thị Thanh,Inspection
 1007,Hà Thị Thanh Hoa,T-Mate
-1030,Bùi Thị Thơm,M-Pro
-1031,Cấn Thị Thúy,PTCA GW
-1034,Đặng Thị Thúy,PTCA GW
-1039,Hoàng Thị Dung,Production Engineering
-1043,Lê Thị Hoa,PTCA GW
-1044,Lê Thị Hương,PTCA GW
-1050,Mai Thị Thìn,PTCA GW
-1066,Nguyễn Thị Ly,Sterilization
-1071,Nguyễn Thị Thanh Bình,Sterilization
-1074,Nguyễn Thị Thơm,SPGW
-1087,Phan Thị Oanh,T-Mate
+1030,Bùi Thị Thơm,Coil
+1031,Cấn Thị Thúy,Assy
+1034,Đặng Thị Thúy,Assy
+1039,Hoàng Thị Dung,APS
+1043,Lê Thị Hoa,Assy
+1044,Lê Thị Hương,Assy
+1050,Mai Thị Thìn,Assy
+1066,Nguyễn Thị Ly,Sterilization/Boxing
+1071,Nguyễn Thị Thanh Bình,Sterilization/Boxing
+1074,Nguyễn Thị Thơm,Assy
+1087,Phan Thị Oanh,T-ESGW
 1099,Nguyễn Tất Thắng,Maintenance
 1100,Đỗ Tuấn Vinh,Improvement
-1123,Nguyễn Thị Huệ,SPGW
-1128,Nguyễn Thu Thuỷ,PTCA GW
-1139,Lưu Thị Vũ,M-Pro
-1153,Nguyễn Thị Thái,SPGW
-1162,Đinh Thị Lý,M-Pro
-1166,Nguyễn Viết Lượng,M-Pro
-1172,Nguyễn Thị Hà,PTCA GW
-1191,Hoàng Hồng Lý,M-Pro
-1201,Nguyễn Thị Hằng,Catheter
+1123,Nguyễn Thị Huệ,Assy
+1128,Nguyễn Thu Thuỷ,Assy
+1139,Lưu Thị Vũ,Core
+1153,Nguyễn Thị Thái,Assy
+1162,Đinh Thị Lý,Core
+1166,Nguyễn Viết Lượng,Coil
+1172,Nguyễn Thị Hà,Assy
+1191,Hoàng Hồng Lý,Core
+1201,Nguyễn Thị Hằng,Micro
 1209,Nguyễn Thị Thơm,T-Mate
-1215,Nguyễn Thị Vĩnh,PTCA GW
-1226,Điêu Thị Thu Hường,Purchase-Import-Receiving
+1215,Nguyễn Thị Vĩnh,Assy
+1226,Điêu Thị Thu Hường,Pur-Import
 1228,Nguyễn Thị Sáng,HR
 1230,Nguyễn Thị Minh Huệ,HR
-1233,Bùi Thị Thảo,PTCA GW
-1237,Đỗ Thị Ngọc Ánh,PTCA GW
-1272,Võ Thị Thảo,Quality Assurance
-1292,Nguyễn Thị Mai,Quality Assurance
-1296,Nguyễn Thị Nhung,Quality Assurance
-1297,Nguyễn Thị Thái,Catheter
-1298,Nguyễn Thị Thu Thủy,Quality Assurance
-1309,Trần Quang Trường,Production Engineering
-1313,Hoàng Minh Bằng,Production Engineering
-1320,Đinh Thị Thu,Catheter
-1335,Trần Thị Liễu,SPGW
-1348,Bùi Thị Thanh Thuỷ,M-Pro
-1352,Đỗ Thị Tố Uyên,PTCA GW
-1371,Vũ Thị Hương,Quality Assurance
-1372,Vũ Thị Lý,Quality Assurance
-1387,Vũ Văn Ước,Sterilization
+1233,Bùi Thị Thảo,Assy
+1237,Đỗ Thị Ngọc Ánh,Assy
+1272,Võ Thị Thảo,Calibration
+1292,Nguyễn Thị Mai,Inspection
+1296,Nguyễn Thị Nhung,Inspection
+1297,Nguyễn Thị Thái,Micro
+1298,Nguyễn Thị Thu Thủy,Quality Engineering
+1309,Trần Quang Trường,APS
+1313,Hoàng Minh Bằng,T-Mate
+1320,Đinh Thị Thu,Guiding
+1335,Trần Thị Liễu,Assy
+1348,Bùi Thị Thanh Thuỷ,Core
+1352,Đỗ Thị Tố Uyên,Assy
+1371,Vũ Thị Hương,Inspection
+1372,Vũ Thị Lý,Inspection
+1387,Vũ Văn Ước,Sterilization/Boxing
 1388,Trần Thị Hải Hồng,GA
-1389,Bùi Thị Mai,M-Pro
-1403,Nguyễn Thị Minh Thơm,Quality Assurance
-1407,Nguyễn Thị Thu Hằng,SPGW
-1413,Phan Thị Thương Thương,Sterilization
-1422,Vũ Ngọc Anh,Production Engineering
+1389,Bùi Thị Mai,Core
+1403,Nguyễn Thị Minh Thơm,Quality Engineering
+1407,Nguyễn Thị Thu Hằng,Assy
+1413,Phan Thị Thương Thương,Sterilization/Boxing
+1422,Vũ Ngọc Anh,Document & IT
 1424,Bùi Thị Hạnh,GA
 1433,Đỗ Trọng Đại,Improvement
-1442,Lê Thị Thu,PTCA GW
-1444,Ngô Thị Huyền,PTCA GW
-1446,Nguyễn Hồng Linh,SPGW
-1447,Nguyễn Kim Thoa,PTCA GW
+1442,Lê Thị Thu,Assy
+1444,Ngô Thị Huyền,Assy
+1446,Nguyễn Hồng Linh,Assy
+1447,Nguyễn Kim Thoa,Assy
 1463,Nguyễn Văn Nghiệp,Maintenance
 1472,Trần Văn Chiến,Maintenance
-1477,Nguyễn Đức An,Sterilization
-1486,Đinh Thị Chinh,PTCA GW
-1489,Lê Thị Hoa,M-Pro
-1492,Nguyễn Thị Hằng,PTCA GW
-1501,Trần Thị Kim Thiện,SPGW
-1505,Bùi Thị Thim,Production Engineering
-1528,Đặng Thị Thanh Hải,PTCA GW
-1533,Nguyễn Thị Giang,M-Pro
-1539,Nguyễn Thị Thanh Luyến,PTCA GW
-1543,Nguyễn Thị Tính,Catheter
-1560,Mai Thị Kim Thoa,Sterilization
-1580,Nguyễn Thị Lưu,Sterilization
-1581,Nguyễn Thị Mai,Production Engineering
+1477,Nguyễn Đức An,Seal/Label
+1486,Đinh Thị Chinh,Assy
+1489,Lê Thị Hoa,Coil
+1492,Nguyễn Thị Hằng,Assy
+1501,Trần Thị Kim Thiện,Assy
+1505,Bùi Thị Thim,Filmecc
+1528,Đặng Thị Thanh Hải,Assy
+1533,Nguyễn Thị Giang,Core
+1539,Nguyễn Thị Thanh Luyến,Assy
+1543,Nguyễn Thị Tính,Guiding
+1560,Mai Thị Kim Thoa,Sterilization/Boxing
+1580,Nguyễn Thị Lưu,Seal/Label
+1581,Nguyễn Thị Mai,Catheter
 1593,Hoàng Thị Văn,GA
-1595,Lê Thị Lợi,SPGW
-1598,Ngô Thị Thúy Lường,PTCA GW
-1599,Nguyễn Thị Hồng Hà,Quality Assurance
-1613,Nguyễn Thị Thư,PTCA GW
-1615,Nguyễn Văn Hạnh,PTCA GW
-1626,Đường Thị Quyên,PTCA GW
-1633,Nguyễn Thị Huyên,PTCA GW
-1642,Nguyễn Văn Thắng,Production Engineering
-1674,Nguyễn Thị Mai,PTCA GW
-1676,Nguyễn Thị Thu Hà,PTCA GW
-1680,Phạm Thị Xuân Bích,PTCA GW
-1692,Nguyễn Thị Phương,Sterilization
+1595,Lê Thị Lợi,Assy
+1598,Ngô Thị Thúy Lường,Assy
+1599,Nguyễn Thị Hồng Hà,Inspection
+1613,Nguyễn Thị Thư,Assy
+1615,Nguyễn Văn Hạnh,Assy
+1626,Đường Thị Quyên,Assy
+1633,Nguyễn Thị Huyên,Assy
+1642,Nguyễn Văn Thắng,Catheter
+1674,Nguyễn Thị Mai,Assy
+1676,Nguyễn Thị Thu Hà,Assy
+1680,Phạm Thị Xuân Bích,Assy
+1692,Nguyễn Thị Phương,Seal/Label
 1704,Phương Đăng Công,Improvement
 1705,Phùng Văn Dương,Improvement
-1707,Phan Thị Thu Hường,PTCA GW
-1708,Phạm Thị Hạnh,PTCA GW
-1719,Nguyễn Thị Thương,PTCA GW
-1721,Nguyễn Thị Thanh Thủy,PTCA GW
-1724,Nguyễn Thị Phương,Catheter
-1726,Nguyễn Thị Nhung,SPGW
-1732,Mai Thị Thương,SPGW
+1707,Phan Thị Thu Hường,Assy
+1708,Phạm Thị Hạnh,Assy
+1719,Nguyễn Thị Thương,Assy
+1721,Nguyễn Thị Thanh Thủy,Assy
+1724,Nguyễn Thị Phương,Balloon
+1726,Nguyễn Thị Nhung,Assy
+1732,Mai Thị Thương,Part
 1744,Bùi Thị Thanh,BIO
-1750,Đinh Thị Ngần,M-Pro
-1756,Hà Thị Phương,PTCA GW
-1760,Khuất Thị Thắm,PTCA GW
+1750,Đinh Thị Ngần,Core
+1756,Hà Thị Phương,Assy
+1760,Khuất Thị Thắm,Assy
 1770,Ngô Thị Hồng,ISO
-1777,Nguyễn Thị Huyền,PTCA GW
-1780,Nguyễn Thị Lý,M-Pro
+1777,Nguyễn Thị Huyền,Assy
+1780,Nguyễn Thị Lý,Coil
 1781,Nguyễn Thị Mai Hương,T-Mate
-1782,Nguyễn Thị Ngoan,SPGW
-1786,Nguyễn Thị Nụ,Catheter
-1797,Phạm Thị Thịnh,SPGW
-1803,Tạ Quang Linh,M-Pro
-1811,Trương Thị Oanh,SPGW
+1782,Nguyễn Thị Ngoan,Assy
+1786,Nguyễn Thị Nụ,Guiding
+1797,Phạm Thị Thịnh,Assy
+1803,Tạ Quang Linh,Core
+1811,Trương Thị Oanh,Assy
 1815,Phạm Chí Sỹ,Improvement
 1818,Bùi Vũ Thái Hà,Accounting
-1823,Bùi Trung Kiên,PTCA GW
-1845,Ngô Văn Chinh,PTCA GW
-1846,Nguyễn Đức Tài,PTCA GW
-1867,Nguyễn Thị Thùy,PTCA GW
+1823,Bùi Trung Kiên,Assy
+1845,Ngô Văn Chinh,Assy
+1846,Nguyễn Đức Tài,Assy
+1867,Nguyễn Thị Thùy,Assy
 1874,Nguyễn Văn Hưng,Maintenance
-1884,Trần Thị Ngoan,SPGW
-1894,Vũ Thị Hoan,PTCA GW
-1898,Doãn Thị Phú,M-Pro
-1902,Lê Thị Dung,Package
-1910,Phan Thị Mai Lệ Huyền,Information & Production support
+1884,Trần Thị Ngoan,Assy
+1894,Vũ Thị Hoan,Assy
+1898,Doãn Thị Phú,Coil
+1902,Lê Thị Dung,Shipping-Package
+1910,Phan Thị Mai Lệ Huyền,Information
 1913,Nguyễn Thị Thơm,GA
 1917,Lưu Thị Hải,T-Mate
-1924,Nguyễn Thu Trang,PTCA GW
-1926,Quách Thị Hà,PTCA GW
-1930,Bùi Thị Vươn,Sterilization
-1934,Đỗ Thị Nhung,Catheter
-1947,Nguyễn Thị Hoa,PTCA GW
-1948,Nguyễn Thị Hương,PTCA GW
-1949,Nguyễn Thị Hường,SPGW
-1975,Vũ Thị Hòa,PTCA GW
+1924,Nguyễn Thu Trang,Assy
+1926,Quách Thị Hà,Assy
+1930,Bùi Thị Vươn,Sterilization/Boxing
+1934,Đỗ Thị Nhung,Micro
+1947,Nguyễn Thị Hoa,Assy
+1948,Nguyễn Thị Hương,Assy
+1949,Nguyễn Thị Hường,Assy
+1975,Vũ Thị Hòa,Assy
 1979,Vũ Thị Huệ,Order Control
-2005,Chu Thị Hạnh,PTCA GW
-2020,Phạm Thị Hồng,PTCA GW
-2023,Triệu Thị Thu Huyền,SPGW
-2027,Chử Thị Liên,Package
-2035,Hà Thị Luyến,SPGW
-2037,Hán Thị Thu Hường,PTCA GW
-2041,Lê Thị Hồng Mai,M-Pro
-2042,Lê Thị Hường,SPGW
-2043,Lê Thị Kim Nguỵên,Package
-2046,Lê Thị Nhâm,SPGW
-2051,Nguyễn Hữu Huy,PTCA GW
-2058,Nguyễn Thị Duyên,M-Pro
+2005,Chu Thị Hạnh,Assy
+2020,Phạm Thị Hồng,Assy
+2023,Triệu Thị Thu Huyền,Assy
+2027,Chử Thị Liên,Shipping-Package
+2035,Hà Thị Luyến,Assy
+2037,Hán Thị Thu Hường,Assy
+2041,Lê Thị Hồng Mai,Core
+2042,Lê Thị Hường,Assy
+2043,Lê Thị Kim Nguỵên,Shipping-Package
+2046,Lê Thị Nhâm,Assy
+2051,Nguyễn Hữu Huy,Assy
+2058,Nguyễn Thị Duyên,Coil
 2063,Nguyễn Thị Minh Thương,T-Mate
-2065,Nguyễn Thị Ngọc,PTCA GW
-2084,Vi Thị Bích Thủy,Purchase-Import-Receiving
-2100,Nguyễn Thị Tuyết Nhung,SPGW
-2103,Trần Thị Trang,SPGW
-2107,Xuân Thị Nga,PTCA GW
-2112,Dương Hồng Thêu,M-Pro
-2123,Mai Thị Hương,M-Pro
-2150,Nguyễn Văn Hưng,M-Pro
-2159,Trần Thị Thu Huyền,Information & Production support
-2164,Đặng Thị Hòa,Catheter
-2166,Đinh Thị Nhung,SPGW
-2180,Lê Thị Thanh Thảo,PTCA GW
-2185,Nguyễn Thị Bé,Sterilization
-2188,Nguyễn Thị Hải Yến,SPGW
+2065,Nguyễn Thị Ngọc,Assy
+2084,Vi Thị Bích Thủy,Pur-Import
+2100,Nguyễn Thị Tuyết Nhung,Assy
+2103,Trần Thị Trang,Assy
+2107,Xuân Thị Nga,Assy
+2112,Dương Hồng Thêu,Coil
+2123,Mai Thị Hương,Coil
+2150,Nguyễn Văn Hưng,Core
+2159,Trần Thị Thu Huyền,SAP
+2164,Đặng Thị Hòa,Micro
+2166,Đinh Thị Nhung,Assy
+2180,Lê Thị Thanh Thảo,Assy
+2185,Nguyễn Thị Bé,Sterilization/Boxing
+2188,Nguyễn Thị Hải Yến,Assy
 2201,Phạm Huyền Ngọc,Accounting
-2203,Phạm Thị Hồng Thái,PTCA GW
-2208,Triệu Thị Vân Anh,Sterilization
-2219,Cầm Thị Thúy Túc,Production Engineering
-2222,Đặng Thị Tân,PTCA GW
-2223,Đặng Thị Thắng,Catheter
-2228,Đỗ Thị Khâm,PTCA GW
+2203,Phạm Thị Hồng Thái,Assy
+2208,Triệu Thị Vân Anh,Sterilization/Boxing
+2219,Cầm Thị Thúy Túc,APS
+2222,Đặng Thị Tân,Assy
+2223,Đặng Thị Thắng,Micro
+2228,Đỗ Thị Khâm,Assy
 2232,Hạ Thị Liên,GA
-2236,Hoàng Thị Huyên,PTCA GW
-2237,Hoàng Thị Khanh,PTCA GW
-2244,Lê Thị Hương,PTCA GW
-2246,Lê Thị Vinh,Production Engineering
-2249,Ngô Thị Lan,PTCA GW
-2254,Nguyễn Thị Dung,Production Engineering
-2257,Nguyễn Thị Hưng,PTCA GW
-2267,Nguyễn Thị Oanh,PTCA GW
-2268,Nguyễn Thị Phong,PTCA GW
-2270,Nguyễn Thị Thanh Huyền,PTCA GW
-2287,Vũ Thị Ngọt,Catheter
-2288,Vũ Thị Thu,Catheter
-2289,Bùi Thị Dân,PTCA GW
-2293,Bùi Thị Thiện,Sterilization
-2298,Đặng Thị Hoa,Sterilization
+2236,Hoàng Thị Huyên,Assy
+2237,Hoàng Thị Khanh,PLGW
+2244,Lê Thị Hương,Assy
+2246,Lê Thị Vinh,APS
+2249,Ngô Thị Lan,Assy
+2254,Nguyễn Thị Dung,APS
+2257,Nguyễn Thị Hưng,Assy
+2267,Nguyễn Thị Oanh,Assy
+2268,Nguyễn Thị Phong,Assy
+2270,Nguyễn Thị Thanh Huyền,Assy
+2287,Vũ Thị Ngọt,Micro
+2288,Vũ Thị Thu,CAG
+2289,Bùi Thị Dân,Assy
+2293,Bùi Thị Thiện,Sterilization/Boxing
+2298,Đặng Thị Hoa,Seal/Label
 2301,Đào Tuyết Nhung,BIO
-2303,Đinh Thị Lan,PTCA GW
-2313,Hồ Thị Hiền,M-Pro
-2317,Hoàng Thị Lộc,Sterilization
+2303,Đinh Thị Lan,Assy
+2313,Hồ Thị Hiền,Core
+2317,Hoàng Thị Lộc,Seal/Label
 2318,Hoàng Thị Mai,Order Control
-2321,Hoàng Thị Thảo,PTCA GW
-2326,Lê Bích Hạnh,PTCA GW
-2332,Lê Thị Kiên,PTCA GW
-2338,Lê Thị Thiết,PTCA GW
-2339,Lê Thị Thu Giang,SPGW
-2340,Lê Thị Thúy,PTCA GW
-2345,Lưu Thị Hoa,PTCA GW
-2353,Nguyễn Mạnh Cường,Sterilization
+2321,Hoàng Thị Thảo,Assy
+2326,Lê Bích Hạnh,Assy
+2332,Lê Thị Kiên,Assy
+2338,Lê Thị Thiết,Assy
+2339,Lê Thị Thu Giang,Assy
+2340,Lê Thị Thúy,Assy
+2345,Lưu Thị Hoa,Assy
+2353,Nguyễn Mạnh Cường,Production Support
 2355,Nguyễn Thị Hải Nguyên,T-Mate
-2356,Nguyễn Thị Hậu,PTCA GW
+2356,Nguyễn Thị Hậu,Assy
 2369,Nguyễn Thị Nguyệt,ISO
-2371,Nguyễn Thị Quyến,Quality Assurance
-2374,Nguyễn Thị Thao,SPGW
+2371,Nguyễn Thị Quyến,Inspection
+2374,Nguyễn Thị Thao,Assy
 2392,Phạm Thị Luyên,GA
-2399,Tạ Thị Thúy Mùi,SPGW
+2399,Tạ Thị Thúy Mùi,Assy
 2421,Vương Thị Lan,GA
-2422,Trần Thị Hoài Thanh,Shipping
-2431,Dương Thị Thúy,SPGW
-2437,Hoàng Thị Tuyền,PTCA GW
-2462,Nguyễn Thị Tươi Thắm,M-Pro
-2468,Phan Thị Phượng,M-Pro
-2477,Trần Thị Ngọc Thùy,PTCA GW
+2422,Trần Thị Hoài Thanh,Export
+2431,Dương Thị Thúy,Assy
+2437,Hoàng Thị Tuyền,Assy
+2462,Nguyễn Thị Tươi Thắm,Coil
+2468,Phan Thị Phượng,Core
+2477,Trần Thị Ngọc Thùy,Assy
 2485,Đặng Thị Thanh Tuyền,ISO
-2489,Đinh Thị Cúc,SPGW
-2490,Đinh Thị Diệu,PTCA GW
+2489,Đinh Thị Cúc,Assy
+2490,Đinh Thị Diệu,Assy
 2495,Dương Thị Duyên,ISO
-2498,Hà Thị Dung,PTCA GW
-2501,Hà Thị Thành,SPGW
-2502,Hồ Thị Mai,PTCA GW
-2507,Hoàng Thị Hường,PTCA GW
-2518,Lê Thị Hoa,PTCA GW
-2525,Ma Lệ Nhu,M-Pro
-2527,Ma Thị Ly,PTCA GW
-2532,Nguyễn Thị Giang,SPGW
-2539,Nguyễn Thị Hương,PTCA GW
-2549,Nguyễn Thị Nhỏ,PTCA GW
-2550,Nguyễn Thị Phương,PTCA GW
-2551,Nguyễn Thị Thắm,PTCA GW
-2555,Nguyễn Thị Thảo,PTCA GW
-2564,Phạm Thị Ninh,Sterilization
-2567,Phan Thị Tân,Quality Assurance
-2568,Phan Thị Thanh Huyền,PTCA GW
+2498,Hà Thị Dung,Assy
+2501,Hà Thị Thành,Part
+2502,Hồ Thị Mai,Assy
+2507,Hoàng Thị Hường,Assy
+2518,Lê Thị Hoa,PLGW
+2525,Ma Lệ Nhu,Core
+2527,Ma Thị Ly,Assy
+2532,Nguyễn Thị Giang,Assy
+2539,Nguyễn Thị Hương,Assy
+2549,Nguyễn Thị Nhỏ,Assy
+2550,Nguyễn Thị Phương,Assy
+2551,Nguyễn Thị Thắm,Assy
+2555,Nguyễn Thị Thảo,Assy
+2564,Phạm Thị Ninh,Production Support
+2567,Phan Thị Tân,Inspection
+2568,Phan Thị Thanh Huyền,Assy
 2576,Trần Thị Linh,BIO
-2587,Vũ Thị Vân Anh,SPGW
-2598,Lê Kim Huệ,M-Pro
-2599,Lưu Thị Anh,PTCA GW
-2600,Ngô Thị Dung,M-Pro
-2605,Nguyễn Thị Anh,PTCA GW
-2607,Nguyễn Thị Hậu,PTCA GW
-2611,Nguyễn Thị Thanh Hoa,PTCA GW
-2635,Hà Thị Hoài,PTCA GW
-2636,Hà Thị Vĩnh,SPGW
-2638,Hoàng Thị Dung,SPGW
+2587,Vũ Thị Vân Anh,Assy
+2598,Lê Kim Huệ,Coil
+2599,Lưu Thị Anh,Assy
+2600,Ngô Thị Dung,Core
+2605,Nguyễn Thị Anh,Assy
+2607,Nguyễn Thị Hậu,Assy
+2611,Nguyễn Thị Thanh Hoa,Assy
+2635,Hà Thị Hoài,Assy
+2636,Hà Thị Vĩnh,Assy
+2638,Hoàng Thị Dung,Assy
 2657,Nguyễn Đức Phóng,Improvement
-2660,Nguyễn Thị Bích,M-Pro
-2661,Nguyễn Thị Chi,SPGW
-2679,Phạm Thị Thảo,PTCA GW
-2683,Phùng Thị Nhàn,PTCA GW
-2688,Trần Thị Nam,M-Pro
-2707,Kim Thu Hiền,Quality Assurance
-2713,Lê Thị Loan,PTCA GW
-2716,Mã Thị Thẻ,PTCA GW
+2660,Nguyễn Thị Bích,Core
+2661,Nguyễn Thị Chi,Assy
+2679,Phạm Thị Thảo,Assy
+2683,Phùng Thị Nhàn,Assy
+2688,Trần Thị Nam,Core
+2707,Kim Thu Hiền,Inspection
+2713,Lê Thị Loan,Assy
+2716,Mã Thị Thẻ,Assy
 2718,Nguyễn Đắc Hiển,Maintenance
-2727,Nguyễn Thị Ly,PTCA GW
-2733,Nguyễn Thị Vân Anh,PTCA GW
-2737,Phan Thị Hòa,PTCA GW
-2738,Phan Thị Mai,PTCA GW
-2740,Trần Thị Công,M-Pro
-2745,Vũ Thị Liên,PTCA GW
+2727,Nguyễn Thị Ly,Assy
+2733,Nguyễn Thị Vân Anh,Assy
+2737,Phan Thị Hòa,Assy
+2738,Phan Thị Mai,Assy
+2740,Trần Thị Công,Core
+2745,Vũ Thị Liên,Assy
 2765,Hoàng Văn Trường,Maintenance
 2776,Nguyễn Thị Mai Hương,ISO
-2783,Phan Thị Hoa,PTCA GW
-2792,Vũ Thế Anh,Sterilization
-2793,Vũ Thị Kim Dung,PTCA GW
+2783,Phan Thị Hoa,Assy
+2792,Vũ Thế Anh,Production Support
+2793,Vũ Thị Kim Dung,Assy
 2796,Trần Thị Hoa,GA
-2799,Đoàn Thị Thu Nga,M-Pro
-2802,Lê Thị Tình,M-Pro
-2806,Nguyễn Thị Lan,PTCA GW
-2807,Nguyễn Thị Ly,PTCA GW
-2813,Trần Thị Hạnh,PTCA GW
-2816,Trần Xuân Tùng,M-Pro
-2817,Trịnh Thị Huyền,Catheter
+2799,Đoàn Thị Thu Nga,Core
+2802,Lê Thị Tình,Core
+2806,Nguyễn Thị Lan,Assy
+2807,Nguyễn Thị Ly,Assy
+2813,Trần Thị Hạnh,Assy
+2816,Trần Xuân Tùng,Core
+2817,Trịnh Thị Huyền,Micro
 2821,Lê Văn Linh,Maintenance
-2823,Phan Ngọc Thắng,Production Engineering
+2823,Phan Ngọc Thắng,T-Mate
 2825,Nguyễn Thị Lai,GA
 2826,Trần Thị Quỳnh Nga,HR
-2832,Trương Văn Đông,Production Engineering
-2837,Bùi Thị Đạt,PTCA GW
-2839,Cao Thị Sơn,PTCA GW
-2842,Lê Thị Lan Hòa,PTCA GW
-2843,Lê Thị Xuân,PTCA GW
+2832,Trương Văn Đông,APS
+2837,Bùi Thị Đạt,Assy
+2839,Cao Thị Sơn,Assy
+2842,Lê Thị Lan Hòa,Assy
+2843,Lê Thị Xuân,Assy
 2844,Nguyễn Anh Tuấn,BIO
 2847,Nguyễn Văn Dũng,Maintenance
 2860,Hoàng Đình Đăng,BIO
-2864,Nguyễn Thị Hà,Production Engineering
-2873,Vương Thị Thùy,Purchase-Import-Receiving
+2864,Nguyễn Thị Hà,APS
+2873,Vương Thị Thùy,Pur-Import
 2874,Trần Mạnh Tân,Maintenance
-2876,Phùng Văn Dương,Quality Assurance
+2876,Phùng Văn Dương,Inspection
 2881,Đỗ Thị Điểm,GA
 2882,Vũ Thị Vân,GA
-2887,Trần Thị Quỳnh Anh,Production Engineering
-2892,Đỗ Thị Kim Thảo,PTCA GW
-2895,Hà Thị Loan,Sterilization
-2896,Hoàng Thị Mơ,PTCA GW
-2899,Lê Thị Huyên,PTCA GW
-2900,Lê Thị Lan,PTCA GW
-2901,Lê Thị Loan,M-Pro
-2907,Ngô Thị Thu Dung,PTCA GW
-2910,Nguyễn Thị Bích Thùy,PTCA GW
-2913,Nguyễn Thị Hoàng Dung,SPGW
-2914,Nguyễn Thị Kiều Trang,PTCA GW
-2917,Nguyễn Thị Mến,PTCA GW
-2921,Nguyễn Thị Thảo,SPGW
-2922,Nguyễn Thị Thảo,Production Engineering
-2924,Phạm Thị Hương,PTCA GW
-2926,Phan Thị Huệ,PTCA GW
-2927,Quách Thị Hồng Phượng,M-Pro
+2887,Trần Thị Quỳnh Anh,Document & IT
+2892,Đỗ Thị Kim Thảo,Assy
+2895,Hà Thị Loan,Sterilization/Boxing
+2896,Hoàng Thị Mơ,Assy
+2899,Lê Thị Huyên,Assy
+2900,Lê Thị Lan,Assy
+2901,Lê Thị Loan,Coil
+2907,Ngô Thị Thu Dung,Assy
+2910,Nguyễn Thị Bích Thùy,Assy
+2913,Nguyễn Thị Hoàng Dung,Assy
+2914,Nguyễn Thị Kiều Trang,Assy
+2917,Nguyễn Thị Mến,Assy
+2921,Nguyễn Thị Thảo,Assy
+2922,Nguyễn Thị Thảo,T-Mate
+2924,Phạm Thị Hương,Assy
+2926,Phan Thị Huệ,Assy
+2927,Quách Thị Hồng Phượng,Core
 2932,Lê Thị Tuyết Lan,GA
-2933,Bùi Diệu Huyền,Catheter
-2934,Bùi Thị Ánh,SPGW
-2942,Dương Thúy Quỳnh,PTCA GW
-2946,Hoàng Thị Nhung,T-Mate
-2955,Lương Nhật Anh,PTCA GW
-2957,Nguyễn Hương Mai,PTCA GW
-2961,Nguyễn Thị Hằng,PTCA GW
-2963,Nguyễn Thị Hồi,PTCA GW
-2966,Nguyễn Thị Ngọc,Production Engineering
-2967,Nguyễn Thị Hà,Sterilization
-2968,Nguyễn Thị Phượng,PTCA GW
-2971,Nguyễn Thị Thanh Thảo,PTCA GW
-2980,Trần Thị Hường,PTCA GW
-2982,Trần Thị Liên,Production Engineering
-2983,Trần Thị Thỏa,PTCA GW
-2987,Nguyễn Thị Hường,PTCA GW
-2989,Nguyễn Thị Hường,Production Engineering
-2996,Trịnh Thị Kiều Diễn,PTCA GW
-3000,Hoàng Thị Kim Ngân,PTCA GW
-3004,Nguyễn Duy Bình,Sterilization
-3012,Lê Thị Ngân,M-Pro
-3014,Ngô Thị Vân,SPGW
+2933,Bùi Diệu Huyền,Micro
+2934,Bùi Thị Ánh,Assy
+2942,Dương Thúy Quỳnh,Assy
+2946,Hoàng Thị Nhung,Shaft
+2955,Lương Nhật Anh,Assy
+2957,Nguyễn Hương Mai,Assy
+2961,Nguyễn Thị Hằng,Assy
+2963,Nguyễn Thị Hồi,Assy
+2966,Nguyễn Thị Ngọc,Filmecc
+2967,Nguyễn Thị Hà,Sterilization/Boxing
+2968,Nguyễn Thị Phượng,Assy
+2971,Nguyễn Thị Thanh Thảo,Assy
+2980,Trần Thị Hường,Assy
+2982,Trần Thị Liên,Catheter
+2983,Trần Thị Thỏa,Assy
+2987,Nguyễn Thị Hường,Assy
+2989,Nguyễn Thị Hường,PTCA GW
+2996,Trịnh Thị Kiều Diễn,Assy
+3000,Hoàng Thị Kim Ngân,Assy
+3004,Nguyễn Duy Bình,Production Support
+3012,Lê Thị Ngân,Coil
+3014,Ngô Thị Vân,Assy
 3016,Nguyễn Thị Bích Liên,T-Mate
-3017,Lê Thị Thúy Nhung,SPGW
-3028,Vũ Thúy Hằng,PTCA GW
+3017,Lê Thị Thúy Nhung,Assy
+3028,Vũ Thúy Hằng,Assy
 3030,Nguyễn Phúc Hưng,Improvement
-3033,Trần Thị Hồng,PTCA GW
-3034,Nguyễn Quốc Hiến,Production Engineering
-3039,Đỗ Thị Phượng,PTCA GW
-3043,Hoàng Thị Huế,Shipping
-3047,Lê Thị Hồ,SPGW
-3054,Nguyễn Thị Huệ,PTCA GW
-3064,Nguyễn Thị Thanh,PTCA GW
-3066,Nguyễn Thị Thu Hà,PTCA GW
-3068,Nguyễn Thị Trang,Production Engineering
-3069,Nguyễn Thị Vui,PTCA GW
-3074,Trần Thị Lan Hương,PTCA GW
-3075,Trần Thị Mai,PTCA GW
-3078,Trần Thị Thơm,PTCA GW
-3080,Vũ Thị Loan,PTCA GW
-3081,Vương Thị Huyền,SPGW
-3087,Bùi Thị Mùi,PTCA GW
-3094,Doãn Thị Thọ,PTCA GW
-3111,Nguyễn Hằng Thanh,Sterilization
-3116,Nguyễn Thị Hiền,Production Engineering
-3118,Nguyễn Thị Hồng,PTCA GW
-3121,Nguyễn Thị Hương Lan,M-Pro
-3128,Nguyễn Thị Nhung,Sterilization
-3131,Nguyễn Thị Thu Trang,PTCA GW
-3134,Phạm Thị Huệ,SPGW
-3141,Trần Thị Nguyên,M-Pro
-3146,Võ Thị Sâm,Quality Assurance
-3153,Nguyễn Thành Hưng,Production Engineering
-3155,Cao Thị Hồng Bảy,Package
-3160,Đỗ Hồng Linh,Sterilization
-3162,Đỗ Thị Ngần,Catheter
-3163,Đỗ Thị Ngọc,Quality Assurance
-3164,Đỗ Thị Tuyết,M-Pro
-3165,Hoàng Thị Phương,PTCA GW
-3166,Hoàng Thị Quỳnh,Production Engineering
-3167,Hứa Thị Ngợi,PTCA GW
-3170,Lê Huyền Trang,Catheter
-3175,Ngô Thị Ánh Nguyệt,PTCA GW
-3179,Nguyễn Thị Loan,SPGW
-3180,Nguyễn Thị Lý,PTCA GW
-3184,Vy Thị Thanh,PTCA GW
-3185,Nguyễn Thị Tuyết,Catheter
-3186,Nguyễn Thị Vọng,PTCA GW
-3187,Phạm Thị Thanh,PTCA GW
-3188,Trần Thị Vóc,PTCA GW
+3033,Trần Thị Hồng,Assy
+3034,Nguyễn Quốc Hiến,Catheter
+3039,Đỗ Thị Phượng,Assy
+3043,Hoàng Thị Huế,Export
+3047,Lê Thị Hồ,Assy
+3054,Nguyễn Thị Huệ,Assy
+3064,Nguyễn Thị Thanh,Assy
+3066,Nguyễn Thị Thu Hà,Assy
+3068,Nguyễn Thị Trang,APS
+3069,Nguyễn Thị Vui,Assy
+3074,Trần Thị Lan Hương,Assy
+3075,Trần Thị Mai,Assy
+3078,Trần Thị Thơm,Assy
+3080,Vũ Thị Loan,Assy
+3081,Vương Thị Huyền,Assy
+3087,Bùi Thị Mùi,Assy
+3094,Doãn Thị Thọ,Assy
+3111,Nguyễn Hằng Thanh,Production Support
+3116,Nguyễn Thị Hiền,T-Mate
+3118,Nguyễn Thị Hồng,Assy
+3121,Nguyễn Thị Hương Lan,Core
+3128,Nguyễn Thị Nhung,Seal/Label
+3131,Nguyễn Thị Thu Trang,Assy
+3134,Phạm Thị Huệ,Assy
+3141,Trần Thị Nguyên,Core
+3146,Võ Thị Sâm,Inspection
+3153,Nguyễn Thành Hưng,PTCA GW
+3155,Cao Thị Hồng Bảy,Shipping-Package
+3160,Đỗ Hồng Linh,Seal/Label
+3162,Đỗ Thị Ngần,CAG
+3163,Đỗ Thị Ngọc,Inspection
+3164,Đỗ Thị Tuyết,Coil
+3165,Hoàng Thị Phương,PLGW
+3166,Hoàng Thị Quỳnh,Catheter
+3167,Hứa Thị Ngợi,Assy
+3170,Lê Huyền Trang,CAG
+3175,Ngô Thị Ánh Nguyệt,Assy
+3179,Nguyễn Thị Loan,Assy
+3180,Nguyễn Thị Lý,Assy
+3184,Vy Thị Thanh,Assy
+3185,Nguyễn Thị Tuyết,Micro
+3186,Nguyễn Thị Vọng,Assy
+3187,Phạm Thị Thanh,Assy
+3188,Trần Thị Vóc,Assy
 3199,Chử Văn Xâm,Maintenance
-3201,Đinh Thị Thu Phương,PTCA GW
-3204,Đỗ Thị Hạnh,PTCA GW
-3214,Hồ Thị Liên,PTCA GW
-3222,Lê Minh Tiến,M-Pro
-3227,Lê Thị Hảo,T-Mate
-3238,Nguyễn Thị Tuyến,PTCA GW
-3246,Nguyễn Thị Ngân,Sterilization
-3250,Nguyễn Thị Thảo,PTCA GW
-3251,Nguyễn Thị Thúy,SPGW
-3254,Nguyễn Thị Xuân Thảo,Sterilization
-3256,Phạm Thị Chính,Sterilization
-3263,Trần Thị Huyền,T-Mate
-3265,Trần Thị Nhung,PTCA GW
-3267,Trần Trung Thành,PTCA GW
-3269,Trương Thị Hồng Hoa,Package
-3274,Vũ Thị Vinh,Sterilization
-3276,Ngô Thị Lan,Quality Assurance
-3281,Đào Hồng Trang,PTCA GW
-3288,Lê Thị Kim Dung,PTCA GW
-3291,Lê Văn Thạo,PTCA GW
-3294,Ngô Thị Mỵ,Sterilization
-3315,Nguyễn Xuân Anh,PTCA GW
-3320,Trần Thị Dung,Sterilization
-3327,Vì Thị Lê,PTCA GW
-3332,Bùi Thị Lệ,PTCA GW
-3338,Hồ Thị Ái Vân,PTCA GW
-3339,Hoàng Thạch Anh,M-Pro
-3341,Hoàng Thị Hà,PTCA GW
-3347,Lê Thị Thu Hồng,PTCA GW
+3201,Đinh Thị Thu Phương,Assy
+3204,Đỗ Thị Hạnh,Assy
+3214,Hồ Thị Liên,Assy
+3222,Lê Minh Tiến,Core
+3227,Lê Thị Hảo,Shaft
+3238,Nguyễn Thị Tuyến,Assy
+3246,Nguyễn Thị Ngân,Sterilization/Boxing
+3250,Nguyễn Thị Thảo,Assy
+3251,Nguyễn Thị Thúy,Assy
+3254,Nguyễn Thị Xuân Thảo,Production Support
+3256,Phạm Thị Chính,Seal/Label
+3263,Trần Thị Huyền,Shaft
+3265,Trần Thị Nhung,Assy
+3267,Trần Trung Thành,Assy
+3269,Trương Thị Hồng Hoa,Shipping-Package
+3274,Vũ Thị Vinh,Sterilization/Boxing
+3276,Ngô Thị Lan,Inspection
+3281,Đào Hồng Trang,Assy
+3288,Lê Thị Kim Dung,Assy
+3291,Lê Văn Thạo,Assy
+3294,Ngô Thị Mỵ,Sterilization/Boxing
+3315,Nguyễn Xuân Anh,Assy
+3320,Trần Thị Dung,Seal/Label
+3327,Vì Thị Lê,Assy
+3332,Bùi Thị Lệ,Assy
+3338,Hồ Thị Ái Vân,Assy
+3339,Hoàng Thạch Anh,Core
+3341,Hoàng Thị Hà,Assy
+3347,Lê Thị Thu Hồng,Assy
 3350,Lưu Thị Yến,Improvement
-3355,Ngô Thị Nam,Sterilization
-3357,Nguyễn Thị Châm,PTCA GW
-3362,Nguyễn Thị Lân,PTCA GW
-3365,Nguyễn Thị Nga,PTCA GW
-3369,Nguyễn Thị Nhung,T-Mate
+3355,Ngô Thị Nam,Seal/Label
+3357,Nguyễn Thị Châm,Assy
+3362,Nguyễn Thị Lân,Assy
+3365,Nguyễn Thị Nga,Assy
+3369,Nguyễn Thị Nhung,Shaft
 3370,Nguyễn Thị Thoa,ISO
-3375,Nguyễn Thị Tuyến,Production Engineering
-3380,Phan Thị Thúy,M-Pro
-3383,Trần Thị Diệp,PTCA GW
-3384,Trần Thị Đức,PTCA GW
-3392,Trương Thị Nhung,PTCA GW
-3396,Vũ Thị Mai,PTCA GW
-3398,Lê Văn Hiệp,Sterilization
-3401,Bùi Thị Mùi,PTCA GW
-3403,Đặng Thị Kiểm,M-Pro
-3414,Lê Thị Nhung,PTCA GW
-3415,Lê Thị Phương,PTCA GW
-3418,Lê Thị Thủy,PTCA GW
-3426,Nguyễn Thị Huệ,PTCA GW
-3428,Nguyễn Thị Loan,Quality Assurance
-3433,Nguyễn Thị Phượng,PTCA GW
-3434,Nguyễn Thị Sự,SPGW
-3435,Nguyễn Thị Thanh Bình,PTCA GW
-3439,Nguyễn Thị Thủy,Quality Assurance
-3442,Nông Thị Thúy Liễu,SPGW
-3443,Phan Thị Hằng,PTCA GW
-3444,Phùng Thị Thuận,M-Pro
-3451,Trương Thị Hướng,SPGW
-3452,Vũ Ngọc Lý,SPGW
+3375,Nguyễn Thị Tuyến,PTCA GW
+3380,Phan Thị Thúy,Core
+3383,Trần Thị Diệp,Assy
+3384,Trần Thị Đức,Assy
+3392,Trương Thị Nhung,Assy
+3396,Vũ Thị Mai,Assy
+3398,Lê Văn Hiệp,Sterilization/Boxing
+3401,Bùi Thị Mùi,Assy
+3403,Đặng Thị Kiểm,Coil
+3414,Lê Thị Nhung,Assy
+3415,Lê Thị Phương,Assy
+3418,Lê Thị Thủy,Assy
+3426,Nguyễn Thị Huệ,Assy
+3428,Nguyễn Thị Loan,Inspection
+3433,Nguyễn Thị Phượng,Assy
+3434,Nguyễn Thị Sự,Assy
+3435,Nguyễn Thị Thanh Bình,Assy
+3439,Nguyễn Thị Thủy,Inspection
+3442,Nông Thị Thúy Liễu,Assy
+3443,Phan Thị Hằng,Assy
+3444,Phùng Thị Thuận,Coil
+3451,Trương Thị Hướng,Assy
+3452,Vũ Ngọc Lý,Assy
 3459,Ma Khắc Thành,Maintenance
-3460,Bùi Thị Phương,M-Pro
-3465,Đinh Thị Hạnh,PTCA GW
-3471,Lại Thị Ngọc Ánh,M-Pro
-3472,Lê Thị Hòa,PTCA GW
-3473,Lê Thị Thoa,PTCA GW
-3475,Mai Thị Nga,M-Pro
-3476,Ngô Thị Hằng,PTCA GW
-3478,Nguyễn Nữ Ngọc Nương,PTCA GW
-3479,Nguyễn Thị Anh,PTCA GW
-3485,Nguyễn Thị Hằng,PTCA GW
-3489,Nguyễn Thị Kim Huệ,Catheter
-3490,Nguyễn Thị Lan,PTCA GW
-3496,Phạm Thị Hiền,PTCA GW
-3498,Phùng Thị Hường,Production Engineering
+3460,Bùi Thị Phương,Core
+3465,Đinh Thị Hạnh,Assy
+3471,Lại Thị Ngọc Ánh,Core
+3472,Lê Thị Hòa,Assy
+3473,Lê Thị Thoa,Assy
+3475,Mai Thị Nga,Core
+3476,Ngô Thị Hằng,Assy
+3478,Nguyễn Nữ Ngọc Nương,Assy
+3479,Nguyễn Thị Anh,Assy
+3485,Nguyễn Thị Hằng,Assy
+3489,Nguyễn Thị Kim Huệ,Micro
+3490,Nguyễn Thị Lan,Assy
+3496,Phạm Thị Hiền,Assy
+3498,Phùng Thị Hường,Filmecc
 3504,Phạm Thị Lan Anh,GA
-3505,Phạm Đình Tài,SPGW
-3514,Hà Thị Thoa,M-Pro
-3516,Hoàng Thị Ánh,PTCA GW
-3523,Lê Thị Yến,PTCA GW
-3526,Ngô Xuân Hợp,M-Pro
-3531,Nguyễn Thị Hằng,Information & Production support
-3537,Nguyễn Văn Trung,T-Mate
-3541,Phạm Thị Hương,PTCA GW
-3549,Trịnh Thị Bích Ngọc,PTCA GW
+3505,Phạm Đình Tài,Assy
+3514,Hà Thị Thoa,Coil
+3516,Hoàng Thị Ánh,Assy
+3523,Lê Thị Yến,Assy
+3526,Ngô Xuân Hợp,Core
+3531,Nguyễn Thị Hằng,SAP
+3537,Nguyễn Văn Trung,Shaft
+3541,Phạm Thị Hương,Assy
+3549,Trịnh Thị Bích Ngọc,Assy
 3556,Đàm Thị Nhanh,GA
-3564,Bùi Thị Thu Hoài,PTCA GW
-3575,Lê Thị Kim Hương,PTCA GW
-3578,Nguyễn Thị Duyên,PTCA GW
-3585,Nguyễn Thị Tuyết,T-Mate
+3564,Bùi Thị Thu Hoài,PLGW
+3575,Lê Thị Kim Hương,Assy
+3578,Nguyễn Thị Duyên,Assy
+3585,Nguyễn Thị Tuyết,Shaft
 3587,Nguyễn Thùy Linh,T-Mate
-3590,Phan Thị Hương,SPGW
+3590,Phan Thị Hương,Assy
 3596,Lưu Thị Hiền,GA
 3608,Đinh Thị An,BIO
-3613,Bùi Thị Huyền,Quality Assurance
+3613,Bùi Thị Huyền,Calibration
 3614,Bùi Văn Thắng,T-Mate
 3623,Lê Thị Nhật,T-Mate
-3639,Nguyễn Thị Lan Hương,PTCA GW
+3639,Nguyễn Thị Lan Hương,Assy
 3640,Nguyễn Thị Ngân,HR
-3641,Nguyễn Thị Ngần,PTCA GW
-3645,Nguyễn Thị Thu,PTCA GW
-3653,Nguyễn Thùy Linh,PTCA GW
-3658,Trần Thị Anh,M-Pro
-3660,Trần Thị Hậu,Sterilization
+3641,Nguyễn Thị Ngần,Assy
+3645,Nguyễn Thị Thu,Assy
+3653,Nguyễn Thùy Linh,Assy
+3658,Trần Thị Anh,Coil
+3660,Trần Thị Hậu,Sterilization/Boxing
 3662,Trần Thị Phương,Maintenance
-3664,Trần Thị Thu Huyền,PTCA GW
-3670,Đỗ Anh Dũng,Production Engineering
-3674,Bùi Thị La,PTCA GW
-3690,Nguyễn Thị Hiền,Package
-3691,Nguyễn Thị Hoa,T-Mate
-3693,Nguyễn Thị Huyền Trang,Sterilization
-3694,Nguyễn Thị Kim Chi,PTCA GW
-3696,Nguyễn Thị Liên,PTCA GW
-3697,Nguyễn Thị Mai,Catheter
-3698,Nguyễn Thị Mai,PTCA GW
-3701,Nguyễn Thị Phương,Quality Assurance
-3704,Nguyễn Thị Thanh Tâm,Sterilization
+3664,Trần Thị Thu Huyền,Assy
+3670,Đỗ Anh Dũng,Catheter
+3674,Bùi Thị La,Assy
+3690,Nguyễn Thị Hiền,Shipping-Package
+3691,Nguyễn Thị Hoa,Shaft
+3693,Nguyễn Thị Huyền Trang,Sterilization/Boxing
+3694,Nguyễn Thị Kim Chi,Assy
+3696,Nguyễn Thị Liên,Assy
+3697,Nguyễn Thị Mai,Guiding
+3698,Nguyễn Thị Mai,Assy
+3701,Nguyễn Thị Phương,Inspection
+3704,Nguyễn Thị Thanh Tâm,Seal/Label
 3705,Nguyễn Thị Thu Hà,BIO
-3708,Nguyễn Thị Trâm,Production Engineering
-3711,Nguyễn Văn Giang,Sterilization
-3715,Phạm Thị Lan,Quality Assurance
-3717,Phạm Thị Lý,PTCA GW
-3721,Phan Văn Khánh,Package
-3723,Tống Minh Tân,PTCA GW
-3727,Trần Thu Huyền,PTCA GW
-3728,Trần Văn Giang,PTCA GW
-3735,Hồ Văn Hoàng,PTCA GW
-3736,Lê Huy Hoan,M-Pro
+3708,Nguyễn Thị Trâm,PTCA GW
+3711,Nguyễn Văn Giang,Sterilization/Boxing
+3715,Phạm Thị Lan,Quality Engineering
+3717,Phạm Thị Lý,Assy
+3721,Phan Văn Khánh,Shipping-Package
+3723,Tống Minh Tân,Assy
+3727,Trần Thu Huyền,Assy
+3728,Trần Văn Giang,Assy
+3735,Hồ Văn Hoàng,Assy
+3736,Lê Huy Hoan,Core
 3743,Tạ Quang Chung,Maintenance
-3748,Hồ Thị Huyền Trang,Purchase-Import-Receiving
-3753,Lê Thị Ngọc Hà,Production Engineering
-3757,Hoàng Trung Thành,PTCA GW
-3761,Bùi Thị Phượng,M-Pro
-3765,Huỳnh Thị Lan,PTCA GW
+3748,Hồ Thị Huyền Trang,Pur-Import
+3753,Lê Thị Ngọc Hà,Document & IT
+3757,Hoàng Trung Thành,Assy
+3761,Bùi Thị Phượng,Coil
+3765,Huỳnh Thị Lan,Assy
 3769,Lý Thị Gấm,BIO
 3771,Nguyễn Hà Nhung,Order Control
-3772,Nguyễn Quang Huy,M-Pro
-3773,Nguyễn Thanh Tùng,M-Pro
-3775,Nguyễn Thị Hương,PTCA GW
-3777,Nguyễn Thị Mỹ Linh,Catheter
-3781,Nguyễn Thị Thanh Hoa,PTCA GW
-3784,Nguyễn Thị Trúc,PTCA GW
-3792,Trần Thị Yến Hoa,PTCA GW
-3796,Vương Thị Tú Quyên,Sterilization
-3800,Bùi Thị Huyền,PTCA GW
-3801,Bùi Thị Liên,Catheter
-3802,Bùi Thị Nhàn,T-Mate
-3810,Hoàng Thị Dung,PTCA GW
-3814,Hoàng Văn Cương,Sterilization
-3816,Lê Thị Yến,M-Pro
-3817,Lê Thu Huyền,PTCA GW
-3818,Lưu Thị Quỳnh,Production Engineering
-3819,Lưu Thị Thanh Ngàn,PTCA GW
-3825,Nguyễn Thị Huệ,Catheter
-3827,Nguyễn Thị Hương,Sterilization
-3828,Nguyễn Thị Huyên,PTCA GW
-3830,Nguyễn Thị Loan,M-Pro
-3831,Nguyễn Thị Mơ,M-Pro
-3836,Nguyễn Thị Thành,PTCA GW
-3838,Nguyễn Thị Thảo,PTCA GW
-3841,Nguyễn Thị Thu Uyên,PTCA GW
-3842,Nguyễn Thị Thủy,PTCA GW
-3843,Nguyễn Thu Phương,PTCA GW
-3852,Vi Thị Bích Phượng,PTCA GW
-3856,Đặng Thị Huệ,PTCA GW
-3859,Đặng Thị Cảnh,Production Engineering
-3871,Lê Thị Lan,PTCA GW
-3879,Nguyễn Thị Ánh,SPGW
-3881,Nguyễn Thị Chính,PTCA GW
-3884,Nguyễn Thị Hạnh,T-Mate
-3891,Nguyễn Thị Quyên,T-Mate
-3898,Phạm Thị Vân,T-Mate
-3901,Thái Thị Lương,PTCA GW
-3907,Vũ Thị Khuyên,SPGW
-3911,Vương Thị Dịu,Catheter
-3919,Bùi Thị Xuyến,PTCA GW
-3929,Hà Thị Mến,PTCA GW
-3933,Lê Thị Hoài,PTCA GW
-3940,Nguyễn Thị Bích Hồng,Catheter
-3943,Nguyễn Thị Hà,PTCA GW
-3958,Trần Thị Hoa,Sterilization
-3959,Trần Thị Huệ,M-Pro
-3964,Trần Thu Phương,Sterilization
-3967,Trương Thị Thảo,PTCA GW
+3772,Nguyễn Quang Huy,Core
+3773,Nguyễn Thanh Tùng,Core
+3775,Nguyễn Thị Hương,Assy
+3777,Nguyễn Thị Mỹ Linh,Micro
+3781,Nguyễn Thị Thanh Hoa,PLGW
+3784,Nguyễn Thị Trúc,Assy
+3792,Trần Thị Yến Hoa,Assy
+3796,Vương Thị Tú Quyên,Production Support
+3800,Bùi Thị Huyền,Assy
+3801,Bùi Thị Liên,Guiding
+3802,Bùi Thị Nhàn,Shaft
+3810,Hoàng Thị Dung,Assy
+3814,Hoàng Văn Cương,Sterilization/Boxing
+3816,Lê Thị Yến,Core
+3817,Lê Thu Huyền,Assy
+3818,Lưu Thị Quỳnh,PTCA GW
+3819,Lưu Thị Thanh Ngàn,Assy
+3825,Nguyễn Thị Huệ,Guiding
+3827,Nguyễn Thị Hương,Production Support
+3828,Nguyễn Thị Huyên,Assy
+3830,Nguyễn Thị Loan,Core
+3831,Nguyễn Thị Mơ,Coil
+3836,Nguyễn Thị Thành,Assy
+3838,Nguyễn Thị Thảo,Assy
+3841,Nguyễn Thị Thu Uyên,Assy
+3842,Nguyễn Thị Thủy,Assy
+3843,Nguyễn Thu Phương,Assy
+3852,Vi Thị Bích Phượng,Assy
+3856,Đặng Thị Huệ,Assy
+3859,Đặng Thị Cảnh,T-Mate
+3871,Lê Thị Lan,Assy
+3879,Nguyễn Thị Ánh,Assy
+3881,Nguyễn Thị Chính,Assy
+3884,Nguyễn Thị Hạnh,Shaft
+3891,Nguyễn Thị Quyên,Shaft
+3898,Phạm Thị Vân,Shaft
+3901,Thái Thị Lương,Assy
+3907,Vũ Thị Khuyên,Assy
+3911,Vương Thị Dịu,Balloon
+3919,Bùi Thị Xuyến,Assy
+3929,Hà Thị Mến,Assy
+3933,Lê Thị Hoài,Assy
+3940,Nguyễn Thị Bích Hồng,Micro
+3943,Nguyễn Thị Hà,Assy
+3958,Trần Thị Hoa,Seal/Label
+3959,Trần Thị Huệ,Core
+3964,Trần Thu Phương,Sterilization/Boxing
+3967,Trương Thị Thảo,Assy
 3970,Phạm Hoàng Huy,Maintenance
 3971,Nguyễn Thị Hà,Order Control
-3974,Đinh Thị Hồng,PTCA GW
-3977,Hoàng Thị Trang,PTCA GW
-3980,Lê Thị Hương,PTCA GW
-3983,Lê Thị Thủy,PTCA GW
-3985,Lộc Thị Vàng,SPGW
-3989,Mai Thị Phương,PTCA GW
-3991,Nguyễn Thị Châm,M-Pro
-3995,Nguyễn Thị Thảo,PTCA GW
-3999,Tạ Thị Thùy,PTCA GW
-4006,Vũ Thị Tuyết Nhung,PTCA GW
-4008,Phan Thị Anh Thư,SPGW
+3974,Đinh Thị Hồng,Assy
+3977,Hoàng Thị Trang,Assy
+3980,Lê Thị Hương,Assy
+3983,Lê Thị Thủy,Assy
+3985,Lộc Thị Vàng,Assy
+3989,Mai Thị Phương,Assy
+3991,Nguyễn Thị Châm,Core
+3995,Nguyễn Thị Thảo,Assy
+3999,Tạ Thị Thùy,Assy
+4006,Vũ Thị Tuyết Nhung,Assy
+4008,Phan Thị Anh Thư,Assy
 4009,Hạ Đình Chương,Improvement
-4012,Trần Văn Toàn,Production Engineering
+4012,Trần Văn Toàn,Document & IT
 4013,Nguyễn Thị Thanh Loan,ISO
-4022,Bùi Thị Hồng Hạnh,Sterilization
-4025,Cao Thị Giang,PTCA GW
-4029,Đỗ Thị Hạnh,PTCA GW
-4033,Hoàng Thị Chuyền,PTCA GW
-4038,Lê Thị Hòa,PTCA GW
-4046,Mai Thị Thiết,Information & Production support
-4051,Nguyễn Thị Dung,PTCA GW
-4055,Nguyễn Thị Hồng,PTCA GW
-4072,Nguyễn Thị Tình,Sterilization
-4076,Phạm Thị Ngọc Ánh,Production Engineering
-4078,Phạm Thị Nụ,PTCA GW
-4082,Trần Thị Kim,Package
-4084,Trần Thị Thu Quỳnh,PTCA GW
-4088,Trương Thị Hồng Thư,PTCA GW
-4090,Vũ Thị Vui,PTCA GW
-4097,Bùi Thị Thành,PTCA GW
-4098,Bùi Thị Yến,T-Mate
-4100,Đặng Thị Ngần,Production Engineering
-4105,Đào Thị Huyền,M-Pro
-4106,Đinh Thị Hương,SPGW
-4118,Hà Bích Lệ,PTCA GW
-4119,Hà Thị Thoi,Catheter
-4121,Hồ Thị Như Quyên,PTCA GW
-4140,Ma Thị Nhường,PTCA GW
-4142,Ngô Thị Ngà,PTCA GW
-4146,Nguyễn Thị Đăng Liên,PTCA GW
-4156,Nguyễn Thị Huế,Catheter
+4022,Bùi Thị Hồng Hạnh,Sterilization/Boxing
+4025,Cao Thị Giang,Assy
+4029,Đỗ Thị Hạnh,Assy
+4033,Hoàng Thị Chuyền,Assy
+4038,Lê Thị Hòa,Assy
+4046,Mai Thị Thiết,Information
+4051,Nguyễn Thị Dung,Assy
+4055,Nguyễn Thị Hồng,Assy
+4072,Nguyễn Thị Tình,Sterilization/Boxing
+4076,Phạm Thị Ngọc Ánh,T-Mate
+4078,Phạm Thị Nụ,Assy
+4082,Trần Thị Kim,Shipping-Package
+4084,Trần Thị Thu Quỳnh,Assy
+4088,Trương Thị Hồng Thư,Assy
+4090,Vũ Thị Vui,Assy
+4097,Bùi Thị Thành,Assy
+4098,Bùi Thị Yến,Shaft
+4100,Đặng Thị Ngần,Filmecc
+4105,Đào Thị Huyền,Core
+4106,Đinh Thị Hương,Assy
+4118,Hà Bích Lệ,Assy
+4119,Hà Thị Thoi,Micro
+4121,Hồ Thị Như Quyên,Assy
+4140,Ma Thị Nhường,Assy
+4142,Ngô Thị Ngà,Assy
+4146,Nguyễn Thị Đăng Liên,Assy
+4156,Nguyễn Thị Huế,Micro
 4157,Nguyễn Thị Hưng,Improvement
-4161,Nguyễn Thị Kim Hương,M-Pro
-4163,Nguyễn Thị Liên,PTCA GW
-4165,Nguyễn Thị Lưu,M-Pro
-4173,Nguyễn Thị Phương,PTCA GW
-4174,Nguyễn Thị Thái,PTCA GW
-4177,Nguyễn Thị Thanh Nga,PTCA GW
-4178,Nguyễn Thị Thanh Tình,PTCA GW
+4161,Nguyễn Thị Kim Hương,Coil
+4163,Nguyễn Thị Liên,Assy
+4165,Nguyễn Thị Lưu,Coil
+4173,Nguyễn Thị Phương,Assy
+4174,Nguyễn Thị Thái,Assy
+4177,Nguyễn Thị Thanh Nga,Assy
+4178,Nguyễn Thị Thanh Tình,Assy
 4180,Nguyễn Thị Thúy,GA
-4183,Nguyễn Thị Thủy,Catheter
-4195,Phạm Thị Hoa,PTCA GW
-4200,Phan Thị Thúy Nga,Catheter
-4204,Tạ Thị Thu,PTCA GW
-4207,Tống Thị Huyền,PTCA GW
-4208,Trần Minh Phương,Catheter
-4209,Trần Phương Hoa,PTCA GW
-4212,Trần Thị Thơm,PTCA GW
-4214,Trần Thị Tươi,PTCA GW
-4218,Trương Minh Lý,PTCA GW
-4221,Vũ Thị Phượng,PTCA GW
+4183,Nguyễn Thị Thủy,Balloon
+4195,Phạm Thị Hoa,Assy
+4200,Phan Thị Thúy Nga,Micro
+4204,Tạ Thị Thu,Assy
+4207,Tống Thị Huyền,Assy
+4208,Trần Minh Phương,Micro
+4209,Trần Phương Hoa,Assy
+4212,Trần Thị Thơm,Assy
+4214,Trần Thị Tươi,Assy
+4218,Trương Minh Lý,Assy
+4221,Vũ Thị Phượng,Assy
 4223,Đặng Thanh Lương,Improvement
-4224,Hoàng Văn Hưng,Sterilization
-4227,Bùi Huyền Diệu Linh,PTCA GW
-4242,Đỗ Thị Minh Phương,M-Pro
-4253,Hoàng Kim Ngân,PTCA GW
-4268,Lê Thị Huệ,Catheter
-4278,Ngô Thị Lan,PTCA GW
-4290,Nguyễn Thị Huyền,Catheter
-4291,Nguyễn Thị Liên,PTCA GW
-4294,Nguyễn Thị Luyến,PTCA GW
-4299,Nguyễn Thị Thắm,Catheter
-4300,Nguyễn Thị Thanh Hoa,PTCA GW
-4306,Nguyễn Thị Thương,Catheter
-4308,Nguyễn Thị Thùy,Catheter
-4327,Trần Thị Ba,PTCA GW
-4331,Trần Thị Nhạn,PTCA GW
-4340,Vũ Thị Duyên,PTCA GW
-4345,Bùi Thị Chín,Sterilization
-4351,Hồ Thị Nguyệt,PTCA GW
-4352,Hoàng Thị Huyền,PTCA GW
-4354,Hoàng Thị Trang,Catheter
-4360,Mạc Thị Kiều Thương,PTCA GW
-4361,Nguyễn Thị Huyền,PTCA GW
-4375,Phạm Thị Hoài,PTCA GW
-4377,Đỗ Thị Thúy,M-Pro
-4382,Hoàng Thị Hà Trang,PTCA GW
-4384,Hứa Thị Hoa,PTCA GW
-4393,Ngô Thị Hiến,T-Mate
-4409,Nguyễn Thị Thu Hường,Catheter
-4411,Nguyễn Thị Xuân,PTCA GW
-4415,Phạm Thị Nhung,PTCA GW
-4418,Phan Thị Thu Hà,Catheter
-4431,Đào Thị Loan,PTCA GW
-4449,Lê Thị Huyền,Quality Assurance
-4450,Lê Thị Loan,Catheter
-4453,Lê Thị Thủy,PTCA GW
-4458,Nguyễn Thị Chinh,Catheter
-4465,Nguyễn Thị Minh,PTCA GW
-4468,Nguyễn Thị Phương Chi,PTCA GW
+4224,Hoàng Văn Hưng,Production Support
+4227,Bùi Huyền Diệu Linh,Assy
+4242,Đỗ Thị Minh Phương,Core
+4253,Hoàng Kim Ngân,Assy
+4268,Lê Thị Huệ,Micro
+4278,Ngô Thị Lan,Assy
+4290,Nguyễn Thị Huyền,Micro
+4291,Nguyễn Thị Liên,Assy
+4294,Nguyễn Thị Luyến,Assy
+4299,Nguyễn Thị Thắm,Micro
+4300,Nguyễn Thị Thanh Hoa,Assy
+4306,Nguyễn Thị Thương,Micro
+4308,Nguyễn Thị Thùy,Micro
+4327,Trần Thị Ba,Assy
+4331,Trần Thị Nhạn,Assy
+4340,Vũ Thị Duyên,Assy
+4345,Bùi Thị Chín,Seal/Label
+4351,Hồ Thị Nguyệt,Assy
+4352,Hoàng Thị Huyền,Assy
+4354,Hoàng Thị Trang,Micro
+4360,Mạc Thị Kiều Thương,Assy
+4361,Nguyễn Thị Huyền,Assy
+4375,Phạm Thị Hoài,Assy
+4377,Đỗ Thị Thúy,Coil
+4382,Hoàng Thị Hà Trang,Assy
+4384,Hứa Thị Hoa,Assy
+4393,Ngô Thị Hiến,Shaft
+4409,Nguyễn Thị Thu Hường,Guiding
+4411,Nguyễn Thị Xuân,Assy
+4415,Phạm Thị Nhung,Assy
+4418,Phan Thị Thu Hà,CAG
+4431,Đào Thị Loan,Assy
+4449,Lê Thị Huyền,Inspection
+4450,Lê Thị Loan,CAG
+4453,Lê Thị Thủy,Assy
+4458,Nguyễn Thị Chinh,Micro
+4465,Nguyễn Thị Minh,Assy
+4468,Nguyễn Thị Phương Chi,Assy
 4470,Nguyễn Thị Thái,Improvement
-4471,Nguyễn Thị Thu Hương,Sterilization
-4482,Trần Thị Hoa,PTCA GW
-4489,Vàng Thị Hương,SPGW
-4491,Vũ Thị Thao,Catheter
-4497,Bùi Thị Loan,PTCA GW
-4509,Đinh Thị Hồng Vân,PTCA GW
-4513,Doãn Thị Hòa,PTCA GW
-4517,Hoàng Thị Huệ,T-Mate
-4534,Mai Thị Hương,Quality Assurance
-4537,Ngô Thị Xuân,Catheter
-4538,Nguyễn Hải Yến,Quality Assurance
-4550,Nguyễn Thị Kim Dung,PTCA GW
-4555,Nguyễn Thị Nhung,PTCA GW
-4557,Nguyễn Thị Thu Trang,PTCA GW
-4564,Phạm Thị Thanh Hương,PTCA GW
-4569,Tô Thị Thư,PTCA GW
-4570,Trần Thị Hạ Tú,Quality Assurance
-4588,Đỗ Thị Thúy Hồng,PTCA GW
-4591,Hồ Thị Hường,PTCA GW
-4593,Hoàng Thị Hương Quỳnh,PTCA GW
-4595,Hoàng Thị Năm,PTCA GW
-4600,Lê Thị Quỳnh,M-Pro
-4602,Lê Thị Thu,PTCA GW
-4621,Nguyễn Thị Thu,PTCA GW
+4471,Nguyễn Thị Thu Hương,Production Support
+4482,Trần Thị Hoa,Assy
+4489,Vàng Thị Hương,Assy
+4491,Vũ Thị Thao,Guiding
+4497,Bùi Thị Loan,Assy
+4509,Đinh Thị Hồng Vân,Assy
+4513,Doãn Thị Hòa,Assy
+4517,Hoàng Thị Huệ,Shaft
+4534,Mai Thị Hương,Inspection
+4537,Ngô Thị Xuân,Guiding
+4538,Nguyễn Hải Yến,Inspection
+4550,Nguyễn Thị Kim Dung,Assy
+4555,Nguyễn Thị Nhung,Assy
+4557,Nguyễn Thị Thu Trang,Assy
+4564,Phạm Thị Thanh Hương,Assy
+4569,Tô Thị Thư,Assy
+4570,Trần Thị Hạ Tú,Inspection
+4588,Đỗ Thị Thúy Hồng,Assy
+4591,Hồ Thị Hường,Assy
+4593,Hoàng Thị Hương Quỳnh,Assy
+4595,Hoàng Thị Năm,Assy
+4600,Lê Thị Quỳnh,Core
+4602,Lê Thị Thu,Assy
+4621,Nguyễn Thị Thu,Assy
 4627,Phạm Duy Hậu,GA
-4632,Phạm Văn Định,Sterilization
-4635,Phùng Thị Mai,PTCA GW
-4642,Trịnh Văn Được,PTCA GW
-4643,Trương Thị Minh Khai,PTCA GW
-4648,Hoàng Thị Xuyến,PTCA GW
-4649,Lê Thị Mai,Sterilization
-4664,Nguyễn Thị Mai,PTCA GW
-4669,Phạm Thị Huyền Trang,M-Pro
-4678,Đào Thị Hồng Phượng,PTCA GW
-4679,Đào Thị Ngân,Sterilization
-4684,Hà Thị Dung,PTCA GW
-4689,Hoàng Thị Hoa,Sterilization
-4692,Hoàng Văn Tam,T-Mate
-4694,Lê Thị An,Package
-4701,Nguyễn Thị Định,Sterilization
-4703,Nguyễn Thị Hoa,Quality Assurance
-4706,Nguyễn Thị Mương,Sterilization
-4707,Nguyễn Thị Nguyệt,Package
-4710,Nguyễn Thị Thu Hương,Sterilization
-4722,Triệu Thị Đường,Sterilization
-4730,Cao Thị Thu Lan,Sterilization
-4732,Đặng Thị Phượng,PTCA GW
-4733,Đặng Thị Yến,PTCA GW
+4632,Phạm Văn Định,Production Support
+4635,Phùng Thị Mai,Assy
+4642,Trịnh Văn Được,Assy
+4643,Trương Thị Minh Khai,Assy
+4648,Hoàng Thị Xuyến,Assy
+4649,Lê Thị Mai,Seal/Label
+4664,Nguyễn Thị Mai,Assy
+4669,Phạm Thị Huyền Trang,Core
+4678,Đào Thị Hồng Phượng,Assy
+4679,Đào Thị Ngân,Production Support
+4684,Hà Thị Dung,Assy
+4689,Hoàng Thị Hoa,Seal/Label
+4692,Hoàng Văn Tam,Shaft
+4694,Lê Thị An,Shipping-Package
+4701,Nguyễn Thị Định,Seal/Label
+4703,Nguyễn Thị Hoa,Inspection
+4706,Nguyễn Thị Mương,Seal/Label
+4707,Nguyễn Thị Nguyệt,Shipping-Package
+4710,Nguyễn Thị Thu Hương,Seal/Label
+4722,Triệu Thị Đường,Sterilization/Boxing
+4730,Cao Thị Thu Lan,Sterilization/Boxing
+4732,Đặng Thị Phượng,Assy
+4733,Đặng Thị Yến,PLGW
 4746,Lưu Văn Hiếu,Maintenance
 4748,Nguyễn Chính Vũ,Maintenance
-4750,Nguyễn Thị Huệ,PTCA GW
-4757,Nguyễn Thị Nhật Lệ,T-Mate
-4762,Nguyễn Thúy Lan,Catheter
-4767,Phạm Thị Quỳnh,PTCA GW
-4771,Phan Thị Thu Hà,Quality Assurance
-4776,Trịnh Thị Cảnh,Catheter
-4779,Vũ Quốc Mạnh,PTCA GW
-4781,Âu Thị Diễm,PTCA GW
-4783,Bùi Thị Dung,PTCA GW
-4785,Bùi Thị Kim Anh,PTCA GW
-4787,Bùi Thị Thúy,Quality Assurance
-4792,Đinh Thị Mai Phương,PTCA GW
-4793,Đỗ Thị Hải Linh,Catheter
-4795,Dương Hồng Ly,PTCA GW
-4796,Dương Thu Huệ,Catheter
-4809,Lê Hồng Thắm,PTCA GW
-4813,Lê Thị Thi,PTCA GW
-4816,Lê Thu Huyền,PTCA GW
-4820,Lương Thị Toàn,Catheter
-4821,Ma Thị Trăng,Catheter
+4750,Nguyễn Thị Huệ,Assy
+4757,Nguyễn Thị Nhật Lệ,Shaft
+4762,Nguyễn Thúy Lan,Guiding
+4767,Phạm Thị Quỳnh,Assy
+4771,Phan Thị Thu Hà,Inspection
+4776,Trịnh Thị Cảnh,Guiding
+4779,Vũ Quốc Mạnh,Assy
+4781,Âu Thị Diễm,Assy
+4783,Bùi Thị Dung,Assy
+4785,Bùi Thị Kim Anh,Assy
+4787,Bùi Thị Thúy,Inspection
+4792,Đinh Thị Mai Phương,Assy
+4793,Đỗ Thị Hải Linh,Guiding
+4795,Dương Hồng Ly,Assy
+4796,Dương Thu Huệ,CAG
+4809,Lê Hồng Thắm,Assy
+4813,Lê Thị Thi,Assy
+4816,Lê Thu Huyền,Assy
+4820,Lương Thị Toàn,Guiding
+4821,Ma Thị Trăng,Guiding
 4824,Nguyễn Thị An,ISO
-4830,Nguyễn Thị Hồng Ngát,Package
-4836,Nguyễn Thị Kim Oanh,Catheter
-4843,Nguyễn Thị Quỳnh Trang,PTCA GW
-4844,Nguyễn Thị Sáu,PTCA GW
-4852,Nguyễn Thị Yến,PTCA GW
-4853,Nguyễn Thu Thảo,PTCA GW
-4854,Nông Thị Ngọc Ánh,PTCA GW
-4855,Nông Thị Nhiệm,PTCA GW
-4862,Tăng Thị Tuyết Ánh,Package
-4869,Trần Thị Thanh Thanh Hoài,Catheter
-4870,Trần Thị Vân,PTCA GW
-4871,Trịnh Thị Hiên,Catheter
-4878,Nguyễn Thị Thu,M-Pro
-4880,Nguyễn Thị Phượng,Sterilization
-4884,Nguyễn Hải Dương,PTCA GW
-4891,Bùi Thị Phương Thúy,M-Pro
-4894,Cù Thị Hồng Vân,Sterilization
-4897,Đặng Thị Thanh Hoa,PTCA GW
-4899,Đậu Thị Huyền,PTCA GW
-4907,Hoàng Thị Huyền,PTCA GW
-4909,Hoàng Thị Thu Hằng,PTCA GW
+4830,Nguyễn Thị Hồng Ngát,Shipping-Package
+4836,Nguyễn Thị Kim Oanh,Guiding
+4843,Nguyễn Thị Quỳnh Trang,Assy
+4844,Nguyễn Thị Sáu,Assy
+4852,Nguyễn Thị Yến,Assy
+4853,Nguyễn Thu Thảo,Assy
+4854,Nông Thị Ngọc Ánh,Assy
+4855,Nông Thị Nhiệm,Assy
+4862,Tăng Thị Tuyết Ánh,Shipping-Package
+4869,Trần Thị Thanh Thanh Hoài,Guiding
+4870,Trần Thị Vân,Assy
+4871,Trịnh Thị Hiên,Guiding
+4878,Nguyễn Thị Thu,Core
+4880,Nguyễn Thị Phượng,Production Support
+4884,Nguyễn Hải Dương,Assy
+4891,Bùi Thị Phương Thúy,Core
+4894,Cù Thị Hồng Vân,Seal/Label
+4897,Đặng Thị Thanh Hoa,Assy
+4899,Đậu Thị Huyền,Assy
+4907,Hoàng Thị Huyền,Assy
+4909,Hoàng Thị Thu Hằng,Assy
 4912,Hoàng Thị Tin,T-Mate
-4913,Lê Thị Bích Huệ,PTCA GW
-4922,Lục Thị Soan,PTCA GW
-4927,Nguyễn Thị Bắc,SPGW
-4928,Nguyễn Thị Hảo,PTCA GW
-4941,Nguyễn Thị Thúy,PTCA GW
-4948,Nông Thị Kim Huế,M-Pro
-4950,Phạm Thị Hằng,PTCA GW
-4953,Phạm Thị Lan,PTCA GW
-4959,Phù Thị Hiệu,PTCA GW
+4913,Lê Thị Bích Huệ,Assy
+4922,Lục Thị Soan,Assy
+4927,Nguyễn Thị Bắc,Assy
+4928,Nguyễn Thị Hảo,Assy
+4941,Nguyễn Thị Thúy,Assy
+4948,Nông Thị Kim Huế,Core
+4950,Phạm Thị Hằng,Assy
+4953,Phạm Thị Lan,Assy
+4959,Phù Thị Hiệu,Assy
 4962,Quách Thị Thập,T-Mate
-4963,Quản Thị Hồng Duyên,PTCA GW
-4964,Quốc Thị Phương,PTCA GW
-4968,Trần Thị Bạch Tuyết,PTCA GW
-4983,Vũ Thị Thanh Tâm,Quality Assurance
-4994,Đào Thị Thu Hiền,PTCA GW
-4996,Đinh Thị Hướng,PTCA GW
-5000,Hoàng Thị Hoài,PTCA GW
-5006,Lý Thị Hạt,PTCA GW
-5007,Ma Thị Anh Thơ,Catheter
-5008,Mai Hồng Ngọc,PTCA GW
-5014,Nguyễn Thị Thanh Thủy,PTCA GW
-5015,Nguyễn Thị Thoa,PTCA GW
-5017,Phạm Thị Tâm,PTCA GW
-5026,Nguyễn Thị Hà,Shipping
+4963,Quản Thị Hồng Duyên,Assy
+4964,Quốc Thị Phương,Assy
+4968,Trần Thị Bạch Tuyết,Assy
+4983,Vũ Thị Thanh Tâm,Inspection
+4994,Đào Thị Thu Hiền,Assy
+4996,Đinh Thị Hướng,Assy
+5000,Hoàng Thị Hoài,Assy
+5006,Lý Thị Hạt,Assy
+5007,Ma Thị Anh Thơ,Micro
+5008,Mai Hồng Ngọc,Assy
+5014,Nguyễn Thị Thanh Thủy,Assy
+5015,Nguyễn Thị Thoa,Assy
+5017,Phạm Thị Tâm,Assy
+5026,Nguyễn Thị Hà,Export
 5028,Tạ Đình Phong,Improvement
 5033,Hoàng Việt Long,Maintenance
 5035,Nguyễn Huy Thắng,Maintenance
 5036,Nguyễn Khắc Văn,Maintenance
 5037,Nguyễn Thanh Bình,Maintenance
-5042,Đào Thị Thu Hường,PTCA GW
-5043,Đinh Thị Huyền Trang,PTCA GW
-5049,Đoàn Thị Mỹ Linh,Sterilization
-5050,Đoàn Thị Nhung,PTCA GW
-5053,Hoàng Thị Bình,Catheter
-5054,Hoàng Thị Thắm,T-Mate
-5057,Lâm Thị Na,PTCA GW
-5058,Lê Đức Côn,PTCA GW
-5067,Lương Ngọc Bích,Sterilization
-5074,Nguyễn Đình Nhân,Catheter
-5079,Nguyễn Thị Châu,Sterilization
+5042,Đào Thị Thu Hường,Assy
+5043,Đinh Thị Huyền Trang,Assy
+5049,Đoàn Thị Mỹ Linh,Seal/Label
+5050,Đoàn Thị Nhung,Assy
+5053,Hoàng Thị Bình,Guiding
+5054,Hoàng Thị Thắm,Shaft
+5057,Lâm Thị Na,Assy
+5058,Lê Đức Côn,Assy
+5067,Lương Ngọc Bích,Sterilization/Boxing
+5074,Nguyễn Đình Nhân,Guiding
+5079,Nguyễn Thị Châu,Seal/Label
 5083,Nguyễn Thị Hậu,ISO
-5089,Nguyễn Thị Huyền,Sterilization
-5093,Nguyễn Thị Nga,Sterilization
-5095,Nguyễn Thị Như Hoa,PTCA GW
-5100,Nguyễn Thị Thin,PTCA GW
-5103,Nguyễn Thị Thu Huyền,PTCA GW
-5113,Phạm Thị Minh Thúy,PTCA GW
-5114,Phạm Thị Xuân,Sterilization
-5115,Phạm Thu Hồng,Sterilization
-5121,Phùng Thị Nguyệt Hà,Production Engineering
-5124,Tạ Thị Chang,SPGW
-5126,Tạ Thị Thu,PTCA GW
-5128,Trần Quang Thắng,Sterilization
-5136,Trần Thị Trang,Catheter
-5137,Trịnh Thị Hiền,PTCA GW
-5143,Vũ Thị Liên,Sterilization
-5148,Lê Thị Sơn,Catheter
-5153,Hoàng Viết Thiện,M-Pro
-5154,Nguyễn Văn Đạt,Catheter
-5162,Hà Thị Hải,Catheter
-5164,Hoàng Thị Bích Dẻo,Catheter
-5185,Ngô Thị Oanh,PTCA GW
-5195,Nguyễn Thị Khánh Linh,Package
-5197,Nguyễn Thị Mão,Sterilization
-5204,Nguyễn Thị Thu Huyền,PTCA GW
-5207,Phạm Thị Hải Yến,PTCA GW
-5212,Phan Thị Hương,PTCA GW
-5219,Trần Thị Vân,PTCA GW
-5225,Vũ Thị Thảo,PTCA GW
+5089,Nguyễn Thị Huyền,Seal/Label
+5093,Nguyễn Thị Nga,Seal/Label
+5095,Nguyễn Thị Như Hoa,Assy
+5100,Nguyễn Thị Thin,Assy
+5103,Nguyễn Thị Thu Huyền,Assy
+5113,Phạm Thị Minh Thúy,Assy
+5114,Phạm Thị Xuân,Sterilization/Boxing
+5115,Phạm Thu Hồng,Sterilization/Boxing
+5121,Phùng Thị Nguyệt Hà,Catheter
+5124,Tạ Thị Chang,Assy
+5126,Tạ Thị Thu,Assy
+5128,Trần Quang Thắng,Seal/Label
+5136,Trần Thị Trang,Micro
+5137,Trịnh Thị Hiền,Assy
+5143,Vũ Thị Liên,Seal/Label
+5148,Lê Thị Sơn,Micro
+5153,Hoàng Viết Thiện,Core
+5154,Nguyễn Văn Đạt,Micro
+5162,Hà Thị Hải,Micro
+5164,Hoàng Thị Bích Dẻo,Micro
+5185,Ngô Thị Oanh,Assy
+5195,Nguyễn Thị Khánh Linh,Shipping-Package
+5197,Nguyễn Thị Mão,Sterilization/Boxing
+5204,Nguyễn Thị Thu Huyền,Assy
+5207,Phạm Thị Hải Yến,Assy
+5212,Phan Thị Hương,Assy
+5219,Trần Thị Vân,Assy
+5225,Vũ Thị Thảo,Assy
 5227,Hoàng Nghĩa Thế,Maintenance
-5232,Bùi Thị Dung,PTCA GW
-5234,Bùi Thị Thu Hoài,PTCA GW
-5235,Cao Thị Xuân,PTCA GW
-5237,Đào Thị Nhung,PTCA GW
-5240,Đinh Thị Nhung,PTCA GW
-5242,Doãn Thị Lan Anh,PTCA GW
-5245,Đặng Thị Thiết,PTCA GW
-5254,Hoàng Thị Huế,Production Engineering
-5261,Lê Thị Thu Hà,PTCA GW
-5270,Lưu Thị Linh,PTCA GW
-5279,Nông Thị Diệp,PTCA GW
-5289,Nguyễn Thị Hoa,Sterilization
-5302,Nguyễn Thị Vân,Catheter
-5303,Nguyễn Thị Hường,PTCA GW
-5304,Nguyễn Thị Thu Trang,PTCA GW
-5306,Nguyễn Thanh Nga,PTCA GW
-5307,Nguyễn Thị Nhẫn,PTCA GW
-5308,Nguyễn Thị Minh Thu,T-Mate
-5318,Nguyễn Thị Hà,PTCA GW
-5324,Phạm Thị Phương Thùy,PTCA GW
-5332,Trần Thị Yến,Catheter
-5334,Trần Lệ Thúy,Catheter
-5339,Vũ Thị Dung,Catheter
-5343,Vũ Thị Thanh,T-Mate
-5350,Vương Thị Tuyết,Catheter
-5355,Quách Thị Duyên,Catheter
+5232,Bùi Thị Dung,Assy
+5234,Bùi Thị Thu Hoài,Assy
+5235,Cao Thị Xuân,Assy
+5237,Đào Thị Nhung,Assy
+5240,Đinh Thị Nhung,Assy
+5242,Doãn Thị Lan Anh,Assy
+5245,Đặng Thị Thiết,Assy
+5254,Hoàng Thị Huế,PTCA GW
+5261,Lê Thị Thu Hà,Assy
+5270,Lưu Thị Linh,Assy
+5279,Nông Thị Diệp,Assy
+5289,Nguyễn Thị Hoa,Seal/Label
+5302,Nguyễn Thị Vân,Micro
+5303,Nguyễn Thị Hường,Assy
+5304,Nguyễn Thị Thu Trang,Assy
+5306,Nguyễn Thanh Nga,Assy
+5307,Nguyễn Thị Nhẫn,Assy
+5308,Nguyễn Thị Minh Thu,Shaft
+5318,Nguyễn Thị Hà,Assy
+5324,Phạm Thị Phương Thùy,Assy
+5332,Trần Thị Yến,Micro
+5334,Trần Lệ Thúy,Guiding
+5339,Vũ Thị Dung,Micro
+5343,Vũ Thị Thanh,Shaft
+5350,Vương Thị Tuyết,Micro
+5355,Quách Thị Duyên,Micro
 5359,Hoàng Thị Quỳnh Thu,Order Control
-5361,Nguyễn Thị Hằng,Information & Production support
-5365,Nguyễn Quang Phương,Production Engineering
-5368,Đặng Thị Hương,PTCA GW
-5374,Lê Thị Thủy,PTCA GW
-5375,Nguyễn Thị Thu Trang,M-Pro
-5380,Nguyễn Mỹ Linh,T-Mate
-5381,Hoàng Thị Minh,Sterilization
-5382,Lê Thị Thúy,M-Pro
-5386,Lý Thị Nhung,PTCA GW
-5387,Lê Thị Thắm,PTCA GW
-5389,Dương Thị Linh,T-Mate
-5390,Ngô Thị Huế,PTCA GW
-5396,Nguyễn Thị Thơ,Package
-5399,Nguyễn Thị Hường,Package
-5402,Đặng Thị Trang,PTCA GW
-5403,Lương Thị Đợi,SPGW
-5404,Hồ Thị Lê,M-Pro
-5405,Tạ Thị Dung,PTCA GW
-5408,Nguyễn Thị Thắm,SPGW
-5409,Đỗ Thị Hoa,PTCA GW
-5410,Đỗ Thị Cúc,Catheter
-5411,Vương Thị Hiền,Production Engineering
-5414,Trần Thị Mai,M-Pro
-5415,Bùi Thị Nguyên Nhung,PTCA GW
-5418,Hà Thị Nga,PTCA GW
-5419,Nguyễn Thị Máng,PTCA GW
-5423,Phùng Thị Tươi,PTCA GW
-5429,Nguyễn Thị Trang,Catheter
-5430,Hoàng Thị Hương,PTCA GW
-5432,Trần Thu Hằng,PTCA GW
-5434,Nguyễn Thị Giang,Catheter
-5435,Phạm Thị Xuân Hương,Quality Assurance
-5436,Đỗ Như Quỳnh,PTCA GW
-5439,Nguyễn Thùy Linh,M-Pro
-5445,Đinh Thị Lan Anh,PTCA GW
-5458,Nguyễn Thị Chờ,PTCA GW
-5460,Nguyễn Văn Chiến,Sterilization
-5462,Trần Văn Linh,Sterilization
-5463,Đỗ Xuân Bắc,M-Pro
-5469,Nguyễn Hữu Thuận,PTCA GW
-5470,Phạm Văn Đại,Catheter
-5473,Bàn Thị Thảo,PTCA GW
-5480,Đặng Thị Thu Huyền,Sterilization
-5490,Đỗ Thị Nhung,Catheter
-5493,Đỗ Thị Vân,PTCA GW
-5500,Hà Thị Nhiên,M-Pro
-5502,Hồ Thị Hoài,Catheter
-5504,Hoàng Thị Hậu,PTCA GW
+5361,Nguyễn Thị Hằng,Information
+5365,Nguyễn Quang Phương,Catheter
+5368,Đặng Thị Hương,Assy
+5374,Lê Thị Thủy,Assy
+5375,Nguyễn Thị Thu Trang,Core
+5380,Nguyễn Mỹ Linh,Shaft
+5381,Hoàng Thị Minh,Sterilization/Boxing
+5382,Lê Thị Thúy,Core
+5386,Lý Thị Nhung,Assy
+5387,Lê Thị Thắm,Assy
+5389,Dương Thị Linh,Shaft
+5390,Ngô Thị Huế,Assy
+5396,Nguyễn Thị Thơ,Shipping-Package
+5399,Nguyễn Thị Hường,Shipping-Package
+5402,Đặng Thị Trang,Assy
+5403,Lương Thị Đợi,Part
+5404,Hồ Thị Lê,Core
+5405,Tạ Thị Dung,Assy
+5408,Nguyễn Thị Thắm,Assy
+5409,Đỗ Thị Hoa,Assy
+5410,Đỗ Thị Cúc,Guiding
+5411,Vương Thị Hiền,T-Mate
+5414,Trần Thị Mai,Core
+5415,Bùi Thị Nguyên Nhung,Assy
+5418,Hà Thị Nga,Assy
+5419,Nguyễn Thị Máng,Assy
+5423,Phùng Thị Tươi,Assy
+5429,Nguyễn Thị Trang,Micro
+5430,Hoàng Thị Hương,PLGW
+5432,Trần Thu Hằng,Assy
+5434,Nguyễn Thị Giang,Guiding
+5435,Phạm Thị Xuân Hương,Inspection
+5436,Đỗ Như Quỳnh,Assy
+5439,Nguyễn Thùy Linh,Coil
+5445,Đinh Thị Lan Anh,Assy
+5458,Nguyễn Thị Chờ,Assy
+5460,Nguyễn Văn Chiến,Sterilization/Boxing
+5462,Trần Văn Linh,Sterilization/Boxing
+5463,Đỗ Xuân Bắc,Core
+5469,Nguyễn Hữu Thuận,Assy
+5470,Phạm Văn Đại,Guiding
+5473,Bàn Thị Thảo,Assy
+5480,Đặng Thị Thu Huyền,Seal/Label
+5490,Đỗ Thị Nhung,Micro
+5493,Đỗ Thị Vân,Assy
+5500,Hà Thị Nhiên,Core
+5502,Hồ Thị Hoài,Micro
+5504,Hoàng Thị Hậu,Assy
 5506,Hoàng Thị Hồng Thắm,T-Mate
-5509,Hứa Thị Ánh,PTCA GW
-5510,Khổng Thị Thùy Dương,M-Pro
+5509,Hứa Thị Ánh,Assy
+5510,Khổng Thị Thùy Dương,Core
 5512,Lại Thị Thúy,BIO
-5530,Lê Thị Thu,PTCA GW
-5532,Lê Thị Thu Hoài,Quality Assurance
-5534,Lưu Thị Thoan,PTCA GW
-5535,Ma Thị Hòe,PTCA GW
-5539,Nguyễn Cao Thị Quyên,Catheter
-5541,Nguyễn Kiều Trang,Catheter
-5545,Nguyễn Thị Hải Yến,Package
-5553,Nguyễn Thị Hoài Nhiên,PTCA GW
-5559,Nguyễn Thị Huyền,PTCA GW
-5562,Nguyễn Thị Lan,PTCA GW
-5577,Nguyễn Thị Phượng,Sterilization
-5584,Nguyễn Thị Thủy,Production Engineering
-5590,Nguyễn Thị Uyên,PTCA GW
-5597,Phạm Thị Hoa,SPGW
-5600,Phạm Thị Thắm,Quality Assurance
-5601,Phạm Thị Thu,Sterilization
-5609,Thái Thị Thủy,Sterilization
-5610,Thiều Thị Dung,Sterilization
-5612,Trần Thị Bình,Quality Assurance
-5613,Trần Thị Cúc,M-Pro
-5620,Trần Thị Thanh,Package
-5621,Trần Thị Thảo,Catheter
-5626,Triệu Thị Xim,Catheter
-5630,Trương Thị Thu Phương,Catheter
-5631,Trương Thị Thương,PTCA GW
-5634,Vi Thị Nhị,Catheter
-5641,Vũ Thị Mai,PTCA GW
-5648,Vương Thị Sơn,PTCA GW
-5654,Bùi Thanh Hoa,PTCA GW
-5656,Bùi Thị Tâm,Catheter
-5664,Đặng Thị Châu,Catheter
-5667,Đặng Thị Ngọc,PTCA GW
-5677,Đỗ Thị Hảo,PTCA GW
-5679,Dương Thị Ánh Việt,Sterilization
-5680,Dương Thị Hiền,PTCA GW
-5698,Khổng Thị Hải,Catheter
-5710,Lê Thị Thu Thanh,PTCA GW
-5713,Lô Thị Quỳnh,PTCA GW
-5715,Lương Thị Liên,Sterilization
-5718,Lý Thị Liền,PTCA GW
-5721,Ma Thị Bích Diệp,Catheter
-5726,Nguyễn Hồng Dung,Catheter
-5727,Nguyễn Hồng Nhung,PTCA GW
-5728,Nguyễn Ngọc Nghĩa,Catheter
-5733,Nguyễn Thị Hằng,PTCA GW
-5736,Nguyễn Thị Hòa,Catheter
-5746,Nguyễn Thị Mai,PTCA GW
-5750,Nguyễn Thị Ngọc Quyên,PTCA GW
-5751,Nguyễn Thị Như,M-Pro
-5753,Nguyễn Thị Oanh,PTCA GW
-5759,Nguyễn Thị Thư,PTCA GW
-5763,Nguyễn Thị Trang,PTCA GW
-5765,Nguyễn Thị Tú Linh,PTCA GW
-5767,Nguyễn Xuân Tiến,PTCA GW
-5771,Phạm Thị Dương,PTCA GW
-5784,Trần Minh Hiếu,PTCA GW
-5788,Trần Thị Mai,Catheter
-5796,Vòong Thị Mai,PTCA GW
-5797,Vũ Thị Duyên,M-Pro
-5800,Nguyễn Đặng Thư,Sterilization
+5530,Lê Thị Thu,Assy
+5532,Lê Thị Thu Hoài,Inspection
+5534,Lưu Thị Thoan,Assy
+5535,Ma Thị Hòe,PLGW
+5539,Nguyễn Cao Thị Quyên,Guiding
+5541,Nguyễn Kiều Trang,Micro
+5545,Nguyễn Thị Hải Yến,Shipping-Package
+5553,Nguyễn Thị Hoài Nhiên,Assy
+5559,Nguyễn Thị Huyền,Assy
+5562,Nguyễn Thị Lan,Assy
+5577,Nguyễn Thị Phượng,Sterilization/Boxing
+5584,Nguyễn Thị Thủy,Catheter
+5590,Nguyễn Thị Uyên,Assy
+5597,Phạm Thị Hoa,Part
+5600,Phạm Thị Thắm,Inspection
+5601,Phạm Thị Thu,Sterilization/Boxing
+5609,Thái Thị Thủy,Sterilization/Boxing
+5610,Thiều Thị Dung,Sterilization/Boxing
+5612,Trần Thị Bình,Inspection
+5613,Trần Thị Cúc,Core
+5620,Trần Thị Thanh,Shipping-Package
+5621,Trần Thị Thảo,Micro
+5626,Triệu Thị Xim,Guiding
+5630,Trương Thị Thu Phương,Micro
+5631,Trương Thị Thương,Assy
+5634,Vi Thị Nhị,Guiding
+5641,Vũ Thị Mai,Assy
+5648,Vương Thị Sơn,Assy
+5654,Bùi Thanh Hoa,Assy
+5656,Bùi Thị Tâm,Guiding
+5664,Đặng Thị Châu,Micro
+5667,Đặng Thị Ngọc,Assy
+5677,Đỗ Thị Hảo,PLGW
+5679,Dương Thị Ánh Việt,Sterilization/Boxing
+5680,Dương Thị Hiền,Assy
+5698,Khổng Thị Hải,CAG
+5710,Lê Thị Thu Thanh,Assy
+5713,Lô Thị Quỳnh,Assy
+5715,Lương Thị Liên,Sterilization/Boxing
+5718,Lý Thị Liền,Assy
+5721,Ma Thị Bích Diệp,Guiding
+5726,Nguyễn Hồng Dung,Micro
+5727,Nguyễn Hồng Nhung,Assy
+5728,Nguyễn Ngọc Nghĩa,Micro
+5733,Nguyễn Thị Hằng,Assy
+5736,Nguyễn Thị Hòa,Guiding
+5746,Nguyễn Thị Mai,Assy
+5750,Nguyễn Thị Ngọc Quyên,Assy
+5751,Nguyễn Thị Như,Coil
+5753,Nguyễn Thị Oanh,Assy
+5759,Nguyễn Thị Thư,Assy
+5763,Nguyễn Thị Trang,Assy
+5765,Nguyễn Thị Tú Linh,Assy
+5767,Nguyễn Xuân Tiến,Assy
+5771,Phạm Thị Dương,Assy
+5784,Trần Minh Hiếu,Assy
+5788,Trần Thị Mai,Micro
+5796,Vòong Thị Mai,Assy
+5797,Vũ Thị Duyên,Core
+5800,Nguyễn Đặng Thư,Sterilization/Boxing
 5801,Đào Văn Hưởng,Improvement
-5804,Bàng Thị Hà,T-Mate
-5805,Bùi Thị Hải Ninh,PTCA GW
-5809,Đặng Thị Kim,PTCA GW
-5812,Đặng Thị Yến,PTCA GW
-5817,Dương Thị Huệ,PTCA GW
-5826,Hoàng Thị Giang,Production Engineering
-5829,Hoàng Thị Loan,PTCA GW
-5834,Lê Thanh Xuân,Sterilization
-5844,Lưu Thị Lan Hương,Production Engineering
-5849,Nguyễn Thị Đoan Trang,PTCA GW
-5851,Nguyễn Thị Hoa,M-Pro
-5852,Nguyễn Thị Hòa,PTCA GW
-5855,Nguyễn Thị Huyền,PTCA GW
-5856,Nguyễn Thị Mỹ Linh,PTCA GW
-5857,Nguyễn Thị Ngân,PTCA GW
-5858,Nguyễn Thị Ngọc,Catheter
-5864,Nguyễn Thị Thu Hà,PTCA GW
-5865,Nguyễn Thị Thu Hà,PTCA GW
-5866,Nguyễn Thị Phương Linh,PTCA GW
-5870,Phạm Thị Thanh,PTCA GW
-5872,Phan Thị Đào,PTCA GW
-5877,Sầm Thị Thanh Huyền,Catheter
-5885,Vương Thị Xuyến,PTCA GW
-5888,Nguyễn Thị Hà,PTCA GW
-5889,Lưu Thị Thoa,PTCA GW
-5904,Đinh Thị Hào,PTCA GW
-5905,Đinh Thị Phương Thảo,PTCA GW
-5915,Hoàng Thị Thùy,PTCA GW
-5928,Nguyễn Thị Anh,PTCA GW
-5930,Nguyễn Thị Cúc,M-Pro
-5932,Nguyễn Thị Hải Yến,PTCA GW
-5936,Nguyễn Thị Hương,PTCA GW
-5937,Nguyễn Thị Kim Cúc,PTCA GW
+5804,Bàng Thị Hà,Shaft
+5805,Bùi Thị Hải Ninh,PLGW
+5809,Đặng Thị Kim,Assy
+5812,Đặng Thị Yến,Assy
+5817,Dương Thị Huệ,Assy
+5826,Hoàng Thị Giang,PTCA GW
+5829,Hoàng Thị Loan,Assy
+5834,Lê Thanh Xuân,Production Support
+5844,Lưu Thị Lan Hương,Document & IT
+5849,Nguyễn Thị Đoan Trang,Assy
+5851,Nguyễn Thị Hoa,Coil
+5852,Nguyễn Thị Hòa,Assy
+5855,Nguyễn Thị Huyền,Assy
+5856,Nguyễn Thị Mỹ Linh,Assy
+5857,Nguyễn Thị Ngân,Assy
+5858,Nguyễn Thị Ngọc,Guiding
+5864,Nguyễn Thị Thu Hà,Assy
+5865,Nguyễn Thị Thu Hà,Assy
+5866,Nguyễn Thị Phương Linh,Assy
+5870,Phạm Thị Thanh,Assy
+5872,Phan Thị Đào,Assy
+5877,Sầm Thị Thanh Huyền,Micro
+5885,Vương Thị Xuyến,Assy
+5888,Nguyễn Thị Hà,Assy
+5889,Lưu Thị Thoa,Assy
+5904,Đinh Thị Hào,Assy
+5905,Đinh Thị Phương Thảo,Assy
+5915,Hoàng Thị Thùy,Assy
+5928,Nguyễn Thị Anh,Assy
+5930,Nguyễn Thị Cúc,Coil
+5932,Nguyễn Thị Hải Yến,Assy
+5936,Nguyễn Thị Hương,Assy
+5937,Nguyễn Thị Kim Cúc,Assy
 5941,Nguyễn Thị Phú,T-Mate
-5944,Nguyễn Thị Thu Hậu,PTCA GW
-5945,Nguyễn Thị Thu Vân,T-Mate
-5948,Nguyễn Thị Xuân,Catheter
-5954,Phạm Thị Tuyết Nhung,PTCA GW
-5956,Phùng Thị Nghĩa,PTCA GW
-5968,Vương Thị Thanh,PTCA GW
-5973,Đặng Thị Thanh Tâm,PTCA GW
-5982,Lâm Thị Quyên,PTCA GW
-5984,Lê Thị Khánh Hòa,M-Pro
-5985,Lê Thị Lan Anh,PTCA GW
-5987,Lò Thị Hảo,PTCA GW
-5990,Nguyễn Phương Thúy,PTCA GW
+5944,Nguyễn Thị Thu Hậu,Assy
+5945,Nguyễn Thị Thu Vân,Shaft
+5948,Nguyễn Thị Xuân,Micro
+5954,Phạm Thị Tuyết Nhung,Assy
+5956,Phùng Thị Nghĩa,Assy
+5968,Vương Thị Thanh,Assy
+5973,Đặng Thị Thanh Tâm,Assy
+5982,Lâm Thị Quyên,Assy
+5984,Lê Thị Khánh Hòa,Core
+5985,Lê Thị Lan Anh,Assy
+5987,Lò Thị Hảo,Assy
+5990,Nguyễn Phương Thúy,Assy
 5992,Nguyễn Thị Dinh,T-Mate
-6009,Phạm Khánh Chi,PTCA GW
-6011,Phạm Thị Kim Ngân,PTCA GW
-6018,Tống Thị Hòa,PTCA GW
-6022,Trần Thị Ngọc,Production Engineering
-6023,Trần Thị Phương Lan,Production Engineering
-6027,Vũ Thị Hoạt,T-Mate
-6029,Chu Thị Thanh Bình,PTCA GW
-6032,Đoàn Văn Dương,Production Engineering
-6034,Nguyễn Thị Tươi,Production Engineering
-6036,Bế Thị Nguyệt,PTCA GW
-6040,Bùi Thị Như,PTCA GW
-6041,Bùi Thị Phương,Sterilization
-6045,Chử Thị Chinh,PTCA GW
-6054,Đoàn Huyền My,PTCA GW
-6062,Hoàng Thị Nở,PTCA GW
+6009,Phạm Khánh Chi,Assy
+6011,Phạm Thị Kim Ngân,Assy
+6018,Tống Thị Hòa,Assy
+6022,Trần Thị Ngọc,Catheter
+6023,Trần Thị Phương Lan,PTCA GW
+6027,Vũ Thị Hoạt,Shaft
+6029,Chu Thị Thanh Bình,Assy
+6032,Đoàn Văn Dương,PTCA GW
+6034,Nguyễn Thị Tươi,Catheter
+6036,Bế Thị Nguyệt,Assy
+6040,Bùi Thị Như,Assy
+6041,Bùi Thị Phương,Seal/Label
+6045,Chử Thị Chinh,Assy
+6054,Đoàn Huyền My,Assy
+6062,Hoàng Thị Nở,Assy
 6065,Kim Thị Ninh Ninh,T-Mate
-6090,Nguyễn Thị Bảy,PTCA GW
-6091,Nguyễn Thị Diệu Linh,Production Engineering
-6093,Nguyễn Thị Hằng,PTCA GW
-6098,Nguyễn Thị Hạnh,PTCA GW
-6099,Nguyễn Thị Hoa,Catheter
-6110,Nguyễn Thị Tấm,Package
-6119,Nịnh Thị Oanh,M-Pro
-6120,Nông Thị Lâm,PTCA GW
-6122,Phạm Thị Huyền,T-Mate
-6123,Phạm Thị Kim Dung,PTCA GW
-6131,Phùng Thị Thúy,PTCA GW
-6133,Quách Thị Hồng Thanh,PTCA GW
-6135,Tô Hải Yến,PTCA GW
-6137,Trần Thị Út Mi,PTCA GW
-6138,Triệu Thị Lan,PTCA GW
-6152,Vương Thanh Thủy,PTCA GW
-6154,Vương Thị Thương,Catheter
-6156,Lê Duy Quang,Production Engineering
-6159,Bùi Thị Phấn,PTCA GW
-6163,Đàm Ngọc Ánh,PTCA GW
-6166,Đặng Thị Thu Trang,Sterilization
-6182,Hoàng Thị Hoài Thu,SPGW
-6185,Hoàng Thị Ngọc Hà,PTCA GW
+6090,Nguyễn Thị Bảy,Assy
+6091,Nguyễn Thị Diệu Linh,PTCA GW
+6093,Nguyễn Thị Hằng,Assy
+6098,Nguyễn Thị Hạnh,Assy
+6099,Nguyễn Thị Hoa,Micro
+6110,Nguyễn Thị Tấm,Shipping-Package
+6119,Nịnh Thị Oanh,Core
+6120,Nông Thị Lâm,Assy
+6122,Phạm Thị Huyền,T-ESGW
+6123,Phạm Thị Kim Dung,Assy
+6131,Phùng Thị Thúy,Assy
+6133,Quách Thị Hồng Thanh,Assy
+6135,Tô Hải Yến,Assy
+6137,Trần Thị Út Mi,Assy
+6138,Triệu Thị Lan,Assy
+6152,Vương Thanh Thủy,Assy
+6154,Vương Thị Thương,Micro
+6156,Lê Duy Quang,Document & IT
+6159,Bùi Thị Phấn,Assy
+6163,Đàm Ngọc Ánh,PLGW
+6166,Đặng Thị Thu Trang,Production Support
+6182,Hoàng Thị Hoài Thu,Assy
+6185,Hoàng Thị Ngọc Hà,Assy
 6187,Hoàng Thị Thơm,T-Mate
-6192,Lê Thị Hạnh,PTCA GW
-6194,Lê Thị Hòa,PTCA GW
-6200,Lữ Thị Nhung,PTCA GW
-6201,Lục Thị Phương,PTCA GW
-6210,Nguyễn Thị Hồng Thắm,PTCA GW
-6221,Nguyễn Thị Tới,SPGW
-6222,Nguyễn Thị Tuyết Ngân,M-Pro
-6225,Nguyễn Thùy Dung,PTCA GW
-6229,Trần Huyền Trang,PTCA GW
-6234,Trần Thị Như Quỳnh,PTCA GW
+6192,Lê Thị Hạnh,Assy
+6194,Lê Thị Hòa,Assy
+6200,Lữ Thị Nhung,Assy
+6201,Lục Thị Phương,Assy
+6210,Nguyễn Thị Hồng Thắm,Assy
+6221,Nguyễn Thị Tới,Assy
+6222,Nguyễn Thị Tuyết Ngân,Core
+6225,Nguyễn Thùy Dung,Assy
+6229,Trần Huyền Trang,Assy
+6234,Trần Thị Như Quỳnh,Assy
 6248,Đặng Văn Hải,Improvement
-6251,Đinh Sỹ Hoài,Production Engineering
-6254,Nguyễn Thị Thanh Hồng,Production Engineering
-6257,Đàm Thị Thu Hà,PTCA GW
-6261,Đỗ Thị Thảo,Catheter
-6264,Dương Thị Hương,PTCA GW
-6265,Hồ Thị Hà,PTCA GW
-6276,Lê Thị Minh,PTCA GW
-6283,Nguyễn Thị Anh,PTCA GW
-6287,Nguyễn Thị Dung,PTCA GW
-6295,Nguyễn Thị Mai,PTCA GW
-6296,Nguyễn Thị Ngọc,PTCA GW
-6298,Nguyễn Thị Thu Hòa,PTCA GW
-6303,Nguyễn Thị Tỉnh,SPGW
-6329,Vũ Nguyễn Trà My,PTCA GW
-6338,Đinh Thị Quỳnh,PTCA GW
-6350,Mai Thị Thắm,Catheter
-6352,Nguyễn Ngọc Ánh,PTCA GW
-6358,Nguyễn Thị Lương,PTCA GW
-6368,Phan Thị Lan Anh,Catheter
-6382,Phạm Vân Anh,Quality Assurance
-6385,Đinh Thị Sáng,Catheter
-6391,Nguyễn Thị Thu Trang,PTCA GW
-6397,Nguyễn Thị Thủy Ngân,M-Pro
+6251,Đinh Sỹ Hoài,Filmecc
+6254,Nguyễn Thị Thanh Hồng,Document & IT
+6257,Đàm Thị Thu Hà,Assy
+6261,Đỗ Thị Thảo,Guiding
+6264,Dương Thị Hương,PLGW
+6265,Hồ Thị Hà,Assy
+6276,Lê Thị Minh,Assy
+6283,Nguyễn Thị Anh,PLGW
+6287,Nguyễn Thị Dung,Assy
+6295,Nguyễn Thị Mai,Assy
+6296,Nguyễn Thị Ngọc,Assy
+6298,Nguyễn Thị Thu Hòa,Assy
+6303,Nguyễn Thị Tỉnh,Assy
+6329,Vũ Nguyễn Trà My,Assy
+6338,Đinh Thị Quỳnh,Assy
+6350,Mai Thị Thắm,CAG
+6352,Nguyễn Ngọc Ánh,Assy
+6358,Nguyễn Thị Lương,Assy
+6368,Phan Thị Lan Anh,CAG
+6382,Phạm Vân Anh,Quality Engineering
+6385,Đinh Thị Sáng,CAG
+6391,Nguyễn Thị Thu Trang,Assy
+6397,Nguyễn Thị Thủy Ngân,Core
 6402,Đỗ Chiến Thuật,Maintenance
-6407,Chu Thị Xuân,PTCA GW
-6410,Đào Thùy Dung,PTCA GW
-6416,Đoàn Thị Thanh Huyền,PTCA GW
-6417,Dương Thị Xuân,Package
-6418,Hà Thị Điều,PTCA GW
-6421,Hà Thu Hiền,Catheter
-6431,Lường Thị Lả,PTCA GW
+6407,Chu Thị Xuân,Assy
+6410,Đào Thùy Dung,Assy
+6416,Đoàn Thị Thanh Huyền,Assy
+6417,Dương Thị Xuân,Shipping-Package
+6418,Hà Thị Điều,Assy
+6421,Hà Thu Hiền,Guiding
+6431,Lường Thị Lả,Assy
 6433,Ma Thị Thuần,T-Mate
-6442,Nguyễn Thị Duyên,Production Engineering
-6448,Nguyễn Thị Hồng,PTCA GW
-6449,Nguyễn Thị Huyền,PTCA GW
-6451,Nguyễn Thị Lâm,PTCA GW
-6455,Nguyễn Thị Nhàn,PTCA GW
-6458,Nguyễn Thị Thơm,PTCA GW
-6470,Tạ Phương Thảo,PTCA GW
-6475,Trần Thị Thơm,PTCA GW
-6476,Trần Thị Thu Hằng,PTCA GW
-6478,Triệu Thị Trang,PTCA GW
+6442,Nguyễn Thị Duyên,Catheter
+6448,Nguyễn Thị Hồng,Assy
+6449,Nguyễn Thị Huyền,Assy
+6451,Nguyễn Thị Lâm,Assy
+6455,Nguyễn Thị Nhàn,Assy
+6458,Nguyễn Thị Thơm,Assy
+6470,Tạ Phương Thảo,Assy
+6475,Trần Thị Thơm,Assy
+6476,Trần Thị Thu Hằng,Assy
+6478,Triệu Thị Trang,Assy
 6485,Đặng Thanh Hòa,Maintenance
-6487,Bùi Thanh Hiền,PTCA GW
-6488,Bùi Thị Hằng,M-Pro
+6487,Bùi Thanh Hiền,Assy
+6488,Bùi Thị Hằng,Core
 6501,Hạ Thị Phượng,GA
-6503,Hoàng Thị Lan,Catheter
+6503,Hoàng Thị Lan,Micro
 6509,Lê Thị Tam,GA
-6514,Lưu Thị Lan,T-Mate
-6520,Nguyễn Thị Bích Dung,PTCA GW
-6521,Nguyễn Thị Hoa,PTCA GW
-6526,Nguyễn Thị Mai Anh,Catheter
-6528,Nguyễn Thị Như Quỳnh,PTCA GW
-6529,Nguyễn Thị Nhung,PTCA GW
-6538,Phạm Thị Bình,PTCA GW
-6546,Trần Thị Hợp,Catheter
-6550,Vũ Thị Chung,Catheter
+6514,Lưu Thị Lan,Shaft
+6520,Nguyễn Thị Bích Dung,Assy
+6521,Nguyễn Thị Hoa,Assy
+6526,Nguyễn Thị Mai Anh,Micro
+6528,Nguyễn Thị Như Quỳnh,Assy
+6529,Nguyễn Thị Nhung,Assy
+6538,Phạm Thị Bình,Assy
+6546,Trần Thị Hợp,Guiding
+6550,Vũ Thị Chung,Micro
 6555,Lê Thị Phượng,GA
 6556,Dương Thùy Linh,HR
-6557,Bế Thị Oánh,PTCA GW
-6565,Đỗ Thị Bình,PTCA GW
-6580,Lê Thị Tươi,SPGW
-6590,Nguyễn Thị Anh Đào,PTCA GW
-6591,Nguyễn Thị Duyên,PTCA GW
-6592,Nguyễn Thị Lệ,Sterilization
-6593,Nguyễn Thị Kim Hương,PTCA GW
-6594,Nguyễn Thị Loan,M-Pro
-6598,Nguyễn Thị Nhung,SPGW
-6601,Nguyễn Thị Tâm,PTCA GW
-6604,Nguyễn Thị Toán,PTCA GW
-6607,Nguyễn Thu Huyền,SPGW
-6615,Trần Thị Thơm,PTCA GW
-6617,Vũ Thị Hưng,PTCA GW
-6618,Vũ Thị Thu Huyền,PTCA GW
-6620,Nguyễn Thị Dung,PTCA GW
+6557,Bế Thị Oánh,Assy
+6565,Đỗ Thị Bình,Assy
+6580,Lê Thị Tươi,Assy
+6590,Nguyễn Thị Anh Đào,Assy
+6591,Nguyễn Thị Duyên,Assy
+6592,Nguyễn Thị Lệ,Sterilization/Boxing
+6593,Nguyễn Thị Kim Hương,Assy
+6594,Nguyễn Thị Loan,Coil
+6598,Nguyễn Thị Nhung,Assy
+6601,Nguyễn Thị Tâm,Assy
+6604,Nguyễn Thị Toán,Assy
+6607,Nguyễn Thu Huyền,Assy
+6615,Trần Thị Thơm,Assy
+6617,Vũ Thị Hưng,Assy
+6618,Vũ Thị Thu Huyền,Assy
+6620,Nguyễn Thị Dung,Assy
 6621,Trần Thị Hương,GA
-6625,Chu Thị Hà,Production Engineering
+6625,Chu Thị Hà,Document & IT
 6635,Lê Thị Thoan,GA
-6636,Nguyễn Thị Dung,PTCA GW
-6637,Nguyễn Thị Duyên,PTCA GW
-6650,Trần Thị Dung,Sterilization
-6658,Bùi Thị Bình,PTCA GW
-6661,Bùi Thị Khanh,PTCA GW
-6662,Bùi Thị Mai,PTCA GW
-6667,Đặng Thị Thuý,PTCA GW
-6668,Đặng Thị Tình,Package
-6669,Đặng Thị Xoan,PTCA GW
-6671,Đào Thị Diệu Linh,Quality Assurance
-6672,Đào Thị Thêm,PTCA GW
-6679,Đỗ Thị Hoà,PTCA GW
-6682,Đỗ Thị Trang,PTCA GW
-6687,Hoàng Thị Thu Hảo,PTCA GW
-6690,Lã Thị Hương,PTCA GW
-6698,Lê Tú Anh,PTCA GW
-6702,Ma Thị Biên,PTCA GW
-6704,Ngô Thị Hoà,PTCA GW
-6705,Ngô Thị Huệ,PTCA GW
-6707,Nguyễn Thị Bích Ngọc,PTCA GW
-6711,Nguyễn Thị Hạnh,PTCA GW
-6714,Nguyễn Thị Huyền,PTCA GW
-6716,Nguyễn Thị Huyền Trang,PTCA GW
-6717,Nguyễn Thị Khuyên,PTCA GW
-6718,Nguyễn Thị Kim Lệ,PTCA GW
-6725,Nguyễn Thị Quỳnh Trang,PTCA GW
-6726,Nguyễn Thị Thanh,PTCA GW
-6728,Nguyễn Thị Thu An,PTCA GW
-6730,Nguyễn Thị Thu Huyền,PTCA GW
-6746,Phạm Thị Phương,Quality Assurance
-6747,Phạm Thị Tâm,Catheter
-6753,Tạ Thị Thuý Hằng,PTCA GW
-6754,Thạch Thị Dương,SPGW
-6758,Trần Thị Nga,Package
-6760,Trần Thị Phương Anh,Sterilization
-6764,Trịnh Thị Nga,Catheter
-6765,Trịnh Thị Thương,SPGW
+6636,Nguyễn Thị Dung,Assy
+6637,Nguyễn Thị Duyên,Assy
+6650,Trần Thị Dung,Sterilization/Boxing
+6658,Bùi Thị Bình,Assy
+6661,Bùi Thị Khanh,Assy
+6662,Bùi Thị Mai,PLGW
+6667,Đặng Thị Thuý,Assy
+6668,Đặng Thị Tình,Shipping-Package
+6669,Đặng Thị Xoan,Assy
+6671,Đào Thị Diệu Linh,Inspection
+6672,Đào Thị Thêm,Assy
+6679,Đỗ Thị Hoà,Assy
+6682,Đỗ Thị Trang,Assy
+6687,Hoàng Thị Thu Hảo,Assy
+6690,Lã Thị Hương,Assy
+6698,Lê Tú Anh,Assy
+6702,Ma Thị Biên,Assy
+6704,Ngô Thị Hoà,Assy
+6705,Ngô Thị Huệ,Assy
+6707,Nguyễn Thị Bích Ngọc,Assy
+6711,Nguyễn Thị Hạnh,Assy
+6714,Nguyễn Thị Huyền,Assy
+6716,Nguyễn Thị Huyền Trang,Assy
+6717,Nguyễn Thị Khuyên,Assy
+6718,Nguyễn Thị Kim Lệ,Assy
+6725,Nguyễn Thị Quỳnh Trang,Assy
+6726,Nguyễn Thị Thanh,Assy
+6728,Nguyễn Thị Thu An,Assy
+6730,Nguyễn Thị Thu Huyền,Assy
+6746,Phạm Thị Phương,Inspection
+6747,Phạm Thị Tâm,Guiding
+6753,Tạ Thị Thuý Hằng,Assy
+6754,Thạch Thị Dương,Assy
+6758,Trần Thị Nga,Shipping-Package
+6760,Trần Thị Phương Anh,Sterilization/Boxing
+6764,Trịnh Thị Nga,Guiding
+6765,Trịnh Thị Thương,Assy
 6770,Vũ Chí Công,GA
 6773,Phạm Hoàng Hải,Maintenance
-6775,Bùi Thị Lon,PTCA GW
-6784,Đỗ Thị Thương,Quality Assurance
-6802,Nguyễn Thị Hà Linh,PTCA GW
-6803,Nguyễn Thị Hiền,Quality Assurance
-6814,Nguyễn Thị Thu Hằng,PTCA GW
-6815,Nguyễn Thị Thuỳ,SPGW
-6817,Nguyễn Thị Vui,PTCA GW
-6822,Phạm Thị Mỹ Hạnh,PTCA GW
-6824,Phạm Thị Thư,Sterilization
-6828,Phan Thị Hồng,PTCA GW
-6829,Phan Thị Hồng,PTCA GW
-6830,Phùng Thị Tuyến,PTCA GW
-6833,Trần Thị Ánh,Sterilization
-6836,Trần Thị Thu Hương,PTCA GW
-6838,Trịnh Thị Thu,PTCA GW
-6840,Trịnh Thu Huyền,M-Pro
-6845,Khúc Thị Ngọc Ánh,SPGW
-6853,Đặng Thị Thanh,PTCA GW
-6855,Đào Thị Lan,PTCA GW
-6867,Hoàng Thị Như,PTCA GW
-6869,Hoàng Thị Tươi,PTCA GW
-6870,Hứa Hồng Diêm,PTCA GW
-6906,Nguyễn Thị Thuỳ Dương,PTCA GW
-6914,Phan Thị Hoài,PTCA GW
-6920,Trần Thị Mơ,PTCA GW
-6931,Vũ Thị Tuyết,PTCA GW
-6933,Trần Thị Hoàng Giang,PTCA GW
-6934,Nguyễn Thị Thắm,Quality Assurance
-6938,Bùi Thị Phương,PTCA GW
-6950,Hoàng Thị Bình,PTCA GW
-6953,Hoàng Thị Yến,PTCA GW
-6956,Lê Thị Hương,PTCA GW
-6957,Lường Thị Hoa,PTCA GW
+6775,Bùi Thị Lon,Assy
+6784,Đỗ Thị Thương,Calibration
+6802,Nguyễn Thị Hà Linh,PLGW
+6803,Nguyễn Thị Hiền,Inspection
+6814,Nguyễn Thị Thu Hằng,Assy
+6815,Nguyễn Thị Thuỳ,Assy
+6817,Nguyễn Thị Vui,Assy
+6822,Phạm Thị Mỹ Hạnh,Assy
+6824,Phạm Thị Thư,Seal/Label
+6828,Phan Thị Hồng,Assy
+6829,Phan Thị Hồng,PLGW
+6830,Phùng Thị Tuyến,Assy
+6833,Trần Thị Ánh,Sterilization/Boxing
+6836,Trần Thị Thu Hương,Assy
+6838,Trịnh Thị Thu,Assy
+6840,Trịnh Thu Huyền,Core
+6845,Khúc Thị Ngọc Ánh,Assy
+6853,Đặng Thị Thanh,Assy
+6855,Đào Thị Lan,Assy
+6867,Hoàng Thị Như,Assy
+6869,Hoàng Thị Tươi,Assy
+6870,Hứa Hồng Diêm,Assy
+6906,Nguyễn Thị Thuỳ Dương,Assy
+6914,Phan Thị Hoài,Assy
+6920,Trần Thị Mơ,Assy
+6931,Vũ Thị Tuyết,Assy
+6933,Trần Thị Hoàng Giang,Assy
+6934,Nguyễn Thị Thắm,Inspection
+6938,Bùi Thị Phương,Assy
+6950,Hoàng Thị Bình,Assy
+6953,Hoàng Thị Yến,Assy
+6956,Lê Thị Hương,Assy
+6957,Lường Thị Hoa,Assy
 6964,Nguyễn Hồng Thu,T-Mate
-6966,Nguyễn Thanh Hòa,PTCA GW
-6968,Nguyễn Thị Chinh,PTCA GW
-6970,Nguyễn Thị Hạnh,PTCA GW
-6975,Nguyễn Thị Lan Anh,PTCA GW
-6980,Nguyễn Thị Oanh,PTCA GW
-6985,Nguyễn Thị Quỳnh,PTCA GW
-6987,Nguyễn Thị Thanh Kim Huệ,PTCA GW
-6991,Nguyễn Thị Thương,PTCA GW
-6996,Nguyễn Thị Xuân Quỳnh,PTCA GW
-6997,Phạm Thị Nụ,PTCA GW
-7012,Trương Thị Thu Liên,PTCA GW
-7018,Nhữ Thị Tuyền,PTCA GW
-7021,Trần Thị Lệ Giang,Production Engineering
-7024,Bùi Thị Hào,PTCA GW
-7026,Bùi Thị Mỹ Oanh,PTCA GW
-7034,Hà Thị Hạnh,PTCA GW
-7037,Hà Thị Thanh Hường,PTCA GW
-7041,Hoàng Minh Hiếu,PTCA GW
-7044,Hoàng Thị Phương Linh,PTCA GW
-7046,Hoàng Thu Thủy,PTCA GW
-7047,Lại Thị Phương,PTCA GW
-7050,Lê Thị Hằng Nhung,PTCA GW
-7061,Ngô Thị Thu,PTCA GW
-7072,Nguyễn Thị Linh,PTCA GW
-7074,Nguyễn Thị Lý,PTCA GW
-7076,Nguyễn Thị Ngọc,PTCA GW
-7097,Phạm Thị Bích Hằng,PTCA GW
-7100,Phạm Thị Thúy,M-Pro
-7102,Phan Thanh Trúc,PTCA GW
-7105,Phùng Thị Thùy Dung,PTCA GW
-7109,Trần Thị Ánh Vân,PTCA GW
-7110,Trần Thị Ly Xa,PTCA GW
-7112,Trần Thị Sơn,PTCA GW
-7113,Trần Thị Thủy,PTCA GW
-7117,Trịnh Thị Liên,PTCA GW
-7119,Vi Thị Hợp,PTCA GW
-7121,Vũ Minh Khánh,PTCA GW
-7124,Vũ Thị Hoa,PTCA GW
-7125,Bùi Hương Giang,PTCA GW
-7134,Đỗ Thị Thủy,PTCA GW
-7135,Đỗ Thị Thùy Chang,PTCA GW
-7136,Đoàn Thị Lành,PTCA GW
-7139,Dương Thị Hương Giang,SPGW
-7140,Dương Thị Phương Anh,PTCA GW
-7148,Hoàng Thị Thu Hà,PTCA GW
-7155,Lê Thị Hà,PTCA GW
-7157,Lê Thị Hường,PTCA GW
-7167,Nguyễn Thị Dung,PTCA GW
-7171,Nguyễn Thị Ly,PTCA GW
-7172,Nguyễn Thị Minh An,PTCA GW
-7174,Nguyễn Thị Nga,PTCA GW
-7176,Nguyễn Thị Nguyệt,PTCA GW
-7178,Nguyễn Thị Thắm,PTCA GW
-7180,Nguyễn Thị Thảo,PTCA GW
-7185,Nguyễn Thị Thúy Ngân,PTCA GW
-7200,Phan Vân Anh,PTCA GW
-7203,Quách Thị Hậu,PTCA GW
-7205,Sái Thị Hồng Ngân,PTCA GW
-7209,Trần Thị Khánh Linh,PTCA GW
-7224,Dương Thị Thanh,PTCA GW
-7235,Đinh Thị Ngọc Ánh,Sterilization
-7237,Đỗ Phương Thơm,Sterilization
-7238,Đỗ Thị Tơ,PTCA GW
-7243,Hoàng Thị Hoa,SPGW
-7252,Nguyễn Thị Hạnh,Sterilization
-7256,Nguyễn Thị Phượng,Sterilization
-7257,Nguyễn Thị Thu Hằng,PTCA GW
-7264,Nguyễn Thị Xuân,PTCA GW
-7270,Thào Thị Mỉ,Sterilization
-7273,Trần Thị Thoa,Sterilization
-7283,Nguyễn Thị Hương,PTCA GW
-7285,Bùi Thị Vân,PTCA GW
-7287,Bùi Thùy Linh,PTCA GW
-7299,Nguyễn Thị Huế,Sterilization
-7302,Nguyễn Thị Thu Hằng,PTCA GW
-7307,Trần Thị Nghĩa,Sterilization
-7311,Nguyễn Thị Ngọc Ánh,Sterilization
-7313,Đinh Thị Xuân Quỳnh,PTCA GW
-7325,Nguyễn Thị Hà,PTCA GW
-7328,Nguyễn Thị Hồng Linh,PTCA GW
-7333,Nguyễn Thị Thơ,PTCA GW
-7337,Quan Thị Huyền,PTCA GW
-7341,Trần Thị Ngọc Linh,M-Pro
-7346,Bùi Thị Ngân,PTCA GW
-7348,Chu Thị Minh Lý,PTCA GW
-7350,Đinh Thúy Hằng,Catheter
-7351,Đỗ Thị Bảo Ngọc,Package
-7356,Dương Thị Trang,PTCA GW
-7367,Hoàng Thị Lan Phương,Catheter
-7374,Hoàng Thị Xoài,PTCA GW
-7379,Lê Thị Hương Thủy,Catheter
-7392,Ma Thị Mỹ Linh,PTCA GW
-7397,Nguyễn Thị Ánh,Catheter
-7399,Nguyễn Thị Diễm Hằng,PTCA GW
-7404,Nguyễn Thị Hồng,PTCA GW
-7407,Nguyễn Thị Huế,PTCA GW
-7408,Nguyễn Thị Huyền,PTCA GW
-7410,Nguyễn Thị Kim Oanh,Sterilization
-7412,Nguyễn Thị Mỹ Phương,Sterilization
-7413,Nguyễn Thị Phương Anh,PTCA GW
-7429,Phạm Thị Thu Thảo,PTCA GW
-7433,Trần Thị Chương,PTCA GW
-7435,Trần Thị Minh Châu,PTCA GW
-7439,Trịnh Thị Thắm,PTCA GW
-7442,Trương Thị Thùy Linh,PTCA GW
+6966,Nguyễn Thanh Hòa,Assy
+6968,Nguyễn Thị Chinh,Assy
+6970,Nguyễn Thị Hạnh,Assy
+6975,Nguyễn Thị Lan Anh,Assy
+6980,Nguyễn Thị Oanh,Assy
+6985,Nguyễn Thị Quỳnh,Assy
+6987,Nguyễn Thị Thanh Kim Huệ,Assy
+6991,Nguyễn Thị Thương,Assy
+6996,Nguyễn Thị Xuân Quỳnh,Assy
+6997,Phạm Thị Nụ,Assy
+7012,Trương Thị Thu Liên,Assy
+7018,Nhữ Thị Tuyền,Assy
+7021,Trần Thị Lệ Giang,Filmecc
+7024,Bùi Thị Hào,Assy
+7026,Bùi Thị Mỹ Oanh,Assy
+7034,Hà Thị Hạnh,Assy
+7037,Hà Thị Thanh Hường,Assy
+7041,Hoàng Minh Hiếu,Assy
+7044,Hoàng Thị Phương Linh,Assy
+7046,Hoàng Thu Thủy,Assy
+7047,Lại Thị Phương,Assy
+7050,Lê Thị Hằng Nhung,Assy
+7061,Ngô Thị Thu,Assy
+7072,Nguyễn Thị Linh,Assy
+7074,Nguyễn Thị Lý,Assy
+7076,Nguyễn Thị Ngọc,Assy
+7097,Phạm Thị Bích Hằng,Assy
+7100,Phạm Thị Thúy,Core
+7102,Phan Thanh Trúc,Assy
+7105,Phùng Thị Thùy Dung,Assy
+7109,Trần Thị Ánh Vân,Assy
+7110,Trần Thị Ly Xa,Assy
+7112,Trần Thị Sơn,Assy
+7113,Trần Thị Thủy,PLGW
+7117,Trịnh Thị Liên,Assy
+7119,Vi Thị Hợp,Assy
+7121,Vũ Minh Khánh,Assy
+7124,Vũ Thị Hoa,Assy
+7125,Bùi Hương Giang,Assy
+7134,Đỗ Thị Thủy,Assy
+7135,Đỗ Thị Thùy Chang,Assy
+7136,Đoàn Thị Lành,Assy
+7139,Dương Thị Hương Giang,Assy
+7140,Dương Thị Phương Anh,Assy
+7148,Hoàng Thị Thu Hà,Assy
+7155,Lê Thị Hà,Assy
+7157,Lê Thị Hường,Assy
+7167,Nguyễn Thị Dung,Assy
+7171,Nguyễn Thị Ly,Assy
+7172,Nguyễn Thị Minh An,Assy
+7174,Nguyễn Thị Nga,Assy
+7176,Nguyễn Thị Nguyệt,Assy
+7178,Nguyễn Thị Thắm,Assy
+7180,Nguyễn Thị Thảo,Assy
+7185,Nguyễn Thị Thúy Ngân,Assy
+7200,Phan Vân Anh,Assy
+7203,Quách Thị Hậu,Assy
+7205,Sái Thị Hồng Ngân,Assy
+7209,Trần Thị Khánh Linh,Assy
+7224,Dương Thị Thanh,Assy
+7235,Đinh Thị Ngọc Ánh,Seal/Label
+7237,Đỗ Phương Thơm,Sterilization/Boxing
+7238,Đỗ Thị Tơ,Assy
+7243,Hoàng Thị Hoa,Assy
+7252,Nguyễn Thị Hạnh,Seal/Label
+7256,Nguyễn Thị Phượng,Sterilization/Boxing
+7257,Nguyễn Thị Thu Hằng,Assy
+7264,Nguyễn Thị Xuân,Assy
+7270,Thào Thị Mỉ,Sterilization/Boxing
+7273,Trần Thị Thoa,Sterilization/Boxing
+7283,Nguyễn Thị Hương,Assy
+7285,Bùi Thị Vân,Assy
+7287,Bùi Thùy Linh,PLGW
+7299,Nguyễn Thị Huế,Seal/Label
+7302,Nguyễn Thị Thu Hằng,PLGW
+7307,Trần Thị Nghĩa,Sterilization/Boxing
+7311,Nguyễn Thị Ngọc Ánh,Sterilization/Boxing
+7313,Đinh Thị Xuân Quỳnh,Assy
+7325,Nguyễn Thị Hà,Assy
+7328,Nguyễn Thị Hồng Linh,Assy
+7333,Nguyễn Thị Thơ,Assy
+7337,Quan Thị Huyền,Assy
+7341,Trần Thị Ngọc Linh,Core
+7346,Bùi Thị Ngân,Assy
+7348,Chu Thị Minh Lý,Assy
+7350,Đinh Thúy Hằng,Guiding
+7351,Đỗ Thị Bảo Ngọc,Shipping-Package
+7356,Dương Thị Trang,Assy
+7367,Hoàng Thị Lan Phương,Micro
+7374,Hoàng Thị Xoài,Assy
+7379,Lê Thị Hương Thủy,Guiding
+7392,Ma Thị Mỹ Linh,Assy
+7397,Nguyễn Thị Ánh,Guiding
+7399,Nguyễn Thị Diễm Hằng,Assy
+7404,Nguyễn Thị Hồng,Assy
+7407,Nguyễn Thị Huế,Assy
+7408,Nguyễn Thị Huyền,Assy
+7410,Nguyễn Thị Kim Oanh,Sterilization/Boxing
+7412,Nguyễn Thị Mỹ Phương,Seal/Label
+7413,Nguyễn Thị Phương Anh,Assy
+7429,Phạm Thị Thu Thảo,Assy
+7433,Trần Thị Chương,Assy
+7435,Trần Thị Minh Châu,Assy
+7439,Trịnh Thị Thắm,Assy
+7442,Trương Thị Thùy Linh,Assy
 7448,Nguyễn Thị Thi,GA
 7455,Nguyễn Thị Thảo,T-Mate
 7456,Nguyễn Thị Hồng Dung,T-Mate
-7468,Tô Thị Phương Thảo,PTCA GW
-7471,Nguyễn Thùy Linh,M-Pro
-7482,Hoàng Thị Ngân,PTCA GW
-7485,Phan Thị Thanh,Catheter
-7486,Đặng Thị Lan Anh,PTCA GW
-7487,Hoàng Thị Hương,Catheter
-7490,Nguyễn Minh Ngọc,Catheter
-7491,Bùi Thị Ánh Vân,T-Mate
-7495,Lê Thị Ngần,Catheter
-7504,Phan Lệ Giang,PTCA GW
-7519,Dương Thị Hằng,PTCA GW
-7528,Nguyễn Thị Thanh Xuân,Catheter
-7530,Bùi Kim Cúc,PTCA GW
-7533,Trần Thị Hồng Nhung,PTCA GW
-7534,Phạm Phương Thảo,PTCA GW
-7535,Cao Thị Ngọc Anh,PTCA GW
-7538,Đỗ Thị Hương,PTCA GW
-7543,Đặng Thị Nhung,Catheter
-7548,Nguyễn Thị Duyên,PTCA GW
-7550,Trương Thị Nguyệt,PTCA GW
+7468,Tô Thị Phương Thảo,Assy
+7471,Nguyễn Thùy Linh,Core
+7482,Hoàng Thị Ngân,Assy
+7485,Phan Thị Thanh,Micro
+7486,Đặng Thị Lan Anh,Assy
+7487,Hoàng Thị Hương,Micro
+7490,Nguyễn Minh Ngọc,Guiding
+7491,Bùi Thị Ánh Vân,Shaft
+7495,Lê Thị Ngần,Guiding
+7504,Phan Lệ Giang,Assy
+7519,Dương Thị Hằng,Assy
+7528,Nguyễn Thị Thanh Xuân,Guiding
+7530,Bùi Kim Cúc,Assy
+7533,Trần Thị Hồng Nhung,Assy
+7534,Phạm Phương Thảo,Assy
+7535,Cao Thị Ngọc Anh,Assy
+7538,Đỗ Thị Hương,Assy
+7543,Đặng Thị Nhung,Micro
+7548,Nguyễn Thị Duyên,Assy
+7550,Trương Thị Nguyệt,Assy
 7551,Trương Thị Hường,T-Mate
-7561,Hoàng Thị Khuyên,PTCA GW
-7566,Nguyễn Thị Ngọc Bích,PTCA GW
-7582,Ngô Thị Hằng,PTCA GW
-7592,Nịnh Thị Ninh,PTCA GW
-7602,Trần Thị Trinh,PTCA GW
+7561,Hoàng Thị Khuyên,Assy
+7566,Nguyễn Thị Ngọc Bích,Assy
+7582,Ngô Thị Hằng,PLGW
+7592,Nịnh Thị Ninh,Assy
+7602,Trần Thị Trinh,Assy
 7615,Hà Thị Tuyết,T-Mate
-7619,Nguyễn Thị Ngọc Giỏi,PTCA GW
+7619,Nguyễn Thị Ngọc Giỏi,Assy
 7625,Nguyễn Cao Thọ,Improvement
-7626,Nguyễn Thị Quỳnh Ngoan,PTCA GW
-7634,Phạm Thị Mỹ Linh,PTCA GW
-7649,Trương Thị Anh Tú,PTCA GW
-7658,Nguyễn Thị Thúy,Sterilization
-7664,Nguyễn Thị Trang,PTCA GW
-7666,Lương Thị Dung,Catheter
-7668,Trần Hiểu My,Catheter
-7669,Cù Thị Hường,PTCA GW
-7675,Trần Thị Giang,PTCA GW
-7679,Phạm Thị Tuyến,PTCA GW
-7685,Lê Thị Ý Nhi,PTCA GW
-7696,Bùi Thị Bích Thùy,T-Mate
+7626,Nguyễn Thị Quỳnh Ngoan,Assy
+7634,Phạm Thị Mỹ Linh,Assy
+7649,Trương Thị Anh Tú,Assy
+7658,Nguyễn Thị Thúy,Seal/Label
+7664,Nguyễn Thị Trang,PLGW
+7666,Lương Thị Dung,Guiding
+7668,Trần Hiểu My,Guiding
+7669,Cù Thị Hường,Assy
+7675,Trần Thị Giang,PLGW
+7679,Phạm Thị Tuyến,Assy
+7685,Lê Thị Ý Nhi,Assy
+7696,Bùi Thị Bích Thùy,Shaft
 7714,Dương Mạnh Cường,Improvement
-7716,Nguyễn Thị Lan,PTCA GW
-7717,Võ Thị Quyên,SPGW
-7732,Vì Thị Nhị,PTCA GW
-7734,Nguyễn Thị Thanh Huyền,PTCA GW
-7743,Nguyễn Thị Giang,PTCA GW
-7753,Nguyễn Thị Hậu,SPGW
-7754,Nguyễn Thị Huyền,PTCA GW
-7765,Phạm Thị Minh,PTCA GW
+7716,Nguyễn Thị Lan,Assy
+7717,Võ Thị Quyên,Part
+7732,Vì Thị Nhị,Assy
+7734,Nguyễn Thị Thanh Huyền,Assy
+7743,Nguyễn Thị Giang,Assy
+7753,Nguyễn Thị Hậu,Part
+7754,Nguyễn Thị Huyền,Assy
+7765,Phạm Thị Minh,Assy
 7767,Ngô Minh Hiếu,Improvement
 7769,Ngô Duy Khánh,Improvement
-7774,Ma Thị Kim Ánh,PTCA GW
-7776,Bùi Thị Sáu,PTCA GW
-7778,Đinh Thị Lương Duyên,PTCA GW
+7774,Ma Thị Kim Ánh,Assy
+7776,Bùi Thị Sáu,Assy
+7778,Đinh Thị Lương Duyên,PLGW
 7791,Nguyễn Văn Quân,Maintenance
-7792,Lê Khánh Quỳnh,Catheter
-7794,Phạm Phương Nam,Production Engineering
-7797,Phạm Thị Hiền,Sterilization
-7820,Nguyễn Thanh Thúy,PTCA GW
-7823,Trần Thị Hoàn,PTCA GW
-7830,Hoàng Yến,PTCA GW
-7835,Vương Thị Thư,PTCA GW
-7837,Nguyễn Thị Thương,PTCA GW
+7792,Lê Khánh Quỳnh,Micro
+7794,Phạm Phương Nam,Filmecc
+7797,Phạm Thị Hiền,Production Support
+7820,Nguyễn Thanh Thúy,Assy
+7823,Trần Thị Hoàn,Assy
+7830,Hoàng Yến,Assy
+7835,Vương Thị Thư,Assy
+7837,Nguyễn Thị Thương,Assy
 7838,Hoàng Nghĩa Phú,Maintenance
-7844,Đặng Thị Mỹ Hương,PTCA GW
-7845,Đặng Thị Lan,PTCA GW
-7868,Trần Thị Thật,M-Pro
-7869,Đào Thị Phương Thảo,PTCA GW
-7871,Tạ Thị Ngọc Ánh,PTCA GW
-7883,Ngô Hải Yến,PTCA GW
-7886,Trần Thị Thùy Dung,PTCA GW
-7891,Tạ Thị Minh,Sterilization
-7899,Nguyễn Thị Hải Vân,Sterilization
-7900,Trần Thị Linh,PTCA GW
-7912,Dương Thị Trang,PTCA GW
+7844,Đặng Thị Mỹ Hương,Assy
+7845,Đặng Thị Lan,Assy
+7868,Trần Thị Thật,Core
+7869,Đào Thị Phương Thảo,Assy
+7871,Tạ Thị Ngọc Ánh,Assy
+7883,Ngô Hải Yến,Assy
+7886,Trần Thị Thùy Dung,Assy
+7891,Tạ Thị Minh,Sterilization/Boxing
+7899,Nguyễn Thị Hải Vân,Production Support
+7900,Trần Thị Linh,Assy
+7912,Dương Thị Trang,Assy
 7917,Nguyễn Văn Tiến Phát,Improvement
-7920,Hoàng Hải Yến,PTCA GW
-7925,Phạm Thị Dung,PTCA GW
-7938,Hoàng Thị Oanh,PTCA GW
-7947,Nguyễn Thị Phương,PTCA GW
-7950,Nguyễn Thị Hạnh,PTCA GW
-7953,Ma Thị Hằng,Production Engineering
-7958,Trần Thị Diễm Quỳnh,PTCA GW
-7960,Phạm Thị Dung,PTCA GW
-7968,Nguyễn Thị Uyên,PTCA GW
-7973,Lại Thị Tố Quyên,Quality Assurance
-7983,Ngô Thị Dung,Sterilization
-7988,Nguyễn Thị Thành,PTCA GW
+7920,Hoàng Hải Yến,Assy
+7925,Phạm Thị Dung,Assy
+7938,Hoàng Thị Oanh,Assy
+7947,Nguyễn Thị Phương,Assy
+7950,Nguyễn Thị Hạnh,Assy
+7953,Ma Thị Hằng,APS
+7958,Trần Thị Diễm Quỳnh,Assy
+7960,Phạm Thị Dung,Assy
+7968,Nguyễn Thị Uyên,Assy
+7973,Lại Thị Tố Quyên,Inspection
+7983,Ngô Thị Dung,Production Support
+7988,Nguyễn Thị Thành,Assy
 7996,Đỗ Văn Dũng,Maintenance
-7997,Lê Thị Phương,PTCA GW
+7997,Lê Thị Phương,Assy
 8003,Nguyễn Thị Như Ý,Order Control
-8009,Nguyễn Thị Xinh,PTCA GW
-8012,Nguyễn Thị Thu Huế,PTCA GW
-8017,Nguyễn Thị Xuyến,PTCA GW
-8018,Triệu Thị Lụa,PTCA GW
-8033,Bùi Thị Thảo,PTCA GW
-8035,Vũ Thị Thanh Mai,PTCA GW
-8040,Lê Thị Nguyệt,PTCA GW
-8043,Nguyễn Gia Trường,Production Engineering
-8046,Bùi Huyền Trang,Package
-8049,Nguyễn Thị Tuyến,Sterilization
-8052,Nguyễn Thị Ngà,Sterilization
-8053,Chu Quỳnh Anh,PTCA GW
-8056,Nguyễn Thị Nguyệt,SPGW
-8059,Nguyễn Thị Thủy,PTCA GW
-8061,Nguyễn Thị Bá Linh,Sterilization
-8066,Nguyễn Thị Hà,Sterilization
-8067,Nguyễn Thị Trang,Package
-8070,Nguyễn Thị Thúy,Sterilization
-8072,Nguyễn Thị Như Quỳnh,Sterilization
-8078,Nguyễn Thị Duyên,Sterilization
-8082,Lương Thị Xiên,SPGW
-8084,Trần Thị Mỹ Hạnh,Sterilization
-8086,Lê Thị Lịch,Sterilization
-8088,Phạm Thị Ngọc Linh,PTCA GW
-8096,Trần Thị Thanh Thủy,PTCA GW
-8098,Bùi Thị Hà,Sterilization
+8009,Nguyễn Thị Xinh,Assy
+8012,Nguyễn Thị Thu Huế,Assy
+8017,Nguyễn Thị Xuyến,Assy
+8018,Triệu Thị Lụa,Assy
+8033,Bùi Thị Thảo,Assy
+8035,Vũ Thị Thanh Mai,Assy
+8040,Lê Thị Nguyệt,Assy
+8043,Nguyễn Gia Trường,PTCA GW
+8046,Bùi Huyền Trang,Shipping-Package
+8049,Nguyễn Thị Tuyến,Sterilization/Boxing
+8052,Nguyễn Thị Ngà,Sterilization/Boxing
+8053,Chu Quỳnh Anh,Assy
+8056,Nguyễn Thị Nguyệt,Assy
+8059,Nguyễn Thị Thủy,Assy
+8061,Nguyễn Thị Bá Linh,Sterilization/Boxing
+8066,Nguyễn Thị Hà,Seal/Label
+8067,Nguyễn Thị Trang,Shipping-Package
+8070,Nguyễn Thị Thúy,Sterilization/Boxing
+8072,Nguyễn Thị Như Quỳnh,Sterilization/Boxing
+8078,Nguyễn Thị Duyên,Seal/Label
+8082,Lương Thị Xiên,Part
+8084,Trần Thị Mỹ Hạnh,Sterilization/Boxing
+8086,Lê Thị Lịch,Sterilization/Boxing
+8088,Phạm Thị Ngọc Linh,Assy
+8096,Trần Thị Thanh Thủy,Assy
+8098,Bùi Thị Hà,Sterilization/Boxing
 8106,Ngô Bích Hồng,Improvement
-8116,Đàm Mỹ Linh,M-Pro
-8119,Hà Thị Huế,PTCA GW
-8120,Vũ Thị Hồng Trinh,PTCA GW
-8121,Lìm Thị Nhết,PTCA GW
-8130,Lê Thị Thu Hằng,Catheter
-8131,Hoàng Thị Thúy,Catheter
-8132,Lê Thị Nguyệt,Catheter
-8137,Lê Thị Lĩnh,PTCA GW
-8140,Nguyễn Thị Phương,Catheter
-8141,Trịnh Thị Trà,T-Mate
-8157,Lê Thị Quỳnh,PTCA GW
-8194,Trần Quang Hưng,Production Engineering
-8195,Nguyễn Văn Ngân,Production Engineering
-8199,Phan Thị Điệp,Quality Assurance
-8201,Bùi Thị Uyên,PTCA GW
-8202,Lưu Thị Ánh Nguyệt,PTCA GW
-8203,Nguyễn Thị Hằng,Quality Assurance
-8206,Phan Thị Giang,PTCA GW
-8208,Nguyễn Thị Chi,M-Pro
-8209,Bùi Thị Nghĩa,PTCA GW
-8210,Ngô Thị Huế,PTCA GW
-8218,Trần Thị Thúy Hà,PTCA GW
-8222,Ngô Thị Ngọc Quỳnh,Sterilization
-8229,Lê Thị Thơm,PTCA GW
-8230,Lê Thị Huyền Trang,PTCA GW
-8234,Bùi Thị Mỹ Hải,PTCA GW
+8116,Đàm Mỹ Linh,Coil
+8119,Hà Thị Huế,Assy
+8120,Vũ Thị Hồng Trinh,Assy
+8121,Lìm Thị Nhết,Assy
+8130,Lê Thị Thu Hằng,Micro
+8131,Hoàng Thị Thúy,Guiding
+8132,Lê Thị Nguyệt,Guiding
+8137,Lê Thị Lĩnh,Assy
+8140,Nguyễn Thị Phương,Micro
+8141,Trịnh Thị Trà,Shaft
+8157,Lê Thị Quỳnh,Assy
+8194,Trần Quang Hưng,Filmecc
+8195,Nguyễn Văn Ngân,Filmecc
+8199,Phan Thị Điệp,Inspection
+8201,Bùi Thị Uyên,Assy
+8202,Lưu Thị Ánh Nguyệt,Assy
+8203,Nguyễn Thị Hằng,Inspection
+8206,Phan Thị Giang,Assy
+8208,Nguyễn Thị Chi,Core
+8209,Bùi Thị Nghĩa,Assy
+8210,Ngô Thị Huế,Assy
+8218,Trần Thị Thúy Hà,Assy
+8222,Ngô Thị Ngọc Quỳnh,Production Support
+8229,Lê Thị Thơm,Assy
+8230,Lê Thị Huyền Trang,Assy
+8234,Bùi Thị Mỹ Hải,Assy
 8248,Phan Thúy Hương,ISO
-8251,Nguyễn Thị Linh,Package
-8252,Nguyễn Thị Hoài Thương,PTCA GW
-8261,Trương Thị Dung,Catheter
-8265,Khương Thị Thùy Trang,PTCA GW
-8266,Phùng Thị Hương,PTCA GW
-8268,Nguyễn Thị Sinh,PTCA GW
-8270,Nguyễn Thị Thúy,Catheter
-8281,Nguyễn Thanh Thảo,Package
-8282,Nguyễn Lê Chi Linh,PTCA GW
-8285,Nguyễn Thị Thu Thúy,PTCA GW
+8251,Nguyễn Thị Linh,Shipping-Package
+8252,Nguyễn Thị Hoài Thương,Assy
+8261,Trương Thị Dung,CAG
+8265,Khương Thị Thùy Trang,Assy
+8266,Phùng Thị Hương,Assy
+8268,Nguyễn Thị Sinh,Assy
+8270,Nguyễn Thị Thúy,CAG
+8281,Nguyễn Thanh Thảo,Shipping-Package
+8282,Nguyễn Lê Chi Linh,Assy
+8285,Nguyễn Thị Thu Thúy,Assy
 8296,Hoàng Thị Ánh Nguyệt,T-Mate
-8301,Đặng Thị Mỹ Nga,Production Engineering
-8302,Nguyễn Thị Hòa,SPGW
-8304,Nguyễn Trọng Tĩnh,Production Engineering
+8301,Đặng Thị Mỹ Nga,PTCA GW
+8302,Nguyễn Thị Hòa,Assy
+8304,Nguyễn Trọng Tĩnh,Catheter
 8306,Tô Đại Dương,Improvement
-8307,Đỗ Thị Kim Tuyến,T-Mate
+8307,Đỗ Thị Kim Tuyến,Shaft
 8309,Nguyễn Thu Hường,BIO
-8310,Phan Thị Ngọc,PTCA GW
-8312,Nguyễn Thị Hồng Bích,PTCA GW
-8322,Vũ Thị Tuyến,Sterilization
-8323,Hoàng Thị Thúy Doanh,Catheter
-8329,Đào Thị Kim Nhung,Catheter
+8310,Phan Thị Ngọc,Assy
+8312,Nguyễn Thị Hồng Bích,Assy
+8322,Vũ Thị Tuyến,Sterilization/Boxing
+8323,Hoàng Thị Thúy Doanh,Guiding
+8329,Đào Thị Kim Nhung,Guiding
 8337,Hoàng Thị Cúc,Improvement
-8339,Hà Thị Thu,Sterilization
-8341,Ma Thị Thu,Sterilization
-8342,Lê Thị Thanh Bình,PTCA GW
-8343,Hoàng Thị Lý,Sterilization
-8344,Nguyễn Thị Linh,Sterilization
-8345,Lê Thu Hà,Sterilization
-8348,Ngô Thị Oanh,PTCA GW
-8349,Bùi Thị Thu Phương,Catheter
-8350,Hoàng Thị Khánh Ly,Sterilization
-8353,Phùng Thị Nguyệt,Sterilization
-8354,Đỗ Thu Thảo,Sterilization
+8339,Hà Thị Thu,Seal/Label
+8341,Ma Thị Thu,Sterilization/Boxing
+8342,Lê Thị Thanh Bình,Assy
+8343,Hoàng Thị Lý,Seal/Label
+8344,Nguyễn Thị Linh,Seal/Label
+8345,Lê Thu Hà,Sterilization/Boxing
+8348,Ngô Thị Oanh,Assy
+8349,Bùi Thị Thu Phương,Guiding
+8350,Hoàng Thị Khánh Ly,Sterilization/Boxing
+8353,Phùng Thị Nguyệt,Sterilization/Boxing
+8354,Đỗ Thu Thảo,Sterilization/Boxing
 8357,Nguyễn Thị Thu Hương,T-Mate
-8360,Trần Thị Hằng,PTCA GW
-8362,Nguyễn Thị Thúy Anh,Sterilization
-8368,Mai Thị Hạnh,PTCA GW
-8370,Nguyễn Thị Hải Yến,PTCA GW
-8377,Trịnh Thị Linh,PTCA GW
+8360,Trần Thị Hằng,Assy
+8362,Nguyễn Thị Thúy Anh,Sterilization/Boxing
+8368,Mai Thị Hạnh,Assy
+8370,Nguyễn Thị Hải Yến,Assy
+8377,Trịnh Thị Linh,Assy
 8381,Ngô Quang Trung,Improvement
 8382,Nguyễn Mạnh Thắng,Maintenance
 8383,Nguyễn Văn Nam,Improvement
-8384,Nguyễn Thị Hương Ly,PTCA GW
-8388,Lê Thị Huyền Nhi,PTCA GW
-8389,Sìn Thị Dương,Sterilization
-8393,Nguyễn Thị Oanh,PTCA GW
-8394,Nguyễn Thị Hiếu,Production Engineering
-8395,Bùi Thị Hoàng Mai,Production Engineering
-8396,Nguyễn Thị Kiều Oanh,Production Engineering
+8384,Nguyễn Thị Hương Ly,Assy
+8388,Lê Thị Huyền Nhi,Assy
+8389,Sìn Thị Dương,Sterilization/Boxing
+8393,Nguyễn Thị Oanh,Assy
+8394,Nguyễn Thị Hiếu,PTCA GW
+8395,Bùi Thị Hoàng Mai,Catheter
+8396,Nguyễn Thị Kiều Oanh,Filmecc
 8400,Nguyễn Hữu Toàn,Maintenance
 8401,Nguyễn Mạnh Hùng,Maintenance
-8402,Lê Ngọc Huyền,PTCA GW
+8402,Lê Ngọc Huyền,Assy
 8403,Hoàng Thị Thu Hoài,Order Control
 8409,Nguyễn Thị Hương,T-Mate
 8411,Nguyễn Thị Thúy Liên,T-Mate
-8412,Nguyễn Thị Quỳnh,PTCA GW
-8417,Nguyễn Thị Hồng Ngọc,T-Mate
-8421,Trần Thị Thúy Hà,PTCA GW
+8412,Nguyễn Thị Quỳnh,Assy
+8417,Nguyễn Thị Hồng Ngọc,Shaft
+8421,Trần Thị Thúy Hà,Assy
 8422,Bùi Thị Huyền,T-Mate
-8424,Vương Thị Thu Hà,SPGW
-8428,Nguyễn Thị Xuân,PTCA GW
-8454,Sái Thị Tuyết Chinh,PTCA GW
-8457,Đoàn Thị Linh,PTCA GW
-8468,Bùi Thị Xuân,PTCA GW
-8476,Bùi Thị Thu Phương,PTCA GW
+8424,Vương Thị Thu Hà,Part
+8428,Nguyễn Thị Xuân,Assy
+8454,Sái Thị Tuyết Chinh,Assy
+8457,Đoàn Thị Linh,Assy
+8468,Bùi Thị Xuân,Assy
+8476,Bùi Thị Thu Phương,PLGW
 8477,Cam Thanh Huế,T-Mate
 8480,Ma Thị Luận,T-Mate
-8481,Nguyễn Thị Hồng,Sterilization
-8487,Nguyễn Thị Hào,PTCA GW
-8497,Nguyễn Khánh Ly,PTCA GW
+8481,Nguyễn Thị Hồng,Sterilization/Boxing
+8487,Nguyễn Thị Hào,Assy
+8497,Nguyễn Khánh Ly,Assy
 8499,Hoàng Lệ Phương,T-Mate
-8504,Nguyễn Thị Sứ,PTCA GW
-8511,Lê Thị Kim Oanh,PTCA GW
-8513,Nguyễn Thị Minh Anh,Sterilization
-8525,Trần Thị Chúc,PTCA GW
-8527,Bùi Thị Lưu,PTCA GW
-8530,Bùi Thị Phương Uyên,PTCA GW
-8532,Lê Thị Thanh,PTCA GW
-8533,Phạm Thị Thoại,PTCA GW
-8534,Nguyễn Thị Thuý Nga,PTCA GW
-8535,Hoàng Thị Nghệ,PTCA GW
-8538,Trần Thúy Trang,PTCA GW
-8547,Nông Thị Hợi,Sterilization
-8548,Nguyễn Văn Thanh,Production Engineering
-8550,Trần Thị Luy,M-Pro
-8552,Hoàng Thanh Thảo,PTCA GW
+8504,Nguyễn Thị Sứ,Assy
+8511,Lê Thị Kim Oanh,Assy
+8513,Nguyễn Thị Minh Anh,Seal/Label
+8525,Trần Thị Chúc,Assy
+8527,Bùi Thị Lưu,Assy
+8530,Bùi Thị Phương Uyên,Assy
+8532,Lê Thị Thanh,Assy
+8533,Phạm Thị Thoại,Assy
+8534,Nguyễn Thị Thuý Nga,Assy
+8535,Hoàng Thị Nghệ,Assy
+8538,Trần Thúy Trang,Assy
+8547,Nông Thị Hợi,Sterilization/Boxing
+8548,Nguyễn Văn Thanh,T-Mate
+8550,Trần Thị Luy,Core
+8552,Hoàng Thanh Thảo,Assy
 8559,Đinh Thị Hồng Vinh,T-Mate
-8567,Phan Thị Hà Anh,PTCA GW
-8571,Phạm Tùng Phương,Sterilization
-8573,Vũ Thị Tuyết Mai,PTCA GW
-8578,Nguyễn Thuỳ Trang,M-Pro
-8580,Phạm Thị Tú Anh,PTCA GW
-8583,Đào Thị Hồng Hạnh,PTCA GW
-8586,Hoàng  Thị Mơ,PTCA GW
-8588,Nguyễn Thị Bích Lan,PTCA GW
-8593,Vũ Thị Phượng,PTCA GW
-8597,Bùi Thị Phú,PTCA GW
-8598,Ma Thị Tươi,PTCA GW
-8606,Quản Thị Thêm,PTCA GW
-8610,Tống Thị Tuyến,PTCA GW
-8611,Hoàng Thị Nhàn,PTCA GW
-8613,Hoàng Thị Hồng Chiên,PTCA GW
-8615,Hoàng Thị Quỳnh,PTCA GW
-8619,Trần Thị Thanh Huyền,PTCA GW
-8620,Phạm Nguyễn Đăng Liêm,Production Engineering
-8621,Nguyễn Thị Hồng Vân,Production Engineering
-8622,Phùng Phương Diễm,PTCA GW
-8627,Lý Thu Thuỷ,PTCA GW
-8628,Bùi Thị Thương,PTCA GW
-8629,Nguyễn Thị Bình,Catheter
-8633,Nguyễn Thị Hồng Anh,Sterilization
-8635,Mai Thị Hồng Nhung,PTCA GW
-8643,Nguyễn Thị Bích Hồng,PTCA GW
-8656,Đinh Thị Luyến,PTCA GW
-8664,Nguyễn Thị Chi,PTCA GW
-8666,Đặng Thị Hà Vân,PTCA GW
-8667,Lê Huy Đạt,Production Engineering
-8669,Phạm Tiến Mạnh,Production Engineering
-8671,Lê Thị Tâm,PTCA GW
+8567,Phan Thị Hà Anh,Assy
+8571,Phạm Tùng Phương,Sterilization/Boxing
+8573,Vũ Thị Tuyết Mai,Assy
+8578,Nguyễn Thuỳ Trang,Core
+8580,Phạm Thị Tú Anh,Assy
+8583,Đào Thị Hồng Hạnh,Assy
+8586,Hoàng  Thị Mơ,Assy
+8588,Nguyễn Thị Bích Lan,Assy
+8593,Vũ Thị Phượng,Assy
+8597,Bùi Thị Phú,Assy
+8598,Ma Thị Tươi,Assy
+8606,Quản Thị Thêm,Assy
+8610,Tống Thị Tuyến,Assy
+8611,Hoàng Thị Nhàn,Assy
+8613,Hoàng Thị Hồng Chiên,Assy
+8615,Hoàng Thị Quỳnh,Assy
+8619,Trần Thị Thanh Huyền,Assy
+8620,Phạm Nguyễn Đăng Liêm,T-Mate
+8621,Nguyễn Thị Hồng Vân,Filmecc
+8622,Phùng Phương Diễm,Assy
+8627,Lý Thu Thuỷ,Assy
+8628,Bùi Thị Thương,Assy
+8629,Nguyễn Thị Bình,Guiding
+8633,Nguyễn Thị Hồng Anh,Sterilization/Boxing
+8635,Mai Thị Hồng Nhung,Assy
+8643,Nguyễn Thị Bích Hồng,Assy
+8656,Đinh Thị Luyến,Assy
+8664,Nguyễn Thị Chi,Assy
+8666,Đặng Thị Hà Vân,Assy
+8667,Lê Huy Đạt,PTCA GW
+8669,Phạm Tiến Mạnh,Filmecc
+8671,Lê Thị Tâm,Assy
 8673,Nguyễn Phương Linh,BIO
-8676,Nguyễn Thu Thủy,M-Pro
-8679,Vũ Thị Loan,PTCA GW
-8680,Trương Thị Hoàng Anh,PTCA GW
-8683,Nguyễn Thị Thanh Thảo,PTCA GW
-8684,Nguyễn Thị Thu Hiền,PTCA GW
-8691,Lê Thị Dung,PTCA GW
-8693,Nguyễn Thị Trang,PTCA GW
-8694,Ngô Thị Thùy Liễu,SPGW
-8696,Bùi Thị Thương,PTCA GW
+8676,Nguyễn Thu Thủy,Core
+8679,Vũ Thị Loan,Assy
+8680,Trương Thị Hoàng Anh,Assy
+8683,Nguyễn Thị Thanh Thảo,Assy
+8684,Nguyễn Thị Thu Hiền,Assy
+8691,Lê Thị Dung,Assy
+8693,Nguyễn Thị Trang,Assy
+8694,Ngô Thị Thùy Liễu,Assy
+8696,Bùi Thị Thương,Assy
 8698,Nguyễn Thu Phương,T-Mate
-8701,Trần Thị Kim Oanh,PTCA GW
-8704,Trần Thị Quỳnh,PTCA GW
-8706,Lê Thị Tâm,PTCA GW
-8712,Đặng Kiều Loan,M-Pro
-8713,Trần Thị Xuyến,PTCA GW
-8714,Đặng Việt Hà,PTCA GW
-8719,Nguyễn Thị Miên,PTCA GW
-8735,Trần Thị Xuyến,PTCA GW
-8736,Bùi Thị Linh Chi,PTCA GW
-8738,Nguyễn Thị Thảo,Sterilization
+8701,Trần Thị Kim Oanh,Assy
+8704,Trần Thị Quỳnh,Assy
+8706,Lê Thị Tâm,Assy
+8712,Đặng Kiều Loan,Core
+8713,Trần Thị Xuyến,PLGW
+8714,Đặng Việt Hà,Assy
+8719,Nguyễn Thị Miên,Assy
+8735,Trần Thị Xuyến,Assy
+8736,Bùi Thị Linh Chi,Assy
+8738,Nguyễn Thị Thảo,Sterilization/Boxing
 8749,Lê Quang Trụ,Improvement
-8755,Nguyễn Thùy Liên,M-Pro
-8760,Ngô Thị Chung,PTCA GW
-8765,Nguyễn Thị Hà Nhi,Quality Assurance
-8776,Quách Thị Nhi,PTCA GW
-8789,Ngô Thị Thuý Quỳnh,T-Mate
-8792,Nguyễn Huyền Trang,T-Mate
-8795,Lê Thuý Hường,PTCA GW
-8798,Nguyễn Thị Mai Thảo,Quality Assurance
-8799,Trần Thị Minh Nguyệt,PTCA GW
+8755,Nguyễn Thùy Liên,Core
+8760,Ngô Thị Chung,Assy
+8765,Nguyễn Thị Hà Nhi,Inspection
+8776,Quách Thị Nhi,Assy
+8789,Ngô Thị Thuý Quỳnh,Shaft
+8792,Nguyễn Huyền Trang,Shaft
+8795,Lê Thuý Hường,Assy
+8798,Nguyễn Thị Mai Thảo,Inspection
+8799,Trần Thị Minh Nguyệt,Assy
 8800,Lê Đình Thành,Maintenance
 8801,Nguyễn Mạnh Tùng,Maintenance
-8802,Bùi Thị Hoa,PTCA GW
-8805,Phạm Thị Trang,Production Engineering
-8807,Nguyễn Huyền Trang,PTCA GW
-8812,Phùng Thị Hòa,PTCA GW
+8802,Bùi Thị Hoa,Assy
+8805,Phạm Thị Trang,T-Mate
+8807,Nguyễn Huyền Trang,Assy
+8812,Phùng Thị Hòa,Assy
 8813,Nguyễn Tuyết Mai,T-Mate
-8814,Trần Thị Phương Mai,Sterilization
-8817,Nịnh Thị Loan,SPGW
-8822,Lại Thị Thu Trang,PTCA GW
-8824,Phạm Hồng Nhung,SPGW
-8831,Phạm Mai Thương,PTCA GW
-8832,Phạm Thị Quỳnh,PTCA GW
-8838,Lê Thị Huyền Thanh,PTCA GW
-8839,Nguyễn Thị Thu Trang,PTCA GW
-8843,Phạm Thị Hiền,PTCA GW
-8854,Trần Thị Hà,SPGW
-8855,Hoàng Thị Như,SPGW
-8864,Lê Thị Lân,PTCA GW
-8866,Nguyễn Thị Thùy Dung,PTCA GW
-8868,Trịnh Thị Mùi,Catheter
-8884,Lưu Thị Kiều,Sterilization
-8888,Nông Thị Thêm,PTCA GW
-8889,Lê Thị Xuân,Sterilization
-8893,Hoàng Mỹ Linh,PTCA GW
-8896,Lê Thị Kim Vui,Information & Production support
-8897,Nguyễn Thị Thanh Hằng,Production Engineering
-8900,Lê Thị Hiệp,PTCA GW
-8901,Lê Thị Quỳnh,Production Engineering
-8902,Lê Thị Thơm,PTCA GW
-8903,Lê Thị Thương,PTCA GW
-8904,Lưu Thị Hằng,PTCA GW
-8909,Nguyễn Thị Quỳnh Nga,PTCA GW
-8910,Nguyễn Thị Thu Trang,PTCA GW
-8911,Hoàng Thị Nhung,PTCA GW
-8913,Nguyễn Thị Thu Hương,T-Mate
-8915,Trần Thu Hiền,T-Mate
-8918,Nguyễn Thị Hà,Catheter
-8919,Lê Thị Ánh Nguyệt,PTCA GW
-8921,Lê Thị Liên,Production Engineering
-8927,Nguyễn Thị Hồng,Catheter
-8937,Hà Thị Thư,PTCA GW
-8941,Phạm Minh Thư,PTCA GW
-8942,Nguyễn Thùy Linh,PTCA GW
-8945,Đỗ Thị Minh Uyên,PTCA GW
-8947,Bùi Thanh Thủy,PTCA GW
+8814,Trần Thị Phương Mai,Sterilization/Boxing
+8817,Nịnh Thị Loan,Assy
+8822,Lại Thị Thu Trang,Assy
+8824,Phạm Hồng Nhung,Assy
+8831,Phạm Mai Thương,Assy
+8832,Phạm Thị Quỳnh,Assy
+8838,Lê Thị Huyền Thanh,Assy
+8839,Nguyễn Thị Thu Trang,Assy
+8843,Phạm Thị Hiền,Assy
+8854,Trần Thị Hà,Assy
+8855,Hoàng Thị Như,Part
+8864,Lê Thị Lân,Assy
+8866,Nguyễn Thị Thùy Dung,Assy
+8868,Trịnh Thị Mùi,Guiding
+8884,Lưu Thị Kiều,Seal/Label
+8888,Nông Thị Thêm,Assy
+8889,Lê Thị Xuân,Sterilization/Boxing
+8893,Hoàng Mỹ Linh,Assy
+8896,Lê Thị Kim Vui,SAP
+8897,Nguyễn Thị Thanh Hằng,APS
+8900,Lê Thị Hiệp,Assy
+8901,Lê Thị Quỳnh,Filmecc
+8902,Lê Thị Thơm,Assy
+8903,Lê Thị Thương,Assy
+8904,Lưu Thị Hằng,Assy
+8909,Nguyễn Thị Quỳnh Nga,Assy
+8910,Nguyễn Thị Thu Trang,Assy
+8911,Hoàng Thị Nhung,Assy
+8913,Nguyễn Thị Thu Hương,Shaft
+8915,Trần Thu Hiền,Shaft
+8918,Nguyễn Thị Hà,Micro
+8919,Lê Thị Ánh Nguyệt,Assy
+8921,Lê Thị Liên,Document & IT
+8927,Nguyễn Thị Hồng,Guiding
+8937,Hà Thị Thư,Assy
+8941,Phạm Minh Thư,Assy
+8942,Nguyễn Thùy Linh,Assy
+8945,Đỗ Thị Minh Uyên,Assy
+8947,Bùi Thanh Thủy,Assy
 8948,Vũ Mạnh Quý,Maintenance
-8953,Phùng Thị Toán,T-Mate
-8957,Nguyễn Thị Hồng Diệp,PTCA GW
-8959,Nguyễn Thị Thu Thiết,PTCA GW
-8960,Lò Thị Hồng,PTCA GW
-8961,Nguyễn Kim Chi,PTCA GW
-8966,Quan Thị Như Quỳnh,PTCA GW
+8953,Phùng Thị Toán,Shaft
+8957,Nguyễn Thị Hồng Diệp,Assy
+8959,Nguyễn Thị Thu Thiết,Assy
+8960,Lò Thị Hồng,Assy
+8961,Nguyễn Kim Chi,Assy
+8966,Quan Thị Như Quỳnh,Assy
 8975,Lã Thị Cúc,BIO
-8976,Nguyễn Thị Yến,Package
-8981,Doãn Thị Thanh Lam,Production Engineering
-8983,Lê Trần Ngọc Linh,PTCA GW
-8985,Nguyễn Thị Xuân,PTCA GW
-8988,Đỗ Thanh Hồng,PTCA GW
-8989,Bùi Thị Hồng Nhung,PTCA GW
-8990,Nguyễn Thu Hường,PTCA GW
-8991,Nguyễn Thị Hồng Anh,PTCA GW
-8992,Nguyễn Thị Kim Nhớ,PTCA GW
+8976,Nguyễn Thị Yến,Shipping-Package
+8981,Doãn Thị Thanh Lam,T-Mate
+8983,Lê Trần Ngọc Linh,Assy
+8985,Nguyễn Thị Xuân,Assy
+8988,Đỗ Thanh Hồng,Assy
+8989,Bùi Thị Hồng Nhung,Assy
+8990,Nguyễn Thu Hường,Assy
+8991,Nguyễn Thị Hồng Anh,Assy
+8992,Nguyễn Thị Kim Nhớ,Assy
 8993,Vương Tiến Anh,Improvement
-9004,Nông Thị Thanh,PTCA GW
-9007,Nguyễn Thị Thúy,PTCA GW
-9008,Lê Thị Kiều Oanh,PTCA GW
-9009,Trần Thị Thơm,Production Engineering
-9014,Bùi Minh Chiến,Production Engineering
+9004,Nông Thị Thanh,Assy
+9007,Nguyễn Thị Thúy,Assy
+9008,Lê Thị Kiều Oanh,Assy
+9009,Trần Thị Thơm,Filmecc
+9014,Bùi Minh Chiến,PTCA GW
 9024,Bùi Trọng Oánh,Improvement
-9028,Vương Kim Ngân,Sterilization
-9030,Bùi Thị Mai,Sterilization
-9032,Trần Thị Thanh Thảo,PTCA GW
-9033,Cù Thị Lan,PTCA GW
-9046,Lê Thị Hương,Sterilization
-9047,Lý Thị Nga,PTCA GW
-9049,Trần Quỳnh Anh,Sterilization
-9050,Bùi Thị Thái Linh,Production Engineering
+9028,Vương Kim Ngân,Sterilization/Boxing
+9030,Bùi Thị Mai,Sterilization/Boxing
+9032,Trần Thị Thanh Thảo,Assy
+9033,Cù Thị Lan,Assy
+9046,Lê Thị Hương,Seal/Label
+9047,Lý Thị Nga,Assy
+9049,Trần Quỳnh Anh,Seal/Label
+9050,Bùi Thị Thái Linh,T-Mate
 9071,Đỗ Thị Ngọc Nhung,T-Mate
 9074,Hà Thị Lý,T-Mate
-9080,Đỗ Thị Thuý Hiền,M-Pro
-9082,Bùi Thị Hiền,T-Mate
-9087,Hà Kiều Mai,T-Mate
-9089,Hà Thị Ánh,M-Pro
-9093,Nguyễn Thị Hường,PTCA GW
-9096,Nông Thị Kim Phượng,PTCA GW
-9097,Nông Thị Giang,PTCA GW
-9106,Phạm Thị Huyền,PTCA GW
-9108,Nguyễn Thị Hồng Hạnh,PTCA GW
-9111,Nguyễn Như Quỳnh,PTCA GW
-9119,Tạ Thị Ngọc Hằng,M-Pro
-9120,Nguyễn Thị Hồng Hạnh,M-Pro
-9123,Chu Thị Phượng,M-Pro
-9125,Phạm Thị Ngọc Yến,M-Pro
-9128,Nguyễn Thị Mộng Dung,M-Pro
-9129,Tăng Thị Dũng,T-Mate
-9130,Bùi Thị Lư,M-Pro
-9132,Diệp Thị Năm,M-Pro
-9144,Nguyễn Hương Ly,PTCA GW
-9149,Hán Thị Thúy,M-Pro
-9150,Trần Thị Thủy,M-Pro
-9154,Nguyễn Thị Thanh Nga,PTCA GW
-9155,Hà Thị Nhịp,PTCA GW
-9157,Đinh Thị Lâm Na,PTCA GW
-9159,Lê Tuấn Cương,Production Engineering
-9160,Trần Thị Thu Hường,M-Pro
-9165,Đỗ Thị Hà Trang,M-Pro
-9167,Kim Ngọc Anh,T-Mate
-9172,Nguyễn Thị Yến Nhi,PTCA GW
-9183,Trần Thị Hoa,PTCA GW
-9188,Mùi Lệ Quyên,M-Pro
-9198,Nguyễn Trí Dũng,Production Engineering
-9200,Bùi Thanh Thúy,PTCA GW
+9080,Đỗ Thị Thuý Hiền,Core
+9082,Bùi Thị Hiền,Shaft
+9087,Hà Kiều Mai,Shaft
+9089,Hà Thị Ánh,Core
+9093,Nguyễn Thị Hường,Assy
+9096,Nông Thị Kim Phượng,Assy
+9097,Nông Thị Giang,Assy
+9106,Phạm Thị Huyền,Assy
+9108,Nguyễn Thị Hồng Hạnh,Assy
+9111,Nguyễn Như Quỳnh,Assy
+9119,Tạ Thị Ngọc Hằng,Core
+9120,Nguyễn Thị Hồng Hạnh,Core
+9123,Chu Thị Phượng,Core
+9125,Phạm Thị Ngọc Yến,Core
+9128,Nguyễn Thị Mộng Dung,Coil
+9129,Tăng Thị Dũng,Shaft
+9130,Bùi Thị Lư,Core
+9132,Diệp Thị Năm,Core
+9144,Nguyễn Hương Ly,Assy
+9149,Hán Thị Thúy,Core
+9150,Trần Thị Thủy,Core
+9154,Nguyễn Thị Thanh Nga,Assy
+9155,Hà Thị Nhịp,Assy
+9157,Đinh Thị Lâm Na,Assy
+9159,Lê Tuấn Cương,T-Mate
+9160,Trần Thị Thu Hường,Core
+9165,Đỗ Thị Hà Trang,Coil
+9167,Kim Ngọc Anh,T-ESGW
+9172,Nguyễn Thị Yến Nhi,Assy
+9183,Trần Thị Hoa,Assy
+9188,Mùi Lệ Quyên,Core
+9198,Nguyễn Trí Dũng,Document & IT
+9200,Bùi Thanh Thúy,Assy
 9206,Nông Thị Thu Huyền,T-Mate
 9207,Trần Thị Mười,T-Mate
-9209,Trần Thị Hậu,Production Engineering
-9212,Nguyễn Thùy Trang,T-Mate
-9216,Nguyễn Thị Trà My,Catheter
+9209,Trần Thị Hậu,Filmecc
+9212,Nguyễn Thùy Trang,Shaft
+9216,Nguyễn Thị Trà My,Micro
 9218,Nguyễn Mạnh Toàn,Maintenance
-9221,Trần Thị Ngọc Ánh,M-Pro
-9223,Bùi Thị Thương,M-Pro
-9224,Đỗ Ngọc Ánh,M-Pro
-9225,Đỗ Thị Phượng,M-Pro
-9226,Nguyễn Thị Quỳnh,T-Mate
-9227,Bùi Minh Nguyệt,SPGW
-9252,Lê Thị Thuỳ,SPGW
-9254,Nguyễn Thị Tám,M-Pro
-9255,Nguyễn Thị Linh,M-Pro
-9256,Nguyễn Thị Phượng,M-Pro
-9261,Nông Thị Thuyên,SPGW
-9262,Kim Thị Hải,PTCA GW
-9263,Nguyễn Thị Tươi,PTCA GW
-9273,Phạm Ngọc Hoài,PTCA GW
-9274,Hoàng Thị Thúy Phương,PTCA GW
-9280,Bàn Thị Hằng,PTCA GW
-9288,Nguyễn Văn Sơn,T-Mate
-9290,Ma Thị Nhuận,T-Mate
-9292,Phạm Thị Kiều Oanh,PTCA GW
-9294,Hoàng Thị Hạnh,M-Pro
-9298,Triệu Thị Ngân,T-Mate
-9302,Nguyễn Từ Thức,T-Mate
+9221,Trần Thị Ngọc Ánh,Core
+9223,Bùi Thị Thương,Core
+9224,Đỗ Ngọc Ánh,Core
+9225,Đỗ Thị Phượng,Core
+9226,Nguyễn Thị Quỳnh,Shaft
+9227,Bùi Minh Nguyệt,Assy
+9252,Lê Thị Thuỳ,Assy
+9254,Nguyễn Thị Tám,Core
+9255,Nguyễn Thị Linh,Core
+9256,Nguyễn Thị Phượng,Core
+9261,Nông Thị Thuyên,Assy
+9262,Kim Thị Hải,Assy
+9263,Nguyễn Thị Tươi,PLGW
+9273,Phạm Ngọc Hoài,Assy
+9274,Hoàng Thị Thúy Phương,Assy
+9280,Bàn Thị Hằng,Assy
+9288,Nguyễn Văn Sơn,Shaft
+9290,Ma Thị Nhuận,Shaft
+9292,Phạm Thị Kiều Oanh,Assy
+9294,Hoàng Thị Hạnh,Coil
+9298,Triệu Thị Ngân,Shaft
+9302,Nguyễn Từ Thức,Shaft
 9306,Nguyễn Văn Quân,T-Mate
 9307,Nguyễn Văn Tĩnh,T-Mate
-9309,Trần Văn Nhất,M-Pro
-9310,Vũ Ngọc Nam,M-Pro
-9313,Đinh Thế Anh,M-Pro
-9315,Nguyễn Thái An,M-Pro
-9318,Trần Thành Hảo,M-Pro
-9335,Nguyễn Văn Việt,M-Pro
-9336,Đỗ Đình Phong,M-Pro
-9338,Đỗ Văn Dũng,M-Pro
-9339,Nguyễn Văn Thực,T-Mate
+9309,Trần Văn Nhất,Core
+9310,Vũ Ngọc Nam,Core
+9313,Đinh Thế Anh,Core
+9315,Nguyễn Thái An,Core
+9318,Trần Thành Hảo,Core
+9335,Nguyễn Văn Việt,Coil
+9336,Đỗ Đình Phong,Core
+9338,Đỗ Văn Dũng,Core
+9339,Nguyễn Văn Thực,Shaft
 9342,Lê Thị Nam,GA
-9347,Lương Thị Ngọc Linh,SPGW
-9354,Nguyễn Hồng Thu,T-Mate
-9356,Lương Thị Hoài Anh,PTCA GW
-9357,Nông Thị Hường,PTCA GW
-9359,Nguyễn Thị Phương Thúy,PTCA GW
-9360,Nguyễn Thị Tuyết,PTCA GW
-9361,Nguyễn Thị Ngọc Bích,PTCA GW
-9363,Bùi Thị Trà,PTCA GW
-9369,Hoàng Diệu Linh,Production Engineering
+9347,Lương Thị Ngọc Linh,Assy
+9354,Nguyễn Hồng Thu,Shaft
+9356,Lương Thị Hoài Anh,Assy
+9357,Nông Thị Hường,Assy
+9359,Nguyễn Thị Phương Thúy,Assy
+9360,Nguyễn Thị Tuyết,Assy
+9361,Nguyễn Thị Ngọc Bích,Assy
+9363,Bùi Thị Trà,Assy
+9369,Hoàng Diệu Linh,T-Mate
 9374,Nguyễn Thị Mai,T-Mate
 9376,Nguyễn Thị Hoa,T-Mate
-9377,Ma Thị Thảo,T-Mate
-9379,Phan Thị Thủy,T-Mate
+9377,Ma Thị Thảo,Shaft
+9379,Phan Thị Thủy,Shaft
 9387,Trần Trọng Phúc,Maintenance
 9388,Nguyễn Đức Thắng,Maintenance
 9389,Lưu Thị Thanh Xuân,GA
 9394,Nguyễn Thị Thùy Linh,T-Mate
-9396,Lâm Thị Thu,M-Pro
+9396,Lâm Thị Thu,Coil
 9397,Vũ Văn Tiến,T-Mate
-9399,Nguyễn Minh Hiếu,T-Mate
-9406,Nguyễn Thị Thu Hằng,Sterilization
-9407,Trần Thị Thanh Thúy,PTCA GW
-9409,Phạm Thị Vượng,PTCA GW
-9410,Phàn Thị Phượng,PTCA GW
-9416,Phan Trung Dũng,M-Pro
+9399,Nguyễn Minh Hiếu,Shaft
+9406,Nguyễn Thị Thu Hằng,Sterilization/Boxing
+9407,Trần Thị Thanh Thúy,Assy
+9409,Phạm Thị Vượng,Assy
+9410,Phàn Thị Phượng,Assy
+9416,Phan Trung Dũng,Core
 9417,Nguyễn Công Chính,T-Mate
 9420,Nguyễn Thị Thanh Hòa,GA
-9421,Hoàng Thị Thuỳ Linh,PTCA GW
-9422,Đặng Thị Huệ,M-Pro
-9423,Nguyễn Thị Lan,T-Mate
-9427,Trần Cẩm Nhung,PTCA GW
-9429,Nguyễn Thị Hường,PTCA GW
-9430,Hà Thị Dương,PTCA GW
-9431,Nguyễn Thị Thanh Thuỷ,M-Pro
-9434,Phan Thị Thanh,M-Pro
-9435,Nguyễn Thị Quý,M-Pro
-9437,Đặng Xuân Mỹ,M-Pro
-9440,Ma Thị Thuỷ,T-Mate
-9449,Hồ Thị Hà,PTCA GW
-9451,Vũ Thu Hà,SPGW
-9452,Đằng Thị Thu Hà,M-Pro
-9471,Nguyễn Thị Thảo,M-Pro
+9421,Hoàng Thị Thuỳ Linh,Assy
+9422,Đặng Thị Huệ,Core
+9423,Nguyễn Thị Lan,Shaft
+9427,Trần Cẩm Nhung,Assy
+9429,Nguyễn Thị Hường,Assy
+9430,Hà Thị Dương,Assy
+9431,Nguyễn Thị Thanh Thuỷ,Core
+9434,Phan Thị Thanh,Core
+9435,Nguyễn Thị Quý,Core
+9437,Đặng Xuân Mỹ,Core
+9440,Ma Thị Thuỷ,Shaft
+9449,Hồ Thị Hà,Assy
+9451,Vũ Thu Hà,Assy
+9452,Đằng Thị Thu Hà,Core
+9471,Nguyễn Thị Thảo,Core
 9476,Nguyễn Đức Tuyên,Improvement
-9481,Vũ Thị Linh,M-Pro
+9481,Vũ Thị Linh,Core
 9488,Mạch Quang Hồng,Maintenance
-9490,Phạm Thị Thành,PTCA GW
-9491,Nguyễn Ngọc Ánh,Sterilization
-9492,Đặng Thị Nga,PTCA GW
-9493,Bùi Huyền Trang,PTCA GW
-9494,Bùi Thị Nhu,PTCA GW
-9495,Nguyễn Thị Ngọc Anh,PTCA GW
-9497,Nguyễn Thị Nhung,PTCA GW
-9499,Nguyễn Thị Quế,T-Mate
-9504,Nguyễn Thị Ngọc Minh,M-Pro
-9507,Nguyễn Thị Kiều Oanh,M-Pro
+9490,Phạm Thị Thành,Assy
+9491,Nguyễn Ngọc Ánh,Seal/Label
+9492,Đặng Thị Nga,Assy
+9493,Bùi Huyền Trang,Assy
+9494,Bùi Thị Nhu,Assy
+9495,Nguyễn Thị Ngọc Anh,Assy
+9497,Nguyễn Thị Nhung,Assy
+9499,Nguyễn Thị Quế,T-ESGW
+9504,Nguyễn Thị Ngọc Minh,Coil
+9507,Nguyễn Thị Kiều Oanh,Core
 9514,Đỗ Thị Yến Linh,BIO
-9515,Ngô Thị Thuý,PTCA GW
-9532,Đỗ Thị Thúy Mến,PTCA GW
-9533,Phan Thị Hà,PTCA GW
-9535,Tạ Thị Hương,M-Pro
-9536,Vũ Thị Khánh Hoà,M-Pro
-9540,Lưu Thị Thanh Thủy,M-Pro
-9553,Nguyễn Ngọc Ánh,PTCA GW
-9555,Ngô Hương Giang,PTCA GW
-9556,Diệp Thị Hạnh,M-Pro
-9557,Hà Văn Minh,M-Pro
+9515,Ngô Thị Thuý,Assy
+9532,Đỗ Thị Thúy Mến,Assy
+9533,Phan Thị Hà,Assy
+9535,Tạ Thị Hương,Core
+9536,Vũ Thị Khánh Hoà,Core
+9540,Lưu Thị Thanh Thủy,Coil
+9553,Nguyễn Ngọc Ánh,Assy
+9555,Ngô Hương Giang,Assy
+9556,Diệp Thị Hạnh,Coil
+9557,Hà Văn Minh,Core
 9563,Vương Thị Ngân,T-Mate
 9572,Đào Thị Tuyết,T-Mate
-9573,Trịnh Thị Cẩm Duyên,Production Engineering
-9577,Nguyễn Thị Mai Phương,M-Pro
-9583,Trần Thị Hương Vui,PTCA GW
-9589,Nguyễn Thị Mận,SPGW
-9593,Nguyễn Thị Ngà,PTCA GW
+9573,Trịnh Thị Cẩm Duyên,T-Mate
+9577,Nguyễn Thị Mai Phương,Coil
+9583,Trần Thị Hương Vui,Assy
+9589,Nguyễn Thị Mận,Assy
+9593,Nguyễn Thị Ngà,Assy
 9597,Nguyễn Mạnh Trường,Improvement
-9601,Lê Thị Vân,M-Pro
+9601,Lê Thị Vân,Core
 9603,Trần Trọng Sang,Maintenance
-9604,Nguyễn Thị Phượng,M-Pro
-9605,Kim Thị Khánh Ly,M-Pro
-9607,Nguyễn Huy Hoàng,Information & Production support
-9608,Nguyễn Thị Ngân,PTCA GW
-9609,Bùi Khánh Linh,PTCA GW
-9610,Phạm Thị Tuyết,M-Pro
-9611,Nguyễn Khánh My,M-Pro
-9612,Đỗ Thị Việt Trinh,M-Pro
-9616,Hoàng Văn Sỹ,Production Engineering
-9617,Chu Thị Bình,PTCA GW
-9618,Cao Thanh Tùng,Production Engineering
-9619,Trần Thị Thu Hiền,M-Pro
-9623,Hoàng Mai Hương,M-Pro
-9626,Lưu Thị Thu,PTCA GW
-9629,Nguyễn Thị Thủy,PTCA GW
-9630,Trần Thị Tịnh Châu,PTCA GW
-9631,Phùng Thị Hiền,PTCA GW
-9636,Vũ Thị Tuyết Quyên,T-Mate
-9643,Thền Thị Huyền,PTCA GW
-9644,Phạm Thị Ngoan,PTCA GW
-9646,Tô Thị Ánh Tuyết,PTCA GW
-9650,Nguyễn Thuỳ Trang,PTCA GW
-9651,Ngô Quang Anh,M-Pro
-9653,Dương Quyết Thắng,T-Mate
+9604,Nguyễn Thị Phượng,Core
+9605,Kim Thị Khánh Ly,Core
+9607,Nguyễn Huy Hoàng,Information
+9608,Nguyễn Thị Ngân,Assy
+9609,Bùi Khánh Linh,Assy
+9610,Phạm Thị Tuyết,Core
+9611,Nguyễn Khánh My,Core
+9612,Đỗ Thị Việt Trinh,Core
+9616,Hoàng Văn Sỹ,PTCA GW
+9617,Chu Thị Bình,Assy
+9618,Cao Thanh Tùng,Filmecc
+9619,Trần Thị Thu Hiền,Coil
+9623,Hoàng Mai Hương,Core
+9626,Lưu Thị Thu,Assy
+9629,Nguyễn Thị Thủy,Assy
+9630,Trần Thị Tịnh Châu,Assy
+9631,Phùng Thị Hiền,Assy
+9636,Vũ Thị Tuyết Quyên,Shaft
+9643,Thền Thị Huyền,Assy
+9644,Phạm Thị Ngoan,Assy
+9646,Tô Thị Ánh Tuyết,Assy
+9650,Nguyễn Thuỳ Trang,Assy
+9651,Ngô Quang Anh,Core
+9653,Dương Quyết Thắng,Shaft
 9654,Nguyễn Văn Chung,T-Mate
-9656,Trần Văn Công,M-Pro
-9661,Bàn Thị Ngọc Ánh,M-Pro
-9662,Trần Việt Quang,Production Engineering
-9664,Ngô Tuấn Anh,PTCA GW
-9665,Nguyễn Văn Quân,PTCA GW
-9666,Hoàng Văn Vinh,PTCA GW
-9668,Tạ Thị Hải Yến,PTCA GW
-9669,Lê Kiều Trinh,PTCA GW
-9670,Phạm Tuấn Minh,PTCA GW
-9677,Trần Văn Vinh,M-Pro
-9678,Nguyễn Văn Minh,M-Pro
-9682,Nguyễn Văn Đồng,T-Mate
-9685,Bùi Thị Nhung,M-Pro
-9687,Hà Việt Hoàng,Production Engineering
+9656,Trần Văn Công,Coil
+9661,Bàn Thị Ngọc Ánh,Core
+9662,Trần Việt Quang,PTCA GW
+9664,Ngô Tuấn Anh,Assy
+9665,Nguyễn Văn Quân,Assy
+9666,Hoàng Văn Vinh,Assy
+9668,Tạ Thị Hải Yến,Assy
+9669,Lê Kiều Trinh,Assy
+9670,Phạm Tuấn Minh,Assy
+9677,Trần Văn Vinh,Coil
+9678,Nguyễn Văn Minh,Core
+9682,Nguyễn Văn Đồng,Shaft
+9685,Bùi Thị Nhung,Core
+9687,Hà Việt Hoàng,PTCA GW
 9688,Hồ Việt Lâm,Improvement
-9693,Bùi Thị Xiên,PTCA GW
-9703,Lưu Thế Anh,Package
-9704,Nguyễn Mạnh Tùng,M-Pro
-9710,Nguyễn Văn Được,M-Pro
-9715,Nguyễn Thị Mây,M-Pro
+9693,Bùi Thị Xiên,Assy
+9703,Lưu Thế Anh,Shipping-Package
+9704,Nguyễn Mạnh Tùng,Coil
+9710,Nguyễn Văn Được,Core
+9715,Nguyễn Thị Mây,Core
 9716,Nguyễn Hồng Dung,T-Mate
-9722,Đỗ Phương Linh,M-Pro
-9723,Nguyễn Quang Đạt,Catheter
-9727,Lê Khánh Linh,PTCA GW
-9728,Phạm Huyền Trang,PTCA GW
-9729,Bùi Thị Tới,PTCA GW
-9730,Phạm Thị Trang,PTCA GW
-9734,Lục Thị Mai,M-Pro
-9735,Lưu Văn Quân,M-Pro
-9736,Bàn Thi Sầu,M-Pro
-9737,Nguyễn Thị Hoa,M-Pro
-9738,Cao Văn Thịnh,M-Pro
-9739,Phó Thị Ba,M-Pro
-9744,Nguyễn Ánh Ngọc,T-Mate
+9722,Đỗ Phương Linh,Core
+9723,Nguyễn Quang Đạt,Guiding
+9727,Lê Khánh Linh,Assy
+9728,Phạm Huyền Trang,Assy
+9729,Bùi Thị Tới,Assy
+9730,Phạm Thị Trang,Assy
+9734,Lục Thị Mai,Core
+9735,Lưu Văn Quân,Core
+9736,Bàn Thi Sầu,Core
+9737,Nguyễn Thị Hoa,Core
+9738,Cao Văn Thịnh,Core
+9739,Phó Thị Ba,Core
+9744,Nguyễn Ánh Ngọc,Shaft
 9745,Nguyễn Kiều Trinh,T-Mate
 9746,Đỗ Mạnh Hùng,Maintenance
-9747,Vũ Thị Mai Trinh,T-Mate
-9748,Phạm Thị Kiên,Catheter
-9750,Bùi Thị Hồng Nhung,Catheter
-9751,Phùng Thị Ngọc Anh,Catheter
-9752,Nguyễn Thị Huyền Trang,T-Mate
-9754,Nguyễn Thị Mai Linh,PTCA GW
-9756,Nguyễn Tiến Đạt,M-Pro
-9759,Nguyễn Thị Ninh,T-Mate
-9762,Nguyễn Trường Giang,M-Pro
+9747,Vũ Thị Mai Trinh,Shaft
+9748,Phạm Thị Kiên,Guiding
+9750,Bùi Thị Hồng Nhung,Guiding
+9751,Phùng Thị Ngọc Anh,Micro
+9752,Nguyễn Thị Huyền Trang,T-ESGW
+9754,Nguyễn Thị Mai Linh,Assy
+9756,Nguyễn Tiến Đạt,Core
+9759,Nguyễn Thị Ninh,Shaft
+9762,Nguyễn Trường Giang,Core
 9763,Hoàng Thị An,T-Mate
-9765,Đỗ Văn Lâm,T-Mate
-9766,Nguyễn Thị Thuỳ Trang,Catheter
-9767,Trịnh Thị Mai,PTCA GW
-9769,Nguyễn Phương Huyền,M-Pro
-9770,Âu Thị Quang,M-Pro
-9771,Nguyễn Phương Anh,PTCA GW
-9772,Phạm Thị Thuỷ Tiên,PTCA GW
-9773,Nguyễn Thị Kim Tiến,PTCA GW
-9774,Đặng Đinh Linh Đan,PTCA GW
-9776,Trần Long Nhật,PTCA GW
-9777,Dương Bảo Lâm,PTCA GW
-9778,Đinh Thị Thúy Linh,PTCA GW
-9779,Bùi Văn Tâm,PTCA GW
-9780,Hồ Thị Mai Trang,PTCA GW
-9781,Hoàng Thị Hồng Nhung,PTCA GW
-9782,Nguyễn Thị Minh,PTCA GW
-9783,Nguyễn Thị Cẩm Nhung,PTCA GW
-9786,Hà Thu Hiền,PTCA GW
+9765,Đỗ Văn Lâm,Shaft
+9766,Nguyễn Thị Thuỳ Trang,Guiding
+9767,Trịnh Thị Mai,Assy
+9769,Nguyễn Phương Huyền,Coil
+9770,Âu Thị Quang,Coil
+9771,Nguyễn Phương Anh,Assy
+9772,Phạm Thị Thuỷ Tiên,Assy
+9773,Nguyễn Thị Kim Tiến,Assy
+9774,Đặng Đinh Linh Đan,Assy
+9776,Trần Long Nhật,Assy
+9777,Dương Bảo Lâm,Assy
+9778,Đinh Thị Thúy Linh,Assy
+9779,Bùi Văn Tâm,Assy
+9780,Hồ Thị Mai Trang,Assy
+9781,Hoàng Thị Hồng Nhung,Assy
+9782,Nguyễn Thị Minh,Assy
+9783,Nguyễn Thị Cẩm Nhung,Assy
+9786,Hà Thu Hiền,Assy
 9787,Hà Thị Thanh Thảo,T-Mate
-9788,Trần Thị Chinh,PTCA GW
-9789,Nguyễn Xuân Trường,PTCA GW
-9792,Nguyễn Thị Quỳnh Mai,M-Pro
+9788,Trần Thị Chinh,Assy
+9789,Nguyễn Xuân Trường,Assy
+9792,Nguyễn Thị Quỳnh Mai,Core
 9794,Đỗ Hoàng Việt,T-Mate
 9795,Trần Thị Thảo,T-Mate
-
-
