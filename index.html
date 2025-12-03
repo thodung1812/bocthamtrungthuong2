@@ -1069,7 +1069,7 @@
             // Step 4: Show victory card with employee info
             await new Promise(resolve => {
                 // Set employee data
-                document.getElementById('displayId').textContent = employee.ID;
+                document.getElementById('displayId').textContent = employee['ID'];;
                 document.getElementById('displayName').textContent = employee['Họ và Tên'];
                 document.getElementById('displayDept').textContent = employee['Bộ Phận'];
 
@@ -1123,6 +1123,7 @@
 </html>
 
                 
+
 
 
 
