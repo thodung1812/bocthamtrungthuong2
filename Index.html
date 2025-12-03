@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory Royale - Asahi Intecc</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: #000000;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Modern gradient background */
+		.hex-background {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background: 
+				radial-gradient(ellipse at top left, rgba(255, 165, 0, 0.08) 0%, transparent 50%),
+				radial-gradient(ellipse at top right, rgba(255, 69, 0, 0.06) 0%, transparent 50%),
+				radial-gradient(ellipse at bottom, rgba(255, 140, 0, 0.05) 0%, transparent 60%),
+				linear-gradient(180deg, #000000 0%, #0a0a0a 50%, #000000 100%);
+			z-index: 0;
+		}
+
+		.hex-background::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-image: 
+				linear-gradient(rgba(255, 165, 0, 0.02) 1px, transparent 1px),
+				linear-gradient(90deg, rgba(255, 165, 0, 0.02) 1px, transparent 1px);
+			background-size: 50px 50px;
+			animation: gridMove 20s linear infinite;
+		}
+
+		@keyframes gridMove {
+			0% { transform: translate(0, 0); }
+			100% { transform: translate(50px, 50px); }
+		}
+
+		.hex-background::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+		}
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        /* Scan lines effect */
+        .scanlines {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.15),
+                rgba(0, 0, 0, 0.15) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            pointer-events: none;
+            z-index: 999;
+            opacity: 0.3;
+        }
+
+        /* Modern corner UI */
+		.corner-ui {
+			position: fixed;
+			pointer-events: none;
+			z-index: 10;
+		}
+
+		.corner-ui::before,
+		.corner-ui::after {
+			content: '';
+			position: absolute;
+			background: linear-gradient(135deg, rgba(255, 165, 0, 0.8), rgba(255, 165, 0, 0));
+		}
+
+		/* Top Left */
+		.corner-ui.top-left {
+			top: 30px;
+			left: 30px;
+			width: 80px;
+			height: 80px;
+		}
+
+		.corner-ui.top-left::before {
+			top: 0;
+			left: 0;
+			width: 3px;
+			height: 100%;
+			box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+		}
+
+		.corner-ui.top-left::after {
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+		}
+
+		/* Top Right */
+		.corner-ui.top-right {
+			top: 30px;
+			right: 30px;
+			width: 80px;
+			height: 80px;
+		}
+
+		.corner-ui.top-right::before {
+			top: 0;
+			right: 0;
+			width: 3px;
+			height: 100%;
+			background: linear-gradient(135deg, rgba(255, 165, 0, 0), rgba(255, 165, 0, 0.8));
+			box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+		}
+
+		.corner-ui.top-right::after {
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 3px;
+			background: linear-gradient(90deg, rgba(255, 165, 0, 0), rgba(255, 165, 0, 0.8));
+			box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+		}
+
+		/* Bottom Left */
+		.corner-ui.bottom-left {
+			bottom: 30px;
+			left: 30px;
+			width: 80px;
+			height: 80px;
+		}
+
+		.corner-ui.bottom-left::before {
+			bottom: 0;
+			left: 0;
+			width: 3px;
+			height: 100%;
+			background: linear-gradient(225deg, rgba(255, 165, 0, 0.8), rgba(255, 165, 0, 0));
+			box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+		}
+
+		.corner-ui.bottom-left::after {
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background: linear-gradient(180deg, rgba(255, 165, 0, 0), rgba(255, 165, 0, 0.8));
+			box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+		}
+
+		/* Bottom Right */
+		.corner-ui.bottom-right {
+			bottom: 30px;
+			right: 30px;
+			width: 80px;
+			height: 80px;
+		}
+
+		.corner-ui.bottom-right::before {
+			bottom: 0;
+			right: 0;
+			width: 3px;
+			height: 100%;
+			background: linear-gradient(225deg, rgba(255, 165, 0, 0), rgba(255, 165, 0, 0.8));
+			box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+		}
+
+		.corner-ui.bottom-right::after {
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 3px;
+			background: linear-gradient(270deg, rgba(255, 165, 0, 0), rgba(255, 165, 0, 0.8));
+			box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+		}
+
+		/* Animation for corners */
+		.corner-ui::before {
+			animation: cornerPulse 2s ease-in-out infinite;
+		}
+
+		.corner-ui::after {
+			animation: cornerPulse 2s ease-in-out infinite 0.5s;
+		}
+
+		@keyframes cornerPulse {
+			0%, 100% {
+				opacity: 0.6;
+			}
+			50% {
+				opacity: 1;
+			}
+		}
+
+        /* Main container */
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 5;
+        }
+
+        /* Logo animation */
+        .logo-container {
+            position: absolute;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+        .logo-container.show {
+            animation: logoReveal 2.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        @keyframes logoReveal {
+            0% {
+                opacity: 0;
+                transform: scale(0.5) rotateY(90deg);
+                filter: blur(20px);
+            }
+            40% {
+                opacity: 1;
+                transform: scale(1.1) rotateY(0deg);
+                filter: blur(0px);
+            }
+            70% {
+                opacity: 1;
+                transform: scale(1) rotateY(0deg);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.8) translateX(-150%);
+                filter: blur(10px);
+            }
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 80px;
+            font-weight: 900;
+            color: #FFA500;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            text-shadow: 
+                0 0 10px rgba(255, 165, 0, 0.8),
+                0 0 20px rgba(255, 165, 0, 0.6),
+                0 0 40px rgba(255, 165, 0, 0.4),
+                0 0 80px rgba(255, 165, 0, 0.2);
+            position: relative;
+        }
+
+        .logo::before {
+            content: 'ASAHI INTECC';
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: -1;
+            transform: translate(3px, 3px);
+        }
+
+        /* Award title display */
+        .award-title-container {
+            position: absolute;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .award-title-container.show {
+            animation: awardTitleSlide 2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        @keyframes awardTitleSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(50px) scale(0.8);
+            }
+            40% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+            70% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-50px) scale(0.8);
+            }
+        }
+
+        .award-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 64px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            color: #FFA500;
+            text-shadow: 
+                0 0 10px currentColor,
+                0 0 20px currentColor,
+                0 0 40px currentColor;
+            position: relative;
+            padding: 20px 40px;
+            border: 2px solid currentColor;
+            background: rgba(0, 0, 0, 0.7);
+            clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        }
+
+        /* Victory card */
+        .victory-card {
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(10, 10, 10, 0.95) 100%);
+            border: 2px solid rgba(255, 165, 0, 0.6);
+            clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+            padding: 50px;
+            min-width: 700px;
+            position: relative;
+            box-shadow: 
+                0 0 30px rgba(255, 165, 0, 0.3),
+                inset 0 0 50px rgba(255, 165, 0, 0.05);
+        }
+
+        .victory-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255, 165, 0, 0.03) 10px,
+                rgba(255, 165, 0, 0.03) 20px
+            );
+            pointer-events: none;
+        }
+
+        .victory-card.show {
+            animation: victoryCardReveal 1.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        @keyframes victoryCardReveal {
+            0% {
+                opacity: 0;
+                transform: scale(0.8) rotateX(30deg);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) rotateX(0deg);
+            }
+        }
+
+        .card-header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .card-header-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #FFA500;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            text-shadow: 0 0 20px rgba(255, 165, 0, 0.6);
+            margin-bottom: 10px;
+        }
+
+        .card-header-subtitle {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Info rows */
+        .info-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 165, 0, 0.05);
+            border-left: 4px solid #FFA500;
+            padding: 15px 20px;
+            opacity: 0;
+            transform: translateX(-50px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 165, 0, 0.2), transparent);
+            transition: width 0.6s ease;
+        }
+
+        .info-item.animate {
+            animation: infoSlideIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        .info-item.animate::before {
+            width: 100%;
+        }
+
+        .info-item:nth-child(1) { animation-delay: 0.2s; }
+        .info-item:nth-child(2) { animation-delay: 0.4s; }
+        .info-item:nth-child(3) { animation-delay: 0.6s; }
+
+        @keyframes infoSlideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .info-label {
+            font-size: 16px;
+            color: rgba(255, 165, 0, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            min-width: 140px;
+        }
+
+        .info-value {
+            font-size: 28px;
+            color: #FFFFFF;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+        }
+
+        /* Control panel */
+        .control-panel {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            background: rgba(20, 20, 20, 0.9);
+            padding: 20px 30px;
+            border: 2px solid rgba(255, 165, 0, 0.4);
+            clip-path: polygon(20px 0, 100% 0, calc(100% - 20px) 100%, 0 100%);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+            z-index: 100;
+        }
+
+        .input-field {
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid rgba(255, 165, 0, 0.3);
+            color: #FFF;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            outline: none;
+            transition: all 0.3s;
+            clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+        }
+
+        .input-field:focus {
+            border-color: #FFA500;
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.4);
+        }
+
+        #employeeId {
+            width: 150px;
+        }
+
+        #awardType {
+            width: 200px;
+            cursor: pointer;
+        }
+
+        #awardType option {
+            background: #1a1a1a;
+            color: #FFF;
+        }
+
+        .search-btn {
+                        background: linear-gradient(135deg, #FFA500 0%, #FF8C00 100%);
+            border: none;
+            color: #000;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+            clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+            box-shadow: 0 0 20px rgba(255, 165, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .search-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .search-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 165, 0, 0.8);
+        }
+
+        .search-btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .search-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Error message */
+        .error-overlay {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(139, 0, 0, 0.95);
+            border: 3px solid #FF0000;
+            padding: 40px 60px;
+            clip-path: polygon(20px 0, 100% 0, calc(100% - 20px) 100%, 0 100%);
+            opacity: 0;
+            pointer-events: none;
+            z-index: 200;
+            box-shadow: 0 0 50px rgba(255, 0, 0, 0.6);
+        }
+
+        .error-overlay.show {
+            animation: errorPulse 2s forwards;
+        }
+
+        @keyframes errorPulse {
+            0%, 100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.8);
+            }
+            50% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        .error-text {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 28px;
+            color: #FFF;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        }
+
+        /* Victory banner */
+        .victory-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 150;
+        }
+
+        .victory-banner.show {
+            animation: bannerReveal 3s ease-out forwards;
+        }
+
+        @keyframes bannerReveal {
+            0% {
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .victory-text {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 64px;
+            font-weight: 900;
+            color: #FFA500;
+            text-transform: uppercase;
+            letter-spacing: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 165, 0, 1),
+                0 0 40px rgba(255, 165, 0, 0.8),
+                0 0 60px rgba(255, 165, 0, 0.6),
+                0 0 80px rgba(255, 165, 0, 0.4);
+            animation: textGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes textGlow {
+            0%, 100% {
+                text-shadow: 
+                    0 0 20px rgba(255, 165, 0, 1),
+                    0 0 40px rgba(255, 165, 0, 0.8),
+                    0 0 60px rgba(255, 165, 0, 0.6);
+            }
+            50% {
+                text-shadow: 
+                    0 0 30px rgba(255, 165, 0, 1),
+                    0 0 60px rgba(255, 165, 0, 1),
+                    0 0 90px rgba(255, 165, 0, 0.8);
+            }
+        }
+
+        /* Transition effect */
+        .wipe-transition {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(255, 165, 0, 0.3) 25%,
+                rgba(255, 165, 0, 0.8) 50%,
+                rgba(255, 165, 0, 0.3) 75%,
+                transparent 100%);
+            z-index: 120;
+            pointer-events: none;
+        }
+
+        .wipe-transition.show {
+            animation: wipeEffect 1.5s ease-in-out;
+        }
+
+        @keyframes wipeEffect {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        /* Particle effects */
+        .particle-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: #FFA500;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #FFA500;
+            animation: particleFloat 8s infinite ease-in-out;
+        }
+
+        @keyframes particleFloat {
+            0%, 100% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(50px);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 48px;
+            }
+
+            .award-title {
+                font-size: 36px;
+                letter-spacing: 5px;
+            }
+
+            .victory-card {
+                min-width: 90%;
+                padding: 30px;
+            }
+
+            .card-header-title {
+                font-size: 24px;
+            }
+
+            .info-value {
+                font-size: 20px;
+            }
+
+            .victory-text {
+                font-size: 60px;
+                letter-spacing: 10px;
+            }
+
+            .control-panel {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .input-field, #employeeId, #awardType {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background elements -->
+    <div class="hex-background"></div>
+    <div class="scanlines"></div>
+
+    <!-- Corner UI -->
+    <div class="corner-ui top-left"></div>
+    <div class="corner-ui top-right"></div>
+    <div class="corner-ui bottom-left"></div>
+    <div class="corner-ui bottom-right"></div>
+
+    <!-- Particle container -->
+    <div class="particle-container" id="particleContainer"></div>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-container" id="logoContainer">
+            <div class="logo">ASAHI INTECC</div>
+        </div>
+
+        <!-- Award title -->
+        <div class="award-title-container" id="awardTitleContainer">
+            <div class="award-title" id="awardTitle"></div>
+        </div>
+
+        <!-- Victory card -->
+        <div class="victory-card" id="victoryCard">
+            <div class="card-header">
+                <div class="card-header-title" id="cardTitle">CONGRATULATIONS</div>
+                <div class="card-header-subtitle">Employee Recognition</div>
+            </div>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">ID Number</span>
+                    <span class="info-value" id="displayId">---</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Full Name</span>
+                    <span class="info-value" id="displayName">---</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Department</span>
+                    <span class="info-value" id="displayDept">---</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Victory banner -->
+        <div class="victory-banner" id="victoryBanner">
+            <div class="victory-text">CONGRATULATIONS</div>
+        </div>
+
+        <!-- Error overlay -->
+        <div class="error-overlay" id="errorOverlay">
+            <div class="error-text">Employee Not Found!</div>
+        </div>
+
+        <!-- Wipe transition -->
+        <div class="wipe-transition" id="wipeTransition"></div>
+    </div>
+
+    <!-- Control panel -->
+    <div class="control-panel">
+        <input type="text" id="employeeId" class="input-field" placeholder="Enter ID">
+        <select id="awardType" class="input-field">
+            <option value="special">Special Award</option>
+            <option value="first">First Prize</option>
+            <option value="second">Second Prize</option>
+            <option value="third">Third Prize</option>
+            <option value="fourth">Fourth Prize</option>
+            <option value="fifth">Fifth Prize</option>
+            <option value="sixth">Sixth Prize</option>
+            <option value="seventh">Seventh Prize</option>
+        </select>
+        <button id="submitBtn" class="search-btn">Search</button>
+    </div>
+    <script>
+        // Generate particles
+        const particleContainer = document.getElementById('particleContainer');
+        for(let i = 0; i < 30; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 8 + 's';
+            particle.style.animationDuration = (Math.random() * 5 + 5) + 's';
+            particleContainer.appendChild(particle);
+        }
+
+        // Employee data
+        <!-- const csvdata = `id,họ và tên,bộ phận -->
+<!-- 1,nguyễn trí dũng,pe - document & it -->
+<!-- 2,bùi trọng oánh,pe - improve -->
+<!-- 3,mai thiết,gpc - it -->
+<!-- 4,trần văn toàn,pe - document & it -->
+<!-- 5,ngô duy khánh,investment`; -->
+		
+		
+		let csvdata = null;
+		async function loadCSV() {
+            try {
+                const response = await fetch('data.csv');
+                const csvText = await response.text();
+                
+                // Parse CSV với Papa Parse
+                Papa.parse(csvText, {
+                    header: true,          // Dòng đầu tiên là header
+                    dynamicTyping: true,   // Tự động chuyển đổi kiểu dữ liệu
+                    skipEmptyLines: true,  // Bỏ qua dòng trống
+                    complete: function(results) {
+                        csvData = results.data;
+                        console.log('Dữ liệu CSV:', csvData);
+                        
+                        // Hiển thị thông báo thành công
+                        document.getElementById('status').textContent = 
+                            `✓ Đã tải ${csvData.length} dòng dữ liệu`;
+                        
+                        // Hiển thị dữ liệu mẫu
+                        displayData();
+                    },
+                    error: function(error) {
+                        console.error('Lỗi parse CSV:', error);
+                        document.getElementById('status').textContent = 
+                            '✗ Lỗi khi đọc file CSV';
+                    }
+                });
+            } catch (error) {
+                console.error('Lỗi tải file:', error);
+                document.getElementById('status').textContent = 
+                    '✗ Không thể tải file data.csv';
+            }
+        }
+		
+        let employeesData = [];
+
+        // Award configurations
+        const awardConfig = {
+            special: {
+                name: 'SPECIAL AWARD',
+                color: '#FFD700',
+                glow: 'rgba(255, 215, 0, 0.8)'
+            },
+            first: {
+                name: 'FIRST PRIZE',
+                color: '#FF0080',
+                glow: 'rgba(255, 0, 128, 0.8)'
+            },
+            second: {
+                name: 'SECOND PRIZE',
+                color: '#00D4FF',
+                glow: 'rgba(0, 212, 255, 0.8)'
+            },
+            third: {
+                name: 'THIRD PRIZE',
+                color: '#7B2FF7',
+                glow: 'rgba(123, 47, 247, 0.8)'
+            },
+            fourth: {
+                name: 'FOURTH PRIZE',
+                color: '#00FF88',
+                glow: 'rgba(0, 255, 136, 0.8)'
+            },
+            fifth: {
+                name: 'FIFTH PRIZE',
+                color: '#FF6B6B',
+                glow: 'rgba(255, 107, 107, 0.8)'
+            },
+            sixth: {
+                name: 'SIXTH PRIZE',
+                color: '#4ECDC4',
+                glow: 'rgba(78, 205, 196, 0.8)'
+            },
+            seventh: {
+                name: 'SEVENTH PRIZE',
+                color: '#95E1D3',
+                glow: 'rgba(149, 225, 211, 0.8)'
+            }
+        };
+
+        // Parse CSV
+        function parseCSV(csv) {
+            const lines = csv.trim().split('\n');
+            const headers = lines[0].split(',');
+            const data = [];
+            
+            for(let i = 1; i < lines.length; i++) {
+                const values = lines[i].split(',');
+                const employee = {};
+                headers.forEach((header, index) => {
+                    employee[header.trim()] = values[index].trim();
+                });
+                data.push(employee);
+            }
+            return data;
+        }
+
+        employeesData = parseCSV(csvData);
+
+        // Apply award theme
+        function applyAwardTheme(config) {
+            const root = document.documentElement;
+            
+            // Update award title
+            document.getElementById('awardTitle').textContent = config.name;
+            document.getElementById('awardTitle').style.color = config.color;
+            document.getElementById('awardTitle').style.textShadow = `
+                0 0 10px ${config.glow},
+                0 0 20px ${config.glow},
+                0 0 40px ${config.glow}
+            `;
+
+            // Update card title
+            document.getElementById('cardTitle').style.color = config.color;
+            document.getElementById('cardTitle').style.textShadow = `0 0 20px ${config.glow}`;
+
+            // Update borders
+            document.querySelectorAll('.corner-ui').forEach(el => {
+                el.style.borderColor = config.color;
+                el.style.boxShadow = `0 0 20px ${config.glow}`;
+            });
+
+            document.getElementById('victoryCard').style.borderColor = config.color;
+            document.getElementById('victoryCard').style.boxShadow = `
+                0 0 30px ${config.glow},                inset 0 0 50px ${config.glow.replace('0.8', '0.1')}
+            `;
+
+            // Update info items
+            document.querySelectorAll('.info-item').forEach(el => {
+                el.style.borderLeftColor = config.color;
+                el.style.background = config.glow.replace('0.8', '0.05');
+            });
+
+            document.querySelectorAll('.info-label').forEach(el => {
+                el.style.color = config.color;
+            });
+
+            // Update victory text
+            document.getElementById('victoryBanner').querySelector('.victory-text').style.color = config.color;
+            document.getElementById('victoryBanner').querySelector('.victory-text').style.textShadow = `
+                0 0 20px ${config.glow},
+                0 0 40px ${config.glow},
+                0 0 60px ${config.glow.replace('0.8', '0.6')},
+                0 0 80px ${config.glow.replace('0.8', '0.4')}
+            `;
+
+            // Update particles
+            document.querySelectorAll('.particle').forEach(el => {
+                el.style.background = config.color;
+                el.style.boxShadow = `0 0 10px ${config.color}`;
+            });
+
+            // Update control panel
+            document.querySelectorAll('.input-field').forEach(el => {
+                el.style.borderColor = config.color.replace(')', ', 0.3)').replace('rgb', 'rgba');
+            });
+
+            document.querySelector('.search-btn').style.background = `linear-gradient(135deg, ${config.color} 0%, ${config.color}dd 100%)`;
+            document.querySelector('.search-btn').style.boxShadow = `0 0 20px ${config.glow.replace('0.8', '0.4')}`;
+        }
+
+        // Animation sequence
+        async function showEmployeeInfo(employee, awardType) {
+            const config = awardConfig[awardType];
+            
+            // Apply theme
+            applyAwardTheme(config);
+
+            // Reset all elements
+            const logoContainer = document.getElementById('logoContainer');
+            const awardTitleContainer = document.getElementById('awardTitleContainer');
+            const victoryCard = document.getElementById('victoryCard');
+            const victoryBanner = document.getElementById('victoryBanner');
+            const wipeTransition = document.getElementById('wipeTransition');
+
+            logoContainer.classList.remove('show');
+            awardTitleContainer.classList.remove('show');
+            victoryCard.classList.remove('show');
+            victoryBanner.classList.remove('show');
+            wipeTransition.classList.remove('show');
+
+            const infoItems = document.querySelectorAll('.info-item');
+            infoItems.forEach(item => item.classList.remove('animate'));
+
+            // Step 1: Show logo (2.5s)
+            await new Promise(resolve => {
+                setTimeout(() => {
+                    logoContainer.classList.add('show');
+                    resolve();
+                }, 100);
+            });
+
+            await new Promise(resolve => setTimeout(resolve, 1500));
+
+            // Step 2: Wipe transition (1.5s)
+				await new Promise(resolve => {
+					wipeTransition.classList.add('show');
+					resolve();
+				});
+
+				await new Promise(resolve => setTimeout(resolve, 1500));
+
+				// Step 2.5: Victory banner (3s - khớp với animation)
+				await new Promise(resolve => {
+					victoryBanner.classList.add('show');
+					setTimeout(resolve, 3000); // Khớp với animation bannerReveal
+				});
+
+            // Step 3: Show award title (2s)
+            await new Promise(resolve => {
+                awardTitleContainer.classList.add('show');
+                resolve();
+            });
+
+            await new Promise(resolve => setTimeout(resolve, 2000));
+
+            // Step 4: Show victory card with employee info
+            await new Promise(resolve => {
+                // Set employee data
+                document.getElementById('displayId').textContent = employee.ID;
+                document.getElementById('displayName').textContent = employee['Họ và Tên'];
+                document.getElementById('displayDept').textContent = employee['Bộ Phận'];
+
+                victoryCard.classList.add('show');
+                
+                setTimeout(() => {
+                    infoItems.forEach(item => item.classList.add('animate'));
+                }, 500);
+
+                resolve();
+            });
+        }
+
+        // Search function
+        function searchEmployee() {
+            const id = document.getElementById('employeeId').value.trim();
+            const awardType = document.getElementById('awardType').value;
+            const errorOverlay = document.getElementById('errorOverlay');
+
+            errorOverlay.classList.remove('show');
+
+            if(!id) {
+                return;
+            }
+
+            const employee = employeesData.find(emp => emp.ID === id);
+
+            if(employee) {
+                showEmployeeInfo(employee, awardType);
+            } else {
+                errorOverlay.classList.add('show');
+                setTimeout(() => {
+                    errorOverlay.classList.remove('show');
+                }, 2000);
+            }
+        }
+
+        // Event listeners
+        document.getElementById('submitBtn').addEventListener('click', searchEmployee);
+
+        document.getElementById('employeeId').addEventListener('keypress', (e) => {
+            if(e.key === 'Enter') {
+                searchEmployee();
+            }
+        });
+
+        // Initialize with default theme
+        applyAwardTheme(awardConfig.special);
+    </script>
+</body>
+</html>
+
+                
+
