@@ -803,7 +803,7 @@
         <div class="victory-card" id="victoryCard">
             <div class="card-header">
                 <div class="card-header-title" id="cardTitle">CONGRATULATIONS</div>
-                <div class="card-header-subtitle" id="cardSubtitle">Name Award</div>
+                <div class="card-header-subtitle" id="cardSubtitle">CONGRATULATIONS</div>
             </div>
             <div class="info-grid">
                 <div class="info-item">
@@ -1005,13 +1005,74 @@
             document.querySelector('.search-btn').style.background = `linear-gradient(135deg, ${config.color} 0%, ${config.color}dd 100%)`;
             document.querySelector('.search-btn').style.boxShadow = `0 0 20px ${config.glow.replace('0.8', '0.4')}`;
         }
+		// Apply award theme2
+        function applyAwardTheme2(config, employee) {
+            const root = document.documentElement;
+            
+            // Update award title
+            document.getElementById('awardTitle').textContent = employee['Bộ Phận'];
+            document.getElementById('awardTitle').style.color = config.color;
+            document.getElementById('awardTitle').style.textShadow = `
+                0 0 10px ${config.glow},
+                0 0 20px ${config.glow},
+                0 0 40px ${config.glow}
+            `;
+
+            // Update card title
+            document.getElementById('cardTitle').style.color = config.color;
+            document.getElementById('cardTitle').style.textShadow = `0 0 20px ${config.glow}`;
+
+            // Update borders
+            document.querySelectorAll('.corner-ui').forEach(el => {
+                el.style.borderColor = config.color;
+                el.style.boxShadow = `0 0 20px ${config.glow}`;
+            });
+
+            document.getElementById('victoryCard').style.borderColor = config.color;
+            document.getElementById('victoryCard').style.boxShadow = `
+                0 0 30px ${config.glow},                inset 0 0 50px ${config.glow.replace('0.8', '0.1')}
+            `;
+
+            // Update info items
+            document.querySelectorAll('.info-item').forEach(el => {
+                el.style.borderLeftColor = config.color;
+                el.style.background = config.glow.replace('0.8', '0.05');
+            });
+
+            document.querySelectorAll('.info-label').forEach(el => {
+                el.style.color = config.color;
+            });
+
+            // Update victory text
+            document.getElementById('victoryBanner').querySelector('.victory-text').style.color = config.color;
+            document.getElementById('victoryBanner').querySelector('.victory-text').style.textShadow = `
+                0 0 20px ${config.glow},
+                0 0 40px ${config.glow},
+                0 0 60px ${config.glow.replace('0.8', '0.6')},
+                0 0 80px ${config.glow.replace('0.8', '0.4')}
+            `;
+
+            // Update particles
+            document.querySelectorAll('.particle').forEach(el => {
+                el.style.background = config.color;
+                el.style.boxShadow = `0 0 10px ${config.color}`;
+            });
+
+            // Update control panel
+            document.querySelectorAll('.input-field').forEach(el => {
+                el.style.borderColor = config.color.replace(')', ', 0.3)').replace('rgb', 'rgba');
+            });
+
+            document.querySelector('.search-btn').style.background = `linear-gradient(135deg, ${config.color} 0%, ${config.color}dd 100%)`;
+            document.querySelector('.search-btn').style.boxShadow = `0 0 20px ${config.glow.replace('0.8', '0.4')}`;
+        }
 
         // Animation sequence
         async function showEmployeeInfo(employee, awardType) {
 				const config = awardConfig[awardType];
 				
 				// Apply theme
-				applyAwardTheme(config);
+				applyAwardTheme2(config, employee);
 
 				// Reset all elements
 				const awardTitleContainer = document.getElementById('awardTitleContainer');
@@ -1050,7 +1111,7 @@
 				document.getElementById('displayId').textContent = employee.ID;
 				document.getElementById('displayName').textContent = employee['Họ và Tên'];
 				document.getElementById('displayDept').textContent = employee['Bộ Phận'];
-				document.getElementById('cardSubtitle').textContent = config.name; // Hiển thị tên giải
+				document.getElementById('cardTitle').textContent = config.name; // Hiển thị tên giải
 			
 				victoryCard.classList.add('show');
 				
@@ -1099,6 +1160,7 @@
 </html>
 
                 
+
 
 
 
