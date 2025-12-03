@@ -869,7 +869,7 @@
 
         // Employee data
 		
-		let csvdata = null;
+		let csvData = null;
 		async function loadCSV() {
             try {
                 const response = await fetch('data.csv');
@@ -881,8 +881,8 @@
                     dynamicTyping: true,   // Tự động chuyển đổi kiểu dữ liệu
                     skipEmptyLines: true,  // Bỏ qua dòng trống
                     complete: function(results) {
-                        csvdata = results.data;
-                        console.log('Dữ liệu CSV:', csvdata);
+                        csvData = results.data;
+                        console.log('Dữ liệu CSV:', csvData);
                         
                         // Hiển thị thông báo thành công
                         document.getElementById('status').textContent = 
@@ -1143,5 +1143,6 @@
 </html>
 
                 
+
 
 
