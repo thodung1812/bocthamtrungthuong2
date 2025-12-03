@@ -1108,7 +1108,7 @@
 				awardTitleContainer.classList.remove('show');
 
 				// Step 4: Show victory card with employee info
-				document.getElementById('displayId').textContent = employee.ID;
+				document.getElementById('displayId').textContent = employee['ID'];
 				document.getElementById('displayName').textContent = employee['Họ và Tên'];
 				document.getElementById('displayDept').textContent = employee['Bộ Phận'];
 				document.getElementById('cardTitle').textContent = config.name; // Hiển thị tên giải
@@ -1160,6 +1160,7 @@
 </html>
 
                 
+
 
 
 
