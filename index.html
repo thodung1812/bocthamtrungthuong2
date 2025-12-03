@@ -868,13 +868,6 @@
         }
 
         // Employee data
-        <!-- const csvdata = `id,họ và tên,bộ phận -->
-<!-- 1,nguyễn trí dũng,pe - document & it -->
-<!-- 2,bùi trọng oánh,pe - improve -->
-<!-- 3,mai thiết,gpc - it -->
-<!-- 4,trần văn toàn,pe - document & it -->
-<!-- 5,ngô duy khánh,investment`; -->
-		
 		
 		let csvdata = null;
 		async function loadCSV() {
@@ -888,8 +881,8 @@
                     dynamicTyping: true,   // Tự động chuyển đổi kiểu dữ liệu
                     skipEmptyLines: true,  // Bỏ qua dòng trống
                     complete: function(results) {
-                        csvData = results.data;
-                        console.log('Dữ liệu CSV:', csvData);
+                        csvdata = results.data;
+                        console.log('Dữ liệu CSV:', csvdata);
                         
                         // Hiển thị thông báo thành công
                         document.getElementById('status').textContent = 
@@ -1150,4 +1143,5 @@
 </html>
 
                 
+
 
