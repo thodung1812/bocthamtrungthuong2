@@ -1042,7 +1042,7 @@
                 }, 100);
             });
 
-            await new Promise(resolve => setTimeout(resolve, 1500));
+            await new Promise(resolve => setTimeout(resolve, 500));
 
             // Step 2: Wipe transition (1.5s)
 				await new Promise(resolve => {
@@ -1050,7 +1050,7 @@
 					resolve();
 				});
 
-				await new Promise(resolve => setTimeout(resolve, 1500));
+				await new Promise(resolve => setTimeout(resolve, 500));
 
 				// Step 2.5: Victory banner (3s - khớp với animation)
 				await new Promise(resolve => {
@@ -1064,7 +1064,7 @@
                 resolve();
             });
 
-            await new Promise(resolve => setTimeout(resolve, 2000));
+            await new Promise(resolve => setTimeout(resolve, 1100));
 
             // Step 4: Show victory card with employee info
             await new Promise(resolve => {
@@ -1123,6 +1123,7 @@
 </html>
 
                 
+
 
 
 
