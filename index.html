@@ -803,7 +803,7 @@
         <div class="victory-card" id="victoryCard">
             <div class="card-header">
                 <div class="card-header-title" id="cardTitle">CONGRATULATIONS</div>
-                <div class="card-header-subtitle">Employee Recognition</div>
+                <div class="card-header-subtitle" id="cardSubtitle">Name Award</div>
             </div>
             <div class="info-grid">
                 <div class="info-item">
@@ -1050,7 +1050,8 @@
 				document.getElementById('displayId').textContent = employee.ID;
 				document.getElementById('displayName').textContent = employee['Họ và Tên'];
 				document.getElementById('displayDept').textContent = employee['Bộ Phận'];
-
+				document.getElementById('cardSubtitle').textContent = config.name; // Hiển thị tên giải
+			
 				victoryCard.classList.add('show');
 				
 				// Animate info items
@@ -1098,6 +1099,7 @@
 </html>
 
                 
+
 
 
 
