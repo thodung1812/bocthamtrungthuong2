@@ -1510,6 +1510,10 @@ document.head.appendChild(cornerStyle);
             document.querySelectorAll('.input-field').forEach(el => {
                 el.style.borderColor = config.color.replace(')', ', 0.3)').replace('rgb', 'rgba');
             });
+			// Update card title 
+			    document.getElementById('cardTitle').textContent = config.prize;
+			    document.getElementById('cardTitle').style.color = config.color;
+			    document.getElementById('cardTitle').style.textShadow = `0 0 20px ${config.glow}`;
 
             document.querySelector('.search-btn').style.background = `linear-gradient(135deg, ${config.color} 0%, ${config.color}dd 100%)`;
             document.querySelector('.search-btn').style.boxShadow = `0 0 20px ${config.glow.replace('0.8', '0.4')}`;
@@ -1615,6 +1619,7 @@ document.head.appendChild(cornerStyle);
 
 
                 
+
 
 
 
