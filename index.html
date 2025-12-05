@@ -8,6 +8,11 @@
       
 		@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Audiowide&display=swap');	
 		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Audiowide&display=swap');
+
+		:root {
+		    --theme-color: #FFA500;
+		    --theme-glow: rgba(255, 165, 0, 0.8);
+		}
         * {
             margin: 0;
             padding: 0;
@@ -355,20 +360,21 @@
 		}
         /* Enhanced Victory Card */
         .victory-card {
-            position: absolute;
-            opacity: 0;
-            background: linear-gradient(135deg, rgba(15, 15, 15, 0.98) 0%, rgba(5, 5, 5, 0.98) 100%);
-            border: 3px solid rgba(255, 165, 0, 0.8);
-            padding: 60px;
-            min-width: 800px;
-            position: relative;
-            box-shadow: 
-                0 0 50px rgba(255, 165, 0, 0.5),
-                inset 0 0 80px rgba(255, 165, 0, 0.08),
-                0 20px 60px rgba(0, 0, 0, 0.8);
-            pointer-events: none;
-            backdrop-filter: blur(10px);
-        }
+		    position: absolute;
+		    opacity: 0;
+		    background: linear-gradient(135deg, rgba(15, 15, 15, 0.98) 0%, rgba(5, 5, 5, 0.98) 100%);
+		    border: 3px solid rgba(255, 165, 0, 0.8);
+		    border-radius: 20px;
+		    padding: 50px;
+		    min-width: 1100px;
+		    max-width: 1200px;
+		    box-shadow: 
+		        0 0 50px rgba(255, 165, 0, 0.5),
+		        inset 0 0 80px rgba(255, 165, 0, 0.08),
+		        0 20px 60px rgba(0, 0, 0, 0.8);
+		    pointer-events: none;
+		    backdrop-filter: blur(10px);
+		}
 
         /* Decorative corners for card */
         .victory-card::before,
@@ -446,9 +452,10 @@
 
         .card-header {
             text-align: center;
-            margin-bottom: 50px;
-            position: relative;
-            padding-top: 20px;
+		    margin-bottom: 40px;
+		    border-bottom: 2px solid rgba(255, 165, 0, 0.5);
+		    padding-bottom: 25px;
+		    position: relative;
         }
 
         .card-header::after {
@@ -498,30 +505,180 @@
             font-weight: 500;
         }
 
-        /* Enhanced Info Grid */
-        .info-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            position: relative;
-            z-index: 1;
-        }
+        /* Award Content Layout */
+		.award-content {
+		    display: grid;
+		    grid-template-columns: 1.2fr 1fr;
+		    gap: 40px;
+		    align-items: start;
+		}
+		
+		/* Images Section */
+		.images-section {
+		    display: flex;
+		    flex-direction: column;
+		    gap: 20px;
+		    opacity: 0;
+		    transform: translateX(-50px);
+		}
+		
+		.images-section.animate {
+		    animation: slideInLeft 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+		}
+		
+		@keyframes slideInLeft {
+		    to {
+		        opacity: 1;
+		        transform: translateX(0);
+		    }
+		}
+		
+		.main-product-image {
+		    width: 100%;
+		    height: 400px;
+		    background: rgba(255, 165, 0, 0.05);
+		    border: 3px solid rgba(255, 165, 0, 0.4);
+		    border-radius: 15px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    overflow: hidden;
+		    position: relative;
+		    transition: all 0.3s;
+		}
+		
+		.main-product-image::before {
+		    content: '🏆 Hình ảnh giải thưởng';
+		    position: absolute;
+		    top: 15px;
+		    left: 50%;
+		    transform: translateX(-50%);
+		    color: rgba(255, 165, 0, 0.6);
+		    font-size: 12px;
+		    font-weight: 600;
+		    text-transform: uppercase;
+		    letter-spacing: 2px;
+		    z-index: 1;
+		}
+		
+		.main-product-image img {
+		    max-width: 90%;
+		    max-height: 90%;
+		    object-fit: contain;
+		    margin-top: 30px;
+		    animation: imageZoomIn 0.6s ease-out;
+		}
+		
+		@keyframes imageZoomIn {
+		    from {
+		        opacity: 0;
+		        transform: scale(0.8);
+		    }
+		    to {
+		        opacity: 1;
+		        transform: scale(1);
+		    }
+		}
+		
+		.additional-images {
+		    display: grid;
+		    grid-template-columns: repeat(3, 1fr);
+		    gap: 15px;
+		}
+		
+		.small-image {
+		    height: 110px;
+		    background: rgba(255, 165, 0, 0.05);
+		    border: 2px solid rgba(255, 165, 0, 0.3);
+		    border-radius: 10px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    overflow: hidden;
+		    cursor: pointer;
+		    transition: all 0.3s;
+		    position: relative;
+		}
+		
+		.small-image::after {
+		    content: attr(data-label);
+		    position: absolute;
+		    bottom: 5px;
+		    left: 50%;
+		    transform: translateX(-50%);
+		    color: rgba(255, 165, 0, 0.5);
+		    font-size: 10px;
+		    font-weight: 600;
+		    text-transform: uppercase;
+		}
+		
+		.small-image:hover {
+		    border-color: var(--theme-color, #FFA500);
+		    transform: scale(1.05);
+		    box-shadow: 0 0 20px var(--theme-glow, rgba(255, 165, 0, 0.5));
+		}
+		
+		.small-image img {
+		    max-width: 90%;
+		    max-height: 90%;
+		    object-fit: contain;
+		}
+		
+		.placeholder-text {
+		    color: rgba(255, 165, 0, 0.4);
+		    font-size: 14px;
+		    text-align: center;
+		}
+		
+		/* Employee Info */
+		.employee-info {
+		    display: flex;
+		    flex-direction: column;
+		    gap: 25px;
+		}
 
-        .info-item {
-            display: flex;
-            align-items: center;
-            background: linear-gradient(90deg, rgba(255, 165, 0, 0.08), rgba(255, 165, 0, 0.02));
-            border-left: 5px solid #FFA500;
-            padding: 20px 30px;
-            opacity: 0;
-            transform: translateX(-50px);
-            position: relative;
-            overflow: hidden;
-            border-radius: 0 10px 10px 0;
-            box-shadow: 
-                0 5px 15px rgba(0, 0, 0, 0.3),
-                inset 0 0 20px rgba(255, 165, 0, 0.05);
-        }
+        .info-row {
+	    display: flex;
+	    flex-direction: column;
+	    background: linear-gradient(90deg, rgba(255, 165, 0, 0.1), transparent);
+	    border-left: 4px solid #FFA500;
+	    padding: 15px 20px;
+	    border-radius: 0 8px 8px 0;
+	    opacity: 0;
+	    transform: translateX(50px);
+	    position: relative;
+	    overflow: hidden;
+	}
+	
+	.info-row.animate {
+	    animation: slideInRight 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+	}
+	
+	.info-row:nth-child(1) { animation-delay: 0.2s; }
+	.info-row:nth-child(2) { animation-delay: 0.4s; }
+	.info-row:nth-child(3) { animation-delay: 0.6s; }
+	
+	@keyframes slideInRight {
+	    to {
+	        opacity: 1;
+	        transform: translateX(0);
+	    }
+	}
+	
+	.info-row::before {
+	    content: '';
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 0;
+	    height: 100%;
+	    background: linear-gradient(90deg, transparent, rgba(255, 165, 0, 0.3), transparent);
+	    transition: width 0.8s ease;
+	}
+	
+	.info-row.animate::before {
+	    width: 100%;
+	}
 
         .info-item::before {
             content: '';
@@ -532,30 +689,6 @@
             height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255, 165, 0, 0.3), transparent);
             transition: width 0.8s ease;
-        }
-
-        .info-item::after {
-            content: '';
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 40px;
-            height: 40px;
-            background: radial-gradient(circle, rgba(255, 165, 0, 0.2), transparent);
-            border-radius: 50%;
-            animation: iconPulse 2s ease-in-out infinite;
-        }
-
-        @keyframes iconPulse {
-            0%, 100% {
-                transform: translateY(-50%) scale(1);
-                opacity: 0.5;
-            }
-            50% {
-                transform: translateY(-50%) scale(1.2);
-                opacity: 1;
-            }
         }
 
         .info-item.animate {
@@ -914,52 +1047,22 @@
 
         /* Responsive */
 		@media (max-width: 768px) {
-			.logo {
-				font-size: 48px;
-				letter-spacing: 4px;
-			}
-
-			.award-title {
-				font-size: 36px;
-				letter-spacing: 5px;
-				padding: 15px 25px;
-			}
-
-			.victory-card {
-				min-width: 90%;
-				padding: 40px 25px;
-			}
-
-			.award-badge {
-				font-size: 12px; /* GIẢM */
-				padding: 8px 20px; /* GIẢM */
-			}
-
-			.card-header-title {
-				font-size: 24px; /* GIẢM */
-				letter-spacing: 3px; /* GIẢM */
-			}
-
-			.card-header-subtitle {
-				font-size: 12px; /* GIẢM */
-				letter-spacing: 2px; /* GIẢM */
-			}
-
-			.info-item {
-				flex-direction: column;
-				align-items: flex-start;
-				gap: 10px;
-				padding: 15px; /* GIẢM */
-			}
-
-			.info-label {
-				font-size: 13px; /* GIẢM */
-				min-width: auto;
-			}
-
-			.info-value {
-				font-size: 20px; /* GIẢM */
-			}
+			@media (max-width: 768px) {
+    .logo {
+        font-size: 48px;
+        letter-spacing: 4px;
+    }
+    
+    .award-title {
+        font-size: 36px;
+        letter-spacing: 5px;
+        padding: 15px 25px;
+    }
+    
+    .victory-card {
+        min-width: 90%;
+        padding: 40px 25px;
+    }
 
 			.victory-text {
 				font-size: 40px;
@@ -1017,27 +1120,52 @@
         </div>
 
         <!-- Victory card -->
-        <div class="victory-card" id="victoryCard">
-            <div class="award-badge" id="awardBadge">SPECIAL AWARD</div>
-            <div class="card-header">
-                <div class="card-header-title" id="cardTitle">CONGRATULATIONS</div>
-                <div class="card-header-subtitle" id="cardSubtitle">CONGRATULATIONS</div>
-            </div>
-            <div class="info-grid">
-                <div class="info-item">
-                    <span class="info-label">ID Number</span>
-                    <span class="info-value" id="displayId">---</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Full Name</span>
-                    <span class="info-value" id="displayName">---</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Department</span>
-                    <span class="info-value" id="displayDept">---</span>
-                </div>
-            </div>
-        </div>
+		<div class="victory-card" id="victoryCard">
+		    <div class="award-badge" id="awardBadge">SPECIAL AWARD</div>
+		    
+		    <div class="card-header">
+		        <div class="card-header-title" id="cardTitle">iPhone 17 Pro Max màu cam</div>
+		        <div class="card-header-subtitle">Chúc mừng bạn đã trúng giải</div>
+		    </div>
+		
+		    <div class="award-content">
+		        <!-- Images Section -->
+		        <div class="images-section" id="imagesSection">
+		            <div class="main-product-image" id="mainProductImage">
+		                <div class="placeholder-text">Hình ảnh sản phẩm chính</div>
+		            </div>
+		            
+		            <div class="additional-images">
+		                <div class="small-image" id="smallImage1" data-label="Góc 1">
+		                    <div class="placeholder-text">📷</div>
+		                </div>
+		                <div class="small-image" id="smallImage2" data-label="Góc 2">
+		                    <div class="placeholder-text">📷</div>
+		                </div>
+		                <div class="small-image" id="smallImage3" data-label="Góc 3">
+		                    <div class="placeholder-text">📷</div>
+		                </div>
+		            </div>
+		        </div>
+		
+		        <!-- Employee Info -->
+		        <div class="employee-info">
+		            <div class="info-row">
+		                <div class="info-label">Mã nhân viên</div>
+		                <div class="info-value" id="displayId">---</div>
+		            </div>
+		            <div class="info-row">
+		                <div class="info-label">Họ và tên</div>
+		                <div class="info-value" id="displayName">---</div>
+		            </div>
+		            <div class="info-row">
+		                <div class="info-label">Bộ phận</div>
+		                <div class="info-value" id="displayDept">---</div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
 
         <!-- Victory banner -->
         <div class="victory-banner" id="victoryBanner">
@@ -1133,7 +1261,13 @@
                 color: '#FFD700',
                 glow: 'rgba(255, 215, 0, 0.8)',
                 bgGradient: 'radial-gradient(ellipse at 30% 40%, rgba(255, 215, 0, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 70% 60%, rgba(255, 200, 0, 0.12) 0%, transparent 50%)',
-                particleColor: '#FFD700'
+                particleColor: '#FFD700',
+				mainImage: 'https://via.placeholder.com/500x500/FFD700/000000?text=iPhone+17+Pro+Max',
+		        images: [
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
+		        ]
             },
             first: {
                 name: 'FIRST PRIZE',
@@ -1141,7 +1275,13 @@
                 color: '#FF0080',
                 glow: 'rgba(255, 0, 128, 0.8)',
                 bgGradient: 'radial-gradient(ellipse at 20% 30%, rgba(255, 0, 128, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 80% 70%, rgba(255, 0, 100, 0.12) 0%, transparent 50%)',
-                particleColor: '#FF0080'
+                particleColor: '#FF0080',
+				mainImage: 'https://via.placeholder.com/500x500/FFD700/000000?text=iPhone+17+Pro+Max',
+		        images: [
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
+		        ]
             },
             second: {
                 name: 'SECOND PRIZE',
@@ -1149,7 +1289,13 @@
                 color: '#00D4FF',
                 glow: 'rgba(0, 212, 255, 0.8)',
                 bgGradient: 'radial-gradient(ellipse at 25% 35%, rgba(0, 212, 255, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 75% 65%, rgba(0, 180, 255, 0.12) 0%, transparent 50%)',
-                particleColor: '#00D4FF'
+                particleColor: '#00D4FF',
+				mainImage: 'https://via.placeholder.com/500x500/FFD700/000000?text=iPhone+17+Pro+Max',
+		        images: [
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
+		        ]
             },
             third: {
                 name: 'THIRD PRIZE',
@@ -1157,7 +1303,13 @@
                 color: '#7B2FF7',
                 glow: 'rgba(123, 47, 247, 0.8)',
                 bgGradient: 'radial-gradient(ellipse at 30% 40%, rgba(123, 47, 247, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 70% 60%, rgba(100, 30, 247, 0.12) 0%, transparent 50%)',
-                particleColor: '#7B2FF7'
+                particleColor: '#7B2FF7',
+				mainImage: 'https://via.placeholder.com/500x500/FFD700/000000?text=iPhone+17+Pro+Max',
+		        images: [
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
+		        ]
             },
             fourth: {
                 name: 'FOURTH PRIZE',
@@ -1165,7 +1317,13 @@
                 color: '#00FF88',
                 glow: 'rgba(0, 255, 136, 0.8)',
                 bgGradient: 'radial-gradient(ellipse at 35% 45%, rgba(0, 255, 136, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 65% 55%, rgba(0, 220, 120, 0.12) 0%, transparent 50%)',
-                particleColor: '#00FF88'
+                particleColor: '#00FF88',
+				mainImage: 'https://via.placeholder.com/500x500/FFD700/000000?text=iPhone+17+Pro+Max',
+		        images: [
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
+		        ]
             },
             fifth: {
                 name: 'FIFTH PRIZE',
@@ -1173,7 +1331,13 @@
                 color: '#FF6B6B',
                 glow: 'rgba(255, 107, 107, 0.8)',
                 bgGradient: 'radial-gradient(ellipse at 40% 30%, rgba(255, 107, 107, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 60% 70%, rgba(255, 80, 80, 0.12) 0%, transparent 50%)',
-                particleColor: '#FF6B6B'
+                particleColor: '#FF6B6B',
+				mainImage: 'https://via.placeholder.com/500x500/FFD700/000000?text=iPhone+17+Pro+Max',
+		        images: [
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
+		        ]
             },
             sixth: {
                 name: 'SIXTH PRIZE',
@@ -1181,7 +1345,13 @@
                 color: '#4ECDC4',
                 glow: 'rgba(78, 205, 196, 0.8)',
                 bgGradient: 'radial-gradient(ellipse at 45% 35%, rgba(78, 205, 196, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 55% 65%, rgba(60, 180, 170, 0.12) 0%, transparent 50%)',
-                particleColor: '#4ECDC4'
+                particleColor: '#4ECDC4',
+				mainImage: 'https://via.placeholder.com/500x500/FFD700/000000?text=iPhone+17+Pro+Max',
+		        images: [
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
+		        ]
             },
             seventh: {
                 name: 'SEVENTH PRIZE',
@@ -1189,272 +1359,284 @@
                 color: '#95E1D3',
                 glow: 'rgba(149, 225, 211, 0.8)',
                 bgGradient: 'radial-gradient(ellipse at 50% 40%, rgba(149, 225, 211, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 50% 60%, rgba(120, 200, 190, 0.12) 0%, transparent 50%)',
-                particleColor: '#95E1D3'
+                particleColor: '#95E1D3',
+				mainImage: 'https://via.placeholder.com/500x500/FFD700/000000?text=iPhone+17+Pro+Max',
+		        images: [
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
+		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
+		        ]
             }
         };
 
         function applyAwardTheme(config, employee) {
-    // Update background
-    const glowLayer = document.querySelector('.glow-layer');
-    glowLayer.style.background = config.bgGradient;
-
-    // Update particles color
-    document.querySelectorAll('.floating-particle').forEach(el => {
-        el.style.background = `radial-gradient(circle, ${config.glow} 0%, transparent 70%)`;
-    });
-
-    // Update award title
-    const titleText = employee ? employee['Bộ Phận'] : config.name;
-    document.getElementById('awardTitle').textContent = titleText;
-    document.getElementById('awardTitle').style.color = config.color;
-    document.getElementById('awardTitle').style.borderColor = config.color;
-    document.getElementById('awardTitle').style.textShadow = `
-        0 0 10px ${config.glow},
-        0 0 20px ${config.glow},
-        0 0 40px ${config.glow}
-    `;
-    document.getElementById('awardTitle').style.boxShadow = `
-        0 0 30px ${config.glow},
-        inset 0 0 30px ${config.glow.replace('0.8', '0.1')}
-    `;
-
-    // Update award badge
-    document.getElementById('awardBadge').textContent = config.name;
-    document.getElementById('awardBadge').style.background = `linear-gradient(135deg, ${config.color}, ${config.color}dd)`;
-    document.getElementById('awardBadge').style.borderColor = config.color;
-    document.getElementById('awardBadge').style.boxShadow = `
-        0 0 30px ${config.glow},
-        inset 0 0 20px rgba(255, 255, 255, 0.3)
-    `;
-
-    // Update card
-    document.getElementById('cardTitle').textContent = employee ? config.prize : 'CONGRATULATIONS';
-    document.getElementById('cardTitle').style.color = config.color;
-    document.getElementById('victoryCard').style.borderColor = config.color;
-    document.getElementById('victoryCard').style.boxShadow = `
-        0 0 50px ${config.glow},
-        inset 0 0 80px ${config.glow.replace('0.8', '0.08')},
-        0 20px 60px rgba(0, 0, 0, 0.8)
-    `;
-    document.getElementById('victoryCard').style.color = config.color;
-
-    // Update card header after line
-    const cardHeader = document.querySelector('.card-header');
-    cardHeader.style.setProperty('--after-color', config.color);
-
-    // Update all corner UI elements
-    document.querySelectorAll('.corner-ui').forEach(corner => {
-        corner.style.setProperty('--corner-color', config.color);
-        corner.style.setProperty('--corner-glow', config.glow);
-    });
-
-    // Update info items
-    document.querySelectorAll('.info-item').forEach(el => {
-        el.style.borderLeftColor = config.color;
-        el.style.background = `linear-gradient(90deg, ${config.glow.replace('0.8', '0.08')}, ${config.glow.replace('0.8', '0.02')})`;
-        el.style.boxShadow = `
-            0 5px 15px rgba(0, 0, 0, 0.3),
-            inset 0 0 20px ${config.glow.replace('0.8', '0.05')}
-        `;
-    });
-
-    document.querySelectorAll('.info-label').forEach(el => {
-        el.style.color = config.color;
-    });
-
-    // Update info item after pseudo element (icon pulse)
-    document.querySelectorAll('.info-item').forEach(el => {
-        el.style.setProperty('--icon-color', config.glow.replace('0.8', '0.2'));
-    });
-
-    // Update victory banner
-    document.querySelector('.victory-text').style.color = config.color;
-    document.querySelector('.victory-text').style.textShadow = `
-        0 0 20px ${config.glow},
-        0 0 40px ${config.glow},
-        0 0 60px ${config.glow.replace('0.8', '0.6')},
-        0 0 80px ${config.glow.replace('0.8', '0.4')}
-    `;
-
-    // Update control panel
-    document.querySelector('.control-panel').style.borderColor = config.color.replace(')', ', 0.5)').replace('rgb', 'rgba');
-    document.querySelector('.control-panel').style.boxShadow = `
-        0 10px 50px rgba(0, 0, 0, 0.9),
-        0 0 30px ${config.glow.replace('0.8', '0.3')},
-        inset 0 0 30px ${config.glow.replace('0.8', '0.05')}
-    `;
-
-    // Update control panel border glow animation
-    const controlPanel = document.querySelector('.control-panel');
-    controlPanel.style.setProperty('--border-glow-color', config.glow);
-
-    document.querySelectorAll('.input-field').forEach(el => {
-        el.style.borderColor = config.color.replace(')', ', 0.4)').replace('rgb', 'rgba');
-    });
-
-    // Update input focus color
-    const style = document.createElement('style');
-    style.id = 'dynamic-input-style';
-    const existingStyle = document.getElementById('dynamic-input-style');
-    if (existingStyle) {
-        existingStyle.remove();
-    }
-    style.textContent = `
-        .input-field:focus {
-            border-color: ${config.color} !important;
-            box-shadow: 0 0 20px ${config.glow.replace('0.8', '0.5')}, inset 0 2px 5px rgba(0, 0, 0, 0.5) !important;
-        }
-    `;
-    document.head.appendChild(style);
-
-    document.querySelector('.search-btn').style.background = `linear-gradient(135deg, ${config.color} 0%, ${config.color}dd 100%)`;
-    document.querySelector('.search-btn').style.boxShadow = `
-        0 0 25px ${config.glow.replace('0.8', '0.5')},
-        0 5px 15px rgba(0, 0, 0, 0.5)
-    `;
-
-    // Update search button hover effect
-    const btnStyle = document.createElement('style');
-    btnStyle.id = 'dynamic-btn-style';
-    const existingBtnStyle = document.getElementById('dynamic-btn-style');
-    if (existingBtnStyle) {
-        existingBtnStyle.remove();
-    }
-    btnStyle.textContent = `
-        .search-btn:hover {
-            box-shadow: 0 0 40px ${config.glow.replace('0.8', '0.8')}, 0 8px 20px rgba(0, 0, 0, 0.6) !important;
-        }
-    `;
-    document.head.appendChild(btnStyle);
-
-    // Update wipe transition
-    document.getElementById('wipeTransition').style.background = `linear-gradient(90deg, 
-        transparent 0%, 
-        ${config.glow.replace('0.8', '0.4')} 25%,
-        ${config.glow.replace('0.8', '0.9')} 50%,
-        ${config.glow.replace('0.8', '0.4')} 75%,
-        transparent 100%)`;
-    document.getElementById('wipeTransition').style.boxShadow = `0 0 100px ${config.glow}`;
-
-    // Update grid layer color
-    <!-- const gridLayer = document.querySelector('.grid-layer'); -->
-    <!-- const gridStyle = document.createElement('style'); -->
-    <!-- gridStyle.id = 'dynamic-grid-style'; -->
-    <!-- const existingGridStyle = document.getElementById('dynamic-grid-style'); -->
-    <!-- if (existingGridStyle) { -->
-        <!-- existingGridStyle.remove(); -->
-    <!-- } -->
-    <!-- gridStyle.textContent = ` -->
-        <!-- .grid-layer { -->
-            <!-- background-image:  -->
-                <!-- linear-gradient(${config.color.replace(')', ', 0.03)')} 1px, transparent 1px), -->
-                <!-- linear-gradient(90deg, ${config.color.replace(')', ', 0.03)')} 1px, transparent 1px); -->
-        <!-- } -->
-    <!-- `; -->
-    <!-- document.head.appendChild(gridStyle); -->
-
-    // Update scanlines color
-    <!-- const scanlineStyle = document.createElement('style'); -->
-    <!-- scanlineStyle.id = 'dynamic-scanline-style'; -->
-    <!-- const existingScanlineStyle = document.getElementById('dynamic-scanline-style'); -->
-    <!-- if (existingScanlineStyle) { -->
-        <!-- existingScanlineStyle.remove(); -->
-    <!-- } -->
-    <!-- scanlineStyle.textContent = ` -->
-        <!-- .scanlines { -->
-            <!-- background: repeating-linear-gradient( -->
-                <!-- 0deg, -->
-                <!-- ${config.color.replace(')', ', 0.05)')}, -->
-                <!-- ${config.color.replace(')', ', 0.05)')} 1px, -->
-                <!-- transparent 1px, -->
-                <!-- transparent 2px -->
-            <!-- ); -->
-        <!-- } -->
-    <!-- `; -->
-    <!-- document.head.appendChild(scanlineStyle); -->
-}
-
-// Cập nhật CSS cho corner UI để sử dụng CSS variables
-const cornerStyle = document.createElement('style');
-cornerStyle.textContent = `
-    .corner-ui::before,
-    .corner-ui::after {
-        background: linear-gradient(135deg, var(--corner-glow, rgba(255, 165, 0, 0.9)), transparent);
-        box-shadow: 0 0 15px var(--corner-color, #FFA500);
-    }
-    
-    .corner-ui.top-right::before {
-        background: linear-gradient(135deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
-    }
-    
-    .corner-ui.top-right::after {
-        background: linear-gradient(90deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
-    }
-    
-    .corner-ui.bottom-left::before {
-        background: linear-gradient(225deg, var(--corner-glow, rgba(255, 165, 0, 0.9)), transparent);
-    }
-    
-    .corner-ui.bottom-left::after {
-        background: linear-gradient(180deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
-    }
-    
-    .corner-ui.bottom-right::before {
-        background: linear-gradient(225deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
-    }
-    
-    .corner-ui.bottom-right::after {
-        background: linear-gradient(270deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
-    }
-
-    .card-header::after {
-        background: linear-gradient(90deg, transparent, var(--after-color, #FFA500), transparent);
-        box-shadow: 0 0 10px var(--after-color, #FFA500);
-    }
-
-    .info-item::after {
-        background: radial-gradient(circle, var(--icon-color, rgba(255, 165, 0, 0.2)), transparent);
-    }
-
-    .control-panel::before {
-        background: linear-gradient(45deg, 
-            var(--border-glow-color, rgba(255, 165, 0, 0.5)), 
-            transparent, 
-            var(--border-glow-color, rgba(255, 165, 0, 0.5)));
-    }
-`;
-document.head.appendChild(cornerStyle);
-
-        // Burst effect
-        function createBurstEffect(config) {
-            const burstContainer = document.getElementById('burstContainer');
-            burstContainer.innerHTML = '';
-            
-            for(let i = 0; i < 30; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'burst-particle';
-                particle.style.background = config.color;
-                particle.style.boxShadow = `0 0 15px ${config.color}`;
-                
-                const angle = (Math.PI * 2 * i) / 30;
-                const distance = 300 + Math.random() * 200;
-                const tx = Math.cos(angle) * distance;
-                const ty = Math.sin(angle) * distance;
-                
-                particle.style.setProperty('--tx', tx + 'px');
-                particle.style.setProperty('--ty', ty + 'px');
-                particle.style.animationDelay = (i * 0.02) + 's';
-                
-                burstContainer.appendChild(particle);
-                
-                setTimeout(() => {
-                    particle.classList.add('active');
-                }, 50);
-            }
-        }
+			// THÊM MỚI - Set CSS variables
+    document.documentElement.style.setProperty('--theme-color', config.color);
+    document.documentElement.style.setProperty('--theme-glow', config.glow);
+	    // Update background
+	    const glowLayer = document.querySelector('.glow-layer');
+	    glowLayer.style.background = config.bgGradient;
+	
+	    // Update particles color
+	    document.querySelectorAll('.floating-particle').forEach(el => {
+	        el.style.background = `radial-gradient(circle, ${config.glow} 0%, transparent 70%)`;
+	    });
+	
+	    // Update award title
+	    const titleText = employee ? employee['Bộ Phận'] : config.name;
+	    document.getElementById('awardTitle').textContent = titleText;
+	    document.getElementById('awardTitle').style.color = config.color;
+	    document.getElementById('awardTitle').style.borderColor = config.color;
+	    document.getElementById('awardTitle').style.textShadow = `
+	        0 0 10px ${config.glow},
+	        0 0 20px ${config.glow},
+	        0 0 40px ${config.glow}
+	    `;
+	    document.getElementById('awardTitle').style.boxShadow = `
+	        0 0 30px ${config.glow},
+	        inset 0 0 30px ${config.glow.replace('0.8', '0.1')}
+	    `;
+	
+	    // Update award badge
+	    document.getElementById('awardBadge').textContent = config.name;
+	    document.getElementById('awardBadge').style.background = `linear-gradient(135deg, ${config.color}, ${config.color}dd)`;
+	    document.getElementById('awardBadge').style.borderColor = config.color;
+	    document.getElementById('awardBadge').style.boxShadow = `
+	        0 0 30px ${config.glow},
+	        inset 0 0 20px rgba(255, 255, 255, 0.3)
+	    `;
+	
+	    // Update card
+	    document.getElementById('cardTitle').textContent = employee ? config.prize : 'CONGRATULATIONS';
+	    document.getElementById('cardTitle').style.color = config.color;
+	    document.getElementById('victoryCard').style.borderColor = config.color;
+	    document.getElementById('victoryCard').style.boxShadow = `
+	        0 0 50px ${config.glow},
+	        inset 0 0 80px ${config.glow.replace('0.8', '0.08')},
+	        0 20px 60px rgba(0, 0, 0, 0.8)
+	    `;
+	    document.getElementById('victoryCard').style.color = config.color;
+	
+	    // Update card header after line
+	    const cardHeader = document.querySelector('.card-header');
+	    cardHeader.style.setProperty('--after-color', config.color);
+	
+	    // Update all corner UI elements
+	    document.querySelectorAll('.corner-ui').forEach(corner => {
+	        corner.style.setProperty('--corner-color', config.color);
+	        corner.style.setProperty('--corner-glow', config.glow);
+	    });
+	
+	    // Update info items
+	    document.querySelectorAll('.info-item').forEach(el => {
+	        el.style.borderLeftColor = config.color;
+	        el.style.background = `linear-gradient(90deg, ${config.glow.replace('0.8', '0.08')}, ${config.glow.replace('0.8', '0.02')})`;
+	        el.style.boxShadow = `
+	            0 5px 15px rgba(0, 0, 0, 0.3),
+	            inset 0 0 20px ${config.glow.replace('0.8', '0.05')}
+	        `;
+	    });
+	
+	    document.querySelectorAll('.info-label').forEach(el => {
+	        el.style.color = config.color;
+	    });
+	
+	    // Update info item after pseudo element (icon pulse)
+	    document.querySelectorAll('.info-item').forEach(el => {
+	        el.style.setProperty('--icon-color', config.glow.replace('0.8', '0.2'));
+	    });
+	
+	    // Update victory banner
+	    document.querySelector('.victory-text').style.color = config.color;
+	    document.querySelector('.victory-text').style.textShadow = `
+	        0 0 20px ${config.glow},
+	        0 0 40px ${config.glow},
+	        0 0 60px ${config.glow.replace('0.8', '0.6')},
+	        0 0 80px ${config.glow.replace('0.8', '0.4')}
+	    `;
+	
+	    // Update control panel
+	    document.querySelector('.control-panel').style.borderColor = config.color.replace(')', ', 0.5)').replace('rgb', 'rgba');
+	    document.querySelector('.control-panel').style.boxShadow = `
+	        0 10px 50px rgba(0, 0, 0, 0.9),
+	        0 0 30px ${config.glow.replace('0.8', '0.3')},
+	        inset 0 0 30px ${config.glow.replace('0.8', '0.05')}
+	    `;
+	
+	    // Update control panel border glow animation
+	    const controlPanel = document.querySelector('.control-panel');
+	    controlPanel.style.setProperty('--border-glow-color', config.glow);
+	
+	    document.querySelectorAll('.input-field').forEach(el => {
+	        el.style.borderColor = config.color.replace(')', ', 0.4)').replace('rgb', 'rgba');
+	    });
+	
+	    // Update input focus color
+	    const style = document.createElement('style');
+	    style.id = 'dynamic-input-style';
+	    const existingStyle = document.getElementById('dynamic-input-style');
+	    if (existingStyle) {
+	        existingStyle.remove();
+	    }
+	    style.textContent = `
+	        .input-field:focus {
+	            border-color: ${config.color} !important;
+	            box-shadow: 0 0 20px ${config.glow.replace('0.8', '0.5')}, inset 0 2px 5px rgba(0, 0, 0, 0.5) !important;
+	        }
+	    `;
+	    document.head.appendChild(style);
+	
+	    document.querySelector('.search-btn').style.background = `linear-gradient(135deg, ${config.color} 0%, ${config.color}dd 100%)`;
+	    document.querySelector('.search-btn').style.boxShadow = `
+	        0 0 25px ${config.glow.replace('0.8', '0.5')},
+	        0 5px 15px rgba(0, 0, 0, 0.5)
+	    `;
+	
+	    // Update search button hover effect
+	    const btnStyle = document.createElement('style');
+	    btnStyle.id = 'dynamic-btn-style';
+	    const existingBtnStyle = document.getElementById('dynamic-btn-style');
+	    if (existingBtnStyle) {
+	        existingBtnStyle.remove();
+	    }
+	    btnStyle.textContent = `
+	        .search-btn:hover {
+	            box-shadow: 0 0 40px ${config.glow.replace('0.8', '0.8')}, 0 8px 20px rgba(0, 0, 0, 0.6) !important;
+	        }
+	    `;
+	    document.head.appendChild(btnStyle);
+	
+	    // Update wipe transition
+	    document.getElementById('wipeTransition').style.background = `linear-gradient(90deg, 
+	        transparent 0%, 
+	        ${config.glow.replace('0.8', '0.4')} 25%,
+	        ${config.glow.replace('0.8', '0.9')} 50%,
+	        ${config.glow.replace('0.8', '0.4')} 75%,
+	        transparent 100%)`;
+	    document.getElementById('wipeTransition').style.boxShadow = `0 0 100px ${config.glow}`;
+	
+	    // Update grid layer color
+	    <!-- const gridLayer = document.querySelector('.grid-layer'); -->
+	    <!-- const gridStyle = document.createElement('style'); -->
+	    <!-- gridStyle.id = 'dynamic-grid-style'; -->
+	    <!-- const existingGridStyle = document.getElementById('dynamic-grid-style'); -->
+	    <!-- if (existingGridStyle) { -->
+	        <!-- existingGridStyle.remove(); -->
+	    <!-- } -->
+	    <!-- gridStyle.textContent = ` -->
+	        <!-- .grid-layer { -->
+	            <!-- background-image:  -->
+	                <!-- linear-gradient(${config.color.replace(')', ', 0.03)')} 1px, transparent 1px), -->
+	                <!-- linear-gradient(90deg, ${config.color.replace(')', ', 0.03)')} 1px, transparent 1px); -->
+	        <!-- } -->
+	    <!-- `; -->
+	    <!-- document.head.appendChild(gridStyle); -->
+	
+	    // Update scanlines color
+	    <!-- const scanlineStyle = document.createElement('style'); -->
+	    <!-- scanlineStyle.id = 'dynamic-scanline-style'; -->
+	    <!-- const existingScanlineStyle = document.getElementById('dynamic-scanline-style'); -->
+	    <!-- if (existingScanlineStyle) { -->
+	        <!-- existingScanlineStyle.remove(); -->
+	    <!-- } -->
+	    <!-- scanlineStyle.textContent = ` -->
+	        <!-- .scanlines { -->
+	            <!-- background: repeating-linear-gradient( -->
+	                <!-- 0deg, -->
+	                <!-- ${config.color.replace(')', ', 0.05)')}, -->
+	                <!-- ${config.color.replace(')', ', 0.05)')} 1px, -->
+	                <!-- transparent 1px, -->
+	                <!-- transparent 2px -->
+	            <!-- ); -->
+	        <!-- } -->
+	    <!-- `; -->
+	    <!-- document.head.appendChild(scanlineStyle); -->
+	}
+	
+	// Cập nhật CSS cho corner UI để sử dụng CSS variables
+	const cornerStyle = document.createElement('style');
+	cornerStyle.textContent = `
+	    .corner-ui::before,
+	    .corner-ui::after {
+	        background: linear-gradient(135deg, var(--corner-glow, rgba(255, 165, 0, 0.9)), transparent);
+	        box-shadow: 0 0 15px var(--corner-color, #FFA500);
+	    }
+	    
+	    .corner-ui.top-right::before {
+	        background: linear-gradient(135deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
+	    }
+	    
+	    .corner-ui.top-right::after {
+	        background: linear-gradient(90deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
+	    }
+	    
+	    .corner-ui.bottom-left::before {
+	        background: linear-gradient(225deg, var(--corner-glow, rgba(255, 165, 0, 0.9)), transparent);
+	    }
+	    
+	    .corner-ui.bottom-left::after {
+	        background: linear-gradient(180deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
+	    }
+	    
+	    .corner-ui.bottom-right::before {
+	        background: linear-gradient(225deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
+	    }
+	    
+	    .corner-ui.bottom-right::after {
+	        background: linear-gradient(270deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
+	    }
+	
+	    .card-header::after {
+	        background: linear-gradient(90deg, transparent, var(--after-color, #FFA500), transparent);
+	        box-shadow: 0 0 10px var(--after-color, #FFA500);
+	    }
+	
+	    .info-item::after {
+	        background: radial-gradient(circle, var(--icon-color, rgba(255, 165, 0, 0.2)), transparent);
+	    }
+	
+	    .control-panel::before {
+	        background: linear-gradient(45deg, 
+	            var(--border-glow-color, rgba(255, 165, 0, 0.5)), 
+	            transparent, 
+	            var(--border-glow-color, rgba(255, 165, 0, 0.5)));
+	    }
+	`;
+	document.head.appendChild(cornerStyle);
+	
+	        // Burst effect
+	        function createBurstEffect(config) {
+	            const burstContainer = document.getElementById('burstContainer');
+	            burstContainer.innerHTML = '';
+	            
+	            for(let i = 0; i < 30; i++) {
+	                const particle = document.createElement('div');
+	                particle.className = 'burst-particle';
+	                particle.style.background = config.color;
+	                particle.style.boxShadow = `0 0 15px ${config.color}`;
+	                
+	                const angle = (Math.PI * 2 * i) / 30;
+	                const distance = 300 + Math.random() * 200;
+	                const tx = Math.cos(angle) * distance;
+	                const ty = Math.sin(angle) * distance;
+	                
+	                particle.style.setProperty('--tx', tx + 'px');
+	                particle.style.setProperty('--ty', ty + 'px');
+	                particle.style.animationDelay = (i * 0.02) + 's';
+	                
+	                burstContainer.appendChild(particle);
+	                
+	                setTimeout(() => {
+	                    particle.classList.add('active');
+	                }, 50);
+	            }
+	        }
 		// Apply award theme 2
         function applyAwardTheme2(config, employee) {
             const root = document.documentElement;
+			// THÊM MỚI - Set CSS variables
+		    document.documentElement.style.setProperty('--theme-color', config.color);
+		    document.documentElement.style.setProperty('--theme-glow', config.glow);
             
             // Update award title
             document.getElementById('awardTitle').textContent = employee['Bộ Phận'];
@@ -1517,6 +1699,31 @@ document.head.appendChild(cornerStyle);
 
             document.querySelector('.search-btn').style.background = `linear-gradient(135deg, ${config.color} 0%, ${config.color}dd 100%)`;
             document.querySelector('.search-btn').style.boxShadow = `0 0 20px ${config.glow.replace('0.8', '0.4')}`;
+
+			// THÊM MỚI - Update images
+		    const mainProductImage = document.getElementById('mainProductImage');
+		    if (config.mainImage) {
+		        mainProductImage.innerHTML = `<img src="${config.mainImage}" alt="${config.prize}">`;
+		    } else {
+		        mainProductImage.innerHTML = '<div class="placeholder-text">Hình ảnh sản phẩm chính</div>';
+		    }
+		    mainProductImage.style.borderColor = config.color;
+		
+		    // Update small images
+		    if (config.images && config.images.length >= 3) {
+		        config.images.forEach((imgUrl, index) => {
+		            const smallImage = document.getElementById(`smallImage${index + 1}`);
+		            if (smallImage) {
+		                smallImage.innerHTML = `<img src="${imgUrl}" alt="Góc ${index + 1}">`;
+		                smallImage.style.borderColor = `${config.color}50`;
+		                
+		                // Add click event to switch main image
+		                smallImage.onclick = () => {
+		                    mainProductImage.innerHTML = `<img src="${imgUrl}" alt="Góc ${index + 1}">`;
+		                };
+		            }
+		        });
+		    }
         }
         // Animation sequence
         // Animation sequence
@@ -1527,50 +1734,56 @@ document.head.appendChild(cornerStyle);
 			// Apply theme
 			applyAwardTheme2(config,employee);
 
-			// Reset all elements
-			const awardTitleContainer = document.getElementById('awardTitleContainer');
-			const victoryCard = document.getElementById('victoryCard');
-			const victoryBanner = document.getElementById('victoryBanner');
-			const wipeTransition = document.getElementById('wipeTransition');
-
-			// Remove all previous animations
-			awardTitleContainer.classList.remove('show');
-			victoryCard.classList.remove('show');
-			victoryBanner.classList.remove('show');
-			wipeTransition.classList.remove('show');
-
-			const infoItems = document.querySelectorAll('.info-item');
-			infoItems.forEach(item => item.classList.remove('animate'));
-
-			// Wait a bit to ensure classes are removed
-			await new Promise(resolve => setTimeout(resolve, 50));
-
-			// Step 1: Wipe transition
-			wipeTransition.classList.add('show');
-			await new Promise(resolve => setTimeout(resolve, 1500));
-			wipeTransition.classList.remove('show');
-
-			// Step 2: Victory banner
-			victoryBanner.classList.add('show');
-			await new Promise(resolve => setTimeout(resolve, 1500));
-			victoryBanner.classList.remove('show');
-
-			// Step 3: Show award title
-			awardTitleContainer.classList.add('show');
-			await new Promise(resolve => setTimeout(resolve, 1200));
-			awardTitleContainer.classList.remove('show');
-
-			// Step 4: Show victory card with employee info
-			document.getElementById('displayId').textContent = employee.ID;
-			document.getElementById('displayName').textContent = employee['Họ và Tên'];
-			document.getElementById('displayDept').textContent = employee['Bộ Phận'];
-			<!-- document.getElementById('cardSubtitle').textContent = config.name; // Hiển thị tên giải -->
-			document.getElementById('cardTitle').textContent = config.prize;
-			victoryCard.classList.add('show');
-			
-			// Animate info items
-			await new Promise(resolve => setTimeout(resolve, 300));
-			infoItems.forEach(item => item.classList.add('animate'));
+			// Reset elements
+		    const awardTitleContainer = document.getElementById('awardTitleContainer');
+		    const victoryCard = document.getElementById('victoryCard');
+		    const victoryBanner = document.getElementById('victoryBanner');
+		    const wipeTransition = document.getElementById('wipeTransition');
+		    const imagesSection = document.getElementById('imagesSection');
+		
+		    // Remove all previous animations
+		    awardTitleContainer.classList.remove('show');
+		    victoryCard.classList.remove('show');
+		    victoryBanner.classList.remove('show');
+		    wipeTransition.classList.remove('show');
+		    imagesSection.classList.remove('animate');
+		
+		    const infoRows = document.querySelectorAll('.info-row');
+		    infoRows.forEach(item => item.classList.remove('animate'));
+		
+		    // Wait to ensure classes are removed
+		    await new Promise(resolve => setTimeout(resolve, 50));
+		
+		    // Step 1: Wipe transition
+		    wipeTransition.classList.add('show');
+		    await new Promise(resolve => setTimeout(resolve, 1500));
+		    wipeTransition.classList.remove('show');
+		
+		    // Step 2: Victory banner
+		    victoryBanner.classList.add('show');
+		    await new Promise(resolve => setTimeout(resolve, 1500));
+		    victoryBanner.classList.remove('show');
+		
+		    // Step 3: Show award title
+		    awardTitleContainer.classList.add('show');
+		    await new Promise(resolve => setTimeout(resolve, 1200));
+		    awardTitleContainer.classList.remove('show');
+		
+		    // Step 4: Show victory card with employee info
+		    document.getElementById('displayId').textContent = employee.ID;
+		    document.getElementById('displayName').textContent = employee['Họ và Tên'];
+		    document.getElementById('displayDept').textContent = employee['Bộ Phận'];
+		    document.getElementById('cardTitle').textContent = config.prize;
+		    
+		    victoryCard.classList.add('show');
+		    
+		    // Animate images section
+		    await new Promise(resolve => setTimeout(resolve, 300));
+		    imagesSection.classList.add('animate');
+		    
+		    // Animate info rows
+		    await new Promise(resolve => setTimeout(resolve, 200));
+		    infoRows.forEach(item => item.classList.add('animate'));
 		}
 
 
@@ -1619,6 +1832,7 @@ document.head.appendChild(cornerStyle);
 
 
                 
+
 
 
 
