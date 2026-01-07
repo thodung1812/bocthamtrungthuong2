@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asahi Intecc - Award System</title>
+    <title>Asahi Intecc - Futuristic Award System</title>
     <style>
-      
-		@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Audiowide&display=swap');	
-		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Audiowide&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900&display=swap');
 
-		:root {
-		    --theme-color: #FFA500;
-		    --theme-glow: rgba(255, 165, 0, 0.8);
-		}
+        :root {
+            --neon-color: #00ffff;
+            --neon-pink: #ff00ff;
+            --neon-yellow: #ffff00;
+            --dark: #0a0a0f;
+            --animation-speed: 1;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -20,832 +22,1034 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
-            background: #000000;
-            min-height: 100vh;
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--dark);
+            color: #fff;
             overflow: hidden;
-            position: relative;
+            height: 100vh;
+            perspective: 1000px;
         }
 
-        /* Dynamic Background System */
-        .dynamic-background {
+        /* ==================== CYBERPUNK BACKGROUND ==================== */
+        .cyber-bg {
             position: fixed;
-            width: 100%;
-            height: 100%;
+            inset: 0;
             z-index: 0;
-            transition: all 1s ease;
-        }
-
-        .bg-layer {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Animated gradient background */
-        .gradient-layer {
-            background: linear-gradient(45deg, #000000, #1a1a1a, #000000);
-            background-size: 400% 400%;
-            animation: gradientShift 15s ease infinite;
-        }
-
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-
-        @keyframes gridMove {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
-        }
-
-        /* Radial glow effects */
-        .glow-layer {
             background: 
-                radial-gradient(ellipse at 20% 30%, rgba(255, 165, 0, 0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 70%, rgba(255, 140, 0, 0.12) 0%, transparent 50%),
-                radial-gradient(ellipse at 50% 50%, rgba(255, 100, 0, 0.08) 0%, transparent 60%);
-            animation: glowPulse 8s ease-in-out infinite;
+                linear-gradient(45deg, #0a0014 0%, #0a0a0f 25%, #000a1a 50%, #0a0a0f 75%, #0a0014 100%);
         }
 
-        @keyframes glowPulse {
-            0%, 100% { opacity: 0.6; }
-            50% { opacity: 1; }
-        }
-
-        /* Floating particles */
-        .particle-layer {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .floating-particle {
-            position: absolute;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(255, 165, 0, 0.8) 0%, transparent 70%);
-            animation: floatParticle 20s infinite ease-in-out;
-        }
-
-        @keyframes floatParticle {
-            0%, 100% {
-                transform: translate(0, 0) scale(1);
-                opacity: 0;
-            }
-            10% { opacity: 0.6; }
-            50% {
-                transform: translate(var(--tx), var(--ty)) scale(1.5);
-                opacity: 0.8;
-            }
-            90% { opacity: 0.6; }
-            100% {
-                transform: translate(calc(var(--tx) * 2), calc(var(--ty) * 2)) scale(1);
-                opacity: 0;
-            }
-        }
-
-        /* Scanlines */
-        .scanlines {
+        /* Digital rain */
+        .digital-rain {
             position: fixed;
-            width: 100%;
-            height: 100%;
+            inset: 0;
+            overflow: hidden;
+            opacity: 0.3;
+            z-index: 1;
+        }
+
+        .rain-column {
+            position: absolute;
+            top: -100%;
+            width: 2px;
+            height: 100px;
+            background: linear-gradient(transparent, var(--neon-color), transparent);
+            box-shadow: 0 0 10px var(--neon-color);
+            animation: rain-fall linear infinite;
+        }
+
+        @keyframes rain-fall {
+            to {
+                transform: translateY(calc(100vh + 100px));
+            }
+        }
+
+        /* Neon grid */
+        .neon-grid {
+            position: fixed;
+            inset: 0;
+            background-image: 
+                linear-gradient(rgba(0, 255, 255, 0.05) 2px, transparent 2px),
+                linear-gradient(90deg, rgba(0, 255, 255, 0.05) 2px, transparent 2px);
+            background-size: 40px 40px;
+            background-position: 0 0, 0 0;
+            animation: grid-scroll 20s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes grid-scroll {
+            0% { background-position: 0 0, 0 0; }
+            100% { background-position: 40px 40px, 40px 40px; }
+        }
+
+        /* Glitch overlay */
+        .glitch-overlay {
+            position: fixed;
+            inset: 0;
             background: repeating-linear-gradient(
                 0deg,
-                rgba(0, 0, 0, 0.15),
-                rgba(0, 0, 0, 0.15) 1px,
+                rgba(0, 255, 255, 0.03) 0px,
                 transparent 1px,
-                transparent 2px
+                transparent 2px,
+                rgba(0, 255, 255, 0.03) 3px
             );
+            z-index: 2;
             pointer-events: none;
-            z-index: 999;
-            opacity: 0.2;
+            animation: glitch-scan 8s linear infinite;
         }
 
-        /* Enhanced Corner UI */
-        .corner-ui {
+        @keyframes glitch-scan {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(100%); }
+        }
+
+        /* Particle system */
+        .particle-system {
             position: fixed;
-            pointer-events: none;
-            z-index: 10;
+            inset: 0;
+            z-index: 1;
+            overflow: hidden;
         }
 
-        .corner-ui::before,
-        .corner-ui::after {
-            content: '';
+        .cyber-particle {
             position: absolute;
-            background: linear-gradient(135deg, rgba(255, 165, 0, 0.9), rgba(255, 165, 0, 0));
-            box-shadow: 0 0 15px currentColor;
-        }
-
-        .corner-ui.top-left {
-            top: 20px;
-            left: 20px;
-            width: 100px;
-            height: 100px;
-        }
-
-        .corner-ui.top-left::before {
-            top: 0;
-            left: 0;
             width: 4px;
-            height: 100%;
-        }
-
-        .corner-ui.top-left::after {
-            top: 0;
-            left: 0;
-            width: 100%;
             height: 4px;
-        }
-
-        .corner-ui.top-right {
-            top: 20px;
-            right: 20px;
-            width: 100px;
-            height: 100px;
-        }
-
-        .corner-ui.top-right::before {
-            top: 0;
-            right: 0;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(255, 165, 0, 0), rgba(255, 165, 0, 0.9));
-        }
-
-        .corner-ui.top-right::after {
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, rgba(255, 165, 0, 0), rgba(255, 165, 0, 0.9));
-        }
-
-        .corner-ui.bottom-left {
-            bottom: 20px;
-            left: 20px;
-            width: 100px;
-            height: 100px;
-        }
-
-        .corner-ui.bottom-left::before {
-            bottom: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(225deg, rgba(255, 165, 0, 0.9), rgba(255, 165, 0, 0));
-        }
-
-        .corner-ui.bottom-left::after {
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(180deg, rgba(255, 165, 0, 0), rgba(255, 165, 0, 0.9));
-        }
-
-        .corner-ui.bottom-right {
-            bottom: 20px;
-            right: 20px;
-            width: 100px;
-            height: 100px;
-        }
-
-        .corner-ui.bottom-right::before {
-            bottom: 0;
-            right: 0;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(225deg, rgba(255, 165, 0, 0), rgba(255, 165, 0, 0.9));
-        }
-
-        .corner-ui.bottom-right::after {
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(270deg, rgba(255, 165, 0, 0), rgba(255, 165, 0, 0.9));
-        }
-
-        .corner-ui::before,
-        .corner-ui::after {
-            animation: cornerPulse 2s ease-in-out infinite;
-        }
-
-        @keyframes cornerPulse {
-            0%, 100% { opacity: 0.6; }
-            50% { opacity: 1; }
-        }
-
-        /* Main container */
-        .container {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 5;
-        }
-
-        /* Logo animation */
-        .logo-container {
-            position: absolute;
-            opacity: 0;
-            transform: scale(0.5);
-        }
-
-        .logo-container.show {
-            animation: logoReveal 2.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-        }
-
-        @keyframes logoReveal {
-            0% {
-                opacity: 0;
-                transform: scale(0.5) rotateY(90deg);
-                filter: blur(20px);
-            }
-            30% {
-                opacity: 1;
-                transform: scale(1.1) rotateY(0deg);
-                filter: blur(0px);
-            }
-            60% {
-                opacity: 1;
-                transform: scale(1) rotateY(0deg);
-            }
-            100% {
-                opacity: 0;
-                transform: scale(0.8) translateX(-150%);
-                filter: blur(10px);
-            }
-        }
-
-        .logo {
-            font-family: 'Audiowide', sans-serif;
-            font-size: 80px;
-            font-weight: 900;
-            color: #FFA500;
-            text-transform: uppercase;
-            letter-spacing: 8px;
-            text-shadow: 
-                0 0 10px rgba(255, 165, 0, 0.8),
-                0 0 20px rgba(255, 165, 0, 0.6),
-                0 0 40px rgba(255, 165, 0, 0.4),
-                0 0 80px rgba(255, 165, 0, 0.2);
-            position: relative;
-        }
-
-        /* Award title display */
-        .award-title-container {
-            position: absolute;
-            opacity: 0;
-            transform: translateY(50px);
-        }
-
-        .award-title-container.show {
-            animation: awardTitleSlide 2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-        }
-
-        @keyframes awardTitleSlide {
-            0% {
-                opacity: 0;
-                transform: translateY(50px) scale(0.8);
-            }
-            20%, 80% {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-            100% {
-                opacity: 0;
-                transform: translateY(-50px) scale(0.8);
-            }
-        }
-
-        .award-title {
-            font-family: 'Audiowide', sans-serif;
-            font-size: 64px;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 10px;
-            color: #FFA500;
-            text-shadow: 
-                0 0 10px currentColor,
-                0 0 20px currentColor,
-                0 0 40px currentColor;
-            position: relative;
-            padding: 25px 60px;
-            border: 3px solid currentColor;
-            background: rgba(0, 0, 0, 0.8);
-            <!-- clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); -->
-			clip-path: polygon(30px 0%, calc(100% - 30px) 0%, 100% 30px, 100% 100%, calc(100% - 30px) 100%, 30px 100%, 0% calc(100% - 30px), 0% 30px);
+            background: var(--neon-color);
+            border-radius: 50%;
             box-shadow: 
-                0 0 30px currentColor,
-                inset 0 0 30px rgba(255, 165, 0, 0.1);
+                0 0 10px var(--neon-color),
+                0 0 20px var(--neon-color);
+            opacity: 0;
+            animation: particle-float 15s infinite;
         }
-		/* Cập nhật ::before để khớp với clip-path mới */
-		.award-title::before {
-			content: '';
-			position: absolute;
-			top: -3px;
-			left: -3px;
-			right: -3px;
-			bottom: -3px;
-			background: linear-gradient(45deg, currentColor, transparent, currentColor);
-			clip-path: polygon(30px 0%, calc(100% - 30px) 0%, 100% 30px, 100% 100%, calc(100% - 30px) 100%, 30px 100%, 0% calc(100% - 30px), 0% 30px);
-			z-index: -1;
-			opacity: 0.5;
-			filter: blur(10px);
-			animation: borderRotate 3s linear infinite;
-		}
-        /* Enhanced Victory Card */
-        .victory-card {
-		    position: absolute;
-		    opacity: 0;
-		    background: linear-gradient(135deg, rgba(15, 15, 15, 0.98) 0%, rgba(5, 5, 5, 0.98) 100%);
-		    border: 3px solid rgba(255, 165, 0, 0.8);
-		    border-radius: 20px;
-		    padding: 50px;
-		    min-width: 1100px;
-		    max-width: 1200px;
-		    box-shadow: 
-		        0 0 50px rgba(255, 165, 0, 0.5),
-		        inset 0 0 80px rgba(255, 165, 0, 0.08),
-		        0 20px 60px rgba(0, 0, 0, 0.8);
-		    pointer-events: none;
-		    backdrop-filter: blur(10px);
-		}
 
-        /* Decorative corners for card */
-        .victory-card::before,
-        .victory-card::after {
+        @keyframes particle-float {
+            0% {
+                transform: translate(0, 100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% {
+                transform: translate(var(--x), -100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Corner HUD */
+        .hud-corner {
+            position: fixed;
+            width: 120px;
+            height: 120px;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .hud-corner::before,
+        .hud-corner::after {
             content: '';
             position: absolute;
-            width: 40px;
-            height: 40px;
-            border: 3px solid currentColor;
-            box-shadow: 0 0 20px currentColor;
+            background: var(--neon-color);
+            box-shadow: 
+                0 0 10px var(--neon-color),
+                0 0 20px var(--neon-color);
         }
 
-        .victory-card::before {
-            top: -3px;
-            left: -3px;
-            border-right: none;
-            border-bottom: none;
+        .hud-corner.tl {
+            top: 20px;
+            left: 20px;
         }
 
-        .victory-card::after {
-            bottom: -3px;
-            right: -3px;
-            border-left: none;
-            border-top: none;
+        .hud-corner.tl::before {
+            width: 100%;
+            height: 3px;
+            top: 0;
+            left: 0;
+            clip-path: polygon(0 0, 70% 0, 70% 100%, 0 100%);
         }
 
-        .victory-card.show {
-            animation: victoryCardReveal 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        .hud-corner.tl::after {
+            width: 3px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
+        }
+
+        .hud-corner.tr {
+            top: 20px;
+            right: 20px;
+        }
+
+        .hud-corner.tr::before {
+            width: 100%;
+            height: 3px;
+            top: 0;
+            right: 0;
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 30% 100%);
+        }
+
+        .hud-corner.tr::after {
+            width: 3px;
+            height: 100%;
+            top: 0;
+            right: 0;
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
+        }
+
+        .hud-corner.bl {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .hud-corner.bl::before {
+            width: 100%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            clip-path: polygon(0 0, 70% 0, 70% 100%, 0 100%);
+        }
+
+        .hud-corner.bl::after {
+            width: 3px;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            clip-path: polygon(0 30%, 100% 30%, 100% 100%, 0 100%);
+        }
+
+        .hud-corner.br {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .hud-corner.br::before {
+            width: 100%;
+            height: 3px;
+            bottom: 0;
+            right: 0;
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 30% 100%);
+        }
+
+        .hud-corner.br::after {
+            width: 3px;
+            height: 100%;
+            bottom: 0;
+            right: 0;
+            clip-path: polygon(0 30%, 100% 30%, 100% 100%, 0 100%);
+        }
+
+        /* Pulsing animation */
+        .hud-corner::before,
+        .hud-corner::after {
+            animation: hud-pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes hud-pulse {
+            0%, 100% {
+                opacity: 0.7;
+                box-shadow: 0 0 10px var(--neon-color);
+            }
+            50% {
+                opacity: 1;
+                box-shadow: 0 0 20px var(--neon-color), 0 0 40px var(--neon-color);
+            }
+        }
+
+        /* ==================== LOGO INTRO ==================== */
+        .logo-intro {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .logo-intro.show {
+            animation: logo-sequence calc(3s / var(--animation-speed)) forwards;
+        }
+
+        @keyframes logo-sequence {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            70% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .cyber-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 70px;
+            font-weight: 900;
+            color: var(--neon-color);
+            text-transform: uppercase;
+            letter-spacing: 15px;
+            text-shadow: 
+                0 0 10px var(--neon-color),
+                0 0 20px var(--neon-color),
+                0 0 40px var(--neon-color),
+                0 0 80px var(--neon-color);
+            animation: logo-glitch 0.3s infinite;
+            position: relative;
+        }
+
+        @keyframes logo-glitch {
+            0%, 90%, 100% {
+                transform: translate(0, 0);
+                text-shadow: 
+                    0 0 10px var(--neon-color),
+                    0 0 20px var(--neon-color),
+                    0 0 40px var(--neon-color);
+            }
+            20% {
+                transform: translate(-2px, 2px);
+                text-shadow: 
+                    -2px 0 var(--neon-pink),
+                    2px 0 var(--neon-yellow);
+            }
+            40% {
+                transform: translate(2px, -2px);
+                text-shadow: 
+                    2px 0 var(--neon-pink),
+                    -2px 0 var(--neon-yellow);
+            }
+        }
+
+        /* ==================== TITLE REVEAL ==================== */
+        .title-reveal {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .title-reveal.show {
+            animation: title-sequence calc(2.5s / var(--animation-speed)) forwards;
+        }
+
+        @keyframes title-sequence {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        .neon-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 56px;
+            font-weight: 900;
+            color: var(--neon-color);
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            text-shadow: 
+                0 0 10px var(--neon-color),
+                0 0 20px var(--neon-color),
+                0 0 40px var(--neon-color),
+                0 0 80px var(--neon-color),
+                0 0 120px var(--neon-color);
+            padding: 25px 50px;
+            border: 3px solid var(--neon-color);
+            position: relative;
+            background: rgba(0, 0, 0, 0.8);
+            clip-path: polygon(0 0, 95% 0, 100% 5%, 100% 100%, 5% 100%, 0 95%);
+            animation: title-flicker 0.15s infinite;
+        }
+
+        @keyframes title-flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.95; }
+        }
+
+        /* ==================== MAIN CONTAINER ==================== */
+        .main-container {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+        }
+
+        /* ==================== AWARD CARD - SPLIT DESIGN ==================== */
+        .award-card {
+            width: 90%;
+            max-width: 950px;
+            height: 70vh;
+            max-height: 650px;
+            background: rgba(10, 10, 15, 0.95);
+            border: 3px solid var(--neon-color);
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            opacity: 0;
+            pointer-events: none;
+            transform: perspective(1000px) rotateY(-15deg);
+            box-shadow: 
+                0 0 50px var(--neon-color),
+                inset 0 0 100px rgba(0, 255, 255, 0.1);
+            clip-path: polygon(0 0, 98% 0, 100% 2%, 100% 100%, 2% 100%, 0 98%);
+        }
+
+        .award-card.show {
+            animation: card-reveal calc(1.2s / var(--animation-speed)) cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
             pointer-events: auto;
         }
 
-        @keyframes victoryCardReveal {
+        @keyframes card-reveal {
             0% {
                 opacity: 0;
-                transform: scale(0.8) rotateX(30deg);
+                transform: perspective(1000px) rotateY(-15deg) translateZ(-200px);
             }
             100% {
                 opacity: 1;
-                transform: scale(1) rotateX(0deg);
+                transform: perspective(1000px) rotateY(0deg) translateZ(0);
+            }
+        }
+
+        /* Animated border */
+        .award-card::before {
+            content: '';
+            position: absolute;
+            inset: -5px;
+            background: linear-gradient(45deg, 
+                var(--neon-color) 0%,
+                var(--neon-pink) 25%,
+                var(--neon-yellow) 50%,
+                var(--neon-pink) 75%,
+                var(--neon-color) 100%);
+            z-index: -1;
+            filter: blur(20px);
+            opacity: 0.6;
+            animation: border-glow 3s linear infinite;
+        }
+
+        @keyframes border-glow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Corner accents */
+        .award-card::after {
+            content: '';
+            position: absolute;
+            inset: 8px;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            clip-path: polygon(0 0, 98% 0, 100% 2%, 100% 100%, 2% 100%, 0 98%);
+            pointer-events: none;
+        }
+
+        /* Left panel - Info */
+        .info-panel {
+            background: linear-gradient(135deg, rgba(0, 20, 40, 0.8) 0%, rgba(0, 10, 20, 0.9) 100%);
+            padding: 35px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            border-right: 2px solid rgba(0, 255, 255, 0.3);
+        }
+
+        .info-panel::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 2px;
+            height: 0;
+            background: var(--neon-color);
+            box-shadow: 0 0 20px var(--neon-color);
+            animation: scan-line 2s ease-in-out infinite;
+        }
+
+        @keyframes scan-line {
+            0%, 100% {
+                height: 0;
+                top: 0;
+            }
+            50% {
+                height: 100%;
+                top: 0;
             }
         }
 
         /* Award badge */
-        .award-badge {
-			position: absolute;
-			top: -30px;
-			left: 50%;
-			transform: translateX(-50%);
-			background: linear-gradient(135deg, rgba(255, 165, 0, 0.95), rgba(255, 140, 0, 0.95));
-			padding: 12px 35px;
-			border-radius: 50px;
-			border: 3px solid rgba(255, 215, 0, 0.8);
-			box-shadow: 
-				0 0 30px rgba(255, 165, 0, 0.8),
-				inset 0 0 20px rgba(255, 255, 255, 0.3);
-			font-family: 'Audiowide', sans-serif;
-			font-size: 16px; /* GIẢM TỪ 20px */
-			font-weight: 900;
-			color: #000;
-			text-transform: uppercase;
-			letter-spacing: 3px;
-			animation: badgePulse 2s ease-in-out infinite;
-		}
-
-        @keyframes badgePulse {
-            0%, 100% {
-                transform: translateX(-50%) scale(1);
-                box-shadow: 0 0 30px rgba(255, 165, 0, 0.8);
-            }
-            50% {
-                transform: translateX(-50%) scale(1.05);
-                box-shadow: 0 0 50px rgba(255, 165, 0, 1);
-            }
-        }
-
-        .card-header {
-            text-align: center;
-		    margin-bottom: 40px;
-		    border-bottom: 2px solid rgba(255, 165, 0, 0.5);
-		    padding-bottom: 25px;
-		    position: relative;
-        }
-
-        .card-header::after {
-            content: '';
-            position: absolute;
-            bottom: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200px;
-            height: 3px;
-            background: linear-gradient(90deg, transparent, currentColor, transparent);
-            box-shadow: 0 0 10px currentColor;
-        }
-
-        .card-header-title {
-            font-family: 'Roboto', sans-serif;
-            font-size: 36px;
+        .award-badge-cyber {
+            background: linear-gradient(135deg, var(--neon-color) 0%, var(--neon-pink) 100%);
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
             font-weight: 900;
-            color: #FFA500;
-            text-transform: uppercase;
-            letter-spacing: 6px;
-            text-shadow: 
-                0 0 20px rgba(255, 165, 0, 0.8),
-                0 0 40px rgba(255, 165, 0, 0.4);
-            margin-bottom: 15px;
-            animation: titleGlow 2s ease-in-out infinite;
+            padding: 12px 25px;
+            text-align: center;
+            letter-spacing: 2px;
+            position: relative;
+            clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+            box-shadow: 
+                0 0 30px var(--neon-color),
+                inset 0 0 20px rgba(255, 255, 255, 0.3);
+            animation: badge-pulse calc(2s / var(--animation-speed)) ease-in-out infinite;
+            margin-bottom: 20px;
         }
 
-        @keyframes titleGlow {
+        @keyframes badge-pulse {
             0%, 100% {
-                text-shadow: 
-                    0 0 20px rgba(255, 165, 0, 0.8),
-                    0 0 40px rgba(255, 165, 0, 0.4);
+                transform: scale(1);
+                box-shadow: 0 0 30px var(--neon-color);
             }
             50% {
-                text-shadow: 
-                    0 0 30px rgba(255, 165, 0, 1),
-                    0 0 60px rgba(255, 165, 0, 0.6);
+                transform: scale(1.03);
+                box-shadow: 0 0 50px var(--neon-color), 0 0 70px var(--neon-pink);
             }
         }
 
-        .card-header-subtitle {
-            font-size: 16px;
-            color: rgba(255, 255, 255, 0.7);
+        /* Prize title */
+        .prize-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            color: var(--neon-color);
             text-transform: uppercase;
             letter-spacing: 3px;
-            font-weight: 500;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            text-shadow: 
+                0 0 20px var(--neon-color),
+                0 0 40px var(--neon-color);
+            animation: text-glow-pulse calc(2s / var(--animation-speed)) ease-in-out infinite;
         }
 
-        /* Award Content Layout */
-		.award-content {
-		    display: grid;
-		    grid-template-columns: 1.2fr 1fr;
-		    gap: 40px;
-		    align-items: start;
-		}
-		
-		/* Images Section */
-		.images-section {
-		    display: flex;
-		    flex-direction: column;
-		    gap: 20px;
-		    opacity: 0;
-		    transform: translateX(-50px);
-		}
-		
-		.images-section.animate {
-		    animation: slideInLeft 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-		}
-		
-		@keyframes slideInLeft {
-		    to {
-		        opacity: 1;
-		        transform: translateX(0);
-		    }
-		}
-		
-		.main-product-image {
-		    width: 100%;
-		    height: 400px;
-		    background: rgba(255, 165, 0, 0.05);
-		    border: 3px solid rgba(255, 165, 0, 0.4);
-		    border-radius: 15px;
-		    display: flex;
-		    align-items: center;
-		    justify-content: center;
-		    overflow: hidden;
-		    position: relative;
-		    transition: all 0.3s;
-		}
-		
-		.main-product-image::before {
-		    content: '🏆 Hình ảnh giải thưởng';
-		    position: absolute;
-		    top: 15px;
-		    left: 50%;
-		    transform: translateX(-50%);
-		    color: rgba(255, 165, 0, 0.6);
-		    font-size: 12px;
-		    font-weight: 600;
-		    text-transform: uppercase;
-		    letter-spacing: 2px;
-		    z-index: 1;
-		}
-		
-		.main-product-image img {
-		    max-width: 90%;
-		    max-height: 90%;
-		    object-fit: contain;
-		    margin-top: 30px;
-		    animation: imageZoomIn 0.6s ease-out;
-		}
-		
-		@keyframes imageZoomIn {
-		    from {
-		        opacity: 0;
-		        transform: scale(0.8);
-		    }
-		    to {
-		        opacity: 1;
-		        transform: scale(1);
-		    }
-		}
-		
-		.additional-images {
-		    display: grid;
-		    grid-template-columns: repeat(3, 1fr);
-		    gap: 15px;
-		}
-		
-		.small-image {
-		    height: 110px;
-		    background: rgba(255, 165, 0, 0.05);
-		    border: 2px solid rgba(255, 165, 0, 0.3);
-		    border-radius: 10px;
-		    display: flex;
-		    align-items: center;
-		    justify-content: center;
-		    overflow: hidden;
-		    cursor: pointer;
-		    transition: all 0.3s;
-		    position: relative;
-		}
-		
-		.small-image::after {
-		    content: attr(data-label);
-		    position: absolute;
-		    bottom: 5px;
-		    left: 50%;
-		    transform: translateX(-50%);
-		    color: rgba(255, 165, 0, 0.5);
-		    font-size: 10px;
-		    font-weight: 600;
-		    text-transform: uppercase;
-		}
-		
-		.small-image:hover {
-		    border-color: var(--theme-color, #FFA500);
-		    transform: scale(1.05);
-		    box-shadow: 0 0 20px var(--theme-glow, rgba(255, 165, 0, 0.5));
-		}
-		
-		.small-image img {
-		    max-width: 90%;
-		    max-height: 90%;
-		    object-fit: contain;
-		}
-		
-		.placeholder-text {
-		    color: rgba(255, 165, 0, 0.4);
-		    font-size: 14px;
-		    text-align: center;
-		}
-		
-		/* Employee Info */
-		.employee-info {
-		    display: flex;
-		    flex-direction: column;
-		    gap: 25px;
-		}
-
-        .info-row {
-	    display: flex;
-	    flex-direction: column;
-	    background: linear-gradient(90deg, rgba(255, 165, 0, 0.1), transparent);
-	    border-left: 4px solid #FFA500;
-	    padding: 15px 20px;
-	    border-radius: 0 8px 8px 0;
-	    opacity: 0;
-	    transform: translateX(50px);
-	    position: relative;
-	    overflow: hidden;
-	}
-	
-	.info-row.animate {
-	    animation: slideInRight 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-	}
-	
-	.info-row:nth-child(1) { animation-delay: 0.2s; }
-	.info-row:nth-child(2) { animation-delay: 0.4s; }
-	.info-row:nth-child(3) { animation-delay: 0.6s; }
-	
-	@keyframes slideInRight {
-	    to {
-	        opacity: 1;
-	        transform: translateX(0);
-	    }
-	}
-	
-	.info-row::before {
-	    content: '';
-	    position: absolute;
-	    left: 0;
-	    top: 0;
-	    width: 0;
-	    height: 100%;
-	    background: linear-gradient(90deg, transparent, rgba(255, 165, 0, 0.3), transparent);
-	    transition: width 0.8s ease;
-	}
-	
-	.info-row.animate::before {
-	    width: 100%;
-	}
-
-        .info-item::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 0;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 165, 0, 0.3), transparent);
-            transition: width 0.8s ease;
+        @keyframes text-glow-pulse {
+            0%, 100% {
+                text-shadow: 
+                    0 0 20px var(--neon-color),
+                    0 0 40px var(--neon-color);
+            }
+            50% {
+                text-shadow: 
+                    0 0 30px var(--neon-color),
+                    0 0 60px var(--neon-color),
+                    0 0 90px var(--neon-color);
+            }
         }
 
-        .info-item.animate {
-            animation: infoSlideIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        .prize-subtitle {
+            font-family: 'Nunito', sans-serif;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
         }
 
-        .info-item.animate::before {
-            width: 100%;
+        /* Employee data */
+        .employee-data {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            justify-content: center;
         }
 
-        .info-item:nth-child(1) { animation-delay: 0.2s; }
-        .info-item:nth-child(2) { animation-delay: 0.4s; }
-        .info-item:nth-child(3) { animation-delay: 0.6s; }
+        .data-row {
+            background: rgba(0, 255, 255, 0.05);
+            border-left: 4px solid var(--neon-color);
+            padding: 15px 20px;
+            position: relative;
+            overflow: hidden;
+            clip-path: polygon(0 0, 98% 0, 100% 20px, 100% 100%, 0 100%);
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.3s;
+        }
 
-        @keyframes infoSlideIn {
+        .data-row.animate {
+            animation: data-slide calc(0.8s / var(--animation-speed)) cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        .data-row:nth-child(1) { animation-delay: calc(0.2s / var(--animation-speed)); }
+        .data-row:nth-child(2) { animation-delay: calc(0.35s / var(--animation-speed)); }
+        .data-row:nth-child(3) { animation-delay: calc(0.5s / var(--animation-speed)); }
+
+        @keyframes data-slide {
             to {
                 opacity: 1;
                 transform: translateX(0);
             }
         }
 
-        .info-label {
-            font-size: 16px;
-            color: rgba(255, 165, 0, 0.9);
+        /* Hologram effect */
+        .data-row::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, 
+                transparent,
+                rgba(0, 255, 255, 0.2),
+                transparent);
+            animation: holo-scan 3s ease-in-out infinite;
+        }
+
+        @keyframes holo-scan {
+            0%, 100% { top: -100%; }
+            50% { top: 100%; }
+        }
+
+        .data-row:hover {
+            background: rgba(0, 255, 255, 0.1);
+            border-left-width: 6px;
+            transform: translateX(5px);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+        }
+
+        .data-label {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 11px;
+            color: rgba(0, 255, 255, 0.8);
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-weight: 600;
-            min-width: 150px;
+            margin-bottom: 6px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
+            font-weight: 600;
         }
 
-        .info-label::before {
-            content: '▸';
-            font-size: 20px;
-            color: currentColor;
-            animation: arrowBlink 1.5s ease-in-out infinite;
+        .data-label::before {
+            content: '>';
+            color: var(--neon-color);
+            font-size: 14px;
+            animation: blink-cursor 1s step-end infinite;
         }
 
-        @keyframes arrowBlink {
-            0%, 100% { opacity: 0.5; }
-            50% { opacity: 1; }
+        @keyframes blink-cursor {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
         }
 
-        .info-value {
-            font-size: 26px;
-            color: #FFFFFF;
+        .data-value {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 24px;
+            color: #fff;
             font-weight: 700;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-shadow: 
-                0 0 10px rgba(255, 165, 0, 0.4),
+                0 0 10px rgba(0, 255, 255, 0.5),
                 0 2px 4px rgba(0, 0, 0, 0.5);
-            flex: 1;
         }
 
-        /* Enhanced Control Panel */
-        .control-panel {
+        /* Right panel - Visual */
+        .visual-panel {
+            background: linear-gradient(135deg, rgba(20, 0, 40, 0.8) 0%, rgba(10, 0, 20, 0.9) 100%);
+            padding: 35px 30px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* Product showcase */
+        .product-showcase {
+            flex: 1;
+            min-height: 400px;
+            background: 
+                radial-gradient(ellipse at center, rgba(0, 255, 255, 0.1) 0%, transparent 70%),
+                rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(0, 255, 255, 0.4);
+            clip-path: polygon(0 0, 97% 0, 100% 3%, 100% 100%, 3% 100%, 0 97%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        .product-showcase.animate {
+            animation: showcase-reveal calc(1s / var(--animation-speed)) cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        @keyframes showcase-reveal {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Rotating hologram effect */
+        .product-showcase::before {
+            content: '';
+            position: absolute;
+            inset: -50%;
+            background: conic-gradient(
+                transparent 0deg,
+                rgba(0, 255, 255, 0.1) 45deg,
+                transparent 90deg,
+                transparent 180deg,
+                rgba(255, 0, 255, 0.1) 225deg,
+                transparent 270deg
+            );
+            animation: holo-rotate 4s linear infinite;
+        }
+
+        @keyframes holo-rotate {
+            to { transform: rotate(360deg); }
+        }
+
+        .product-showcase::after {
+            content: '[ PRIZE ITEM ]';
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 11px;
+            color: var(--neon-color);
+            letter-spacing: 2px;
+            font-weight: 600;
+            z-index: 1;
+        }
+
+        .product-image {
+            width: 350px;
+            height: 350px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 30px rgba(0, 255, 255, 0.5));
+            animation: product-levitate 4s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        @keyframes product-levitate {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-20px) scale(1.05); }
+        }
+
+        /* ==================== VICTORY BANNER ==================== */
+        .victory-banner {
             position: fixed;
-            bottom: 40px;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 150;
+            opacity: 0;
+            pointer-events: none;
+            background: radial-gradient(ellipse at center, rgba(0, 255, 255, 0.2) 0%, transparent 60%);
+        }
+
+        .victory-banner.show {
+            animation: banner-appear calc(2s / var(--animation-speed)) forwards;
+        }
+
+        @keyframes banner-appear {
+            0% { opacity: 0; }
+            20%, 80% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        .victory-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 80px;
+            font-weight: 900;
+            color: var(--neon-color);
+            text-transform: uppercase;
+            letter-spacing: 25px;
+            text-shadow: 
+                0 0 20px var(--neon-color),
+                0 0 40px var(--neon-color),
+                0 0 60px var(--neon-color),
+                0 0 100px var(--neon-color);
+            animation: victory-glitch 0.5s infinite;
+        }
+
+        @keyframes victory-glitch {
+            0%, 90%, 100% {
+                transform: translate(0);
+                text-shadow: 
+                    0 0 20px var(--neon-color),
+                    0 0 40px var(--neon-color),
+                    0 0 60px var(--neon-color);
+            }
+            20% {
+                transform: translate(-5px, 5px);
+                text-shadow: 
+                    -5px 0 var(--neon-pink),
+                    5px 0 var(--neon-yellow);
+            }
+            40% {
+                transform: translate(5px, -5px);
+                text-shadow: 
+                    5px 0 var(--neon-pink),
+                    -5px 0 var(--neon-yellow);
+            }
+        }
+
+        /* ==================== WIPE TRANSITION ==================== */
+        .wipe-effect {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                var(--neon-color) 50%,
+                transparent 100%);
+            z-index: 120;
+            pointer-events: none;
+            opacity: 0.5;
+            box-shadow: 0 0 100px var(--neon-color);
+        }
+
+        .wipe-effect.show {
+            animation: wipe-across calc(1.5s / var(--animation-speed)) cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes wipe-across {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* ==================== ERROR STATE ==================== */
+        .error-state {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(139, 0, 0, 0.95);
+            border: 3px solid #ff0000;
+            padding: 40px 60px;
+            clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+            opacity: 0;
+            pointer-events: none;
+            z-index: 200;
+            box-shadow: 
+                0 0 50px rgba(255, 0, 0, 0.8),
+                inset 0 0 50px rgba(255, 0, 0, 0.2);
+        }
+
+        .error-state.show {
+            animation: error-flash 2s forwards;
+        }
+
+        @keyframes error-flash {
+            0%, 100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.9);
+            }
+            50% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        .error-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-align: center;
+            text-shadow: 
+                0 0 20px #ff0000,
+                0 0 40px #ff0000;
+            animation: error-shake 0.3s infinite;
+        }
+
+        @keyframes error-shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        /* ==================== CONTROL PANEL ==================== */
+        .control-hub {
+            position: fixed;
+            bottom: 25px;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
-            gap: 20px;
+            gap: 15px;
             align-items: center;
-            background: linear-gradient(135deg, rgba(20, 20, 20, 0.95), rgba(10, 10, 10, 0.95));
-            padding: 25px 40px;
-            border: 3px solid rgba(255, 165, 0, 0.5);
-            border-radius: 15px;
-            box-shadow: 
-                0 10px 50px rgba(0, 0, 0, 0.9),
-                0 0 30px rgba(255, 165, 0, 0.3),
-                inset 0 0 30px rgba(255, 165, 0, 0.05);
+            background: rgba(10, 10, 15, 0.95);
+            padding: 20px 35px;
+            border: 2px solid var(--neon-color);
+            clip-path: polygon(2% 0, 100% 0, 98% 100%, 0 100%);
             z-index: 100;
-            backdrop-filter: blur(10px);
-        }
-
-        .control-panel::before {
-            content: '';
-            position: absolute;
-            top: -3px;
-            left: -3px;
-            right: -3px;
-            bottom: -3px;
-            background: linear-gradient(45deg, 
-                rgba(255, 165, 0, 0.5), 
-                rgba(255, 140, 0, 0.3), 
-                rgba(255, 165, 0, 0.5));
-            border-radius: 15px;
-            z-index: -1;
-            opacity: 0;
-            animation: borderGlow 3s ease-in-out infinite;
-        }
-
-        @keyframes borderGlow {
-            0%, 100% { opacity: 0; }
-            50% { opacity: 1; }
-        }
-
-        .input-field {
-            background: rgba(0, 0, 0, 0.7);
-            border: 2px solid rgba(255, 165, 0, 0.4);
-            color: #FFF;
-            padding: 15px 25px;
-            font-size: 18px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 600;
-            outline: none;
-            transition: all 0.3s;
-            border-radius: 8px;
-            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .input-field:focus {
-            border-color: #FFA500;
             box-shadow: 
-                0 0 20px rgba(255, 165, 0, 0.5),
-                inset 0 2px 5px rgba(0, 0, 0, 0.5);
-            background: rgba(0, 0, 0, 0.9);
+                0 0 40px rgba(0, 255, 255, 0.5),
+                inset 0 0 40px rgba(0, 255, 255, 0.05);
         }
 
-        #employeeId {
+        /* ==================== SETTINGS PANEL ==================== */
+        .settings-panel {
+            position: fixed;
+            bottom: 90px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: rgba(10, 10, 15, 0.98);
+            border: 2px solid var(--neon-color);
+            padding: 20px 30px;
+            border-radius: 10px;
+            z-index: 99;
+            box-shadow: 
+                0 0 40px rgba(0, 255, 255, 0.5),
+                inset 0 0 40px rgba(0, 255, 255, 0.05);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            clip-path: polygon(2% 0, 100% 0, 98% 100%, 0 100%);
+        }
+
+        .settings-panel.show {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .settings-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 12px;
+            color: var(--neon-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            text-align: center;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+            padding-bottom: 8px;
+        }
+
+        .settings-content {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .settings-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .settings-label {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 10px;
+            color: rgba(0, 255, 255, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            font-weight: 600;
+        }
+
+        .speed-slider {
             width: 180px;
-        }
-
-        #awardType {
-            width: 220px;
+            height: 4px;
+            background: rgba(0, 255, 255, 0.2);
+            border-radius: 2px;
+            outline: none;
+            -webkit-appearance: none;
             cursor: pointer;
         }
 
-        #awardType option {
-            background: #1a1a1a;
-            color: #FFF;
-            padding: 10px;
+        .speed-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 14px;
+            height: 14px;
+            background: var(--neon-color);
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 10px var(--neon-color);
         }
 
-        .search-btn {
-            background: linear-gradient(135deg, #FFA500 0%, #FF8C00 100%);
+        .speed-slider::-moz-range-thumb {
+            width: 14px;
+            height: 14px;
+            background: var(--neon-color);
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 0 10px var(--neon-color);
+        }
+
+        .speed-value {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 11px;
+            color: var(--neon-color);
+            text-align: center;
+            margin-top: 3px;
+        }
+
+        .csv-upload-btn {
+            background: linear-gradient(135deg, var(--neon-color) 0%, var(--neon-pink) 100%);
             border: none;
             color: #000;
-            padding: 15px 40px;
-            font-size: 18px;
-            font-family: 'Roboto', sans-serif;
+            padding: 8px 20px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 10px;
             font-weight: 900;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            letter-spacing: 1px;
             cursor: pointer;
             transition: all 0.3s;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            white-space: nowrap;
+        }
+
+        .csv-upload-btn:hover {
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+            transform: translateY(-2px);
+        }
+
+        .csv-upload-btn:hover {
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+            transform: translateY(-2px);
+        }
+
+        /* Control buttons */
+        .control-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .icon-button {
+            background: linear-gradient(135deg, var(--neon-color) 0%, var(--neon-pink) 100%);
+            border: none;
+            color: #000;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
             border-radius: 8px;
-            box-shadow: 
-                0 0 25px rgba(255, 165, 0, 0.5),
-                0 5px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: relative;
             overflow: hidden;
         }
 
-        .search-btn::before {
+        .icon-button::before {
             content: '';
             position: absolute;
             top: 50%;
@@ -858,1004 +1062,660 @@
             transition: width 0.6s, height 0.6s;
         }
 
-        .search-btn:hover {
-            transform: scale(1.05) translateY(-2px);
+        .icon-button:hover {
+            transform: scale(1.1) translateY(-2px);
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.8);
+        }
+
+        .icon-button:hover::before {
+            width: 100px;
+            height: 100px;
+        }
+
+        .icon-button:active {
+            transform: scale(0.95);
+        }
+
+        .icon-button.active {
+            background: linear-gradient(135deg, var(--neon-pink) 0%, var(--neon-yellow) 100%);
+        }
+
+        .cyber-input {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid rgba(0, 255, 255, 0.5);
+            color: var(--neon-color);
+            padding: 10px 20px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 13px;
+            outline: none;
+            transition: all 0.3s;
+            clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
+        }
+
+        .cyber-input:focus {
+            border-color: var(--neon-color);
             box-shadow: 
-                0 0 40px rgba(255, 165, 0, 0.8),
-                0 8px 20px rgba(0, 0, 0, 0.6);
+                0 0 20px rgba(0, 255, 255, 0.5),
+                inset 0 0 20px rgba(0, 255, 255, 0.1);
         }
 
-        .search-btn:hover::before {
-            width: 300px;
-            height: 300px;
+        .cyber-input::placeholder {
+            color: rgba(0, 255, 255, 0.5);
         }
 
-        .search-btn:active {
-            transform: scale(0.98);
+        #empId {
+            width: 160px;
         }
 
-        /* Error overlay */
-        .error-overlay {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: linear-gradient(135deg, rgba(139, 0, 0, 0.98), rgba(100, 0, 0, 0.98));
-            border: 4px solid #FF0000;
-            padding: 50px 80px;
-            border-radius: 15px;
-            opacity: 0;
-            pointer-events: none;
-            z-index: 200;
-            box-shadow: 
-                0 0 60px rgba(255, 0, 0, 0.8),
-                inset 0 0 40px rgba(255, 0, 0, 0.2);
-            backdrop-filter: blur(10px);
+        #awardSelect {
+            width: 200px;
+            cursor: pointer;
         }
 
-        .error-overlay.show {
-            animation: errorPulse 2s forwards;
-        }
-
-        @keyframes errorPulse {
-            0%, 100% {
-                opacity: 0;
-                transform: translate(-50%, -50%) scale(0.8);
-            }
-            50% {
-                opacity: 1;
-                transform: translate(-50%, -50%) scale(1);
-            }
-        }
-
-        .error-text {
-            font-family: 'Audiowide', sans-serif;
-            font-size: 32px;
-            color: #FFF;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            text-align: center;
-            text-shadow: 
-                0 0 15px rgba(255, 0, 0, 1),
-                0 0 30px rgba(255, 0, 0, 0.6);
-            animation: errorTextShake 0.5s ease-in-out infinite;
-        }
-
-        @keyframes errorTextShake {
-            0%, 100% { transform: translateX(0); }
-            25% { transform: translateX(-5px); }
-            75% { transform: translateX(5px); }
-        }
-
-        /* Victory banner */
-        .victory-banner {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            pointer-events: none;
-            z-index: 150;
-        }
-
-        .victory-banner.show {
-            animation: bannerReveal 1.5s ease-out forwards;
-        }
-
-        @keyframes bannerReveal {
-            0% { opacity: 0; }
-            20%, 80% { opacity: 1; }
-            100% { opacity: 0; }
-        }
-
-        .victory-text {
-            font-family: 'Audiowide', sans-serif;
-            font-size: 80px;
+        .cyber-button {
+            background: linear-gradient(135deg, var(--neon-color) 0%, var(--neon-pink) 100%);
+            border: none;
+            color: #000;
+            padding: 10px 30px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 12px;
             font-weight: 900;
-            color: #FFA500;
             text-transform: uppercase;
-            letter-spacing: 25px;
-            text-shadow: 
-                0 0 20px rgba(255, 165, 0, 1),
-                0 0 40px rgba(255, 165, 0, 0.8),
-                0 0 60px rgba(255, 165, 0, 0.6),
-                0 0 80px rgba(255, 165, 0, 0.4);
-            animation: textGlow 2s ease-in-out infinite;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+            clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+            position: relative;
+            overflow: hidden;
         }
 
-        @keyframes textGlow {
-            0%, 100% {
-                text-shadow: 
-                    0 0 20px rgba(255, 165, 0, 1),
-                    0 0 40px rgba(255, 165, 0, 0.8),
-                    0 0 60px rgba(255, 165, 0, 0.6);
-            }
-            50% {
-                text-shadow: 
-                    0 0 30px rgba(255, 165, 0, 1),
-                    0 0 60px rgba(255, 165, 0, 1),
-                     0 0 90px rgba(255, 165, 0, 0.8);
-            }
-        }
-
-        /* Wipe transition */
-        .wipe-transition {
-            position: fixed;
+        .cyber-button::before {
+            content: '';
+            position: absolute;
             top: 0;
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, 
-                transparent 0%, 
-                rgba(255, 165, 0, 0.4) 25%,
-                rgba(255, 165, 0, 0.9) 50%,
-                rgba(255, 165, 0, 0.4) 75%,
-                transparent 100%);
-            z-index: 120;
-            pointer-events: none;
-            box-shadow: 0 0 100px rgba(255, 165, 0, 0.8);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s;
         }
 
-        .wipe-transition.show {
-            animation: wipeEffect 1.5s ease-in-out;
+        .cyber-button:hover::before {
+            left: 100%;
         }
 
-        @keyframes wipeEffect {
-            0% { left: -100%; }
-            100% { left: 100%; }
+        .cyber-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 50px rgba(0, 255, 255, 0.8);
         }
 
-        /* Burst particles effect */
-        .burst-container {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            width: 10px;
-            height: 10px;
-            pointer-events: none;
-            z-index: 140;
+        .cyber-button:active {
+            transform: translateY(0);
         }
 
-        .burst-particle {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: #FFA500;
-            border-radius: 50%;
-            box-shadow: 0 0 15px currentColor;
-            opacity: 0;
-        }
-
-        .burst-particle.active {
-            animation: burstOut 1.5s ease-out forwards;
-        }
-
-        @keyframes burstOut {
-            0% {
-                transform: translate(0, 0) scale(1);
-                opacity: 1;
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 1024px) {
+            .award-card {
+                grid-template-columns: 1fr;
+                height: auto;
+                max-height: none;
+                overflow-y: auto;
             }
-            100% {
-                transform: translate(var(--tx), var(--ty)) scale(0);
-                opacity: 0;
+
+            .info-panel {
+                border-right: none;
+                border-bottom: 2px solid rgba(0, 255, 255, 0.3);
             }
         }
 
-        /* Responsive */
-		@media (max-width: 768px) {
-			@media (max-width: 768px) {
-    .logo {
-        font-size: 48px;
-        letter-spacing: 4px;
-    }
-    
-    .award-title {
-        font-size: 36px;
-        letter-spacing: 5px;
-        padding: 15px 25px;
-    }
-    
-    .victory-card {
-        min-width: 90%;
-        padding: 40px 25px;
-    }
+        @media (max-width: 768px) {
+            .cyber-logo {
+                font-size: 40px;
+                letter-spacing: 8px;
+            }
 
-			.victory-text {
-				font-size: 40px;
-				letter-spacing: 10px;
-			}
+            .neon-title {
+                font-size: 32px;
+                letter-spacing: 6px;
+                padding: 18px 30px;
+            }
 
-			.control-panel {
-				flex-direction: column;
-				width: 90%;
-				padding: 20px;
-			}
+            .victory-text {
+                font-size: 40px;
+                letter-spacing: 15px;
+            }
 
-			.input-field, #employeeId, #awardType {
-				width: 100%;
-			}
+            .award-card {
+                width: 95%;
+                height: auto;
+            }
 
-			.corner-ui {
-				width: 60px;
-				height: 60px;
-			}
-		}
+            .prize-title {
+                font-size: 22px;
+                letter-spacing: 2px;
+            }
 
+            .data-value {
+                font-size: 20px;
+            }
+
+            .control-hub {
+                flex-direction: column;
+                width: 90%;
+                padding: 18px;
+                gap: 12px;
+            }
+
+            .control-buttons {
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .settings-panel {
+                width: 90%;
+                bottom: 70px;
+            }
+
+            .settings-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .speed-slider {
+                width: 100%;
+            }
+
+            .cyber-input, #empId, #awardSelect {
+                width: 100%;
+            }
+
+            .error-text {
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Dynamic Background -->
-    <div class="dynamic-background">
-        <div class="bg-layer gradient-layer"></div>
-        <!-- <div class="bg-layer grid-layer"></div> -->
-        <div class="bg-layer glow-layer"></div>
-        <div class="bg-layer particle-layer" id="particleLayer"></div>
+    <!-- Cyberpunk Background -->
+    <div class="cyber-bg"></div>
+    <div class="digital-rain" id="digitalRain"></div>
+    <div class="neon-grid"></div>
+    <div class="glitch-overlay"></div>
+    <div class="particle-system" id="particleSystem"></div>
+
+    <!-- Settings Panel -->
+    <div class="settings-panel" id="settingsPanel">
+        <div class="settings-title">⚙ SETTINGS</div>
+        
+        <div class="settings-content">
+            <div class="settings-group">
+                <label class="settings-label">Animation Speed</label>
+                <input type="range" class="speed-slider" id="speedSlider" min="0.5" max="3" step="0.1" value="1">
+                <div class="speed-value" id="speedValue">1.0x</div>
+            </div>
+
+            <div class="settings-group">
+                <label class="settings-label">Load Awards CSV</label>
+                <label for="awardsCsvInput" class="csv-upload-btn">
+                    📁 Upload Awards
+                </label>
+                <input type="file" id="awardsCsvInput" accept=".csv" style="display: none;">
+            </div>
+        </div>
     </div>
 
-    <div class="scanlines"></div>
+    <!-- HUD Corners -->
+    <div class="hud-corner tl"></div>
+    <div class="hud-corner tr"></div>
+    <div class="hud-corner bl"></div>
+    <div class="hud-corner br"></div>
 
-    <!-- Corner UI -->
-    <div class="corner-ui top-left"></div>
-    <div class="corner-ui top-right"></div>
-    <div class="corner-ui bottom-left"></div>
-    <div class="corner-ui bottom-right"></div>
-
-    <!-- Burst particles -->
-    <div class="burst-container" id="burstContainer"></div>
-
-    <!-- Main container -->
-    <div class="container">
-        <!-- Logo -->
-        <div class="logo-container" id="logoContainer">
-            <div class="logo">ASAHI INTECC</div>
-        </div>
-
-        <!-- Award title -->
-        <div class="award-title-container" id="awardTitleContainer">
-            <div class="award-title" id="awardTitle"></div>
-        </div>
-
-        <!-- Victory card -->
-		<div class="victory-card" id="victoryCard">
-		    <div class="award-badge" id="awardBadge">SPECIAL AWARD</div>
-		    
-		    <div class="card-header">
-		        <div class="card-header-title" id="cardTitle">iPhone 17 Pro Max màu cam</div>
-		        <div class="card-header-subtitle">Chúc mừng bạn đã trúng giải</div>
-		    </div>
-		
-		    <div class="award-content">
-		        <!-- Images Section -->
-		        <div class="images-section" id="imagesSection">
-		            <div class="main-product-image" id="mainProductImage">
-		                <div class="placeholder-text">Hình ảnh sản phẩm chính</div>
-		            </div>
-		            
-		            <div class="additional-images">
-		                <div class="small-image" id="smallImage1" data-label="Góc 1">
-		                    <div class="placeholder-text">📷</div>
-		                </div>
-		                <div class="small-image" id="smallImage2" data-label="Góc 2">
-		                    <div class="placeholder-text">📷</div>
-		                </div>
-		                <div class="small-image" id="smallImage3" data-label="Góc 3">
-		                    <div class="placeholder-text">📷</div>
-		                </div>
-		            </div>
-		        </div>
-		
-		        <!-- Employee Info -->
-		        <div class="employee-info">
-		            <div class="info-row">
-		                <div class="info-label">Mã nhân viên</div>
-		                <div class="info-value" id="displayId">---</div>
-		            </div>
-		            <div class="info-row">
-		                <div class="info-label">Họ và tên</div>
-		                <div class="info-value" id="displayName">---</div>
-		            </div>
-		            <div class="info-row">
-		                <div class="info-label">Bộ phận</div>
-		                <div class="info-value" id="displayDept">---</div>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-
-
-        <!-- Victory banner -->
-        <div class="victory-banner" id="victoryBanner">
-            <div class="victory-text">CONGRATULATIONS</div>
-        </div>
-
-        <!-- Error overlay -->
-        <div class="error-overlay" id="errorOverlay">
-            <div class="error-text">⚠ EMPLOYEE NOT FOUND ⚠</div>
-        </div>
-
-        <!-- Wipe transition -->
-        <div class="wipe-transition" id="wipeTransition"></div>
+    <!-- Logo Intro -->
+    <div class="logo-intro" id="logoIntro">
+        <div class="cyber-logo">ASAHI INTECC</div>
     </div>
 
-    <!-- Control panel -->
-    <div class="control-panel">
-        <input type="text" id="employeeId" class="input-field" placeholder="Enter ID">
-        <select id="awardType" class="input-field">
-            <option value="special">Special Award</option>
-            <option value="first">First Prize</option>
-            <option value="second">Second Prize</option>
-            <option value="third">Third Prize</option>
-            <option value="fourth">Fourth Prize</option>
-            <option value="fifth">Fifth Prize</option>
-            <option value="sixth">Sixth Prize</option>
-            <option value="seventh">Seventh Prize</option>
+    <!-- Title Reveal -->
+    <div class="title-reveal" id="titleReveal">
+        <div class="neon-title" id="neonTitle"></div>
+    </div>
+
+    <!-- Victory Banner -->
+    <div class="victory-banner" id="victoryBanner">
+        <div class="victory-text">Congratulations!</div>
+    </div>
+
+    <!-- Wipe Effect -->
+    <div class="wipe-effect" id="wipeEffect"></div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Award Card -->
+        <div class="award-card" id="awardCard">
+            <!-- Left Panel - Info -->
+            <div class="info-panel">
+                <div>
+                    <div class="award-badge-cyber" id="badgeCyber">SPECIAL AWARD</div>
+                    <div class="prize-title" id="prizeTitle">iPhone 17 Pro Max</div>
+                    <div class="prize-subtitle">Chúc mừng bạn đã trúng giải</div>
+                </div>
+
+                <div class="employee-data">
+                    <div class="data-row">
+                        <div class="data-label">Employee ID</div>
+                        <div class="data-value" id="empIdDisplay">---</div>
+                    </div>
+                    <div class="data-row">
+                        <div class="data-label">Full Name</div>
+                        <div class="data-value" id="empNameDisplay">---</div>
+                    </div>
+                    <div class="data-row">
+                        <div class="data-label">Department</div>
+                        <div class="data-value" id="empDeptDisplay">---</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel - Visual -->
+            <div class="visual-panel">
+                <div class="product-showcase" id="productShowcase">
+                    <img class="product-image" id="productImage" src="" alt="Prize">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error State -->
+    <div class="error-state" id="errorState">
+        <div class="error-text">[ ERROR ] EMPLOYEE NOT FOUND</div>
+    </div>
+
+    <!-- Control Hub -->
+    <div class="control-hub">
+        <div class="control-buttons">
+            <button class="icon-button" id="settingsBtn" title="Settings">⚙</button>
+            <button class="icon-button" id="resetBtn" title="Reset">🏠</button>
+        </div>
+
+        <label for="csvFile" class="cyber-button" style="cursor: pointer; margin: 0;">
+            LOAD DATA
+        </label>
+        <input type="file" id="csvFile" accept=".csv" style="display: none;">
+        
+        <input type="text" id="empId" class="cyber-input" placeholder="EMPLOYEE ID">
+        <select id="awardSelect" class="cyber-input">
+            <!-- Options will be populated by JavaScript -->
         </select>
-        <button id="submitBtn" class="search-btn">🔍 SEARCH</button>
+        <button id="searchBtn" class="cyber-button">EXECUTE</button>
     </div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
     <script>
+        // Settings panel toggle
+        const settingsBtn = document.getElementById('settingsBtn');
+        const settingsPanel = document.getElementById('settingsPanel');
+        
+        settingsBtn.addEventListener('click', () => {
+            settingsPanel.classList.toggle('show');
+            settingsBtn.classList.toggle('active');
+        });
+
+        // Close settings when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!settingsPanel.contains(e.target) && e.target !== settingsBtn) {
+                settingsPanel.classList.remove('show');
+                settingsBtn.classList.remove('active');
+            }
+        });
+
+        // Reset button - clear screen and return to idle state
+        const resetBtn = document.getElementById('resetBtn');
+        
+        resetBtn.addEventListener('click', () => {
+            // Hide all displays
+            document.getElementById('logoIntro').classList.remove('show');
+            document.getElementById('titleReveal').classList.remove('show');
+            document.getElementById('victoryBanner').classList.remove('show');
+            document.getElementById('wipeEffect').classList.remove('show');
+            document.getElementById('awardCard').classList.remove('show');
+            document.getElementById('productShowcase').classList.remove('animate');
+            
+            const dataRows = document.querySelectorAll('.data-row');
+            dataRows.forEach(row => row.classList.remove('animate'));
+            
+            // Clear input
+            document.getElementById('empId').value = '';
+            
+            // Reset to default award type
+            document.getElementById('awardSelect').value = 'special';
+            
+            // Hide settings panel
+            settingsPanel.classList.remove('show');
+            settingsBtn.classList.remove('active');
+            
+            console.log('✓ Reset to idle state');
+        });
+
+        // Animation speed control
+        const speedSlider = document.getElementById('speedSlider');
+        const speedValue = document.getElementById('speedValue');
+
+        speedSlider.addEventListener('input', (e) => {
+            const speed = parseFloat(e.target.value);
+            document.documentElement.style.setProperty('--animation-speed', speed);
+            speedValue.textContent = speed.toFixed(1) + 'x';
+        });
+
+        // Generate digital rain
+        const digitalRain = document.getElementById('digitalRain');
+        for(let i = 0; i < 30; i++) {
+            const column = document.createElement('div');
+            column.className = 'rain-column';
+            column.style.left = (i * 3.33) + '%';
+            column.style.animationDuration = (2 + Math.random() * 3) + 's';
+            column.style.animationDelay = Math.random() * 5 + 's';
+            digitalRain.appendChild(column);
+        }
+
         // Generate particles
-        const particleLayer = document.getElementById('particleLayer');
-        for(let i = 0; i < 20; i++) {
+        const particleSystem = document.getElementById('particleSystem');
+        for(let i = 0; i < 50; i++) {
             const particle = document.createElement('div');
-            particle.className = 'floating-particle';
-            const size = Math.random() * 60 + 20;
-            particle.style.width = size + 'px';
-            particle.style.height = size + 'px';
+            particle.className = 'cyber-particle';
             particle.style.left = Math.random() * 100 + '%';
-            particle.style.top = Math.random() * 100 + '%';
-            particle.style.setProperty('--tx', (Math.random() - 0.5) * 400 + 'px');
-            particle.style.setProperty('--ty', (Math.random() - 0.5) * 400 + 'px');
-            particle.style.animationDelay = Math.random() * 10 + 's';
-            particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
-            particleLayer.appendChild(particle);
+            particle.style.setProperty('--x', (Math.random() - 0.5) * 300 + 'px');
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particleSystem.appendChild(particle);
         }
 
         // Employee data
-		let employeesData = [];
+        let employeesData = [];
 
-		// Load CSV function
-		async function loadCSV() {
-		    try {
-		        const response = await fetch('data.csv');
-		        if (!response.ok) {
-		            throw new Error(`HTTP error! status: ${response.status}`);
-		        }
-		        const csvText = await response.text();
-		        
-		        // Parse CSV with Papa Parse
-		        Papa.parse(csvText, {
-		            header: true,
-		            dynamicTyping: false,
-		            skipEmptyLines: true,
-		            complete: function(results) {
-		                employeesData = results.data;
-		                console.log('✓ Đã tải thành công:', employeesData.length, 'nhân viên');
-		                console.log('Dữ liệu mẫu:', employeesData[0]);
-		            },
-		            error: function(error) {
-		                console.error('✗ Lỗi parse CSV:', error);
-		                alert('Lỗi khi đọc file CSV. Vui lòng kiểm tra console.');
-		            }
-		        });
-		    } catch (error) {
-		        console.error('✗ Lỗi tải file:', error);
-		        alert('Không thể tải file data.csv. Đảm bảo file nằm cùng thư mục với index.html');
-		    }
-		}
-		
-		// Load CSV on page load
-		loadCSV();
+        // Parse Awards CSV
+        function parseAwardsCSV(csvText) {
+            Papa.parse(csvText, {
+                header: true,
+                dynamicTyping: false,
+                skipEmptyLines: true,
+                complete: function(results) {
+                    // Update awardConfig from CSV
+                    // Expected columns: "Award Name", "Product Name", "Image URL"
+                    let updatedCount = 0;
+                    results.data.forEach((row, index) => {
+                        const awardKey = getAwardKey(index);
+                        if (awardKey && awardConfig[awardKey]) {
+                            if (row['Award Name']) {
+                                awardConfig[awardKey].name = row['Award Name'];
+                                updatedCount++;
+                            }
+                            if (row['Product Name']) {
+                                awardConfig[awardKey].prize = row['Product Name'];
+                            }
+                            if (row['Image URL']) {
+                                awardConfig[awardKey].mainImage = row['Image URL'];
+                            }
+                        }
+                    });
+                    
+                    // Update dropdown with new award names
+                    updateAwardDropdown();
+                    
+                    console.log('✓ Awards loaded:', updatedCount, 'prizes');
+                    console.log('✓ Dropdown updated with new award names');
+                    console.log('CSV Format: "Award Name", "Product Name", "Image URL"');
+                    alert(`✓ Đã tải thành công ${updatedCount} giải thưởng!\n✓ Combobox đã được cập nhật.`);
+                },
+                error: function(error) {
+                    console.error('✗ Awards CSV Error:', error);
+                    alert('Lỗi khi đọc file CSV giải thưởng!');
+                }
+            });
+        }
 
+        // Map index to award key
+        function getAwardKey(index) {
+            const keys = ['special', 'first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh'];
+            return keys[index];
+        }
 
-        // Award configurations
+        // Update award dropdown options
+        function updateAwardDropdown() {
+            const awardSelect = document.getElementById('awardSelect');
+            awardSelect.innerHTML = ''; // Clear current options
+            
+            const awards = [
+                { key: 'special', label: 'Special Award' },
+                { key: 'first', label: 'First Prize' },
+                { key: 'second', label: 'Second Prize' },
+                { key: 'third', label: 'Third Prize' },
+                { key: 'fourth', label: 'Fourth Prize' },
+                { key: 'fifth', label: 'Fifth Prize' },
+                { key: 'sixth', label: 'Sixth Prize' },
+                { key: 'seventh', label: 'Seventh Prize' }
+            ];
+            
+            awards.forEach(award => {
+                const option = document.createElement('option');
+                option.value = award.key;
+                // Use custom name from config if available, otherwise use default label
+                option.textContent = awardConfig[award.key].name || award.label;
+                awardSelect.appendChild(option);
+            });
+        }
+
+        // Awards CSV file handler
+        document.getElementById('awardsCsvInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            
+            if (!file.name.endsWith('.csv')) {
+                alert('⚠ Vui lòng chọn file CSV!');
+                return;
+            }
+            
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                parseAwardsCSV(event.target.result);
+            };
+            reader.onerror = function() {
+                alert('✗ Lỗi khi đọc file!');
+            };
+            reader.readAsText(file, 'UTF-8');
+        });
+
+        // Parse CSV
+        function parseCSVText(csvText) {
+            Papa.parse(csvText, {
+                header: true,
+                dynamicTyping: false,
+                skipEmptyLines: true,
+                complete: function(results) {
+                    employeesData = results.data;
+                    console.log('✓ Loaded:', employeesData.length, 'employees');
+                    alert(`✓ DATA LOADED: ${employeesData.length} EMPLOYEES`);
+                },
+                error: function(error) {
+                    console.error('✗ Error:', error);
+                    alert('ERROR LOADING DATA');
+                }
+            });
+        }
+
+        // File handler
+        document.getElementById('csvFile').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            
+            if (!file.name.endsWith('.csv')) {
+                alert('ERROR: CSV FILE REQUIRED');
+                return;
+            }
+            
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                parseCSVText(event.target.result);
+            };
+            reader.readAsText(file, 'UTF-8');
+        });
+
+        // Award config
         const awardConfig = {
             special: {
-                name: 'SPECIAL AWARD',
-				prize: 'Iphone 17 Promax màu cam',
-                color: '#FFD700',
-                glow: 'rgba(255, 215, 0, 0.8)',
-                bgGradient: 'radial-gradient(ellipse at 30% 40%, rgba(255, 215, 0, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 70% 60%, rgba(255, 200, 0, 0.12) 0%, transparent 50%)',
-                particleColor: '#FFD700',
-				mainImage: 'https://www.pngall.com/wp-content/uploads/20/iPhone-17-Pro-Max-Artwork-PNG.png',
-		        images: [
-		            'https://www.techone.vn/wp-content/smush-webp/2025/09/Thumb-sp-17-series_0000_17-prm-xanh-dam.jpg.webp',
-		            'https://www.techone.vn/wp-content/smush-webp/2025/09/Thumb-sp-17-series_0001_17-prm-cam.jpg.webp',
-		            'https://www.techone.vn/wp-content/smush-webp/2025/09/Thumb-sp-17-series_0002_17-prm-trang.jpg.webp'
-		        ]
+                name: 'GIẢI ĐẶC BIỆT',
+                prize: 'iPhone 17 Pro Max màu cam',
+                color: '#00ffff',
+                mainImage: 'https://www.pngall.com/wp-content/uploads/20/iPhone-17-Pro-Max-Artwork-PNG.png'
             },
             first: {
-                name: 'FIRST PRIZE',
-				prize: 'Máy hút bụi cầm tay',
-                color: '#FF0080',
-                glow: 'rgba(255, 0, 128, 0.8)',
-                bgGradient: 'radial-gradient(ellipse at 20% 30%, rgba(255, 0, 128, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 80% 70%, rgba(255, 0, 100, 0.12) 0%, transparent 50%)',
-                particleColor: '#FF0080',
-				mainImage: 'https://png.pngtree.com/png-clipart/20250517/original/pngtree-compact-and-powerful-handheld-vacuum-cleaner-for-efficient-cleaning-png-image_21012506.png',
-		        images: [
-		            'https://baseapi.elle.vn/uploads/ELLE_Affiliate_8_f7844d0a33.png',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
-		        ]
+                name: 'GIẢI NHẤT',
+                prize: 'Máy hút bụi cầm tay',
+                color: '#ff00ff',
+                mainImage: 'https://png.pngtree.com/png-clipart/20250517/original/pngtree-compact-and-powerful-handheld-vacuum-cleaner-for-efficient-cleaning-png-image_21012506.png'
             },
             second: {
-                name: 'SECOND PRIZE',
-				prize: 'Nồi chiên không dầu',
-                color: '#00D4FF',
-                glow: 'rgba(0, 212, 255, 0.8)',
-                bgGradient: 'radial-gradient(ellipse at 25% 35%, rgba(0, 212, 255, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 75% 65%, rgba(0, 180, 255, 0.12) 0%, transparent 50%)',
-                particleColor: '#00D4FF',
-				mainImage: 'https://png.pngtree.com/png-vector/20240203/ourmid/pngtree-smart-home-air-fryer-3d-illustration-png-image_11596035.png',
-		        images: [
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
-		        ]
+                name: 'GIẢI NHÌ',
+                prize: 'Bếp điện từ đôi LocknLock',
+                color: '#ffff00',
+                mainImage: 'https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m8k870mhwz9ja8.webp'
             },
             third: {
-                name: 'THIRD PRIZE',
-				prize: 'Gi gi do',
-                color: '#7B2FF7',
-                glow: 'rgba(123, 47, 247, 0.8)',
-                bgGradient: 'radial-gradient(ellipse at 30% 40%, rgba(123, 47, 247, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 70% 60%, rgba(100, 30, 247, 0.12) 0%, transparent 50%)',
-                particleColor: '#7B2FF7',
-				mainImage: 'https://via.placeholder.com/500x500/FFD700/000000?text=iPhone+17+Pro+Max',
-		        images: [
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
-		        ]
+                name: 'GIẢI BA',
+                prize: 'Gi gi do',
+                color: '#00ff88',
+                mainImage: 'https://via.placeholder.com/500/00ff88/000?text=Third+Prize'
             },
             fourth: {
-                name: 'FOURTH PRIZE',
-				prize: 'Dong ho thong minh',
-                color: '#00FF88',
-                glow: 'rgba(0, 255, 136, 0.8)',
-                bgGradient: 'radial-gradient(ellipse at 35% 45%, rgba(0, 255, 136, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 65% 55%, rgba(0, 220, 120, 0.12) 0%, transparent 50%)',
-                particleColor: '#00FF88',
-				mainImage: 'https://via.placeholder.com/500x500/FFD700/000000?text=iPhone+17+Pro+Max',
-		        images: [
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
-		        ]
+                name: 'GIẢI TƯ',
+                prize: 'Dong ho thong minh',
+                color: '#ff6b6b',
+                mainImage: 'https://via.placeholder.com/500/ff6b6b/fff?text=Fourth'
             },
             fifth: {
-                name: 'FIFTH PRIZE',
-				prize: 'But bi thien long',
-                color: '#FF6B6B',
-                glow: 'rgba(255, 107, 107, 0.8)',
-                bgGradient: 'radial-gradient(ellipse at 40% 30%, rgba(255, 107, 107, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 60% 70%, rgba(255, 80, 80, 0.12) 0%, transparent 50%)',
-                particleColor: '#FF6B6B',
-				mainImage: 'https://via.placeholder.com/500x500/FFD700/000000?text=iPhone+17+Pro+Max',
-		        images: [
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
-		        ]
+                name: 'GIẢI NĂM',
+                prize: 'But bi thien long',
+                color: '#4ecdc4',
+                mainImage: 'https://via.placeholder.com/500/4ecdc4/000?text=Fifth'
             },
             sixth: {
-                name: 'SIXTH PRIZE',
-				prize: 'cai cai gi do',
-                color: '#4ECDC4',
-                glow: 'rgba(78, 205, 196, 0.8)',
-                bgGradient: 'radial-gradient(ellipse at 45% 35%, rgba(78, 205, 196, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 55% 65%, rgba(60, 180, 170, 0.12) 0%, transparent 50%)',
-                particleColor: '#4ECDC4',
-				mainImage: 'https://via.placeholder.com/500x500/FFD700/000000?text=iPhone+17+Pro+Max',
-		        images: [
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
-		        ]
+                name: 'GIẢI SÁU',
+                prize: 'cai cai gi do',
+                color: '#95e1d3',
+                mainImage: 'https://via.placeholder.com/500/95e1d3/000?text=Sixth'
             },
             seventh: {
-                name: 'SEVENTH PRIZE',
-				prize: 'Thit Cho',
-                color: '#95E1D3',
-                glow: 'rgba(149, 225, 211, 0.8)',
-                bgGradient: 'radial-gradient(ellipse at 50% 40%, rgba(149, 225, 211, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 50% 60%, rgba(120, 200, 190, 0.12) 0%, transparent 50%)',
-                particleColor: '#95E1D3',
-				mainImage: 'https://via.placeholder.com/500x500/FFD700/000000?text=iPhone+17+Pro+Max',
-		        images: [
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+truoc',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Mat+sau',
-		            'https://via.placeholder.com/300x300/FFD700/000000?text=Canh+ben'
-		        ]
+                name: 'GIẢI BẢY',
+                prize: 'Thit Cho',
+                color: '#ffd93d',
+                mainImage: 'https://via.placeholder.com/500/ffd93d/000?text=Seventh'
             }
         };
 
-        function applyAwardTheme(config, employee) {
-			// THÊM MỚI - Set CSS variables
-    document.documentElement.style.setProperty('--theme-color', config.color);
-    document.documentElement.style.setProperty('--theme-glow', config.glow);
-	    // Update background
-	    const glowLayer = document.querySelector('.glow-layer');
-	    glowLayer.style.background = config.bgGradient;
-	
-	    // Update particles color
-	    document.querySelectorAll('.floating-particle').forEach(el => {
-	        el.style.background = `radial-gradient(circle, ${config.glow} 0%, transparent 70%)`;
-	    });
-	
-	    // Update award title
-	    const titleText = employee ? employee['Bộ Phận'] : config.name;
-	    document.getElementById('awardTitle').textContent = titleText;
-	    document.getElementById('awardTitle').style.color = config.color;
-	    document.getElementById('awardTitle').style.borderColor = config.color;
-	    document.getElementById('awardTitle').style.textShadow = `
-	        0 0 10px ${config.glow},
-	        0 0 20px ${config.glow},
-	        0 0 40px ${config.glow}
-	    `;
-	    document.getElementById('awardTitle').style.boxShadow = `
-	        0 0 30px ${config.glow},
-	        inset 0 0 30px ${config.glow.replace('0.8', '0.1')}
-	    `;
-	
-	    // Update award badge
-	    document.getElementById('awardBadge').textContent = config.name;
-	    document.getElementById('awardBadge').style.background = `linear-gradient(135deg, ${config.color}, ${config.color}dd)`;
-	    document.getElementById('awardBadge').style.borderColor = config.color;
-	    document.getElementById('awardBadge').style.boxShadow = `
-	        0 0 30px ${config.glow},
-	        inset 0 0 20px rgba(255, 255, 255, 0.3)
-	    `;
-	
-	    // Update card
-	    document.getElementById('cardTitle').textContent = employee ? config.prize : 'CONGRATULATIONS';
-	    document.getElementById('cardTitle').style.color = config.color;
-	    document.getElementById('victoryCard').style.borderColor = config.color;
-	    document.getElementById('victoryCard').style.boxShadow = `
-	        0 0 50px ${config.glow},
-	        inset 0 0 80px ${config.glow.replace('0.8', '0.08')},
-	        0 20px 60px rgba(0, 0, 0, 0.8)
-	    `;
-	    document.getElementById('victoryCard').style.color = config.color;
-	
-	    // Update card header after line
-	    const cardHeader = document.querySelector('.card-header');
-	    cardHeader.style.setProperty('--after-color', config.color);
-	
-	    // Update all corner UI elements
-	    document.querySelectorAll('.corner-ui').forEach(corner => {
-	        corner.style.setProperty('--corner-color', config.color);
-	        corner.style.setProperty('--corner-glow', config.glow);
-	    });
-	
-	    // Update info items
-	    document.querySelectorAll('.info-item').forEach(el => {
-	        el.style.borderLeftColor = config.color;
-	        el.style.background = `linear-gradient(90deg, ${config.glow.replace('0.8', '0.08')}, ${config.glow.replace('0.8', '0.02')})`;
-	        el.style.boxShadow = `
-	            0 5px 15px rgba(0, 0, 0, 0.3),
-	            inset 0 0 20px ${config.glow.replace('0.8', '0.05')}
-	        `;
-	    });
-	
-	    document.querySelectorAll('.info-label').forEach(el => {
-	        el.style.color = config.color;
-	    });
-	
-	    // Update info item after pseudo element (icon pulse)
-	    document.querySelectorAll('.info-item').forEach(el => {
-	        el.style.setProperty('--icon-color', config.glow.replace('0.8', '0.2'));
-	    });
-	
-	    // Update victory banner
-	    document.querySelector('.victory-text').style.color = config.color;
-	    document.querySelector('.victory-text').style.textShadow = `
-	        0 0 20px ${config.glow},
-	        0 0 40px ${config.glow},
-	        0 0 60px ${config.glow.replace('0.8', '0.6')},
-	        0 0 80px ${config.glow.replace('0.8', '0.4')}
-	    `;
-	
-	    // Update control panel
-	    document.querySelector('.control-panel').style.borderColor = config.color.replace(')', ', 0.5)').replace('rgb', 'rgba');
-	    document.querySelector('.control-panel').style.boxShadow = `
-	        0 10px 50px rgba(0, 0, 0, 0.9),
-	        0 0 30px ${config.glow.replace('0.8', '0.3')},
-	        inset 0 0 30px ${config.glow.replace('0.8', '0.05')}
-	    `;
-	
-	    // Update control panel border glow animation
-	    const controlPanel = document.querySelector('.control-panel');
-	    controlPanel.style.setProperty('--border-glow-color', config.glow);
-	
-	    document.querySelectorAll('.input-field').forEach(el => {
-	        el.style.borderColor = config.color.replace(')', ', 0.4)').replace('rgb', 'rgba');
-	    });
-	
-	    // Update input focus color
-	    const style = document.createElement('style');
-	    style.id = 'dynamic-input-style';
-	    const existingStyle = document.getElementById('dynamic-input-style');
-	    if (existingStyle) {
-	        existingStyle.remove();
-	    }
-	    style.textContent = `
-	        .input-field:focus {
-	            border-color: ${config.color} !important;
-	            box-shadow: 0 0 20px ${config.glow.replace('0.8', '0.5')}, inset 0 2px 5px rgba(0, 0, 0, 0.5) !important;
-	        }
-	    `;
-	    document.head.appendChild(style);
-	
-	    document.querySelector('.search-btn').style.background = `linear-gradient(135deg, ${config.color} 0%, ${config.color}dd 100%)`;
-	    document.querySelector('.search-btn').style.boxShadow = `
-	        0 0 25px ${config.glow.replace('0.8', '0.5')},
-	        0 5px 15px rgba(0, 0, 0, 0.5)
-	    `;
-	
-	    // Update search button hover effect
-	    const btnStyle = document.createElement('style');
-	    btnStyle.id = 'dynamic-btn-style';
-	    const existingBtnStyle = document.getElementById('dynamic-btn-style');
-	    if (existingBtnStyle) {
-	        existingBtnStyle.remove();
-	    }
-	    btnStyle.textContent = `
-	        .search-btn:hover {
-	            box-shadow: 0 0 40px ${config.glow.replace('0.8', '0.8')}, 0 8px 20px rgba(0, 0, 0, 0.6) !important;
-	        }
-	    `;
-	    document.head.appendChild(btnStyle);
-	
-	    // Update wipe transition
-	    document.getElementById('wipeTransition').style.background = `linear-gradient(90deg, 
-	        transparent 0%, 
-	        ${config.glow.replace('0.8', '0.4')} 25%,
-	        ${config.glow.replace('0.8', '0.9')} 50%,
-	        ${config.glow.replace('0.8', '0.4')} 75%,
-	        transparent 100%)`;
-	    document.getElementById('wipeTransition').style.boxShadow = `0 0 100px ${config.glow}`;
-	
-	    // Update grid layer color
-	    <!-- const gridLayer = document.querySelector('.grid-layer'); -->
-	    <!-- const gridStyle = document.createElement('style'); -->
-	    <!-- gridStyle.id = 'dynamic-grid-style'; -->
-	    <!-- const existingGridStyle = document.getElementById('dynamic-grid-style'); -->
-	    <!-- if (existingGridStyle) { -->
-	        <!-- existingGridStyle.remove(); -->
-	    <!-- } -->
-	    <!-- gridStyle.textContent = ` -->
-	        <!-- .grid-layer { -->
-	            <!-- background-image:  -->
-	                <!-- linear-gradient(${config.color.replace(')', ', 0.03)')} 1px, transparent 1px), -->
-	                <!-- linear-gradient(90deg, ${config.color.replace(')', ', 0.03)')} 1px, transparent 1px); -->
-	        <!-- } -->
-	    <!-- `; -->
-	    <!-- document.head.appendChild(gridStyle); -->
-	
-	    // Update scanlines color
-	    <!-- const scanlineStyle = document.createElement('style'); -->
-	    <!-- scanlineStyle.id = 'dynamic-scanline-style'; -->
-	    <!-- const existingScanlineStyle = document.getElementById('dynamic-scanline-style'); -->
-	    <!-- if (existingScanlineStyle) { -->
-	        <!-- existingScanlineStyle.remove(); -->
-	    <!-- } -->
-	    <!-- scanlineStyle.textContent = ` -->
-	        <!-- .scanlines { -->
-	            <!-- background: repeating-linear-gradient( -->
-	                <!-- 0deg, -->
-	                <!-- ${config.color.replace(')', ', 0.05)')}, -->
-	                <!-- ${config.color.replace(')', ', 0.05)')} 1px, -->
-	                <!-- transparent 1px, -->
-	                <!-- transparent 2px -->
-	            <!-- ); -->
-	        <!-- } -->
-	    <!-- `; -->
-	    <!-- document.head.appendChild(scanlineStyle); -->
-	}
-	
-	// Cập nhật CSS cho corner UI để sử dụng CSS variables
-	const cornerStyle = document.createElement('style');
-	cornerStyle.textContent = `
-	    .corner-ui::before,
-	    .corner-ui::after {
-	        background: linear-gradient(135deg, var(--corner-glow, rgba(255, 165, 0, 0.9)), transparent);
-	        box-shadow: 0 0 15px var(--corner-color, #FFA500);
-	    }
-	    
-	    .corner-ui.top-right::before {
-	        background: linear-gradient(135deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
-	    }
-	    
-	    .corner-ui.top-right::after {
-	        background: linear-gradient(90deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
-	    }
-	    
-	    .corner-ui.bottom-left::before {
-	        background: linear-gradient(225deg, var(--corner-glow, rgba(255, 165, 0, 0.9)), transparent);
-	    }
-	    
-	    .corner-ui.bottom-left::after {
-	        background: linear-gradient(180deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
-	    }
-	    
-	    .corner-ui.bottom-right::before {
-	        background: linear-gradient(225deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
-	    }
-	    
-	    .corner-ui.bottom-right::after {
-	        background: linear-gradient(270deg, transparent, var(--corner-glow, rgba(255, 165, 0, 0.9)));
-	    }
-	
-	    .card-header::after {
-	        background: linear-gradient(90deg, transparent, var(--after-color, #FFA500), transparent);
-	        box-shadow: 0 0 10px var(--after-color, #FFA500);
-	    }
-	
-	    .info-item::after {
-	        background: radial-gradient(circle, var(--icon-color, rgba(255, 165, 0, 0.2)), transparent);
-	    }
-	
-	    .control-panel::before {
-	        background: linear-gradient(45deg, 
-	            var(--border-glow-color, rgba(255, 165, 0, 0.5)), 
-	            transparent, 
-	            var(--border-glow-color, rgba(255, 165, 0, 0.5)));
-	    }
-	`;
-	document.head.appendChild(cornerStyle);
-	
-	        // Burst effect
-	        function createBurstEffect(config) {
-	            const burstContainer = document.getElementById('burstContainer');
-	            burstContainer.innerHTML = '';
-	            
-	            for(let i = 0; i < 30; i++) {
-	                const particle = document.createElement('div');
-	                particle.className = 'burst-particle';
-	                particle.style.background = config.color;
-	                particle.style.boxShadow = `0 0 15px ${config.color}`;
-	                
-	                const angle = (Math.PI * 2 * i) / 30;
-	                const distance = 300 + Math.random() * 200;
-	                const tx = Math.cos(angle) * distance;
-	                const ty = Math.sin(angle) * distance;
-	                
-	                particle.style.setProperty('--tx', tx + 'px');
-	                particle.style.setProperty('--ty', ty + 'px');
-	                particle.style.animationDelay = (i * 0.02) + 's';
-	                
-	                burstContainer.appendChild(particle);
-	                
-	                setTimeout(() => {
-	                    particle.classList.add('active');
-	                }, 50);
-	            }
-	        }
-		// Apply award theme 2
-        function applyAwardTheme2(config, employee) {
-            const root = document.documentElement;
-			// THÊM MỚI - Set CSS variables
-		    document.documentElement.style.setProperty('--theme-color', config.color);
-		    document.documentElement.style.setProperty('--theme-glow', config.glow);
-            
-            // Update award title
-            document.getElementById('awardTitle').textContent = employee['Bộ Phận'];
-            document.getElementById('awardTitle').style.color = config.color;
-            document.getElementById('awardTitle').style.textShadow = `
-                0 0 10px ${config.glow},
-                0 0 20px ${config.glow},
-                0 0 40px ${config.glow}
-            `;
+        // Apply theme
+        function applyTheme(config) {
+            document.documentElement.style.setProperty('--neon-color', config.color);
 
-            // Update card title
-            document.getElementById('cardTitle').style.color = config.color;
-            document.getElementById('cardTitle').style.textShadow = `0 0 20px ${config.glow}`;
-
-            // Update borders
-            document.querySelectorAll('.corner-ui').forEach(el => {
-                el.style.borderColor = config.color;
-                el.style.boxShadow = `0 0 20px ${config.glow}`;
-            });
-
-            document.getElementById('victoryCard').style.borderColor = config.color;
-            document.getElementById('victoryCard').style.boxShadow = `
-                0 0 30px ${config.glow},
-                  inset 0 0 50px ${config.glow.replace('0.8', '0.1')}
-            `;
-
-            // Update info items
-            document.querySelectorAll('.info-item').forEach(el => {
-                el.style.borderLeftColor = config.color;
-                el.style.background = config.glow.replace('0.8', '0.05');
-            });
-
-            document.querySelectorAll('.info-label').forEach(el => {
-                el.style.color = config.color;
-            });
-
-            // Update victory text
-            document.getElementById('victoryBanner').querySelector('.victory-text').style.color = config.color;
-            document.getElementById('victoryBanner').querySelector('.victory-text').style.textShadow = `
-                0 0 20px ${config.glow},
-                0 0 40px ${config.glow},
-                0 0 60px ${config.glow.replace('0.8', '0.6')},
-                0 0 80px ${config.glow.replace('0.8', '0.4')}
-            `;
-
-            // Update particles
-            document.querySelectorAll('.particle').forEach(el => {
-                el.style.background = config.color;
-                el.style.boxShadow = `0 0 10px ${config.color}`;
-            });
-
-            // Update control panel
-            document.querySelectorAll('.input-field').forEach(el => {
-                el.style.borderColor = config.color.replace(')', ', 0.3)').replace('rgb', 'rgba');
-            });
-			// Update card title 
-			    document.getElementById('cardTitle').textContent = config.prize;
-			    document.getElementById('cardTitle').style.color = config.color;
-			    document.getElementById('cardTitle').style.textShadow = `0 0 20px ${config.glow}`;
-
-            document.querySelector('.search-btn').style.background = `linear-gradient(135deg, ${config.color} 0%, ${config.color}dd 100%)`;
-            document.querySelector('.search-btn').style.boxShadow = `0 0 20px ${config.glow.replace('0.8', '0.4')}`;
-
-			// THÊM MỚI - Update images
-		    const mainProductImage = document.getElementById('mainProductImage');
-		    if (config.mainImage) {
-		        mainProductImage.innerHTML = `<img src="${config.mainImage}" alt="${config.prize}">`;
-		    } else {
-		        mainProductImage.innerHTML = '<div class="placeholder-text">Hình ảnh sản phẩm chính</div>';
-		    }
-		    mainProductImage.style.borderColor = config.color;
-		
-		    // Update small images
-		    if (config.images && config.images.length >= 3) {
-		        config.images.forEach((imgUrl, index) => {
-		            const smallImage = document.getElementById(`smallImage${index + 1}`);
-		            if (smallImage) {
-		                smallImage.innerHTML = `<img src="${imgUrl}" alt="Góc ${index + 1}">`;
-		                smallImage.style.borderColor = `${config.color}50`;
-		                
-		                // Add click event to switch main image
-		                smallImage.onclick = () => {
-		                    mainProductImage.innerHTML = `<img src="${imgUrl}" alt="Góc ${index + 1}">`;
-		                };
-		            }
-		        });
-		    }
-        }
-        // Animation sequence
-        // Animation sequence
-			// Animation sequence
-		async function showEmployeeInfo(employee, awardType) {
-			const config = awardConfig[awardType];
-			
-			// Apply theme
-			applyAwardTheme2(config,employee);
-
-			// Reset elements
-		    const awardTitleContainer = document.getElementById('awardTitleContainer');
-		    const victoryCard = document.getElementById('victoryCard');
-		    const victoryBanner = document.getElementById('victoryBanner');
-		    const wipeTransition = document.getElementById('wipeTransition');
-		    const imagesSection = document.getElementById('imagesSection');
-		
-		    // Remove all previous animations
-		    awardTitleContainer.classList.remove('show');
-		    victoryCard.classList.remove('show');
-		    victoryBanner.classList.remove('show');
-		    wipeTransition.classList.remove('show');
-		    imagesSection.classList.remove('animate');
-		
-		    const infoRows = document.querySelectorAll('.info-row');
-		    infoRows.forEach(item => item.classList.remove('animate'));
-		
-		    // Wait to ensure classes are removed
-		    await new Promise(resolve => setTimeout(resolve, 50));
-		
-		    // Step 1: Wipe transition
-		    wipeTransition.classList.add('show');
-		    await new Promise(resolve => setTimeout(resolve, 1500));
-		    wipeTransition.classList.remove('show');
-		
-		    // Step 2: Victory banner
-		    victoryBanner.classList.add('show');
-		    await new Promise(resolve => setTimeout(resolve, 1500));
-		    victoryBanner.classList.remove('show');
-		
-		    // Step 3: Show award title
-		    awardTitleContainer.classList.add('show');
-		    await new Promise(resolve => setTimeout(resolve, 1200));
-		    awardTitleContainer.classList.remove('show');
-		
-		    // Step 4: Show victory card with employee info
-		    document.getElementById('displayId').textContent = employee.ID;
-		    document.getElementById('displayName').textContent = employee['Họ và Tên'];
-		    document.getElementById('displayDept').textContent = employee['Bộ Phận'];
-		    document.getElementById('cardTitle').textContent = config.prize;
-		    
-		    victoryCard.classList.add('show');
-		    
-		    // Animate images section
-		    await new Promise(resolve => setTimeout(resolve, 300));
-		    imagesSection.classList.add('animate');
-		    
-		    // Animate info rows
-		    await new Promise(resolve => setTimeout(resolve, 200));
-		    infoRows.forEach(item => item.classList.add('animate'));
-		}
-
-
-        // Search function
-        function searchEmployee() {
-            const id = document.getElementById('employeeId').value.trim();
-            const awardType = document.getElementById('awardType').value;
-            const errorOverlay = document.getElementById('errorOverlay');
-
-            errorOverlay.classList.remove('show');
-
-            if(!id) {
-                return;
+            // Update main image
+            const productImage = document.getElementById('productImage');
+            if (config.mainImage) {
+                productImage.src = config.mainImage;
             }
+        }
+
+        // Animation sequence
+        async function showEmployeeInfo(employee, awardType) {
+            const config = awardConfig[awardType];
+            
+            applyTheme(config);
+
+            const logoIntro = document.getElementById('logoIntro');
+            const titleReveal = document.getElementById('titleReveal');
+            const victoryBanner = document.getElementById('victoryBanner');
+            const wipeEffect = document.getElementById('wipeEffect');
+            const awardCard = document.getElementById('awardCard');
+            const productShowcase = document.getElementById('productShowcase');
+
+            // Reset
+            logoIntro.classList.remove('show');
+            titleReveal.classList.remove('show');
+            victoryBanner.classList.remove('show');
+            wipeEffect.classList.remove('show');
+            awardCard.classList.remove('show');
+            productShowcase.classList.remove('animate');
+
+            const dataRows = document.querySelectorAll('.data-row');
+            dataRows.forEach(row => row.classList.remove('animate'));
+
+            await new Promise(resolve => setTimeout(resolve, 50));
+
+            // Get animation speed
+            const animSpeed = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--animation-speed')) || 1;
+
+            // Step 1: Wipe
+            wipeEffect.classList.add('show');
+            await new Promise(resolve => setTimeout(resolve, 1500 / animSpeed));
+
+            // Step 2: Victory
+            victoryBanner.classList.add('show');
+            await new Promise(resolve => setTimeout(resolve, 2000 / animSpeed));
+
+            // Step 3: Title
+            document.getElementById('neonTitle').textContent = employee['Bộ Phận'];
+            document.getElementById('badgeCyber').textContent = config.name;
+            titleReveal.classList.add('show');
+            await new Promise(resolve => setTimeout(resolve, 2500 / animSpeed));
+
+            // Step 4: Card
+            document.getElementById('empIdDisplay').textContent = employee.ID;
+            document.getElementById('empNameDisplay').textContent = employee['Họ và Tên'];
+            document.getElementById('empDeptDisplay').textContent = employee['Bộ Phận'];
+            document.getElementById('prizeTitle').textContent = config.prize;
+            
+            awardCard.classList.add('show');
+            
+            await new Promise(resolve => setTimeout(resolve, 400 / animSpeed));
+            productShowcase.classList.add('animate');
+            
+            await new Promise(resolve => setTimeout(resolve, 200 / animSpeed));
+            dataRows.forEach(row => row.classList.add('animate'));
+        }
+
+        // Search
+        function searchEmployee() {
+            const id = document.getElementById('empId').value.trim();
+            const awardType = document.getElementById('awardSelect').value;
+            const errorState = document.getElementById('errorState');
+
+            errorState.classList.remove('show');
+
+            if(!id) return;
 
             const employee = employeesData.find(emp => emp.ID === id);
 
             if(employee) {
                 showEmployeeInfo(employee, awardType);
             } else {
-                errorOverlay.classList.add('show');
+                errorState.classList.add('show');
                 setTimeout(() => {
-                    errorOverlay.classList.remove('show');
+                    errorState.classList.remove('show');
                 }, 2000);
             }
         }
 
-        // Event listeners
-        document.getElementById('submitBtn').addEventListener('click', searchEmployee);
-
-        document.getElementById('employeeId').addEventListener('keypress', (e) => {
-            if(e.key === 'Enter') {
-                searchEmployee();
-            }
+        // Events
+        document.getElementById('searchBtn').addEventListener('click', searchEmployee);
+        document.getElementById('empId').addEventListener('keypress', (e) => {
+            if(e.key === 'Enter') searchEmployee();
         });
-// Update theme when award type changes - QUAN TRỌNG!
-		document.getElementById('awardType').addEventListener('change', (e) => {
-			const config = awardConfig[e.target.value];
-			applyAwardTheme(config, null);
-		});
-        // Initialize with default theme
-        applyAwardTheme2(awardConfig.special);
+        document.getElementById('awardSelect').addEventListener('change', (e) => {
+            const config = awardConfig[e.target.value];
+            applyTheme(config);
+        });
+
+        // Init
+        applyTheme(awardConfig.special);
+        updateAwardDropdown(); // Initialize dropdown with default names
     </script>
 </body>
 </html>
-
-
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
