@@ -344,9 +344,9 @@
         }
 
         .winner-award {
-            font-family: 'Orbitron', 'Segoe UI', sans-serif;
-            font-size: 8px;
-            font-weight: 600;
+            font-family: 'Montserrat', 'Segoe UI', sans-serif;
+            font-size: 9px;
+            font-weight: 700;
             color: var(--neon-color);
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -500,14 +500,14 @@
         }
 
         .backdrop-title {
-            font-family: 'Orbitron', 'Segoe UI', sans-serif;
+            font-family: 'Montserrat', 'Segoe UI', sans-serif;
             font-size: 48px;
             font-weight: 900;
             background: linear-gradient(90deg, var(--neon-color), var(--neon-pink), var(--neon-yellow));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            letter-spacing: 8px;
+            letter-spacing: 4px;
             text-transform: uppercase;
             margin-bottom: 10px;
         }
@@ -519,18 +519,20 @@
         }
 
         .backdrop-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            display: flex;
+            flex-wrap: wrap;
             gap: 20px;
             max-width: 1800px;
             margin: 0 auto;
-            padding: 0 20px;
+            justify-content: center;
         }
 
         .backdrop-card {
+            width: 300px;
+            flex-shrink: 0;
             background: linear-gradient(135deg, rgba(0, 30, 60, 0.6), rgba(30, 0, 60, 0.6));
             border: 2px solid var(--neon-color);
-            padding: 18px;
+            padding: 20px;
             clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
             box-shadow: 0 0 30px rgba(0, 255, 255, 0.3), inset 0 0 30px rgba(0, 255, 255, 0.05);
             animation: fadeInUp 0.8s ease-out backwards;
@@ -554,32 +556,33 @@
         }
 
         .backdrop-card-name {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 900;
             color: #fff;
             margin-bottom: 15px;
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 2px 2px 4px rgba(0, 0, 0, 0.5);
-            line-height: 1.2;
+            line-height: 1.3;
         }
 
         .backdrop-card-details {
             display: grid;
             grid-template-columns: auto 1fr;
             gap: 6px 10px;
-            font-size: 13px;
+            font-size: 12px;
             color: rgba(255, 255, 255, 0.8);
         }
 
         .backdrop-card-label {
-            font-family: 'Orbitron', 'Segoe UI', sans-serif;
-            font-weight: 600;
+            font-family: 'Montserrat', 'Segoe UI', sans-serif;
+            font-weight: 700;
             color: var(--neon-color);
             text-transform: uppercase;
             font-size: 10px;
         }
 
         .backdrop-card-value {
-            font-family: 'Roboto Mono', monospace;
+            font-family: 'Nunito', 'Segoe UI', sans-serif;
+            font-weight: 600;
             color: #fff;
             font-size: 12px;
         }
@@ -2440,23 +2443,7 @@
         }
 
         /* Responsive */
-        @media (max-width: 1600px) {
-            .backdrop-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-
-        @media (max-width: 1300px) {
-            .backdrop-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
         @media (max-width: 1000px) {
-            .backdrop-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
             .award-card {
                 grid-template-columns: 1fr;
                 max-height: 90vh;
@@ -3167,29 +3154,7 @@
             }
         }
 
-        // Parse Awards CSV - Tự động lấy tên giải từ CSV
-        // Danh sách màu mặc định để xoay vòng
-        const defaultColorPalette = [
-            '#00ffff', // cyan
-            '#ff00ff', // magenta
-            '#ffff00', // yellow
-            '#00ff88', // green
-            '#ff6b6b', // red
-            '#4ecdc4', // teal
-            '#95e1d3', // mint
-            '#ffd93d', // gold
-            '#a855f7', // purple
-            '#f472b6', // pink
-            '#38bdf8', // sky blue
-            '#fb923c', // orange
-            '#34d399', // emerald
-            '#e879f9', // fuchsia
-            '#22d3ee'  // cyan light
-        ];
-        
-        // Lưu thứ tự giải để hiển thị đúng trong dropdown
-        let awardOrder = [];
-        
+        // Parse Awards CSV
         function parseAwardsCSV(csvText) {
             if (csvText.charCodeAt(0) === 0xFEFF) {
                 csvText = csvText.slice(1);
@@ -3201,27 +3166,44 @@
                 skipEmptyLines: true,
                 complete: function(results) {
                     awardConfig = {};
-                    awardOrder = [];
                     
-                    results.data.forEach((row, index) => {
+                    const awardKeyMap = {
+                        'Giải Đặc Biệt': 'special',
+                        'Giải 1': 'first',
+                        'Giải 2': 'second',
+                        'Giải 3': 'third',
+                        'Giải 4': 'fourth',
+                        'Giải 5': 'fifth',
+                        'Giải 6': 'sixth',
+                        'Giải 7': 'seventh',
+						'Giải 8': 'eighth' 
+                    };
+                    
+                    const defaultColors = {
+                        'special': '#00ffff',
+                        'first': '#ff00ff',
+                        'second': '#ffff00',
+                        'third': '#00ff88',
+                        'fourth': '#ff6b6b',
+                        'fifth': '#4ecdc4',
+                        'sixth': '#95e1d3',
+                        'seventh': '#ffd93d',
+						'eighth': '#a855f7'
+                    };
+                    
+                    results.data.forEach(row => {
                         const awardName = row['Award Name']?.trim();
                         const productName = row['Product Name']?.trim();
                         const imageUrl = row['Image URL']?.trim();
-                        const customColor = row['Color']?.trim(); // Có thể thêm cột Color trong CSV
                         
-                        if (awardName) {
-                            // Tạo key từ tên giải (loại bỏ dấu, khoảng trắng)
-                            const key = 'award_' + index;
-                            
+                        if (awardName && awardKeyMap[awardName]) {
+                            const key = awardKeyMap[awardName];
                             awardConfig[key] = {
                                 name: awardName,
                                 prize: productName || awardName,
-                                color: customColor || defaultColorPalette[index % defaultColorPalette.length],
+                                color: defaultColors[key] || '#00ffff',
                                 mainImage: imageUrl || ''
                             };
-                            
-                            // Lưu thứ tự
-                            awardOrder.push(key);
                         }
                     });
                     
@@ -3240,12 +3222,23 @@
             const awardSelect = document.getElementById('awardSelect');
             awardSelect.innerHTML = '<option value="">Chọn giải...</option>';
             
-            // Hiển thị theo thứ tự trong CSV
-            awardOrder.forEach(key => {
-                if (awardConfig[key] && awardConfig[key].name) {
+            const awards = [
+                { key: 'special', label: 'Giải Đặc Biệt' },
+                { key: 'first', label: 'Giải 1' },
+                { key: 'second', label: 'Giải 2' },
+                { key: 'third', label: 'Giải 3' },
+                { key: 'fourth', label: 'Giải 4' },
+                { key: 'fifth', label: 'Giải 5' },
+                { key: 'sixth', label: 'Giải 6' },
+                { key: 'seventh', label: 'Giải 7' },
+				{ key: 'eighth', label: 'Giải 8' }  
+            ];
+            
+            awards.forEach(award => {
+                if (awardConfig[award.key] && awardConfig[award.key].name) {
                     const option = document.createElement('option');
-                    option.value = key;
-                    option.textContent = awardConfig[key].name;
+                    option.value = award.key;
+                    option.textContent = awardConfig[award.key].name;
                     awardSelect.appendChild(option);
                 }
             });
@@ -3730,10 +3723,34 @@
             }
         });
 
-        // Keyboard shortcut - ESC to close
+        // Keyboard shortcuts
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && isAnimating) {
-                closeAwardDisplay();
+            // ESC key
+            if (e.key === 'Escape') {
+                // Check if backdrop is showing first
+                const backdropScreen = document.getElementById('backdropScreen');
+                if (backdropScreen.classList.contains('show')) {
+                    closeBackdrop();
+                    return;
+                }
+                // Then check if award animation is showing
+                if (isAnimating) {
+                    closeAwardDisplay();
+                    return;
+                }
+            }
+            
+            // Ctrl+Space - Focus and select all in employee ID input
+            if (e.ctrlKey && e.code === 'Space') {
+                e.preventDefault(); // Prevent default browser behavior
+                
+                // Check if control panel is visible (not dimmed)
+                const controlPanel = document.querySelector('.control-panel');
+                if (!controlPanel.classList.contains('dimmed')) {
+                    const empIdInput = document.getElementById('empId');
+                    empIdInput.focus();
+                    empIdInput.select();
+                }
             }
         });
 
