@@ -12,7 +12,7 @@
             --neon-pink: #ff00ff;
             --neon-yellow: #ffff00;
             --dark: #0a0a0f;
-             --animation-speed: 1; 
+            --animation-speed: 1;
         }
 
         * {
@@ -2347,7 +2347,6 @@
         }
 
         .product-showcase::after {
-          
             position: absolute;
             top: 15px;
             left: 50%;
@@ -3167,43 +3166,34 @@
                 complete: function(results) {
                     awardConfig = {};
                     
-                    const awardKeyMap = {
-                        'Giải Đặc Biệt': 'special',
-                        'Giải 1': 'first',
-                        'Giải 2': 'second',
-                        'Giải 3': 'third',
-                        'Giải 4': 'fourth',
-                        'Giải 5': 'fifth',
-                        'Giải 6': 'sixth',
-                        'Giải 7': 'seventh',
-						'Giải 8': 'eighth' 
-                    };
+                    // Danh sách màu để tự động gán
+                    const colorPalette = [
+                        '#00ffff', '#ff00ff', '#ffff00', '#00ff88', 
+                        '#ff6b6b', '#4ecdc4', '#95e1d3', '#ffd93d',
+                        '#a855f7', '#f472b6', '#38bdf8', '#fb923c',
+                        '#22d3ee', '#c084fc', '#e879f9', '#2dd4bf'
+                    ];
                     
-                    const defaultColors = {
-                        'special': '#00ffff',
-                        'first': '#ff00ff',
-                        'second': '#ffff00',
-                        'third': '#00ff88',
-                        'fourth': '#ff6b6b',
-                        'fifth': '#4ecdc4',
-                        'sixth': '#95e1d3',
-                        'seventh': '#ffd93d',
-						'eighth': '#a855f7'
-                    };
+                    let colorIndex = 0;
                     
-                    results.data.forEach(row => {
+                    results.data.forEach((row, index) => {
                         const awardName = row['Award Name']?.trim();
                         const productName = row['Product Name']?.trim();
                         const imageUrl = row['Image URL']?.trim();
                         
-                        if (awardName && awardKeyMap[awardName]) {
-                            const key = awardKeyMap[awardName];
+                        if (awardName) {
+                            // Tạo key từ tên giải (loại bỏ dấu và khoảng trắng)
+                            const key = 'award_' + index;
+                            
                             awardConfig[key] = {
                                 name: awardName,
                                 prize: productName || awardName,
-                                color: defaultColors[key] || '#00ffff',
-                                mainImage: imageUrl || ''
+                                color: colorPalette[colorIndex % colorPalette.length],
+                                mainImage: imageUrl || '',
+                                order: index
                             };
+                            
+                            colorIndex++;
                         }
                     });
                     
@@ -3222,25 +3212,16 @@
             const awardSelect = document.getElementById('awardSelect');
             awardSelect.innerHTML = '<option value="">Chọn giải...</option>';
             
-            const awards = [
-                { key: 'special', label: 'Giải Đặc Biệt' },
-                { key: 'first', label: 'Giải 1' },
-                { key: 'second', label: 'Giải 2' },
-                { key: 'third', label: 'Giải 3' },
-                { key: 'fourth', label: 'Giải 4' },
-                { key: 'fifth', label: 'Giải 5' },
-                { key: 'sixth', label: 'Giải 6' },
-                { key: 'seventh', label: 'Giải 7' },
-				{ key: 'eighth', label: 'Giải 8' }  
-            ];
+            // Lấy tất cả giải từ awardConfig và sắp xếp theo order
+            const awards = Object.keys(awardConfig)
+                .map(key => ({ key, ...awardConfig[key] }))
+                .sort((a, b) => a.order - b.order);
             
             awards.forEach(award => {
-                if (awardConfig[award.key] && awardConfig[award.key].name) {
-                    const option = document.createElement('option');
-                    option.value = award.key;
-                    option.textContent = awardConfig[award.key].name;
-                    awardSelect.appendChild(option);
-                }
+                const option = document.createElement('option');
+                option.value = award.key;
+                option.textContent = award.name;
+                awardSelect.appendChild(option);
             });
         }
 
@@ -3788,4 +3769,3 @@
     </script>
 </body>
 </html>
-
