@@ -2347,7 +2347,7 @@
         }
 
         .product-showcase::after {
-            content: '[ PRIZE ITEM ]';
+           <!-- content: '[ PRIZE ITEM ]';-->
             position: absolute;
             top: 15px;
             left: 50%;
@@ -3155,7 +3155,7 @@
         }
 
         // Parse Awards CSV
-        function parseAwardsCSV(csvText) {
+        function parseAwardsCSV(csvText, silent = false) {
             if (csvText.charCodeAt(0) === 0xFEFF) {
                 csvText = csvText.slice(1);
             }
@@ -3209,11 +3209,11 @@
                     
                     updateAwardDropdown();
                     console.log('✓ Loaded awards:', Object.keys(awardConfig).length);
-                    alert(`✓ ĐÃ TẢI: ${Object.keys(awardConfig).length} GIẢI THƯỞNG`);
+                    if (!silent) alert(`✓ ĐÃ TẢI: ${Object.keys(awardConfig).length} GIẢI THƯỞNG`);
                 },
                 error: function(error) {
                     console.error('✗ Parse error:', error);
-                    alert('✗ LỖI KHI ĐỌC FILE GIẢI THƯỞNG');
+                    if (!silent) alert('✗ LỖI KHI ĐỌC FILE GIẢI THƯỞNG');
                 }
             });
         }
@@ -3265,7 +3265,7 @@
         });
 
         // Parse Employee CSV
-        function parseCSVText(csvText) {
+        function parseCSVText(csvText, silent = false) {
             if (csvText.charCodeAt(0) === 0xFEFF) {
                 csvText = csvText.slice(1);
             }
@@ -3277,11 +3277,11 @@
                 complete: function(results) {
                     employeesData = results.data;
                     console.log('✓ Loaded:', employeesData.length, 'employees');
-                    alert(`✓ ĐÃ TẢI: ${employeesData.length} NHÂN VIÊN`);
+                    if (!silent) alert(`✓ ĐÃ TẢI: ${employeesData.length} NHÂN VIÊN`);
                 },
                 error: function(error) {
                     console.error('✗ Error:', error);
-                    alert('✗ LỖI KHI TẢI DỮ LIỆU');
+                    if (!silent) alert('✗ LỖI KHI TẢI DỮ LIỆU');
                 }
             });
         }
@@ -3754,10 +3754,36 @@
             }
         });
 
+        // Auto load data from GitHub
+        async function loadDefaultData() {
+            const baseURL = 'https://raw.githubusercontent.com/thodung1812/bocthamtrungthuong2/main/';
+            
+            try {
+                // Load danh sách nhân viên
+                const empResponse = await fetch(baseURL + 'Danhsachnhanvien.csv');
+                if (empResponse.ok) {
+                    const empText = await empResponse.text();
+                    parseCSVText(empText, true);
+                    console.log('✅ Loaded employees from GitHub');
+                }
+                
+                // Load danh sách giải thưởng
+                const awardResponse = await fetch(baseURL + 'Giai_thuong.csv');
+                if (awardResponse.ok) {
+                    const awardText = await awardResponse.text();
+                    parseAwardsCSV(awardText, true);
+                    console.log('✅ Loaded awards from GitHub');
+                }
+            } catch (error) {
+                console.log('⚠ Could not load default data:', error);
+            }
+        }
+
         // Initialize
         updateAwardDropdown();
         loadWinners();
         loadSavedSpeed();
+        loadDefaultData();
         console.log('✅ System ready - Fixed version with speed control');
     </script>
 </body>
